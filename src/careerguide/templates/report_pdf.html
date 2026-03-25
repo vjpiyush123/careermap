@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Career Report - {{ report.analysis.student_name }}</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            color: #1a1a2e;
+            font-size: 10pt;
+            line-height: 1.5;
+        }
+        h1 { font-size: 18pt; color: #4338ca; margin-bottom: 2px; }
+        h2 { font-size: 13pt; color: #4338ca; margin-top: 18px; margin-bottom: 6px; border-bottom: 1px solid #c7d2fe; padding-bottom: 3px; }
+        h3 { font-size: 11pt; margin-top: 10px; margin-bottom: 4px; }
+        .subtitle { color: #6b7280; font-size: 10pt; }
+        table.info { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+        table.info td { padding: 3px 8px; border: 1px solid #d1d5db; font-size: 9pt; }
+        table.info td.label { font-weight: bold; color: #4b5563; width: 160px; background-color: #f3f4f6; }
+        .score { font-size: 28pt; font-weight: bold; text-align: center; margin: 8px 0; }
+        .score-high { color: #16a34a; }
+        .score-medium { color: #d97706; }
+        .score-low { color: #dc2626; }
+        table.colleges { width: 100%; border-collapse: collapse; font-size: 8pt; margin-top: 6px; }
+        table.colleges th, table.colleges td { padding: 3px 5px; border: 1px solid #d1d5db; }
+        table.colleges th { background-color: #e0e7ff; color: #312e81; text-transform: uppercase; font-size: 7pt; }
+        .tag { display: inline; padding: 1px 6px; margin: 1px; background-color: #e0e7ff; color: #4338ca; font-size: 8pt; }
+        .pro { color: #16a34a; }
+        .con { color: #d97706; }
+        .narrative { margin: 6px 0; white-space: pre-wrap; font-size: 9pt; }
+        .warning { background-color: #fef3c7; border: 1px solid #d97706; color: #92400e; padding: 6px; font-size: 9pt; }
+        .step-box { border: 1px solid #c7d2fe; padding: 8px 10px; margin-bottom: 8px; background-color: #f5f3ff; }
+        .step-title { font-size: 10pt; font-weight: bold; color: #4338ca; margin-bottom: 4px; }
+        .footer { text-align: center; font-size: 7pt; color: #9ca3af; margin-top: 20px; border-top: 1px solid #d1d5db; padding-top: 6px; }
+    </style>
+</head>
+<body>
+    <h1>Career Analysis Report</h1>
+    <p class="subtitle">{{ report.analysis.student_name }} - {{ report.analysis.selected_stream }}</p>
+
+    <h2>Student Information</h2>
+    <table class="info">
+        <tr><td class="label">Name</td><td>{{ report.analysis.student_name }}</td></tr>
+        <tr><td class="label">Standard</td><td>{{ report.analysis.standard }}</td></tr>
+        <tr><td class="label">Board</td><td>{{ report.analysis.board }}</td></tr>
+        <tr><td class="label">State</td><td>{{ report.analysis.state }}</td></tr>
+        <tr><td class="label">10th Percentage</td><td>{{ report.analysis.percentage_10th }}%</td></tr>
+        <tr><td class="label">12th Percentage</td><td>{{ report.analysis.percentage_12th or 'N/A' }}{% if report.analysis.percentage_12th %}%{% endif %}</td></tr>
+        <tr><td class="label">Stream</td><td>{{ report.analysis.selected_stream }}</td></tr>
+    </table>
+
+    <h2>Suitability Score</h2>
+    <div class="score {% if report.analysis.stream_analysis.suitability_score >= 70 %}score-high{% elif report.analysis.stream_analysis.suitability_score >= 50 %}score-medium{% else %}score-low{% endif %}">
+        {{ report.analysis.stream_analysis.suitability_score }} / 100
+    </div>
+    {% if report.analysis.top_2_recommendations %}
+    <p><strong>Top Recommended Streams:</strong> {{ report.analysis.top_2_recommendations | join(', ') }}</p>
+    {% endif %}
+    {% if not report.analysis.data_sufficient %}
+    <div class="warning">Note: {{ report.analysis.insufficient_data_reason }}</div>
+    {% endif %}
+
+    <h2>Executive Summary</h2>
+    <div class="narrative">{{ report.enrichment.executive_summary }}</div>
+
+    <h2>Stream Recommendation</h2>
+    <div class="narrative">{{ report.enrichment.stream_recommendation_narrative }}</div>
+
+    <h2>Strengths and Considerations</h2>
+    <h3 class="pro">Strengths</h3>
+    <ul>
+        {% for pro in report.analysis.stream_analysis.pros %}
+        <li class="pro">{{ pro }}</li>
+        {% endfor %}
+    </ul>
+    <h3 class="con">Considerations</h3>
+    <ul>
+        {% for con in report.analysis.stream_analysis.cons %}
+        <li class="con">{{ con }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Step-by-Step Roadmap to {{ report.analysis.selected_stream }}</h2>
+
+    <div class="step-box">
+        <div class="step-title">Step 1: Subjects to Focus On</div>
+        {% if report.analysis.stream_analysis.subjects_10th %}
+        <p><strong>10th Standard:</strong> {{ report.analysis.stream_analysis.subjects_10th | join(', ') }}</p>
+        {% endif %}
+        {% if report.analysis.stream_analysis.subjects_12th %}
+        <p><strong>12th Standard:</strong> {{ report.analysis.stream_analysis.subjects_12th | join(', ') }}</p>
+        {% endif %}
+    </div>
+
+    {% if report.analysis.stream_analysis.entrance_exams %}
+    <div class="step-box">
+        <div class="step-title">Step 2: Entrance Exams to Prepare For</div>
+        <p>
+        {% for exam in report.analysis.stream_analysis.entrance_exams %}
+            <span class="tag">{{ exam }}</span>
+        {% endfor %}
+        </p>
+    </div>
+    {% endif %}
+
+    {% if report.analysis.stream_analysis.coaching_institutes %}
+    <div class="step-box">
+        <div class="step-title">Step 3: Top Coaching Institutes for Preparation</div>
+        <ul>
+            {% for inst in report.analysis.stream_analysis.coaching_institutes %}
+            <li>{{ inst }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <div class="step-box">
+        <div class="step-title">Step 4: Top Colleges to Target</div>
+        <table class="colleges">
+            <thead>
+                <tr><th>College</th><th>Rank</th><th>City</th><th>State</th><th>Fees (LPA)</th><th>Placement (LPA)</th><th>Seats</th></tr>
+            </thead>
+            <tbody>
+                {% for c in report.analysis.stream_analysis.top_colleges %}
+                <tr>
+                    <td>{{ c.college_name }}</td>
+                    <td>{{ c.ranking }}</td>
+                    <td>{{ c.city }}</td>
+                    <td>{{ c.state }}</td>
+                    <td>Rs {{ c.avg_fees_lpa }}</td>
+                    <td>Rs {{ c.avg_placement_lpa }}</td>
+                    <td>{{ c.total_seats }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="step-box">
+        <div class="step-title">Step 5: Career Opportunities After Graduation</div>
+        <p>
+        {% for opt in report.analysis.stream_analysis.career_options %}
+            <span class="tag">{{ opt }}</span>
+        {% endfor %}
+        </p>
+        <p><strong>Average Starting Salary:</strong> Rs {{ report.analysis.stream_analysis.avg_starting_salary_lpa }} LPA</p>
+    </div>
+
+    <h2>Industries</h2>
+    <p>
+    {% for ind in report.analysis.stream_analysis.industries %}
+        <span class="tag">{{ ind }}</span>
+    {% endfor %}
+    </p>
+
+    <h2>Growth Outlook</h2>
+    <p><strong>India:</strong> {{ report.analysis.stream_analysis.growth_india }}</p>
+    <p><strong>Abroad:</strong> {{ report.analysis.stream_analysis.growth_abroad }}</p>
+
+    <h2>Career Guidance</h2>
+    <div class="narrative">{{ report.enrichment.career_guidance_narrative }}</div>
+
+    <h2>Analysis Methodology</h2>
+    <div class="narrative" style="font-size: 8pt; color: #6b7280;">{{ report.enrichment.dependency_explanation }}</div>
+
+    {% if report.analysis.psychology_alignment %}
+    <h2>Psychology Alignment (Top 5 Streams)</h2>
+    <table class="info">
+        {% for stream, score in report.analysis.psychology_alignment.items() | sort(attribute='1', reverse=true) %}
+        {% if loop.index <= 5 %}
+        <tr><td class="label">{{ stream }}</td><td>{{ score }} / 100</td></tr>
+        {% endif %}
+        {% endfor %}
+    </table>
+    {% endif %}
+
+    <div class="footer">
+        <p>Generated by CareerGuide Analysis Agent | Source: {{ report.enrichment.source }}</p>
+        <p>This is a data-driven assessment. The system supports human judgment - it does not replace it.</p>
+    </div>
+</body>
+</html>

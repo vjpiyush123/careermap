@@ -1,0 +1,40 @@
+# CareerGuide Application Settings
+app:
+  name: "CareerGuide Analysis Agent"
+  version: "0.1.0"
+  debug: false
+  host: "0.0.0.0"
+  port: 8000
+
+# Analysis engine settings
+analysis:
+  max_analysis_duration_seconds: 120
+  cache_ttl_seconds: 3600
+  max_college_suggestions: 10
+  max_concurrent_runs: 5
+
+# LLM settings
+llm:
+  provider: "ollama" # ollama | azure | openai
+  tier1_model: "llama3.2:3b"
+  tier2_model: "llama3.2:3b"
+  ollama_base_url: "http://localhost:11434"
+  tier1_max_tokens: 2000
+  tier2_max_tokens: 500
+  tier1_temperature: 0.1
+  tier2_temperature: 0.1
+  tier1_timeout_seconds: 120
+  tier2_timeout_seconds: 90
+  fallback_to_templates: true # if LLM unavailable, use template narratives
+
+# Persistence
+persistence:
+  db_url: "sqlite+aiosqlite:///./careerguide.db"
+
+# Reliability
+reliability:
+  api_timeout_seconds: 10
+  api_max_retries: 3
+  api_retry_backoff_base_seconds: 1
+  circuit_breaker_failure_threshold: 3
+  circuit_breaker_recovery_seconds: 30

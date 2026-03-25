@@ -1,0 +1,303 @@
+{% extends "base.html" %}
+{% block title %}Career Options — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Career Options</h1>
+    <p class="subtitle">Explore career streams and paths available after 10th and 12th</p>
+</div>
+
+<div class="co-layout">
+    <!-- Left sidebar — stream list -->
+    <aside class="co-sidebar" id="coSidebar">
+        <div class="co-sidebar-header">Streams</div>
+        {% for stream in streams %}
+        <button class="co-stream-btn{% if loop.first %} active{% endif %}"
+                data-panel="panel-{{ loop.index }}" type="button">
+            {{ stream }}
+        </button>
+        {% endfor %}
+    </aside>
+
+    <!-- Right content — one panel per stream -->
+    <div class="co-content">
+        {% for stream in streams %}
+        {% set idx = loop.index %}
+        {% set sdata = stream_details[stream] %}
+
+        <div class="co-panel{% if loop.first %} active{% endif %}" id="panel-{{ idx }}">
+            <h2 class="co-panel-heading">{{ stream }}</h2>
+
+            {% if sdata %}
+            <!-- Tab bar — Roadmap | Selection Process | Coaching | Career Paths | Colleges (State) | Top Colleges (India) | Abroad -->
+            <div class="co-tabbar" role="tablist">
+                <button class="co-tab-item active" type="button" data-pane="pane-roadmap-{{ idx }}">Roadmap</button>
+                <button class="co-tab-item" type="button" data-pane="pane-selection-{{ idx }}">Selection Process</button>
+                <button class="co-tab-item" type="button" data-pane="pane-coaching-{{ idx }}">Coaching</button>
+                <button class="co-tab-item" type="button" data-pane="pane-careers-{{ idx }}">Career Paths</button>
+                <button class="co-tab-item" type="button" data-pane="pane-state-{{ idx }}">Colleges (State)</button>
+                <button class="co-tab-item" type="button" data-pane="pane-india-{{ idx }}">Top Colleges (India)</button>
+                <button class="co-tab-item" type="button" data-pane="pane-abroad-{{ idx }}">Abroad</button>
+            </div>
+
+            <!-- ═══ Pane: Roadmap ═══ -->
+            <div class="co-pane active" id="pane-roadmap-{{ idx }}">
+                {% if sdata.roadmap %}
+                <div class="roadmap-timeline">
+                    {% for step in sdata.roadmap %}
+                    <div class="roadmap-item">
+                        <div class="roadmap-marker">{{ step.step }}</div>
+                        <div class="roadmap-body">
+                            <h5>{{ step.title }}</h5>
+                            <p>{{ step.detail }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="muted">Roadmap not available for this stream.</p>
+                {% endif %}
+            </div>
+
+            <!-- ═══ Pane: Selection Process ═══ -->
+            <div class="co-pane" id="pane-selection-{{ idx }}">
+                {% if sdata.selection_process %}
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Exam Name</th>
+                                <th>Conducted By</th>
+                                <th>Eligibility</th>
+                                <th>Pattern</th>
+                                <th>Tentative Dates</th>
+                                <th>Website</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for ex in sdata.selection_process %}
+                            <tr>
+                                <td><strong>{{ ex.exam }}</strong></td>
+                                <td>{{ ex.conducted_by }}</td>
+                                <td>{{ ex.eligibility }}</td>
+                                <td>{{ ex.pattern }}</td>
+                                <td>{{ ex.dates }}</td>
+                                <td>{% if ex.website and ex.website.startswith('http') %}<a href="{{ ex.website }}" target="_blank" rel="noopener">Visit ↗</a>{% else %}{{ ex.website }}{% endif %}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="muted">Selection process data not available.</p>
+                {% endif %}
+            </div>
+
+            <!-- ═══ Pane: Coaching ═══ -->
+            <div class="co-pane" id="pane-coaching-{{ idx }}">
+                {% if sdata.coaching %}
+                <ul class="coaching-list">
+                    {% for inst in sdata.coaching %}
+                    <li>{{ inst }}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p class="muted">No coaching data available.</p>
+                {% endif %}
+            </div>
+
+            <!-- ═══ Pane: Career Paths ═══ -->
+            <div class="co-pane" id="pane-careers-{{ idx }}">
+                {% if sdata.career_options %}
+                <div class="co-careers-grid">
+                    {% for co in sdata.career_options %}
+                    <div class="career-option-card">
+                        <h5>{{ co.name }}</h5>
+                        <p>{{ co.description }}</p>
+                        <div class="career-meta">
+                            <span class="tag">Avg Salary: ₹{{ co.avg_starting_salary_lpa }} LPA</span>
+                            {% for role in co.typical_roles %}
+                            <span class="tag tag-role">{{ role }}</span>
+                            {% endfor %}
+                        </div>
+                        <p class="growth-text"><strong>India:</strong> {{ co.growth_india }}</p>
+                        <p class="growth-text"><strong>Abroad:</strong> {{ co.growth_abroad }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="muted">No career path data available.</p>
+                {% endif %}
+            </div>
+
+            <!-- ═══ Pane: Colleges (State) ═══ -->
+            <div class="co-pane" id="pane-state-{{ idx }}">
+                {% if sdata.colleges_by_state %}
+                    {% for state, colleges in sdata.colleges_by_state.items() %}
+                    <h5 class="co-state-heading">{{ state }}</h5>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>College Name</th>
+                                    <th>Ranking</th>
+                                    <th>City</th>
+                                    <th>Avg Fees (LPA)</th>
+                                    <th>Placement (LPA)</th>
+                                    <th>Seats</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for c in colleges %}
+                                <tr>
+                                    <td>{% if c.website %}<a href="{{ c.website }}" target="_blank" rel="noopener">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}</td>
+                                    <td>{{ c.ranking }}</td>
+                                    <td>{{ c.city }}</td>
+                                    <td>₹{{ c.avg_fees_lpa }}</td>
+                                    <td>₹{{ c.avg_placement_lpa }}</td>
+                                    <td>{{ c.total_seats }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="muted">State-wise data not available for this stream.</p>
+                {% endif %}
+            </div>
+
+            <!-- ═══ Pane: Top Colleges (India) ═══ -->
+            <div class="co-pane" id="pane-india-{{ idx }}">
+                {% if sdata.colleges_india %}
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>College Name</th>
+                                <th>Ranking</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Avg Fees (LPA)</th>
+                                <th>Placement (LPA)</th>
+                                <th>Seats</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for c in sdata.colleges_india %}
+                            <tr>
+                                <td>{% if c.website %}<a href="{{ c.website }}" target="_blank" rel="noopener">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}</td>
+                                <td>{{ c.ranking }}</td>
+                                <td>{{ c.city }}</td>
+                                <td>{{ c.state }}</td>
+                                <td>₹{{ c.avg_fees_lpa }}</td>
+                                <td>₹{{ c.avg_placement_lpa }}</td>
+                                <td>{{ c.total_seats }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="muted">No India-level college data available.</p>
+                {% endif %}
+            </div>
+
+            <!-- ═══ Pane: Abroad ═══ -->
+            <div class="co-pane" id="pane-abroad-{{ idx }}">
+                {% if sdata.abroad %}
+                {% set ab = sdata.abroad %}
+                <div class="abroad-section">
+                    <p class="abroad-overview">{{ ab.overview }}</p>
+                    <div class="abroad-grid">
+                        <div class="abroad-card">
+                            <h5>🌍 Top Countries</h5>
+                            <div class="abroad-tags">
+                                {% for c in ab.top_countries %}
+                                <span class="tag">{{ c }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="abroad-card">
+                            <h5>📝 Exams Required</h5>
+                            <ul class="abroad-list">
+                                {% for ex in ab.exams_required %}
+                                <li>{{ ex }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="abroad-card">
+                            <h5>🏛️ Top Universities</h5>
+                            <ul class="abroad-list">
+                                {% for u in ab.top_universities %}
+                                <li>{{ u }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="abroad-card">
+                            <h5>💰 Avg Cost / Year</h5>
+                            <p class="abroad-highlight">{{ ab.avg_cost_per_year }}</p>
+                        </div>
+                        <div class="abroad-card">
+                            <h5>🎓 Scholarships</h5>
+                            <div class="abroad-tags">
+                                {% for s in ab.scholarships %}
+                                <span class="tag tag-role">{{ s }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="abroad-card">
+                            <h5>🛂 Work Visa</h5>
+                            <p>{{ ab.work_visa }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <p class="muted">Abroad data not available for this stream.</p>
+                {% endif %}
+            </div>
+
+            {% else %}
+            <p class="muted">No data available for this stream.</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    /* ── Sidebar stream buttons ── */
+    var sidebar = document.getElementById('coSidebar');
+    if (sidebar) {
+        sidebar.addEventListener('click', function(e) {
+            var btn = e.target.closest('.co-stream-btn');
+            if (!btn) return;
+            sidebar.querySelectorAll('.co-stream-btn').forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            document.querySelectorAll('.co-panel').forEach(function(p) { p.classList.remove('active'); });
+            var panel = document.getElementById(btn.getAttribute('data-panel'));
+            if (panel) panel.classList.add('active');
+        });
+    }
+
+    /* ── Tab bar clicks (event delegation on each tabbar) ── */
+    document.querySelectorAll('.co-tabbar').forEach(function(tabbar) {
+        tabbar.addEventListener('click', function(e) {
+            var tab = e.target.closest('.co-tab-item');
+            if (!tab) return;
+            var panel = tabbar.closest('.co-panel');
+            // Deactivate all tabs & panes in this panel
+            panel.querySelectorAll('.co-tab-item').forEach(function(t) { t.classList.remove('active'); });
+            panel.querySelectorAll('.co-pane').forEach(function(p) { p.classList.remove('active'); });
+            // Activate clicked tab & its pane
+            tab.classList.add('active');
+            var pane = document.getElementById(tab.getAttribute('data-pane'));
+            if (pane) pane.classList.add('active');
+        });
+    });
+});
+</script>
+{% endblock %}

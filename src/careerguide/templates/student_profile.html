@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% block title %}{{ student.name }} — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>{{ student.name }}</h1>
+    <p class="subtitle">Student Profile & Analysis</p>
+</div>
+
+<div class="profile-section">
+    <div class="profile-card">
+        <h3>Profile Summary</h3>
+        <div class="profile-grid">
+            <div><strong>Standard:</strong> {{ student.standard }}</div>
+            <div><strong>Board:</strong> {{ student.board }}</div>
+            <div><strong>State:</strong> {{ student.state }}</div>
+            <div><strong>Year:</strong> {{ student.year_of_study }}</div>
+            <div><strong>10th %:</strong> {{ student.percentage_10th }}%</div>
+            <div><strong>12th %:</strong> {{ student.percentage_12th or 'N/A' }}{% if student.percentage_12th %}%{% endif %}</div>
+            <div><strong>Stream Interest:</strong> {{ student.stream_interest }}</div>
+            <div><strong>Psychology Test:</strong> {{ 'Completed ✓' if has_psychology else 'Not taken' }}</div>
+        </div>
+    </div>
+</div>
+
+<!-- Psychology Test Section -->
+{% if not has_psychology %}
+<section class="section">
+    <h2>Psychology Aptitude Test</h2>
+    <p>Take this test to improve the accuracy of your career analysis.</p>
+    <form id="psychology-form" class="form">
+        {% for q in psychology_test.questions %}
+        <div class="question-card">
+            <p class="question-text"><strong>Q{{ q.id }}.</strong> {{ q.text }}</p>
+            <div class="options">
+                {% for opt in q.options %}
+                <label class="radio-label">
+                    <input type="radio" name="q{{ q.id }}" value="{{ loop.index0 }}" {% if loop.first %}checked{% endif %}>
+                    <span>{{ opt.text }}</span>
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary">Submit Test</button>
+    </form>
+    <div id="psych-message" class="form-message" style="display:none;"></div>
+</section>
+{% else %}
+<section class="section">
+    <h2>Psychology Test Results</h2>
+    <div class="scores-grid">
+        {% for stream, score in student.psychology_score.items() | sort(attribute='1', reverse=true) %}
+        <div class="score-bar-container">
+            <div class="score-label">{{ stream }}</div>
+            <div class="score-bar-bg">
+                <div class="score-bar" style="width: {{ score }}%;">{{ score }}%</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<!-- Analysis Section -->
+<section class="section">
+    <h2>Career Analysis</h2>
+    <button id="run-analysis-btn" class="btn btn-primary" onclick="runAnalysis()">
+        Generate New Analysis
+    </button>
+    <div id="analysis-message" class="form-message" style="display:none;"></div>
+
+    {% if analyses %}
+    <div class="analyses-list">
+        {% for a in analyses %}
+        <div class="analysis-card">
+            <div class="analysis-header">
+                <h4>{{ a.selected_stream }}</h4>
+                <span class="score-badge {% if a.stream_analysis.suitability_score >= 70 %}high{% elif a.stream_analysis.suitability_score >= 50 %}medium{% else %}low{% endif %}">
+                    {{ a.stream_analysis.suitability_score }}/100
+                </span>
+            </div>
+            <div class="analysis-meta">
+                <span>{{ a.created_at.strftime('%d %b %Y %H:%M') }}</span>
+                {% if a.top_2_recommendations %}
+                <span>Top picks: {{ a.top_2_recommendations | join(', ') }}</span>
+                {% endif %}
+            </div>
+            <div class="analysis-actions">
+                <a href="/analysis/{{ a.id }}" class="btn btn-secondary btn-sm">View Details</a>
+                <button class="btn btn-primary btn-sm" onclick="generateReport('{{ a.id }}')">Generate Report</button>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <p>No analyses yet. Click "Generate New Analysis" to get started.</p>
+    </div>
+    {% endif %}
+</section>
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+const studentId = '{{ student.id }}';
+
+{% if not has_psychology %}
+document.getElementById('psychology-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const msg = document.getElementById('psych-message');
+    const answers = [];
+    {% for q in psychology_test.questions %}
+    const q{{ q.id }} = document.querySelector('input[name="q{{ q.id }}"]:checked');
+    if (q{{ q.id }}) {
+        answers.push({question_id: {{ q.id }}, selected_option: parseInt(q{{ q.id }}.value)});
+    }
+    {% endfor %}
+
+    try {
+        const resp = await fetch('/api/psychology-test/submit', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({student_id: studentId, answers: answers}),
+        });
+        if (!resp.ok) throw new Error('Submission failed');
+        msg.textContent = 'Test submitted! Refreshing...';
+        msg.className = 'form-message success';
+        msg.style.display = 'block';
+        setTimeout(() => window.location.reload(), 1000);
+    } catch (err) {
+        msg.textContent = 'Error: ' + err.message;
+        msg.className = 'form-message error';
+        msg.style.display = 'block';
+    }
+});
+{% endif %}
+
+async function runAnalysis() {
+    const btn = document.getElementById('run-analysis-btn');
+    const msg = document.getElementById('analysis-message');
+    btn.disabled = true;
+    btn.textContent = 'Running analysis...';
+
+    try {
+        const resp = await fetch('/api/analysis/' + studentId, {method: 'POST'});
+        if (!resp.ok) throw new Error('Analysis failed');
+        const result = await resp.json();
+        msg.textContent = 'Analysis complete! Refreshing...';
+        msg.className = 'form-message success';
+        msg.style.display = 'block';
+        setTimeout(() => window.location.reload(), 1000);
+    } catch (err) {
+        msg.textContent = 'Error: ' + err.message;
+        msg.className = 'form-message error';
+        msg.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Generate New Analysis';
+    }
+}
+
+async function generateReport(analysisId) {
+    try {
+        const resp = await fetch('/api/report/' + analysisId, {method: 'POST'});
+        if (!resp.ok) throw new Error('Report generation failed');
+        window.location.href = '/analysis/' + analysisId;
+    } catch (err) {
+        alert('Error: ' + err.message);
+    }
+}
+</script>
+{% endblock %}

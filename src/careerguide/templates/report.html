@@ -1,0 +1,269 @@
+{% extends "base.html" %}
+{% block title %}Report: {{ report.analysis.student_name }} — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Career Analysis Report</h1>
+    <p class="subtitle">{{ report.analysis.student_name }} — {{ report.analysis.selected_stream }}</p>
+    <div class="report-actions">
+        <button class="btn btn-primary" onclick="downloadPDF()">📥 Download PDF</button>
+        <a href="/analysis" class="btn btn-secondary">← Back to Reports</a>
+    </div>
+</div>
+
+<div class="report-container" id="report-content">
+    <!-- Student Info -->
+    <section class="report-section">
+        <h2>Student Information</h2>
+        <div class="profile-grid">
+            <div><strong>Name:</strong> {{ report.analysis.student_name }}</div>
+            <div><strong>Standard:</strong> {{ report.analysis.standard }}</div>
+            <div><strong>Board:</strong> {{ report.analysis.board }}</div>
+            <div><strong>State:</strong> {{ report.analysis.state }}</div>
+            <div><strong>10th %:</strong> {{ report.analysis.percentage_10th }}%</div>
+            <div><strong>12th %:</strong> {{ report.analysis.percentage_12th or 'N/A' }}{% if report.analysis.percentage_12th %}%{% endif %}</div>
+        </div>
+    </section>
+
+    <!-- Suitability Score -->
+    <section class="report-section">
+        <h2>Suitability Assessment</h2>
+        <div class="score-display">
+            <div class="big-score {% if report.analysis.stream_analysis.suitability_score >= 70 %}high{% elif report.analysis.stream_analysis.suitability_score >= 50 %}medium{% else %}low{% endif %}">
+                {{ report.analysis.stream_analysis.suitability_score }}<span class="score-unit">/100</span>
+            </div>
+            <div class="score-stream">{{ report.analysis.selected_stream }}</div>
+        </div>
+        {% if report.analysis.top_2_recommendations %}
+        <p><strong>Top 2 Recommended Streams:</strong> {{ report.analysis.top_2_recommendations | join(', ') }}</p>
+        {% endif %}
+        {% if not report.analysis.data_sufficient %}
+        <div class="warning-box">
+            ⚠ {{ report.analysis.insufficient_data_reason }}
+        </div>
+        {% endif %}
+    </section>
+
+    <!-- Executive Summary -->
+    <section class="report-section">
+        <h2>Executive Summary</h2>
+        <div class="narrative">{{ report.enrichment.executive_summary | replace('\n', '<br>') | safe }}</div>
+        <span class="source-tag">Source: {{ report.enrichment.source }}</span>
+    </section>
+
+    <!-- Stream Recommendation -->
+    <section class="report-section">
+        <h2>Stream Recommendation</h2>
+        <div class="narrative">{{ report.enrichment.stream_recommendation_narrative | replace('\n', '<br>') | safe }}</div>
+    </section>
+
+    <!-- Pros & Cons -->
+    <section class="report-section">
+        <div class="pros-cons">
+            <div class="pros">
+                <h3>✓ Strengths</h3>
+                <ul>
+                    {% for pro in report.analysis.stream_analysis.pros %}
+                    <li>{{ pro }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="cons">
+                <h3>• Considerations</h3>
+                <ul>
+                    {% for con in report.analysis.stream_analysis.cons %}
+                    <li>{{ con }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Options -->
+    <section class="report-section">
+        <h2>Career Options</h2>
+        <div class="tag-list">
+            {% for opt in report.analysis.stream_analysis.career_options %}
+            <span class="tag">{{ opt }}</span>
+            {% endfor %}
+        </div>
+        <p><strong>Average Starting Salary:</strong> ₹{{ report.analysis.stream_analysis.avg_starting_salary_lpa }} LPA</p>
+    </section>
+
+    <!-- Step-by-Step Roadmap -->
+    <section class="report-section">
+        <h2>🗺️ Step-by-Step Roadmap to {{ report.analysis.selected_stream }}</h2>
+
+        <div class="roadmap">
+            <!-- Step 1: Subjects -->
+            <div class="roadmap-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Subjects to Focus On</h3>
+                    {% if report.analysis.stream_analysis.subjects_10th %}
+                    <p><strong>10th Standard:</strong> {{ report.analysis.stream_analysis.subjects_10th | join(', ') }}</p>
+                    {% endif %}
+                    {% if report.analysis.stream_analysis.subjects_12th %}
+                    <p><strong>12th Standard:</strong> {{ report.analysis.stream_analysis.subjects_12th | join(', ') }}</p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Step 2: Entrance Exams -->
+            {% if report.analysis.stream_analysis.entrance_exams %}
+            <div class="roadmap-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Entrance Exams to Prepare For</h3>
+                    <div class="tag-list">
+                        {% for exam in report.analysis.stream_analysis.entrance_exams %}
+                        <span class="tag tag-exam">{{ exam }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Step 3: Coaching Institutes -->
+            {% if report.analysis.stream_analysis.coaching_institutes %}
+            <div class="roadmap-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Top Coaching Institutes for Preparation</h3>
+                    <ul class="coaching-list">
+                        {% for inst in report.analysis.stream_analysis.coaching_institutes %}
+                        <li>{{ inst }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Step 4: Top Colleges -->
+            <div class="roadmap-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Top Colleges to Target</h3>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>College Name</th>
+                                    <th>Ranking</th>
+                                    <th>City</th>
+                                    <th>Avg Fees (LPA)</th>
+                                    <th>Placement (LPA)</th>
+                                    <th>Seats</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for c in report.analysis.stream_analysis.top_colleges[:5] %}
+                                <tr>
+                                    <td>{% if c.website %}<a href="{{ c.website }}" target="_blank" rel="noopener">{{ c.college_name }}</a>{% else %}{{ c.college_name }}{% endif %}</td>
+                                    <td>{{ c.ranking }}</td>
+                                    <td>{{ c.city }}, {{ c.state }}</td>
+                                    <td>₹{{ c.avg_fees_lpa }}</td>
+                                    <td>₹{{ c.avg_placement_lpa }}</td>
+                                    <td>{{ c.total_seats }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Career Opportunities -->
+            <div class="roadmap-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Career Opportunities After Graduation</h3>
+                    <div class="tag-list">
+                        {% for opt in report.analysis.stream_analysis.career_options %}
+                        <span class="tag">{{ opt }}</span>
+                        {% endfor %}
+                    </div>
+                    <p><strong>Average Starting Salary:</strong> ₹{{ report.analysis.stream_analysis.avg_starting_salary_lpa }} LPA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="report-section">
+        <h2>Industries</h2>
+        <div class="tag-list">
+            {% for ind in report.analysis.stream_analysis.industries %}
+            <span class="tag">{{ ind }}</span>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Growth -->
+    <section class="report-section">
+        <h2>Growth Outlook</h2>
+        <div class="growth-grid">
+            <div class="growth-card">
+                <h4>🇮🇳 India</h4>
+                <p>{{ report.analysis.stream_analysis.growth_india }}</p>
+            </div>
+            <div class="growth-card">
+                <h4>🌍 Abroad</h4>
+                <p>{{ report.analysis.stream_analysis.growth_abroad }}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Guidance -->
+    <section class="report-section">
+        <h2>Career Guidance</h2>
+        <div class="narrative">{{ report.enrichment.career_guidance_narrative | replace('\n', '<br>') | safe }}</div>
+    </section>
+
+    <!-- Methodology -->
+    <section class="report-section">
+        <h2>Analysis Methodology</h2>
+        <div class="narrative methodology">{{ report.enrichment.dependency_explanation | replace('\n', '<br>') | safe }}</div>
+    </section>
+
+    <!-- Psychology Alignment -->
+    {% if report.analysis.psychology_alignment %}
+    <section class="report-section">
+        <h2>Psychology Alignment</h2>
+        <div class="scores-grid">
+            {% for stream, score in report.analysis.psychology_alignment.items() | sort(attribute='1', reverse=true) %}
+            {% if loop.index <= 5 %}
+            <div class="score-bar-container">
+                <div class="score-label">{{ stream }}</div>
+                <div class="score-bar-bg">
+                    <div class="score-bar" style="width: {{ score }}%;">{{ score }}%</div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+async function downloadPDF() {
+    const analysisId = '{{ report.analysis.id }}';
+    try {
+        const resp = await fetch('/api/report/' + analysisId + '/pdf');
+        if (!resp.ok) throw new Error('PDF generation failed');
+        const blob = await resp.blob();
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = '{{ report.analysis.student_name }}_{{ report.analysis.selected_stream }}_report.pdf';
+        a.click();
+        URL.revokeObjectURL(url);
+    } catch (err) {
+        alert('PDF download unavailable: ' + err.message);
+    }
+}
+</script>
+{% endblock %}

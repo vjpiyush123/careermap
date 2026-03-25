@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}CareerGuide{% endblock %}</title>
+    <script>
+        (function(){
+            var t=localStorage.getItem('cg-theme')||'dark';
+            document.documentElement.setAttribute('data-theme',t);
+        })();
+    </script>
+    <link rel="stylesheet" href="/static/css/style.css">
+    {% block head_extra %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="/">🎓 CareerGuide</a>
+        </div>
+        <div class="nav-links">
+            <a href="/" class="nav-link{% if request.url.path == '/' %} active{% endif %}">Dashboard</a>
+            <a href="/careeroptions" class="nav-link{% if request.url.path == '/careeroptions' %} active{% endif %}">Career Options</a>
+            <a href="/studentdetails" class="nav-link{% if '/studentdetails' in request.url.path %} active{% endif %}">Student Details</a>
+            <a href="/analysis" class="nav-link{% if '/analysis' in request.url.path %} active{% endif %}">Reports</a>
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle theme">
+                <span class="theme-icon" id="themeIcon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 CareerGuide Analysis Agent — AI-powered career stream guidance</p>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+    {% block scripts_extra %}{% endblock %}
+</body>
+</html>

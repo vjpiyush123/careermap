@@ -1,0 +1,773 @@
+INFO:     Started server process [51328]
+INFO:     Waiting for application startup.
+2026-03-21 21:11:05,921 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-21 21:11:06,074 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55659 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55659 - "GET /static/css/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51525 - "GET /static/js/main.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64384 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55230 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51854 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51854 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50732 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57371 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57213 - "POST /api/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57213 - "GET /studentdetails/02920adfef4b462880db61dc39bfec12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53335 - "POST /api/psychology-test/submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53335 - "GET /studentdetails/02920adfef4b462880db61dc39bfec12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64044 - "POST /api/analysis/02920adfef4b462880db61dc39bfec12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64044 - "GET /studentdetails/02920adfef4b462880db61dc39bfec12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57226 - "GET /analysis/8e6fa3572dae45ff8706ef8f7a4d4cd7 HTTP/1.1" 404 Not Found
+2026-03-21 21:17:19,932 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-21 21:17:22,762 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60217 - "GET /analysis/8e6fa3572dae45ff8706ef8f7a4d4cd7 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60217 - "GET /analysis/8e6fa3572dae45ff8706ef8f7a4d4cd7 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56363 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56363 - "GET /analysis HTTP/1.1" 200 OK
+2026-03-21 21:17:51,294 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+INFO:     127.0.0.1:57226 - "POST /api/report/8e6fa3572dae45ff8706ef8f7a4d4cd7 HTTP/1.1" 200 OK
+2026-03-21 21:17:53,882 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+INFO:     127.0.0.1:59189 - "POST /api/report/8e6fa3572dae45ff8706ef8f7a4d4cd7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59189 - "GET /analysis/8e6fa3572dae45ff8706ef8f7a4d4cd7 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\uvicorn\protocols\http\httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\routes\pages.py", line 125, in analysis_detail_page
+    report = await get_existing_report(session, analysis_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\services\career_service.py", line 129, in get_existing_report
+    enrichment = await get_report_for_analysis(session, analysis_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\db\crud.py", line 215, in get_report_for_analysis
+    row = result.scalar_one_or_none()
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\result.py", line 1504, in scalar_one_or_none
+    return self._only_one_row(
+           ~~~~~~~~~~~~~~~~~~^
+        raise_for_second_row=True, raise_for_none=False, scalar=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\result.py", line 825, in _only_one_row
+    raise exc.MultipleResultsFound(
+    ...<4 lines>...
+    )
+sqlalchemy.exc.MultipleResultsFound: Multiple rows were found when one or none was required
+INFO:     Started server process [16780]
+INFO:     Waiting for application startup.
+2026-03-21 21:23:25,331 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-21 21:23:25,411 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55744 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55744 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53141 - "GET /static/js/main.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58465 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60197 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60197 - "GET /studentdetails/02920adfef4b462880db61dc39bfec12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60197 - "GET /analysis/8e6fa3572dae45ff8706ef8f7a4d4cd7 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\uvicorn\protocols\http\httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\routes\pages.py", line 125, in analysis_detail_page
+    report = await get_existing_report(session, analysis_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\services\career_service.py", line 129, in get_existing_report
+    enrichment = await get_report_for_analysis(session, analysis_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\db\crud.py", line 215, in get_report_for_analysis
+    row = result.scalar_one_or_none()
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\result.py", line 1504, in scalar_one_or_none
+    return self._only_one_row(
+           ~~~~~~~~~~~~~~~~~~^
+        raise_for_second_row=True, raise_for_none=False, scalar=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\result.py", line 825, in _only_one_row
+    raise exc.MultipleResultsFound(
+    ...<4 lines>...
+    )
+sqlalchemy.exc.MultipleResultsFound: Multiple rows were found when one or none was required
+INFO:     127.0.0.1:58230 - "POST /api/report/8e6fa3572dae45ff8706ef8f7a4d4cd7 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\uvicorn\protocols\http\httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\routes\pages.py", line 196, in api_generate_report
+    report = await generate_full_report(session, analysis_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\services\career_service.py", line 110, in generate_full_report
+    existing = await get_report_for_analysis(session, analysis_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\db\crud.py", line 215, in get_report_for_analysis
+    row = result.scalar_one_or_none()
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\result.py", line 1504, in scalar_one_or_none
+    return self._only_one_row(
+           ~~~~~~~~~~~~~~~~~~^
+        raise_for_second_row=True, raise_for_none=False, scalar=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\result.py", line 825, in _only_one_row
+    raise exc.MultipleResultsFound(
+    ...<4 lines>...
+    )
+sqlalchemy.exc.MultipleResultsFound: Multiple rows were found when one or none was required
+INFO:     127.0.0.1:58455 - "POST /api/analysis/02920adfef4b462880db61dc39bfec12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58455 - "GET /studentdetails/02920adfef4b462880db61dc39bfec12 HTTP/1.1" 200 OK
+2026-03-21 21:25:28,051 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-21 21:25:31,569 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-21 21:25:49,665 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-21 21:25:54,289 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-21 21:25:57,209 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:57626 - "POST /api/analysis/02920adfef4b462880db61dc39bfec12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57626 - "GET /studentdetails/02920adfef4b462880db61dc39bfec12 HTTP/1.1" 200 OK
+2026-03-21 21:26:02,730 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+2026-03-21 21:26:06,160 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:52948 - "GET /analysis HTTP/1.1" 200 OK
+2026-03-21 21:26:17,663 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-21 21:26:21,654 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+2026-03-21 21:26:21,690 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-21 21:26:22,854 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-21 21:26:26,935 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+2026-03-21 21:26:29,960 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+2026-03-21 21:26:32,164 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60520 - "GET / HTTP/1.1" 200 OK
+2026-03-21 21:26:37,911 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+INFO:     127.0.0.1:57626 - "POST /api/report/2c371b7cd14d40e3b4a85d00b69a4e88 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57626 - "GET /careeroptions HTTP/1.1" 200 OK
+2026-03-21 21:26:50,139 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+2026-03-21 21:26:53,988 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+2026-03-21 21:26:54,262 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+2026-03-21 21:27:04,452 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+INFO:     127.0.0.1:63134 - "POST /api/report/2c371b7cd14d40e3b4a85d00b69a4e88 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64627 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64627 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64627 - "GET /analysis/2c371b7cd14d40e3b4a85d00b69a4e88 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\uvicorn\protocols\http\httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\routes\pages.py", line 125, in analysis_detail_page
+    report = await get_existing_report(session, analysis_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\services\career_service.py", line 129, in get_existing_report
+    enrichment = await get_report_for_analysis(session, analysis_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\db\crud.py", line 215, in get_report_for_analysis
+    row = result.scalar_one_or_none()
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\result.py", line 1504, in scalar_one_or_none
+    return self._only_one_row(
+           ~~~~~~~~~~~~~~~~~~^
+        raise_for_second_row=True, raise_for_none=False, scalar=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sqlalchemy\engine\result.py", line 825, in _only_one_row
+    raise exc.MultipleResultsFound(
+    ...<4 lines>...
+    )
+sqlalchemy.exc.MultipleResultsFound: Multiple rows were found when one or none was required
+INFO:     Started server process [39376]
+INFO:     Waiting for application startup.
+2026-03-21 21:35:25,687 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-21 21:35:25,756 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [15384]
+INFO:     Waiting for application startup.
+2026-03-21 21:38:56,374 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-21 21:38:56,475 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55597 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55597 - "GET /static/css/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54801 - "GET /static/js/main.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55806 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62427 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62427 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:56113 - "POST /api/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56113 - "GET /studentdetails/d4b9b37831654960b2bffcb023be209f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63219 - "POST /api/psychology-test/submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63219 - "GET /studentdetails/d4b9b37831654960b2bffcb023be209f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57295 - "POST /api/analysis/d4b9b37831654960b2bffcb023be209f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57295 - "GET /studentdetails/d4b9b37831654960b2bffcb023be209f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57295 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+2026-03-21 21:43:13,300 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-21 21:43:33,622 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-21 21:44:04,170 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-21 21:44:15,530 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+INFO:     127.0.0.1:57295 - "GET /analysis/aa79bf0c224845b0ab3eb5106ec950be HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57295 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+
+-----
+
+WeasyPrint could not import some external libraries. Please carefully follow the installation steps before reporting an issue:
+https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation
+https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#troubleshooting 
+
+-----
+
+INFO:     127.0.0.1:53423 - "GET /api/report/aa79bf0c224845b0ab3eb5106ec950be/pdf HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\uvicorn\protocols\http\httptools_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\applications.py", line 1160, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 130, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 116, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 670, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\fastapi\routing.py", line 324, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\careermap\src\careerguide\routes\pages.py", line 284, in api_download_pdf
+    pdf_bytes = generate_pdf(report)
+  File "C:\workspace\careermap\src\careerguide\services\pdf_service.py", line 25, in generate_pdf
+    from weasyprint import HTML
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\weasyprint\__init__.py", line 372, in <module>
+    from .css import preprocess_stylesheet  # noqa: I001, E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\weasyprint\css\__init__.py", line 29, in <module>
+    from ..text.fonts import FontConfiguration
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\weasyprint\text\fonts.py", line 17, in <module>
+    from .constants import (  # isort:skip
+        CAPS_KEYS, EAST_ASIAN_KEYS, FONTCONFIG_STRETCH, FONTCONFIG_STYLE, FONTCONFIG_WEIGHT,
+        LIGATURE_KEYS, NUMERIC_KEYS, PANGO_STRETCH, PANGO_STYLE, PANGO_VARIANT)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\weasyprint\text\constants.py", line 5, in <module>
+    from .ffi import pango
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\weasyprint\text\ffi.py", line 476, in <module>
+    gobject = _dlopen(
+        ffi, 'libgobject-2.0-0', 'gobject-2.0-0', 'gobject-2.0',
+        'libgobject-2.0.so.0', 'libgobject-2.0.0.dylib', 'libgobject-2.0-0.dll')
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\weasyprint\text\ffi.py", line 464, in _dlopen
+    return ffi.dlopen(names[0], flags)  # pragma: no cover
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cffi\api.py", line 150, in dlopen
+    lib, function_cache = _make_ffi_library(self, name, flags)
+                          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cffi\api.py", line 834, in _make_ffi_library
+    backendlib = _load_backend_lib(backend, libname, flags)
+  File "C:\Users\vijayvep\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\cffi\api.py", line 829, in _load_backend_lib
+    raise OSError(msg)
+OSError: cannot load library 'libgobject-2.0-0': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'
+INFO:     Started server process [26840]
+INFO:     Waiting for application startup.
+2026-03-21 21:50:24,892 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-21 21:50:25,000 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58640 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58640 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59046 - "GET /static/js/main.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59046 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59046 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52068 - "POST /api/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52068 - "GET /studentdetails/3d4f6a899bb248e68efb1805edad27aa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50293 - "POST /api/psychology-test/submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50293 - "GET /studentdetails/3d4f6a899bb248e68efb1805edad27aa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50293 - "POST /api/analysis/3d4f6a899bb248e68efb1805edad27aa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50293 - "GET /studentdetails/3d4f6a899bb248e68efb1805edad27aa HTTP/1.1" 200 OK
+2026-03-21 21:54:22,264 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-21 21:54:54,372 [WARNING] careerguide.llm.pipeline: Ollama call failed: 
+INFO:     127.0.0.1:63479 - "GET /analysis/9bec6c3deecd4735be79749a1418e0dc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63479 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52596 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52596 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50067 - "GET /static/js/main.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54357 - "GET /analysis/aa79bf0c224845b0ab3eb5106ec950be HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51791 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51791 - "GET /studentdetails/d4b9b37831654960b2bffcb023be209f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65205 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60552 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60552 - "GET /studentdetails/d4b9b37831654960b2bffcb023be209f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60552 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60552 - "GET /studentdetails/d4b9b37831654960b2bffcb023be209f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60552 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60552 - "GET /analysis/9bec6c3deecd4735be79749a1418e0dc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60552 - "GET /api/report/9bec6c3deecd4735be79749a1418e0dc/pdf HTTP/1.1" 200 OK
+INFO:     Started server process [40232]
+INFO:     Waiting for application startup.
+2026-03-21 22:39:25,668 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-21 22:39:25,773 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-03-21 22:40:47,297 [INFO] careerguide: CareerGuide shutting down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [40232]
+INFO:     Started server process [18804]
+INFO:     Waiting for application startup.
+2026-03-21 23:02:28,730 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-21 23:02:28,855 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started server process [39088]
+INFO:     Waiting for application startup.
+2026-03-22 16:54:27,952 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-22 16:54:28,129 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56516 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56516 - "GET /static/js/main.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59585 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59585 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61171 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59310 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59310 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61128 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57972 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53393 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53393 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61831 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61831 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61831 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65452 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65452 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65452 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51044 - "POST /api/students HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51044 - "GET /studentdetails/3afcdb99acb646719cc9ed81f4adcea0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "POST /api/psychology-test/submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /studentdetails/3afcdb99acb646719cc9ed81f4adcea0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57536 - "POST /api/analysis/3afcdb99acb646719cc9ed81f4adcea0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57536 - "GET /studentdetails/3afcdb99acb646719cc9ed81f4adcea0 HTTP/1.1" 200 OK
+2026-03-22 16:59:00,582 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-22 16:59:03,307 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-22 16:59:07,134 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-22 16:59:12,173 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-22 16:59:17,433 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-22 16:59:29,658 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 16:59:44,844 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 16:59:59,837 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:00:09,847 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2026-03-22 17:00:14,430 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:00:28,794 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:00:50,143 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:01:05,528 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:01:22,570 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:01:46,289 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:02:10,464 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:02:21,722 [WARNING] careerguide.llm.pipeline: Ollama call timed out after 90s (model=llama3.2:3b)
+2026-03-22 17:02:24,134 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:02:36,964 [WARNING] careerguide.llm.pipeline: Ollama call timed out after 90s (model=llama3.2:3b)
+2026-03-22 17:02:53,965 [WARNING] careerguide.llm.pipeline: Ollama call timed out after 90s (model=llama3.2:3b)
+2026-03-22 17:03:14,053 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:03:39,312 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:03:50,996 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:03:55,399 [WARNING] careerguide.llm.pipeline: Ollama call timed out after 90s (model=llama3.2:3b)
+2026-03-22 17:04:08,290 [WARNING] careerguide.llm.pipeline: Ollama call timed out after 90s (model=llama3.2:3b)
+INFO:     127.0.0.1:52760 - "POST /api/report/08c7e8c190344e0cb1db283cb6474e41 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52760 - "GET /analysis/08c7e8c190344e0cb1db283cb6474e41 HTTP/1.1" 200 OK
+2026-03-22 17:04:22,324 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:04:44,969 [WARNING] careerguide.llm.pipeline: Ollama call timed out after 90s (model=llama3.2:3b)
+2026-03-22 17:05:02,134 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:65288 - "POST /api/report/08c7e8c190344e0cb1db283cb6474e41 HTTP/1.1" 200 OK
+2026-03-22 17:05:14,143 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-22 17:05:26,944 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:51500 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51500 - "GET /analysis/08c7e8c190344e0cb1db283cb6474e41 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49672 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54228 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56970 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64179 - "GET /studentdetails/3afcdb99acb646719cc9ed81f4adcea0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64247 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64247 - "GET /analysis/08c7e8c190344e0cb1db283cb6474e41 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62730 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62730 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61409 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61409 - "GET /studentdetails/3afcdb99acb646719cc9ed81f4adcea0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51493 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51493 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51493 - "GET /analysis/08c7e8c190344e0cb1db283cb6474e41 HTTP/1.1" 200 OK
+INFO:     Started server process [43564]
+INFO:     Waiting for application startup.
+2026-03-25 11:50:13,777 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-25 11:50:13,907 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64677 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64677 - "GET /static/js/main.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50239 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50239 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50239 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50239 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57408 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57408 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55786 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55786 - "GET /studentdetails/3afcdb99acb646719cc9ed81f4adcea0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55786 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61656 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55411 - "GET / HTTP/1.1" 200 OK
+INFO:     Started server process [41312]
+INFO:     Waiting for application startup.
+2026-03-25 12:26:17,416 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-25 12:26:17,500 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:49777 - "GET /roadmap HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49777 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49777 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54628 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54628 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54628 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50504 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55066 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55066 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61838 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58150 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62900 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62900 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61670 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     Started server process [34964]
+INFO:     Waiting for application startup.
+2026-03-25 12:34:01,911 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-25 12:34:02,035 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62057 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62057 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62057 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62057 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62057 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62057 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62057 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62057 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58523 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55956 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60990 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60990 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52282 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60361 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60361 - "GET /static/css/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61423 - "GET /static/js/main.js HTTP/1.1" 200 OK
+INFO:     Started server process [49508]
+INFO:     Waiting for application startup.
+2026-03-25 13:43:15,004 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-25 13:43:15,245 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56959 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56959 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54750 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54750 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60761 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62175 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62175 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62175 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51606 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51677 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51677 - "GET /static/css/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64126 - "GET /static/js/main.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64126 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64126 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57570 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57570 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49982 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49982 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49982 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49982 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49982 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49982 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59396 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59396 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55768 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55768 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55768 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55768 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55768 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59176 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59176 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60874 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60874 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60874 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55829 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55829 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55829 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55829 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55829 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     Started server process [28948]
+INFO:     Waiting for application startup.
+2026-03-25 14:32:49,529 [INFO] careerguide: CareerGuide v0.1.0 starting up
+2026-03-25 14:32:49,629 [INFO] careerguide: Database initialised
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59723 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61644 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54841 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54841 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63899 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63899 - "GET /static/css/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49797 - "GET /static/js/main.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63899 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63899 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63899 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62949 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62949 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60694 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60694 - "GET /static/css/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60694 - "GET /static/js/main.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:63522 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63522 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:62870 - "GET /static/js/main.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58385 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56541 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56541 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55024 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62085 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62085 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62085 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52180 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52180 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57051 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57051 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57051 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56945 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56945 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:56945 - "GET /static/js/main.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:56945 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56945 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60343 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51265 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51265 - "GET /studentdetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51265 - "GET /analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51265 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51265 - "GET /careeroptions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51772 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51772 - "GET /careeroptions HTTP/1.1" 200 OK

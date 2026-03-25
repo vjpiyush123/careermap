@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Dashboard</h1>
+    <p class="subtitle">Summary of all student analyses</p>
+</div>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-number">{{ stats.total_analyses }}</div>
+        <div class="stat-label">Total Analyses</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">{{ stats.by_stream | length }}</div>
+        <div class="stat-label">Streams Analysed</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">{{ stats.by_state | length }}</div>
+        <div class="stat-label">States Covered</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">{{ stats.by_board | length }}</div>
+        <div class="stat-label">Boards Represented</div>
+    </div>
+</div>
+
+{% if stats.by_stream %}
+<section class="dashboard-section">
+    <h2>Analysis by Stream</h2>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr><th>Stream</th><th>Count</th></tr>
+            </thead>
+            <tbody>
+                {% for stream, count in stats.by_stream.items() %}
+                <tr><td>{{ stream }}</td><td>{{ count }}</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endif %}
+
+{% if stats.by_state %}
+<section class="dashboard-section">
+    <h2>Analysis by State</h2>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr><th>State</th><th>Count</th></tr>
+            </thead>
+            <tbody>
+                {% for state, count in stats.by_state.items() %}
+                <tr><td>{{ state }}</td><td>{{ count }}</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endif %}
+
+{% if stats.by_board %}
+<section class="dashboard-section">
+    <h2>Analysis by Board</h2>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr><th>Board</th><th>Count</th></tr>
+            </thead>
+            <tbody>
+                {% for board, count in stats.by_board.items() %}
+                <tr><td>{{ board }}</td><td>{{ count }}</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endif %}
+
+{% if stats.total_analyses == 0 %}
+<div class="empty-state">
+    <h3>No analyses yet</h3>
+    <p>Create a <a href="/studentdetails">student profile</a> and run an analysis to get started.</p>
+</div>
+{% endif %}
+{% endblock %}

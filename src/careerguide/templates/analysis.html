@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Analysis Reports — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Analysis Reports</h1>
+    <p class="subtitle">All generated analysis reports</p>
+</div>
+
+{% if reports %}
+<div class="table-responsive">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Standard</th>
+                <th>Board</th>
+                <th>State</th>
+                <th>Stream</th>
+                <th>Score</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in reports %}
+            <tr>
+                <td>{{ r.student_name }}</td>
+                <td>{{ r.standard }}</td>
+                <td>{{ r.board }}</td>
+                <td>{{ r.state }}</td>
+                <td>{{ r.selected_stream }}</td>
+                <td>
+                    <span class="score-badge {% if r.stream_analysis.suitability_score >= 70 %}high{% elif r.stream_analysis.suitability_score >= 50 %}medium{% else %}low{% endif %}">
+                        {{ r.stream_analysis.suitability_score }}/100
+                    </span>
+                </td>
+                <td>{{ r.created_at.strftime('%d %b %Y') }}</td>
+                <td>
+                    <a href="/analysis/{{ r.id }}" class="btn btn-secondary btn-sm">View</a>
+                    <button class="btn btn-primary btn-sm" onclick="generateReport('{{ r.id }}')">Report</button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="empty-state">
+    <h3>No reports yet</h3>
+    <p>Create a <a href="/studentdetails">student profile</a>, run an analysis, and generate a report.</p>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+async function generateReport(analysisId) {
+    try {
+        const resp = await fetch('/api/report/' + analysisId, {method: 'POST'});
+        if (!resp.ok) throw new Error('Report generation failed');
+        window.location.href = '/analysis/' + analysisId;
+    } catch (err) {
+        alert('Error: ' + err.message);
+    }
+}
+</script>
+{% endblock %}
