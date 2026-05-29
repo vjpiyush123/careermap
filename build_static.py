@@ -23,7 +23,13 @@ from urllib.parse import urlparse
 from jinja2 import Environment, FileSystemLoader
 
 # ── Import data layer ──────────────────────────────────────────────────
-from careerguide.data import build_career_tree, get_all_stream_names, get_stream_data
+from careerguide.data import (
+    build_career_tree,
+    get_all_state_data,
+    get_all_states,
+    get_all_stream_names,
+    get_stream_data,
+)
 
 # ── Paths ──────────────────────────────────────────────────────────────
 ROOT_DIR = Path(__file__).resolve().parent
@@ -88,7 +94,17 @@ def build(base_path: str = "") -> None:
         "stream_details": stream_details,
     }, "careeroptions.html")
 
-    # ── 2. Landing / index page ───────────────────────────────────────
+    # ── 2. State Opportunities page ───────────────────────────────────
+    states = get_all_states()
+    state_data = get_all_state_data()
+
+    _render("state_opportunities.html", {
+        "request": _MockRequest("/stateopportunities"),
+        "states": states,
+        "state_data": state_data,
+    }, "stateopportunities.html")
+
+    # ── 3. Landing / index page ───────────────────────────────────────
     index_html = env.from_string(INDEX_TEMPLATE).render(
         base=base,
         request=_MockRequest("/"),
@@ -100,12 +116,12 @@ def build(base_path: str = "") -> None:
     (OUT_DIR / "index.html").write_text(index_html, encoding="utf-8")
     print("  ✓ index.html")
 
-    # ── 3. Copy static assets ─────────────────────────────────────────
+    # ── 4. Copy static assets ─────────────────────────────────────────
     static_out = OUT_DIR / "static"
     shutil.copytree(STATIC_DIR, static_out)
     print("  ✓ static/ (css, js)")
 
-    # ── 4. Create .nojekyll for GitHub Pages ──────────────────────────
+    # ── 5. Create .nojekyll for GitHub Pages ──────────────────────────
     (OUT_DIR / ".nojekyll").write_text("", encoding="utf-8")
     print("  ✓ .nojekyll")
 
@@ -135,6 +151,7 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
         <div class="nav-links">
             <a href="/" class="nav-link active">Home</a>
             <a href="/careeroptions.html" class="nav-link">Career Options</a>
+            <a href="/stateopportunities.html" class="nav-link">State Guide</a>
             <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle theme">
                 <span class="theme-icon" id="themeIcon"></span>
             </button>
@@ -150,9 +167,12 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
             </p>
         </div>
 
-        <div style="text-align:center; margin:2rem 0;">
+        <div style="text-align:center; margin:2rem 0; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
             <a href="/careeroptions.html" class="btn btn-primary" style="font-size:1.1rem; padding:0.9rem 2.5rem;">
                 Explore Career Options →
+            </a>
+            <a href="/stateopportunities.html" class="btn btn-secondary" style="font-size:1.1rem; padding:0.9rem 2.5rem;">
+                State Guide →
             </a>
         </div>
 
@@ -172,6 +192,10 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
             <div class="stat-card">
                 <div class="stat-number">50+</div>
                 <div class="stat-label">Entrance Exams</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">33</div>
+                <div class="stat-label">States & UTs</div>
             </div>
         </div>
 
