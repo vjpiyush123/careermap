@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 from fastapi import APIRouter, Depends, HTTPException, Request
-from fastapi.responses import HTMLResponse, Response
+from fastapi.responses import HTMLResponse, JSONResponse, Response
 from fastapi.templating import Jinja2Templates
+from pydantic import BaseModel, EmailStr
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from careerguide.data import build_career_tree, get_all_state_data, get_all_states, get_all_stream_names, get_stream_data
@@ -30,6 +31,7 @@ from careerguide.services.career_service import (
     run_student_analysis,
     submit_psychology_test,
 )
+from careerguide.db.crud import create_feedback, list_all_feedbacks
 
 from pathlib import Path
 
@@ -90,6 +92,44 @@ async def feedback_page(request: Request):
     streams = get_all_stream_names()
     return templates.TemplateResponse(request, "feedback.html", {
         "streams": streams,
+    })
+
+
+# Pydantic model for feedback submission
+class FeedbackCreate(BaseModel):
+    student_name: str
+    email: EmailStr
+    standard: str
+    stream: str | None = None
+    feedback: str
+
+
+@router.post("/api/feedback")
+async def submit_feedback(
+    data: FeedbackCreate,
+    session: AsyncSession = Depends(_get_session),
+):
+    """API endpoint to submit student feedback."""
+    if len(data.feedback) < 20:
+        raise HTTPException(status_code=400, detail="Feedback must be at least 20 characters")
+    
+    await create_feedback(
+        session=session,
+        student_name=data.student_name,
+        email=data.email,
+        standard=data.standard,
+        stream=data.stream,
+        feedback=data.feedback,
+    )
+    return JSONResponse({"status": "success", "message": "Feedback submitted successfully"})
+
+
+@router.get("/admin/feedback", response_class=HTMLResponse)
+async def feedback_admin_page(request: Request, session: AsyncSession = Depends(_get_session)):
+    """Admin page to view all feedback."""
+    feedbacks = await list_all_feedbacks(session)
+    return templates.TemplateResponse(request, "feedback_admin.html", {
+        "feedbacks": feedbacks,
     })
 
 

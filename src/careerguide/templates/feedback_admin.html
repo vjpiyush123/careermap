@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Feedback Admin — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>📋 Student Feedback</h1>
+    <p class="subtitle">View all feedback submitted by students</p>
+</div>
+
+<div class="feedback-admin">
+    <div class="feedback-stats">
+        <div class="stat-card">
+            <div class="stat-number">{{ feedbacks | length }}</div>
+            <div class="stat-label">Total Feedback</div>
+        </div>
+    </div>
+
+    {% if feedbacks %}
+    <div class="feedback-list">
+        {% for fb in feedbacks %}
+        <div class="feedback-card">
+            <div class="feedback-header">
+                <div class="feedback-meta">
+                    <span class="feedback-name">{{ fb.student_name }}</span>
+                    <span class="feedback-email">{{ fb.email }}</span>
+                </div>
+                <div class="feedback-date">
+                    {{ fb.created_at.strftime('%d %b %Y, %H:%M') }}
+                </div>
+            </div>
+            <div class="feedback-tags">
+                <span class="tag tag-standard">{{ fb.standard }}</span>
+                {% if fb.stream %}
+                <span class="tag tag-stream">{{ fb.stream }}</span>
+                {% endif %}
+            </div>
+            <div class="feedback-content">
+                {{ fb.feedback }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <div class="empty-icon">📭</div>
+        <h3>No Feedback Yet</h3>
+        <p>When students submit feedback, it will appear here.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

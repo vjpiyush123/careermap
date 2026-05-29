@@ -1,8 +1,8 @@
 # Student Feedback Feature — PRD
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Date:** May 2026  
-**Status:** Implemented
+**Status:** Implemented (Database-backed)
 
 ---
 
@@ -19,7 +19,7 @@ Students exploring career options often face challenges that are not immediately
 
 ## 2. Feature Overview
 
-A dedicated **Feedback Page** where students can share their challenges, questions, and pain points related to career exploration. The form collects structured data while allowing free-form feedback.
+A dedicated **Feedback Page** where students can share their challenges, questions, and pain points related to career exploration. Feedback is stored in the database and can be viewed by administrators.
 
 ---
 
@@ -65,36 +65,46 @@ All 14 career streams:
 
 ## 4. Technical Implementation
 
-### 4.1 Form Submission
-Since CareerGuide's GitHub Pages deployment is static (no backend), form submissions are handled via **Formspree.io**:
+### 4.1 Database Model
+Feedback is stored in the `feedbacks` table:
 
-- Free tier: 50 submissions/month
-- Submissions forwarded to configured email
-- No backend required
-- AJAX support with redirect capability
+```python
+class FeedbackRow(Base):
+    __tablename__ = "feedbacks"
 
-**Formspree Endpoint:** `https://formspree.io/f/xanywpbz`
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    student_name = Column(String(200), nullable=False)
+    email = Column(String(200), nullable=False)
+    standard = Column(String(50), nullable=False)
+    stream = Column(String(100), nullable=True)  # Optional
+    feedback = Column(Text, nullable=False)
+    created_at = Column(DateTime, default=lambda: datetime.now(UTC))
+```
 
-### 4.2 Files Created/Modified
+### 4.2 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/feedback` | Display feedback form |
+| POST | `/api/feedback` | Submit feedback (JSON) |
+| GET | `/admin/feedback` | Admin view of all feedback |
+
+### 4.3 Files Created/Modified
 
 | File | Purpose |
 |------|---------|
-| `src/careerguide/templates/feedback.html` | Feedback page template |
-| `src/careerguide/routes/pages.py` | Added `/feedback` route |
-| `src/careerguide/templates/base.html` | Added navbar link |
-| `src/careerguide/static/css/style.css` | Feedback form styling |
-| `build_static.py` | Include feedback page in static build |
-
-### 4.3 Routes
-
-| Route | Page | Static File |
-|-------|------|-------------|
-| `/feedback` | Feedback Form | `feedback.html` |
+| `src/careerguide/db/models.py` | Added FeedbackRow model |
+| `src/careerguide/db/crud.py` | Added create_feedback, list_all_feedbacks |
+| `src/careerguide/templates/feedback.html` | Feedback form (AJAX submission) |
+| `src/careerguide/templates/feedback_admin.html` | Admin view template |
+| `src/careerguide/routes/pages.py` | API and page routes |
+| `src/careerguide/static/css/style.css` | Styling for feedback pages |
 
 ---
 
 ## 5. User Flow
 
+### Student Submission Flow
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    User clicks "Feedback"                    │
@@ -112,14 +122,26 @@ Since CareerGuide's GitHub Pages deployment is static (no backend), form submiss
 ┌─────────────────────────────────────────────────────────────┐
 │               User fills form and submits                    │
 │  • Client-side validation (min 20 chars for feedback)        │
-│  • All required fields validated                             │
+│  • AJAX POST to /api/feedback                                │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              Form submitted to Formspree                     │
-│  • Data forwarded to configured email                        │
+│              Feedback saved to database                      │
 │  • User sees "Thank You" message                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Admin View Flow
+```
+Admin navigates to /admin/feedback
+        │
+        ▼
+┌─────────────────────────────────────────────────────────────┐
+│              All feedback displayed                          │
+│  • Sorted by most recent first                               │
+│  • Shows student name, email, standard, stream, feedback     │
+│  • Timestamps for each submission                            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -127,50 +149,20 @@ Since CareerGuide's GitHub Pages deployment is static (no backend), form submiss
 
 ## 6. UI Design
 
-### Page Layout
-```
-┌─────────────────────────────────────────────────────────────┐
-│  🎓 CareerGuide    [Home] [Career Options] [State Guide]    │
-│                    [Feedback] [Student Details] [Reports]    │
-├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│         Share Your Feedback                                  │
-│   Help us understand your challenges in finding              │
-│   the right career path                                      │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │ 🎯 Why Your Feedback Matters                           │ │
-│  │                                                         │ │
-│  │ We want to understand the real pain points students     │ │
-│  │ face when exploring career options...                   │ │
-│  └────────────────────────────────────────────────────────┘ │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │                                                         │ │
-│  │  Student Name *            [___________________]        │ │
-│  │                                                         │ │
-│  │  Email Address *           [___________________]        │ │
-│  │                                                         │ │
-│  │  Currently Studying In *   [___________________▼]       │ │
-│  │                                                         │ │
-│  │  Stream of Interest        [___________________▼]       │ │
-│  │  (Optional)                                             │ │
-│  │                                                         │ │
-│  │  Your Feedback / Pain Points *                          │ │
-│  │  ┌────────────────────────────────────────────────┐    │ │
-│  │  │                                                │    │ │
-│  │  │                                                │    │ │
-│  │  │                                                │    │ │
-│  │  └────────────────────────────────────────────────┘    │ │
-│  │                                                         │ │
-│  │              [ 📨 Submit Feedback ]                     │ │
-│  │                                                         │ │
-│  └────────────────────────────────────────────────────────┘ │
-│                                                              │
-├─────────────────────────────────────────────────────────────┤
-│  © 2026 CareerGuide — AI-powered career stream guidance      │
-└─────────────────────────────────────────────────────────────┘
-```
+### Feedback Form Page (`/feedback`)
+- Introduction card explaining why feedback matters
+- Clean form with labeled fields
+- Submit button with loading state
+- Success message after submission
+
+### Admin View Page (`/admin/feedback`)
+- Total feedback count stat card
+- List of feedback cards showing:
+  - Student name and email
+  - Standard and stream tags
+  - Full feedback content
+  - Submission timestamp
+- Empty state when no feedback exists
 
 ---
 
@@ -186,7 +178,18 @@ Since CareerGuide's GitHub Pages deployment is static (no backend), form submiss
 
 ---
 
-## 8. Success Metrics
+## 8. Access Control
+
+| Route | Access |
+|-------|--------|
+| `/feedback` | Public (all users) |
+| `/admin/feedback` | Currently open (future: admin authentication) |
+
+**Future Enhancement:** Add authentication for admin routes.
+
+---
+
+## 9. Success Metrics
 
 - Number of feedback submissions per week
 - Common pain points identified
@@ -195,19 +198,11 @@ Since CareerGuide's GitHub Pages deployment is static (no backend), form submiss
 
 ---
 
-## 9. Future Enhancements
+## 10. Future Enhancements
 
-1. **Analytics Dashboard** — Visualize feedback trends
-2. **Auto-categorization** — Use AI to categorize feedback themes
-3. **Follow-up System** — Email students when their feedback is addressed
-4. **Upvoting** — Let students vote on common pain points
-5. **Integration with Database** — Store feedback in DB for full-stack deployment
-
----
-
-## 10. Privacy & Data Handling
-
-- Email addresses are only used for follow-up purposes
-- No data is shared with third parties
-- Formspree complies with GDPR
-- Students can request data deletion via email
+1. **Admin Authentication** — Protect admin routes with login
+2. **Analytics Dashboard** — Visualize feedback trends
+3. **Auto-categorization** — Use AI to categorize feedback themes
+4. **Follow-up System** — Email students when their feedback is addressed
+5. **Export to CSV** — Download feedback data for analysis
+6. **Delete/Archive** — Allow admins to manage feedback entries

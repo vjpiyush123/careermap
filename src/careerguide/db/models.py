@@ -60,3 +60,15 @@ class ReportRow(Base):
     dependency_explanation = Column(Text, nullable=False)
     source = Column(String(30), nullable=False, default="template_fallback")
     created_at = Column(DateTime, default=lambda: datetime.now(UTC), nullable=False)
+
+
+class FeedbackRow(Base):
+    __tablename__ = "feedbacks"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    student_name = Column(String(200), nullable=False)
+    email = Column(String(200), nullable=False)
+    standard = Column(String(50), nullable=False)
+    stream = Column(String(100), nullable=True)  # Optional
+    feedback = Column(Text, nullable=False)
+    created_at = Column(DateTime, default=lambda: datetime.now(UTC), nullable=False)

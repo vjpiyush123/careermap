@@ -8,7 +8,7 @@ from datetime import UTC, datetime
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from careerguide.db.models import AnalysisRow, ReportRow, StudentRow
+from careerguide.db.models import AnalysisRow, FeedbackRow, ReportRow, StudentRow
 from careerguide.models.analysis import (
     AnalysisResult,
     FullReport,
@@ -264,3 +264,42 @@ async def get_dashboard_stats(session: AsyncSession) -> dict:
         "by_state": by_state,
         "by_board": by_board,
     }
+
+
+# ─── Feedback CRUD ─────────────────────────────────────────────────────
+
+async def create_feedback(
+    session: AsyncSession,
+    student_name: str,
+    email: str,
+    standard: str,
+    feedback: str,
+    stream: str | None = None,
+) -> FeedbackRow:
+    """Create a new feedback entry."""
+    row = FeedbackRow(
+        student_name=student_name,
+        email=email,
+        standard=standard,
+        stream=stream,
+        feedback=feedback,
+    )
+    session.add(row)
+    await session.commit()
+    await session.refresh(row)
+    return row
+
+
+async def list_all_feedbacks(session: AsyncSession) -> list[FeedbackRow]:
+    """Get all feedbacks ordered by most recent first."""
+    result = await session.execute(
+        select(FeedbackRow).order_by(FeedbackRow.created_at.desc())
+    )
+    return list(result.scalars().all())
+
+
+async def get_feedback_count(session: AsyncSession) -> int:
+    """Get total feedback count."""
+    from sqlalchemy import func
+    result = await session.execute(select(func.count(FeedbackRow.id)))
+    return result.scalar() or 0

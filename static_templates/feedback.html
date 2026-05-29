@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Student Feedback — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Share Your Feedback</h1>
+    <p class="subtitle">Help us understand your challenges in finding the right career path</p>
+</div>
+
+<div class="feedback-container">
+    <div class="feedback-intro">
+        <h3>🎯 Why Your Feedback Matters</h3>
+        <p>We want to understand the real pain points students face when exploring career options. Your insights will help us improve CareerGuide and create better resources for students like you.</p>
+    </div>
+
+    <div class="static-notice">
+        <div class="notice-icon">ℹ️</div>
+        <h3>Feedback Submission Not Available</h3>
+        <p>The feedback form requires the full CareerGuide application with a database backend.</p>
+        <p>This static version on GitHub Pages cannot process form submissions.</p>
+        <div class="notice-actions">
+            <a href="mailto:careerguide@example.com?subject=CareerGuide%20Feedback" class="btn btn-primary">
+                📧 Send Feedback via Email
+            </a>
+            <a href="/" class="btn btn-secondary">
+                ← Back to Home
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
