@@ -1481,3 +1481,387 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
         grid-template-columns: 1fr;
     }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   STATE OPPORTUNITIES PAGE
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.state-selector {
+    margin-bottom: 1.5rem;
+}
+
+.state-selector label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.state-dropdown {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.state-dropdown:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.state-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.state-panel {
+    display: none;
+}
+
+.state-panel.active {
+    display: block;
+}
+
+.state-tabbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.state-tab {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.state-tab:hover {
+    background: var(--bg-card);
+    color: var(--text-primary);
+}
+
+.state-tab.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.state-pane {
+    display: none;
+}
+
+.state-pane.active {
+    display: block;
+}
+
+/* Job Market */
+.job-market-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+}
+
+.jm-it-parks {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+}
+
+.sectors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.sector-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
+.sector-name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.sector-growth {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    margin-bottom: 0.5rem;
+}
+
+.sector-growth.growth-very-high,
+.sector-growth.growth-high {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.sector-growth.growth-medium {
+    background: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+}
+
+.sector-growth.growth-stable,
+.sector-growth.growth-low {
+    background: rgba(156, 163, 175, 0.15);
+    color: #9ca3af;
+}
+
+.sector-growth.growth-emerging {
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--accent);
+}
+
+.sector-salary {
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.sector-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Govt Jobs */
+.govt-jobs-info h4 {
+    margin: 1.5rem 0 1rem;
+}
+
+.psc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+.other-recruiters {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+}
+
+/* Industry Clusters */
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.industry-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
+.industry-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.industry-type {
+    font-size: 0.85rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.industry-companies {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.industry-potential {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    margin-bottom: 0.5rem;
+}
+
+.industry-potential.potential-very-high,
+.industry-potential.potential-high {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.industry-potential.potential-medium,
+.industry-potential.potential-growing {
+    background: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+}
+
+.industry-potential.potential-low,
+.industry-potential.potential-seasonal {
+    background: rgba(156, 163, 175, 0.15);
+    color: #9ca3af;
+}
+
+.industry-streams {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.stream-tag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.75rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-right: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+/* Startup Ecosystem */
+.startup-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+}
+
+.startup-section {
+    margin-bottom: 1.5rem;
+}
+
+.startup-section h4 {
+    margin-bottom: 0.75rem;
+}
+
+.startup-tags,
+.incubator-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.startup-tag,
+.incubator-tag {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.85rem;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+    border-radius: var(--radius);
+}
+
+.incubator-tag {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+}
+
+.startup-scheme-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.startup-scheme-card strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.startup-scheme-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+/* Schemes Grid */
+.schemes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.scheme-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
+.scheme-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.scheme-benefit {
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.scheme-eligibility {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .state-tabbar {
+        gap: 0.35rem;
+    }
+    .state-tab {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.8rem;
+    }
+    .job-market-header,
+    .startup-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .sectors-grid,
+    .industry-grid,
+    .schemes-grid {
+        grid-template-columns: 1fr;
+    }
+}

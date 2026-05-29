@@ -7,7 +7,7 @@ from fastapi.responses import HTMLResponse, Response
 from fastapi.templating import Jinja2Templates
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from careerguide.data import build_career_tree, get_all_stream_names, get_stream_data
+from careerguide.data import build_career_tree, get_all_state_data, get_all_states, get_all_stream_names, get_stream_data
 from careerguide.db.session import get_session_factory
 from careerguide.models.student import (
     INDIAN_STATES,
@@ -70,6 +70,17 @@ async def career_options_page(request: Request):
         "tree": tree,
         "streams": streams,
         "stream_details": stream_details,
+    })
+
+
+@router.get("/stateopportunities", response_class=HTMLResponse)
+async def state_opportunities_page(request: Request):
+    """State-specific career opportunities — scholarships, jobs, industry."""
+    states = get_all_states()
+    state_data = get_all_state_data()
+    return templates.TemplateResponse(request, "state_opportunities.html", {
+        "states": states,
+        "state_data": state_data,
     })
 
 

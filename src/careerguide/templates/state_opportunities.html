@@ -1,0 +1,266 @@
+{% extends "base.html" %}
+{% block title %}State Guide — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>State-Specific Career Opportunities</h1>
+    <p class="subtitle">Discover career opportunities, scholarships, and schemes in your state</p>
+</div>
+
+<div class="state-selector">
+    <label for="stateSelect">Select Your State</label>
+    <select id="stateSelect" class="state-dropdown">
+        {% for state in states %}
+        <option value="{{ state }}" {% if loop.first %}selected{% endif %}>{{ state }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<div class="state-content">
+    {% for state in states %}
+    {% set sdata = state_data[state] %}
+    <div class="state-panel{% if loop.first %} active{% endif %}" data-state="{{ state }}">
+        
+        <!-- Tab bar -->
+        <div class="state-tabbar" role="tablist">
+            <button class="state-tab active" type="button" data-pane="job-market">💼 Job Market</button>
+            <button class="state-tab" type="button" data-pane="scholarships">🎓 Scholarships</button>
+            <button class="state-tab" type="button" data-pane="govt-jobs">🏛️ Govt Jobs</button>
+            <button class="state-tab" type="button" data-pane="industry">🏭 Industry</button>
+            <button class="state-tab" type="button" data-pane="startups">🚀 Startups</button>
+            <button class="state-tab" type="button" data-pane="schemes">📋 Schemes</button>
+        </div>
+
+        <!-- ═══ Pane: Job Market ═══ -->
+        <div class="state-pane active" data-pane-id="job-market">
+            {% if sdata.job_market %}
+            <div class="job-market-header">
+                <div class="jm-cities">
+                    <strong>Major Cities:</strong> {{ sdata.job_market.major_cities | join(', ') }}
+                </div>
+                <div class="jm-entry-salary">
+                    <strong>Avg Entry Salary:</strong> {{ sdata.job_market.avg_entry_salary }}
+                </div>
+            </div>
+            
+            {% if sdata.job_market.it_parks %}
+            <div class="jm-it-parks">
+                <strong>IT Parks / SEZs:</strong> {{ sdata.job_market.it_parks | join(', ') }}
+            </div>
+            {% endif %}
+
+            <h4>Top Sectors</h4>
+            <div class="sectors-grid">
+                {% for sector in sdata.job_market.top_sectors %}
+                <div class="sector-card">
+                    <div class="sector-name">{{ sector.sector }}</div>
+                    <div class="sector-growth growth-{{ sector.growth | lower | replace(' ', '-') }}">{{ sector.growth }} Growth</div>
+                    <div class="sector-salary">{{ sector.avg_salary }}</div>
+                    <div class="sector-desc">{{ sector.description }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="muted">Job market data not available.</p>
+            {% endif %}
+        </div>
+
+        <!-- ═══ Pane: Scholarships ═══ -->
+        <div class="state-pane" data-pane-id="scholarships">
+            {% if sdata.scholarships %}
+            <div class="scholarship-grid">
+                {% for sch in sdata.scholarships %}
+                <div class="scholarship-card">
+                    <div class="scholarship-name">{{ sch.name }}</div>
+                    <div class="scholarship-dept">{{ sch.department }}</div>
+                    <div class="scholarship-amount">{{ sch.amount }}</div>
+                    <div class="scholarship-eligibility"><strong>Eligibility:</strong> {{ sch.eligibility }}</div>
+                    <a href="{{ sch.website }}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Apply Now</a>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="muted">Scholarship data not available.</p>
+            {% endif %}
+        </div>
+
+        <!-- ═══ Pane: Govt Jobs ═══ -->
+        <div class="state-pane" data-pane-id="govt-jobs">
+            {% if sdata.government_jobs %}
+            <div class="govt-jobs-info">
+                <div class="psc-header">
+                    <strong>{{ sdata.government_jobs.psc_name }}</strong>
+                    <a href="{{ sdata.government_jobs.psc_website }}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Visit Website</a>
+                </div>
+
+                <h4>Major Exams</h4>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Exam</th>
+                            <th>Posts</th>
+                            <th>Eligibility</th>
+                            <th>Age Limit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for exam in sdata.government_jobs.major_exams %}
+                        <tr>
+                            <td><strong>{{ exam.exam }}</strong></td>
+                            <td>{{ exam.posts }}</td>
+                            <td>{{ exam.eligibility }}</td>
+                            <td>{{ exam.age }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+                {% if sdata.government_jobs.other_recruiters %}
+                <div class="other-recruiters">
+                    <strong>Other State Recruiters:</strong> {{ sdata.government_jobs.other_recruiters | join(', ') }}
+                </div>
+                {% endif %}
+            </div>
+            {% else %}
+            <p class="muted">Government jobs data not available.</p>
+            {% endif %}
+        </div>
+
+        <!-- ═══ Pane: Industry Clusters ═══ -->
+        <div class="state-pane" data-pane-id="industry">
+            {% if sdata.industry_clusters %}
+            <div class="industry-grid">
+                {% for cluster in sdata.industry_clusters %}
+                <div class="industry-card">
+                    <div class="industry-name">{{ cluster.name }}</div>
+                    <div class="industry-type">{{ cluster.type }}</div>
+                    <div class="industry-companies"><strong>Companies:</strong> {{ cluster.companies }}</div>
+                    <div class="industry-potential potential-{{ cluster.jobs_potential | lower | replace(' ', '-') }}">
+                        Jobs Potential: {{ cluster.jobs_potential }}
+                    </div>
+                    <div class="industry-streams">
+                        <strong>Relevant Streams:</strong>
+                        {% for stream in cluster.relevant_streams %}
+                        <span class="stream-tag">{{ stream }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="muted">Industry cluster data not available.</p>
+            {% endif %}
+        </div>
+
+        <!-- ═══ Pane: Startup Ecosystem ═══ -->
+        <div class="state-pane" data-pane-id="startups">
+            {% if sdata.startup_ecosystem %}
+            <div class="startup-header">
+                <div class="startup-ranking">
+                    <strong>State Ranking:</strong> {{ sdata.startup_ecosystem.ranking }}
+                </div>
+                <div class="startup-count">
+                    <strong>Total Startups:</strong> {{ sdata.startup_ecosystem.total_startups }}
+                </div>
+            </div>
+
+            {% if sdata.startup_ecosystem.notable_startups %}
+            <div class="startup-section">
+                <h4>Notable Startups</h4>
+                <div class="startup-tags">
+                    {% for startup in sdata.startup_ecosystem.notable_startups %}
+                    <span class="startup-tag">{{ startup }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if sdata.startup_ecosystem.incubators %}
+            <div class="startup-section">
+                <h4>Incubators & Accelerators</h4>
+                <div class="incubator-list">
+                    {% for inc in sdata.startup_ecosystem.incubators %}
+                    <span class="incubator-tag">{{ inc }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if sdata.startup_ecosystem.govt_schemes %}
+            <div class="startup-section">
+                <h4>Startup Schemes</h4>
+                {% for scheme in sdata.startup_ecosystem.govt_schemes %}
+                <div class="startup-scheme-card">
+                    <strong>{{ scheme.name }}</strong>
+                    <p>{{ scheme.benefit }}</p>
+                    <a href="{{ scheme.website }}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Learn More</a>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% else %}
+            <p class="muted">Startup ecosystem data not available.</p>
+            {% endif %}
+        </div>
+
+        <!-- ═══ Pane: Govt Schemes ═══ -->
+        <div class="state-pane" data-pane-id="schemes">
+            {% if sdata.govt_schemes %}
+            <div class="schemes-grid">
+                {% for scheme in sdata.govt_schemes %}
+                <div class="scheme-card">
+                    <div class="scheme-name">{{ scheme.name }}</div>
+                    <div class="scheme-benefit">{{ scheme.benefit }}</div>
+                    <div class="scheme-eligibility"><strong>Eligibility:</strong> {{ scheme.eligibility }}</div>
+                    <a href="{{ scheme.website }}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Apply</a>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="muted">Government schemes data not available.</p>
+            {% endif %}
+        </div>
+
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var stateSelect = document.getElementById('stateSelect');
+    var panels = document.querySelectorAll('.state-panel');
+
+    // State selector change
+    stateSelect.addEventListener('change', function() {
+        var selectedState = this.value;
+        panels.forEach(function(panel) {
+            panel.classList.remove('active');
+            if (panel.getAttribute('data-state') === selectedState) {
+                panel.classList.add('active');
+            }
+        });
+    });
+
+    // Tab clicks within each panel
+    document.querySelectorAll('.state-tabbar').forEach(function(tabbar) {
+        tabbar.addEventListener('click', function(e) {
+            var tab = e.target.closest('.state-tab');
+            if (!tab) return;
+            var panel = tabbar.closest('.state-panel');
+            var paneId = tab.getAttribute('data-pane');
+
+            // Deactivate all tabs and panes in this panel
+            panel.querySelectorAll('.state-tab').forEach(function(t) { t.classList.remove('active'); });
+            panel.querySelectorAll('.state-pane').forEach(function(p) { p.classList.remove('active'); });
+
+            // Activate selected tab and pane
+            tab.classList.add('active');
+            var pane = panel.querySelector('.state-pane[data-pane-id="' + paneId + '"]');
+            if (pane) pane.classList.add('active');
+        });
+    });
+});
+</script>
+{% endblock %}
