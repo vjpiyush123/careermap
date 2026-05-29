@@ -4,7 +4,7 @@ app:
   version: "0.1.0"
   debug: false
   host: "0.0.0.0"
-  port: 8000
+  port: 8002
 
 # Analysis engine settings
 analysis:

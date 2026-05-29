@@ -9,7 +9,7 @@
 
 <div class="feedback-container">
     <div class="feedback-intro">
-        <h3>🎯 Why Your Feedback Matters</h3>
+        <h3>&#127919; Why Your Feedback Matters</h3>
         <p>We want to understand the real pain points students face when exploring career options. Your insights will help us improve CareerGuide and create better resources for students like you.</p>
     </div>
 
@@ -58,23 +58,23 @@
         <div class="form-group">
             <label for="feedback" class="required-field">Your Feedback / Pain Points</label>
             <textarea id="feedback" name="feedback" rows="6" placeholder="Please share your challenges, questions, or pain points related to finding the right career path. For example:
-• What confuses you most about career choices?
-• What information is hard to find?
-• What would help you decide better?" required></textarea>
+- What confuses you most about career choices?
+- What information is hard to find?
+- What would help you decide better?" required></textarea>
             <span class="form-hint">Minimum 20 characters</span>
         </div>
 
         <div class="form-actions">
             <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
-                <span>📨</span> Submit Feedback
+                Submit Feedback
             </button>
         </div>
-        
+
         <div class="form-error" id="formError" style="display: none;"></div>
     </form>
 
     <div class="feedback-thank-you" id="thankYou" style="display: none;">
-        <div class="thank-you-icon">✅</div>
+        <div class="thank-you-icon">&#10004;</div>
         <h3>Thank You!</h3>
         <p>Your feedback has been submitted successfully. We appreciate you taking the time to help us improve CareerGuide.</p>
         <a href="/" class="btn btn-secondary">Back to Home</a>
@@ -86,17 +86,17 @@
 <script>
 document.getElementById('feedbackForm').addEventListener('submit', async function(e) {
     e.preventDefault();
-    
+
     var feedback = document.getElementById('feedback').value;
     if (feedback.length < 20) {
         showError('Please provide more detailed feedback (at least 20 characters).');
         return;
     }
-    
+
     var submitBtn = document.getElementById('submitBtn');
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '<span>⏳</span> Submitting...';
-    
+    submitBtn.textContent = 'Submitting...';
+
     var formData = {
         student_name: document.getElementById('studentName').value,
         email: document.getElementById('email').value,
@@ -104,14 +104,14 @@ document.getElementById('feedbackForm').addEventListener('submit', async functio
         stream: document.getElementById('stream').value || null,
         feedback: feedback
     };
-    
+
     try {
         var response = await fetch('/api/feedback', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
         });
-        
+
         if (response.ok) {
             document.getElementById('feedbackForm').style.display = 'none';
             document.querySelector('.feedback-intro').style.display = 'none';
@@ -120,12 +120,12 @@ document.getElementById('feedbackForm').addEventListener('submit', async functio
             var data = await response.json();
             showError(data.detail || 'Failed to submit feedback. Please try again.');
             submitBtn.disabled = false;
-            submitBtn.innerHTML = '<span>📨</span> Submit Feedback';
+            submitBtn.textContent = 'Submit Feedback';
         }
     } catch (error) {
         showError('Network error. Please check your connection and try again.');
         submitBtn.disabled = false;
-        submitBtn.innerHTML = '<span>📨</span> Submit Feedback';
+        submitBtn.textContent = 'Submit Feedback';
     }
 });
 
@@ -135,10 +135,5 @@ function showError(message) {
     errorDiv.style.display = 'block';
     setTimeout(function() { errorDiv.style.display = 'none'; }, 5000);
 }
-</script>
-{% endblock %}
-        return false;
-    }
-});
 </script>
 {% endblock %}
