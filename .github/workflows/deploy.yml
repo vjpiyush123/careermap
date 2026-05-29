@@ -30,7 +30,7 @@ jobs:
         run: pip install jinja2 -e .
 
       - name: Build static site
-        run: python build_static.py
+        run: python build_static.py --base /careermap
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
