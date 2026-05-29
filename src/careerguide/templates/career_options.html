@@ -29,7 +29,7 @@
             <h2 class="co-panel-heading">{{ stream }}</h2>
 
             {% if sdata %}
-            <!-- Tab bar — Roadmap | Selection Process | Coaching | Career Paths | Colleges (State) | Top Colleges (India) | Abroad -->
+            <!-- Tab bar — Roadmap | Selection Process | Coaching | Career Paths | Colleges (State) | Top Colleges (India) | Abroad | Scholarships | AI Impact -->
             <div class="co-tabbar" role="tablist">
                 <button class="co-tab-item active" type="button" data-pane="pane-roadmap-{{ idx }}">Roadmap</button>
                 <button class="co-tab-item" type="button" data-pane="pane-selection-{{ idx }}">Selection Process</button>
@@ -38,6 +38,8 @@
                 <button class="co-tab-item" type="button" data-pane="pane-state-{{ idx }}">Colleges (State)</button>
                 <button class="co-tab-item" type="button" data-pane="pane-india-{{ idx }}">Top Colleges (India)</button>
                 <button class="co-tab-item" type="button" data-pane="pane-abroad-{{ idx }}">Abroad</button>
+                <button class="co-tab-item" type="button" data-pane="pane-scholarships-{{ idx }}">🎓 Scholarships</button>
+                <button class="co-tab-item" type="button" data-pane="pane-ai-impact-{{ idx }}">🤖 AI Impact</button>
             </div>
 
             <!-- ═══ Pane: Roadmap ═══ -->
@@ -254,6 +256,82 @@
                 </div>
                 {% else %}
                 <p class="muted">Abroad data not available for this stream.</p>
+                {% endif %}
+            </div>
+
+            <!-- ═══ Pane: Scholarships ═══ -->
+            <div class="co-pane" id="pane-scholarships-{{ idx }}">
+                {% if sdata.scholarships %}
+                <div class="scholarship-grid">
+                    {% for sch in sdata.scholarships %}
+                    <div class="scholarship-card">
+                        <h5>{{ sch.name }}</h5>
+                        <div class="scholarship-provider">{{ sch.provider }}</div>
+                        <div class="scholarship-amount">{{ sch.amount }}</div>
+                        <div class="scholarship-eligibility"><strong>Eligibility:</strong> {{ sch.eligibility }}</div>
+                        <div class="scholarship-process">
+                            <strong>How to Apply:</strong> {{ sch.process }}
+                        </div>
+                        {% if sch.website and sch.website.startswith('http') %}
+                        <a href="{{ sch.website }}" target="_blank" rel="noopener" class="scholarship-link">Apply Now ↗</a>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="muted">Scholarship data not available for this stream.</p>
+                {% endif %}
+            </div>
+
+            <!-- ═══ Pane: AI Impact ═══ -->
+            <div class="co-pane" id="pane-ai-impact-{{ idx }}">
+                {% if sdata.ai_impact %}
+                {% set ai = sdata.ai_impact %}
+                <div class="ai-impact-header">
+                    <h3>AI Impact on {{ stream }}</h3>
+                    <span class="ai-impact-badge {{ ai.impact_level|lower }}">
+                        {% if ai.impact_level == 'Low' %}🟢{% elif ai.impact_level == 'Medium' %}🟡{% else %}🔴{% endif %}
+                        {{ ai.impact_level }} Impact
+                    </span>
+                </div>
+
+                <div class="ai-impact-summary">{{ ai.summary }}</div>
+
+                <h4 class="ai-section-heading">🛡️ Risk Mitigation Strategies</h4>
+                <ul class="ai-strategies-list">
+                    {% for strategy in ai.risk_mitigation %}
+                    <li>{{ strategy }}</li>
+                    {% endfor %}
+                </ul>
+
+                <h4 class="ai-section-heading">🚀 Most Valuable Roles in 5-10 Years</h4>
+                <div class="ai-roles-grid">
+                    {% for role in ai.valuable_roles_5_10_years %}
+                    <span class="ai-role-tag">{{ role }}</span>
+                    {% endfor %}
+                </div>
+
+                <h4 class="ai-section-heading">🟢 Low AI Impact Areas (Safer Careers)</h4>
+                <div class="ai-cards-grid">
+                    {% for area in ai.low_impact_areas %}
+                    <div class="ai-card safe">
+                        <h6>{{ area.role }}</h6>
+                        <p>{{ area.explanation }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <h4 class="ai-section-heading">🔴 High AI Impact Areas (At-Risk Roles)</h4>
+                <div class="ai-cards-grid">
+                    {% for area in ai.high_impact_areas %}
+                    <div class="ai-card at-risk">
+                        <h6>{{ area.role }}</h6>
+                        <p>{{ area.explanation }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="muted">AI impact data not available for this stream.</p>
                 {% endif %}
             </div>
 

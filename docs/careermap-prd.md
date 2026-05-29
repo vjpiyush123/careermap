@@ -22,7 +22,7 @@ This document lists various streams which a student can opt for after 10th and 1
 ## For above stream need to fetch the below data
 
 Top 10 college of India
-Top 10 college of states of India
+Top 10 college of states of India (all streams must have state-level college data)
 
 - college name
 - college ranking
@@ -34,3 +34,32 @@ Top 10 college of states of India
 
 Show the data in Tab format
     India , State
+
+## Scholarship Programs (per stream)
+
+Each career stream has a dedicated Scholarships tab listing the top scholarship programs available to students. For each scholarship:
+
+- Scholarship name
+- Provider / organization
+- Scholarship amount
+- Eligibility criteria
+- Application process (step-by-step how to apply)
+- Direct link to apply (website URL)
+
+Displayed as a card grid with "Apply Now" links opening in a new tab.
+
+## AI Analysis Impact (per stream)
+
+Each career stream has a dedicated AI Impact tab providing a comprehensive analysis of how artificial intelligence is affecting that career field. The tab includes:
+
+- **Overall AI Impact Badge** — Color-coded badge (🟢 Green = Low, 🟡 Yellow = Medium, 🔴 Red = High) showing the impact level
+- **Impact Summary** — Detailed explanation of how AI is affecting the career stream
+- **Risk Mitigation Strategies** — Actionable steps students can take to future-proof their career
+- **Most Valuable Roles in 5-10 Years** — Tagged list of future-proof job titles within the stream
+- **Low AI Impact Areas** — Card grid of safer career roles with explanations of why they are resilient
+- **High AI Impact Areas** — Card grid of at-risk roles with explanations of automation threats
+
+## UI Layout
+
+- Full-width content layout (max-width 1600px) to minimize wasted space on left and right sides
+- Responsive design for mobile and desktop

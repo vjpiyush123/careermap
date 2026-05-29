@@ -146,9 +146,8 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
 /* ─── Container ───────────────────────────────────────────── */
 
 .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 3rem;
+    width: 100%;
 }
 
 .page-header {
@@ -169,7 +168,7 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -602,7 +601,7 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
 /* ─── Report Page ─────────────────────────────────────────── */
 
 .report-container {
-    max-width: 900px;
+    max-width: 100%;
 }
 
 .report-section {
@@ -1226,6 +1225,225 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
 
 /* ─── Responsive ──────────────────────────────────────────── */
 
+/* ─── Scholarship Cards ───────────────────────────────────── */
+
+.scholarship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.25rem;
+}
+
+.scholarship-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    box-shadow: var(--shadow);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.scholarship-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-lg);
+}
+
+.scholarship-card h5 {
+    color: var(--accent);
+    font-size: 1rem;
+    margin-bottom: 0.15rem;
+}
+
+.scholarship-card .scholarship-provider {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.scholarship-card .scholarship-amount {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--success);
+}
+
+.scholarship-card .scholarship-eligibility {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.scholarship-card .scholarship-process {
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+    background: var(--bg-primary);
+    border-radius: var(--radius);
+    padding: 0.6rem 0.75rem;
+}
+
+.scholarship-card .scholarship-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: auto;
+    padding: 0.4rem 0.85rem;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: var(--radius);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s;
+    width: fit-content;
+}
+
+.scholarship-card .scholarship-link:hover {
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ─── AI Impact Section ───────────────────────────────────── */
+
+.ai-impact-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.ai-impact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.ai-impact-badge.low {
+    background: var(--success-bg);
+    color: var(--success);
+    border: 1px solid var(--success);
+}
+
+.ai-impact-badge.medium {
+    background: var(--warning-bg);
+    color: var(--warning);
+    border: 1px solid var(--warning);
+}
+
+.ai-impact-badge.high {
+    background: var(--danger-bg);
+    color: var(--danger);
+    border: 1px solid var(--danger);
+}
+
+.ai-impact-summary {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+.ai-section-heading {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 1.5rem 0 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.ai-strategies-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.ai-strategies-list li {
+    padding: 0.6rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.ai-strategies-list li::before {
+    content: "→";
+    color: var(--accent);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.ai-roles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.ai-role-tag {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    background: var(--accent-light);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.ai-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.ai-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.ai-card h6 {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+}
+
+.ai-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.ai-card.safe {
+    border-left: 3px solid var(--success);
+}
+
+.ai-card.at-risk {
+    border-left: 3px solid var(--danger);
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -1252,5 +1470,14 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
     }
     .container {
         padding: 1rem;
+    }
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .scholarship-grid {
+        grid-template-columns: 1fr;
+    }
+    .ai-cards-grid {
+        grid-template-columns: 1fr;
     }
 }
