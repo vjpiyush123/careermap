@@ -84,6 +84,15 @@ async def state_opportunities_page(request: Request):
     })
 
 
+@router.get("/feedback", response_class=HTMLResponse)
+async def feedback_page(request: Request):
+    """Feedback page — collect student pain points."""
+    streams = get_all_stream_names()
+    return templates.TemplateResponse(request, "feedback.html", {
+        "streams": streams,
+    })
+
+
 @router.get("/studentdetails", response_class=HTMLResponse)
 async def student_details_page(request: Request, session: AsyncSession = Depends(_get_session)):
     """Student details — profile form and list."""

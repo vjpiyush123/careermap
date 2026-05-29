@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Student Feedback — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Share Your Feedback</h1>
+    <p class="subtitle">Help us understand your challenges in finding the right career path</p>
+</div>
+
+<div class="feedback-container">
+    <div class="feedback-intro">
+        <h3>🎯 Why Your Feedback Matters</h3>
+        <p>We want to understand the real pain points students face when exploring career options. Your insights will help us improve CareerGuide and create better resources for students like you.</p>
+    </div>
+
+    <form class="feedback-form" action="https://formspree.io/f/xanywpbz" method="POST">
+        <!-- Hidden field for form identification -->
+        <input type="hidden" name="_subject" value="New CareerGuide Feedback">
+        
+        <div class="form-group">
+            <label for="studentName" class="required-field">Student Name</label>
+            <input type="text" id="studentName" name="student_name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="required-field">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            <span class="form-hint">We'll never share your email with anyone</span>
+        </div>
+
+        <div class="form-group">
+            <label for="standard" class="required-field">Currently Studying In</label>
+            <select id="standard" name="standard" required>
+                <option value="">Select your class/standard</option>
+                <option value="8th Standard">8th Standard</option>
+                <option value="9th Standard">9th Standard</option>
+                <option value="10th Standard">10th Standard</option>
+                <option value="11th Standard (Science)">11th Standard (Science)</option>
+                <option value="11th Standard (Commerce)">11th Standard (Commerce)</option>
+                <option value="11th Standard (Arts)">11th Standard (Arts)</option>
+                <option value="12th Standard (Science)">12th Standard (Science)</option>
+                <option value="12th Standard (Commerce)">12th Standard (Commerce)</option>
+                <option value="12th Standard (Arts)">12th Standard (Arts)</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Postgraduate">Postgraduate</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="stream">Career Stream of Interest <span class="optional-tag">(Optional)</span></label>
+            <select id="stream" name="stream">
+                <option value="">Select a stream (if applicable)</option>
+                {% for stream in streams %}
+                <option value="{{ stream }}">{{ stream }}</option>
+                {% endfor %}
+                <option value="Not Sure Yet">Not Sure Yet</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="feedback" class="required-field">Your Feedback / Pain Points</label>
+            <textarea id="feedback" name="feedback" rows="6" placeholder="Please share your challenges, questions, or pain points related to finding the right career path. For example:
+• What confuses you most about career choices?
+• What information is hard to find?
+• What would help you decide better?" required></textarea>
+            <span class="form-hint">Minimum 20 characters</span>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-lg">
+                <span>📨</span> Submit Feedback
+            </button>
+        </div>
+    </form>
+
+    <div class="feedback-thank-you" id="thankYou" style="display: none;">
+        <div class="thank-you-icon">✅</div>
+        <h3>Thank You!</h3>
+        <p>Your feedback has been submitted successfully. We appreciate you taking the time to help us improve CareerGuide.</p>
+        <a href="/" class="btn btn-secondary">Back to Home</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+// Check if returning from successful form submission
+if (window.location.search.includes('submitted=true')) {
+    document.querySelector('.feedback-form').style.display = 'none';
+    document.querySelector('.feedback-intro').style.display = 'none';
+    document.getElementById('thankYou').style.display = 'block';
+}
+
+// Form validation
+document.querySelector('.feedback-form').addEventListener('submit', function(e) {
+    var feedback = document.getElementById('feedback').value;
+    if (feedback.length < 20) {
+        e.preventDefault();
+        alert('Please provide more detailed feedback (at least 20 characters).');
+        return false;
+    }
+});
+</script>
+{% endblock %}

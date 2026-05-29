@@ -104,7 +104,13 @@ def build(base_path: str = "") -> None:
         "state_data": state_data,
     }, "stateopportunities.html")
 
-    # ── 3. Landing / index page ───────────────────────────────────────
+    # ── 3. Feedback page ──────────────────────────────────────────────
+    _render("feedback.html", {
+        "request": _MockRequest("/feedback"),
+        "streams": streams,
+    }, "feedback.html")
+
+    # ── 4. Landing / index page ───────────────────────────────────────
     index_html = env.from_string(INDEX_TEMPLATE).render(
         base=base,
         request=_MockRequest("/"),
@@ -116,12 +122,12 @@ def build(base_path: str = "") -> None:
     (OUT_DIR / "index.html").write_text(index_html, encoding="utf-8")
     print("  ✓ index.html")
 
-    # ── 4. Copy static assets ─────────────────────────────────────────
+    # ── 5. Copy static assets ─────────────────────────────────────────
     static_out = OUT_DIR / "static"
     shutil.copytree(STATIC_DIR, static_out)
     print("  ✓ static/ (css, js)")
 
-    # ── 5. Create .nojekyll for GitHub Pages ──────────────────────────
+    # ── 6. Create .nojekyll for GitHub Pages ──────────────────────────
     (OUT_DIR / ".nojekyll").write_text("", encoding="utf-8")
     print("  ✓ .nojekyll")
 
@@ -152,6 +158,7 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
             <a href="/" class="nav-link active">Home</a>
             <a href="/careeroptions.html" class="nav-link">Career Options</a>
             <a href="/stateopportunities.html" class="nav-link">State Guide</a>
+            <a href="/feedback.html" class="nav-link">Feedback</a>
             <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle theme">
                 <span class="theme-icon" id="themeIcon"></span>
             </button>
