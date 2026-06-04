@@ -78,7 +78,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 1. IIT Bombay ──────────────────────────────────────────────
     College(
         name="Indian Institute of Technology Bombay",
-        short_name="IIT Bombay", institute_type="IIT", established=1958,
+        short_name="IIT Bombay", stream="engineering", institute_type="IIT", established=1958,
         ranking=1, city="Mumbai", state="Maharashtra",
         nirf_ranking=3, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.25,
@@ -120,7 +120,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 2. IIT Delhi ───────────────────────────────────────────────
     College(
         name="Indian Institute of Technology Delhi",
-        short_name="IIT Delhi", institute_type="IIT", established=1961,
+        short_name="IIT Delhi", stream="engineering", institute_type="IIT", established=1961,
         ranking=2, city="New Delhi", state="Delhi",
         nirf_ranking=2, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.20,
@@ -153,7 +153,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 3. IIT Madras ──────────────────────────────────────────────
     College(
         name="Indian Institute of Technology Madras",
-        short_name="IIT Madras", institute_type="IIT", established=1959,
+        short_name="IIT Madras", stream="engineering", institute_type="IIT", established=1959,
         ranking=3, city="Chennai", state="Tamil Nadu",
         nirf_ranking=1, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.22,
@@ -186,7 +186,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 4. IIT Kanpur ──────────────────────────────────────────────
     College(
         name="Indian Institute of Technology Kanpur",
-        short_name="IIT Kanpur", institute_type="IIT", established=1959,
+        short_name="IIT Kanpur", stream="engineering", institute_type="IIT", established=1959,
         ranking=4, city="Kanpur", state="Uttar Pradesh",
         nirf_ranking=4, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.22,
@@ -216,7 +216,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 5. IIT Kharagpur ───────────────────────────────────────────
     College(
         name="Indian Institute of Technology Kharagpur",
-        short_name="IIT Kharagpur", institute_type="IIT", established=1951,
+        short_name="IIT Kharagpur", stream="engineering", institute_type="IIT", established=1951,
         ranking=5, city="Kharagpur", state="West Bengal",
         nirf_ranking=5, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -249,7 +249,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 6. IIT Roorkee ─────────────────────────────────────────────
     College(
         name="Indian Institute of Technology Roorkee",
-        short_name="IIT Roorkee", institute_type="IIT", established=1847,
+        short_name="IIT Roorkee", stream="engineering", institute_type="IIT", established=1847,
         ranking=6, city="Roorkee", state="Uttarakhand",
         nirf_ranking=6, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.20,
@@ -279,7 +279,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 7. IIT Guwahati ────────────────────────────────────────────
     College(
         name="Indian Institute of Technology Guwahati",
-        short_name="IIT Guwahati", institute_type="IIT", established=1994,
+        short_name="IIT Guwahati", stream="engineering", institute_type="IIT", established=1994,
         ranking=7, city="Guwahati", state="Assam",
         nirf_ranking=7, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -305,7 +305,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 8. IIT Hyderabad ───────────────────────────────────────────
     College(
         name="Indian Institute of Technology Hyderabad",
-        short_name="IIT Hyderabad", institute_type="IIT", established=2008,
+        short_name="IIT Hyderabad", stream="engineering", institute_type="IIT", established=2008,
         ranking=8, city="Sangareddy", state="Telangana",
         nirf_ranking=8, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.20,
@@ -334,7 +334,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 9. IIT BHU Varanasi ────────────────────────────────────────
     College(
         name="Indian Institute of Technology (BHU) Varanasi",
-        short_name="IIT BHU", institute_type="IIT", established=1919,
+        short_name="IIT BHU", stream="engineering", institute_type="IIT", established=1919,
         ranking=9, city="Varanasi", state="Uttar Pradesh",
         nirf_ranking=10, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.15,
@@ -363,7 +363,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 10. IIT Indore ─────────────────────────────────────────────
     College(
         name="Indian Institute of Technology Indore",
-        short_name="IIT Indore", institute_type="IIT", established=2009,
+        short_name="IIT Indore", stream="engineering", institute_type="IIT", established=2009,
         ranking=10, city="Indore", state="Madhya Pradesh",
         nirf_ranking=11, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -389,7 +389,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 11. NIT Trichy ─────────────────────────────────────────────
     College(
         name="National Institute of Technology Tiruchirappalli",
-        short_name="NIT Trichy", institute_type="NIT", established=1964,
+        short_name="NIT Trichy", stream="engineering", institute_type="NIT", established=1964,
         ranking=11, city="Tiruchirappalli", state="Tamil Nadu",
         nirf_ranking=9, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=1.5, hostel_fees_per_year=0.12,
@@ -418,7 +418,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 12. NIT Karnataka Surathkal ────────────────────────────────
     College(
         name="National Institute of Technology Karnataka",
-        short_name="NIT Surathkal", institute_type="NIT", established=1960,
+        short_name="NIT Surathkal", stream="engineering", institute_type="NIT", established=1960,
         ranking=12, city="Surathkal", state="Karnataka",
         nirf_ranking=12, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=1.5, hostel_fees_per_year=0.12,
@@ -444,7 +444,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 13. NIT Warangal ───────────────────────────────────────────
     College(
         name="National Institute of Technology Warangal",
-        short_name="NIT Warangal", institute_type="NIT", established=1959,
+        short_name="NIT Warangal", stream="engineering", institute_type="NIT", established=1959,
         ranking=13, city="Warangal", state="Telangana",
         nirf_ranking=15, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=1.5, hostel_fees_per_year=0.10,
@@ -470,7 +470,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 14. NIT Calicut ────────────────────────────────────────────
     College(
         name="National Institute of Technology Calicut",
-        short_name="NIT Calicut", institute_type="NIT", established=1961,
+        short_name="NIT Calicut", stream="engineering", institute_type="NIT", established=1961,
         ranking=14, city="Kozhikode", state="Kerala",
         nirf_ranking=14, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=1.2, hostel_fees_per_year=0.10,
@@ -496,7 +496,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 15. NIT Rourkela ───────────────────────────────────────────
     College(
         name="National Institute of Technology Rourkela",
-        short_name="NIT Rourkela", institute_type="NIT", established=1961,
+        short_name="NIT Rourkela", stream="engineering", institute_type="NIT", established=1961,
         ranking=15, city="Rourkela", state="Odisha",
         nirf_ranking=16, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=1.2, hostel_fees_per_year=0.10,
@@ -522,7 +522,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 16. BITS Pilani ────────────────────────────────────────────
     College(
         name="Birla Institute of Technology & Science, Pilani",
-        short_name="BITS Pilani", institute_type="Private", established=1964,
+        short_name="BITS Pilani", stream="engineering", institute_type="Private", established=1964,
         ranking=16, city="Pilani", state="Rajasthan",
         nirf_ranking=20, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=4.5, hostel_fees_per_year=0.40,
@@ -558,7 +558,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 17. DTU Delhi ──────────────────────────────────────────────
     College(
         name="Delhi Technological University",
-        short_name="DTU", institute_type="State Govt", established=1941,
+        short_name="DTU", stream="engineering", institute_type="State Govt", established=1941,
         ranking=17, city="New Delhi", state="Delhi",
         nirf_ranking=30, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=1.8, hostel_fees_per_year=0.15,
@@ -586,7 +586,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 18. NSUT Delhi ─────────────────────────────────────────────
     College(
         name="Netaji Subhas University of Technology",
-        short_name="NSUT", institute_type="State Govt", established=1983,
+        short_name="NSUT", stream="engineering", institute_type="State Govt", established=1983,
         ranking=18, city="New Delhi", state="Delhi",
         nirf_ranking=35, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=1.8, hostel_fees_per_year=0.15,
@@ -611,7 +611,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 19. VIT Vellore ────────────────────────────────────────────
     College(
         name="Vellore Institute of Technology",
-        short_name="VIT Vellore", institute_type="Private", established=1984,
+        short_name="VIT Vellore", stream="engineering", institute_type="Private", established=1984,
         ranking=19, city="Vellore", state="Tamil Nadu",
         nirf_ranking=18, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=3.5, hostel_fees_per_year=0.35,
@@ -636,7 +636,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 20. COEP Pune ──────────────────────────────────────────────
     College(
         name="College of Engineering Pune",
-        short_name="COEP Pune", institute_type="State Govt", established=1854,
+        short_name="COEP Pune", stream="engineering", institute_type="State Govt", established=1854,
         ranking=20, city="Pune", state="Maharashtra",
         nirf_ranking=38, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=1.2, hostel_fees_per_year=0.10,
@@ -661,7 +661,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 21. Jadavpur University ────────────────────────────────────
     College(
         name="Jadavpur University",
-        short_name="Jadavpur Univ", institute_type="State Govt", established=1955,
+        short_name="Jadavpur Univ", stream="engineering", institute_type="State Govt", established=1955,
         ranking=21, city="Kolkata", state="West Bengal",
         nirf_ranking=19, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=0.15, hostel_fees_per_year=0.05,
@@ -686,7 +686,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 22. Anna University ────────────────────────────────────────
     College(
         name="Anna University",
-        short_name="Anna Univ", institute_type="State Govt", established=1978,
+        short_name="Anna Univ", stream="engineering", institute_type="State Govt", established=1978,
         ranking=22, city="Chennai", state="Tamil Nadu",
         nirf_ranking=17, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=0.50, hostel_fees_per_year=0.08,
@@ -711,7 +711,7 @@ _ENGINEERING_DIRECTORY: list[College] = [
     # ── 23. ICT Mumbai ─────────────────────────────────────────────
     College(
         name="Institute of Chemical Technology Mumbai",
-        short_name="ICT Mumbai", institute_type="Deemed", established=1933,
+        short_name="ICT Mumbai", stream="engineering", institute_type="Deemed", established=1933,
         ranking=23, city="Mumbai", state="Maharashtra",
         nirf_ranking=28, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=0.80, hostel_fees_per_year=0.10,
@@ -743,7 +743,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 1. IIIT Hyderabad ──────────────────────────────────────────
     College(
         name="International Institute of Information Technology Hyderabad",
-        short_name="IIIT Hyderabad", institute_type="IIIT", established=1998,
+        short_name="IIIT Hyderabad", stream="engineering", institute_type="IIIT", established=1998,
         ranking=1, city="Hyderabad", state="Telangana",
         nirf_ranking=22, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=3.5, hostel_fees_per_year=0.25,
@@ -767,7 +767,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 2. IIIT Delhi ──────────────────────────────────────────────
     College(
         name="Indraprastha Institute of Information Technology Delhi",
-        short_name="IIIT Delhi", institute_type="IIIT", established=2008,
+        short_name="IIIT Delhi", stream="engineering", institute_type="IIIT", established=2008,
         ranking=2, city="New Delhi", state="Delhi",
         nirf_ranking=25, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=3.8, hostel_fees_per_year=0.30,
@@ -794,7 +794,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 3. IIIT Allahabad ──────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Allahabad",
-        short_name="IIIT Allahabad", institute_type="IIIT", established=1999,
+        short_name="IIIT Allahabad", stream="engineering", institute_type="IIIT", established=1999,
         ranking=3, city="Prayagraj", state="Uttar Pradesh",
         nirf_ranking=30, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=2.0, hostel_fees_per_year=0.20,
@@ -821,7 +821,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 4. IIIT Bangalore ──────────────────────────────────────────
     College(
         name="International Institute of Information Technology Bangalore",
-        short_name="IIIT Bangalore", institute_type="IIIT", established=1999,
+        short_name="IIIT Bangalore", stream="engineering", institute_type="IIIT", established=1999,
         ranking=4, city="Bangalore", state="Karnataka",
         nirf_ranking=45, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=4.0, hostel_fees_per_year=0.30,
@@ -846,7 +846,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 5. ABV-IIITM Gwalior ───────────────────────────────────────
     College(
         name="ABV Indian Institute of Information Technology & Management Gwalior",
-        short_name="ABV-IIITM Gwalior", institute_type="IIIT", established=1997,
+        short_name="ABV-IIITM Gwalior", stream="engineering", institute_type="IIIT", established=1997,
         ranking=5, city="Gwalior", state="Madhya Pradesh",
         nirf_ranking=55, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=1.8, hostel_fees_per_year=0.15,
@@ -870,7 +870,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 6. IIITDM Jabalpur ─────────────────────────────────────────
     College(
         name="IIIT Design & Manufacturing Jabalpur",
-        short_name="IIITDM Jabalpur", institute_type="IIIT", established=2005,
+        short_name="IIITDM Jabalpur", stream="engineering", institute_type="IIIT", established=2005,
         ranking=6, city="Jabalpur", state="Madhya Pradesh",
         nirf_ranking=65, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=1.5, hostel_fees_per_year=0.12,
@@ -898,7 +898,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 7. IIITDM Kancheepuram ─────────────────────────────────────
     College(
         name="IIIT Design & Manufacturing Kancheepuram",
-        short_name="IIITDM Kancheepuram", institute_type="IIIT", established=2007,
+        short_name="IIITDM Kancheepuram", stream="engineering", institute_type="IIIT", established=2007,
         ranking=7, city="Chennai", state="Tamil Nadu",
         nirf_ranking=60, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=1.5, hostel_fees_per_year=0.12,
@@ -923,7 +923,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 8. IIIT Sri City ───────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Sri City",
-        short_name="IIIT Sri City", institute_type="IIIT", established=2013,
+        short_name="IIIT Sri City", stream="engineering", institute_type="IIIT", established=2013,
         ranking=8, city="Chittoor", state="Andhra Pradesh",
         nirf_ranking=70, naac_grade="A",
         avg_fees_lpa=2.5, hostel_fees_per_year=0.20,
@@ -944,7 +944,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 9. IIIT Lucknow ────────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Lucknow",
-        short_name="IIIT Lucknow", institute_type="IIIT", established=2015,
+        short_name="IIIT Lucknow", stream="engineering", institute_type="IIIT", established=2015,
         ranking=9, city="Lucknow", state="Uttar Pradesh",
         nirf_ranking=92,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -965,7 +965,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 10. IIIT Guwahati ──────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Guwahati",
-        short_name="IIIT Guwahati", institute_type="IIIT", established=2013,
+        short_name="IIIT Guwahati", stream="engineering", institute_type="IIIT", established=2013,
         ranking=10, city="Guwahati", state="Assam",
         nirf_ranking=80,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -986,7 +986,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 11. IIIT Vadodara ──────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Vadodara",
-        short_name="IIIT Vadodara", institute_type="IIIT", established=2013,
+        short_name="IIIT Vadodara", stream="engineering", institute_type="IIIT", established=2013,
         ranking=11, city="Vadodara", state="Gujarat",
         nirf_ranking=85,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -1007,7 +1007,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 12. IIIT Kota ──────────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Kota",
-        short_name="IIIT Kota", institute_type="IIIT", established=2013,
+        short_name="IIIT Kota", stream="engineering", institute_type="IIIT", established=2013,
         ranking=12, city="Kota", state="Rajasthan",
         nirf_ranking=90,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -1028,7 +1028,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 13. IIIT Trichy ────────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Tiruchirappalli",
-        short_name="IIIT Trichy", institute_type="IIIT", established=2013,
+        short_name="IIIT Trichy", stream="engineering", institute_type="IIIT", established=2013,
         ranking=13, city="Tiruchirappalli", state="Tamil Nadu",
         nirf_ranking=88,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -1049,7 +1049,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 14. IIIT Una ───────────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Una",
-        short_name="IIIT Una", institute_type="IIIT", established=2014,
+        short_name="IIIT Una", stream="engineering", institute_type="IIIT", established=2014,
         ranking=14, city="Una", state="Himachal Pradesh",
         nirf_ranking=95,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.15,
@@ -1073,7 +1073,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 15. IIIT Sonepat ───────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Sonepat",
-        short_name="IIIT Sonepat", institute_type="IIIT", established=2014,
+        short_name="IIIT Sonepat", stream="engineering", institute_type="IIIT", established=2014,
         ranking=15, city="Sonepat", state="Haryana",
         nirf_ranking=100,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -1094,7 +1094,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 16. IIIT Kalyani ───────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Kalyani",
-        short_name="IIIT Kalyani", institute_type="IIIT", established=2014,
+        short_name="IIIT Kalyani", stream="engineering", institute_type="IIIT", established=2014,
         ranking=16, city="Kalyani", state="West Bengal",
         nirf_ranking=105,
         avg_fees_lpa=2.0, hostel_fees_per_year=0.15,
@@ -1115,7 +1115,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 17. IIIT Dharwad ───────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Dharwad",
-        short_name="IIIT Dharwad", institute_type="IIIT", established=2015,
+        short_name="IIIT Dharwad", stream="engineering", institute_type="IIIT", established=2015,
         ranking=17, city="Dharwad", state="Karnataka",
         nirf_ranking=98,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -1136,7 +1136,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 18. IIIT Kancheepuram (PPP) ────────────────────────────────
     College(
         name="Indian Institute of Information Technology Kancheepuram",
-        short_name="IIIT Kancheepuram", institute_type="IIIT", established=2014,
+        short_name="IIIT Kancheepuram", stream="engineering", institute_type="IIIT", established=2014,
         ranking=18, city="Kancheepuram", state="Tamil Nadu",
         nirf_ranking=102,
         avg_fees_lpa=2.0, hostel_fees_per_year=0.15,
@@ -1157,7 +1157,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 19. IIITDM Kurnool ─────────────────────────────────────────
     College(
         name="IIIT Design & Manufacturing Kurnool",
-        short_name="IIITDM Kurnool", institute_type="IIIT", established=2015,
+        short_name="IIITDM Kurnool", stream="engineering", institute_type="IIIT", established=2015,
         ranking=19, city="Kurnool", state="Andhra Pradesh",
         nirf_ranking=110,
         avg_fees_lpa=2.0, hostel_fees_per_year=0.15,
@@ -1181,7 +1181,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 20. IIIT Nagpur ────────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Nagpur",
-        short_name="IIIT Nagpur", institute_type="IIIT", established=2016,
+        short_name="IIIT Nagpur", stream="engineering", institute_type="IIIT", established=2016,
         ranking=20, city="Nagpur", state="Maharashtra",
         nirf_ranking=108,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -1202,7 +1202,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 21. IIIT Pune ──────────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Pune",
-        short_name="IIIT Pune", institute_type="IIIT", established=2016,
+        short_name="IIIT Pune", stream="engineering", institute_type="IIIT", established=2016,
         ranking=21, city="Pune", state="Maharashtra",
         nirf_ranking=112,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -1223,7 +1223,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 22. IIIT Ranchi ────────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Ranchi",
-        short_name="IIIT Ranchi", institute_type="IIIT", established=2016,
+        short_name="IIIT Ranchi", stream="engineering", institute_type="IIIT", established=2016,
         ranking=22, city="Ranchi", state="Jharkhand",
         nirf_ranking=115,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.15,
@@ -1244,7 +1244,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 23. IIIT Bhagalpur ─────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Bhagalpur",
-        short_name="IIIT Bhagalpur", institute_type="IIIT", established=2017,
+        short_name="IIIT Bhagalpur", stream="engineering", institute_type="IIIT", established=2017,
         ranking=23, city="Bhagalpur", state="Bihar",
         nirf_ranking=120,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.15,
@@ -1265,7 +1265,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 24. IIIT Bhopal ───────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Bhopal",
-        short_name="IIIT Bhopal", institute_type="IIIT", established=2017,
+        short_name="IIIT Bhopal", stream="engineering", institute_type="IIIT", established=2017,
         ranking=24, city="Bhopal", state="Madhya Pradesh",
         nirf_ranking=118,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.15,
@@ -1286,7 +1286,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 25. IIIT Surat ────────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Surat",
-        short_name="IIIT Surat", institute_type="IIIT", established=2017,
+        short_name="IIIT Surat", stream="engineering", institute_type="IIIT", established=2017,
         ranking=25, city="Surat", state="Gujarat",
         nirf_ranking=116,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -1307,7 +1307,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 26. IIIT Kottayam ─────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Kottayam",
-        short_name="IIIT Kottayam", institute_type="IIIT", established=2015,
+        short_name="IIIT Kottayam", stream="engineering", institute_type="IIIT", established=2015,
         ranking=26, city="Kottayam", state="Kerala",
         nirf_ranking=125,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.18,
@@ -1328,7 +1328,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 27. IIIT Raichur ──────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Raichur",
-        short_name="IIIT Raichur", institute_type="IIIT", established=2019,
+        short_name="IIIT Raichur", stream="engineering", institute_type="IIIT", established=2019,
         ranking=27, city="Raichur", state="Karnataka",
         nirf_ranking=130,
         avg_fees_lpa=2.5, hostel_fees_per_year=0.15,
@@ -1349,7 +1349,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 28. IIIT Agartala ─────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Agartala",
-        short_name="IIIT Agartala", institute_type="IIIT", established=2018,
+        short_name="IIIT Agartala", stream="engineering", institute_type="IIIT", established=2018,
         ranking=28, city="Agartala", state="Tripura",
         nirf_ranking=135,
         avg_fees_lpa=2.0, hostel_fees_per_year=0.12,
@@ -1370,7 +1370,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 29. IIIT Manipur ──────────────────────────────────────────
     College(
         name="Indian Institute of Information Technology Senapati, Manipur",
-        short_name="IIIT Manipur", institute_type="IIIT", established=2015,
+        short_name="IIIT Manipur", stream="engineering", institute_type="IIIT", established=2015,
         ranking=29, city="Imphal", state="Manipur",
         nirf_ranking=140,
         avg_fees_lpa=2.0, hostel_fees_per_year=0.12,
@@ -1391,7 +1391,7 @@ _IIIT_DIRECTORY: list[College] = [
     # ── 30. IIIT Srikakulam ───────────────────────────────────────
     College(
         name="Rajiv Gandhi University of Knowledge Technologies IIIT Srikakulam",
-        short_name="IIIT Srikakulam", institute_type="IIIT", established=2015,
+        short_name="IIIT Srikakulam", stream="engineering", institute_type="IIIT", established=2015,
         ranking=30, city="Srikakulam", state="Andhra Pradesh",
         nirf_ranking=145,
         avg_fees_lpa=1.5, hostel_fees_per_year=0.10,
@@ -1446,7 +1446,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 1. AIIMS New Delhi ─────────────────────────────────────────
     College(
         name="All India Institute of Medical Sciences, New Delhi",
-        short_name="AIIMS Delhi", institute_type="Central", established=1956,
+        short_name="AIIMS Delhi", stream="medical", institute_type="Central", established=1956,
         ranking=1, city="New Delhi", state="Delhi",
         nirf_ranking=1, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=0.01, hostel_fees_per_year=0.005,
@@ -1482,7 +1482,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 2. PGIMER Chandigarh ───────────────────────────────────────
     College(
         name="Post Graduate Institute of Medical Education & Research",
-        short_name="PGIMER", institute_type="Central", established=1962,
+        short_name="PGIMER", stream="medical", institute_type="Central", established=1962,
         ranking=2, city="Chandigarh", state="Chandigarh",
         nirf_ranking=2, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=0.02, hostel_fees_per_year=0.005,
@@ -1508,7 +1508,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 3. CMC Vellore ─────────────────────────────────────────────
     College(
         name="Christian Medical College Vellore",
-        short_name="CMC Vellore", institute_type="Private", established=1900,
+        short_name="CMC Vellore", stream="medical", institute_type="Private", established=1900,
         ranking=3, city="Vellore", state="Tamil Nadu",
         nirf_ranking=3, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=0.35, hostel_fees_per_year=0.10,
@@ -1534,7 +1534,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 4. JIPMER Puducherry ───────────────────────────────────────
     College(
         name="Jawaharlal Institute of Postgraduate Medical Education & Research",
-        short_name="JIPMER", institute_type="Central", established=1823,
+        short_name="JIPMER", stream="medical", institute_type="Central", established=1823,
         ranking=4, city="Puducherry", state="Puducherry",
         nirf_ranking=5, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=0.02, hostel_fees_per_year=0.005,
@@ -1557,7 +1557,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 5. NIMHANS Bangalore ───────────────────────────────────────
     College(
         name="National Institute of Mental Health and Neurosciences",
-        short_name="NIMHANS", institute_type="Central", established=1974,
+        short_name="NIMHANS", stream="medical", institute_type="Central", established=1974,
         ranking=5, city="Bangalore", state="Karnataka",
         nirf_ranking=4, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=0.02, hostel_fees_per_year=0.005,
@@ -1588,7 +1588,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 6. KMC Manipal ─────────────────────────────────────────────
     College(
         name="Kasturba Medical College Manipal",
-        short_name="KMC Manipal", institute_type="Private", established=1953,
+        short_name="KMC Manipal", stream="medical", institute_type="Private", established=1953,
         ranking=6, city="Manipal", state="Karnataka",
         nirf_ranking=6, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=12.0, hostel_fees_per_year=1.0,
@@ -1614,7 +1614,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 7. BHU IMS Varanasi ────────────────────────────────────────
     College(
         name="Institute of Medical Sciences, BHU",
-        short_name="IMS BHU", institute_type="Central University", established=1916,
+        short_name="IMS BHU", stream="medical", institute_type="Central University", established=1916,
         ranking=7, city="Varanasi", state="Uttar Pradesh",
         nirf_ranking=8, naac_grade="A++", nba_accredited=True,
         avg_fees_lpa=0.05, hostel_fees_per_year=0.01,
@@ -1637,7 +1637,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 8. KGMU Lucknow ───────────────────────────────────────────
     College(
         name="King George's Medical University",
-        short_name="KGMU", institute_type="State Govt", established=1911,
+        short_name="KGMU", stream="medical", institute_type="State Govt", established=1911,
         ranking=8, city="Lucknow", state="Uttar Pradesh",
         nirf_ranking=10, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=0.08, hostel_fees_per_year=0.01,
@@ -1660,7 +1660,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 9. Maulana Azad Medical College ────────────────────────────
     College(
         name="Maulana Azad Medical College",
-        short_name="MAMC Delhi", institute_type="State Govt", established=1958,
+        short_name="MAMC Delhi", stream="medical", institute_type="State Govt", established=1958,
         ranking=9, city="New Delhi", state="Delhi",
         nirf_ranking=7, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=0.05, hostel_fees_per_year=0.01,
@@ -1686,7 +1686,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 10. Madras Medical College ─────────────────────────────────
     College(
         name="Madras Medical College",
-        short_name="MMC Chennai", institute_type="State Govt", established=1835,
+        short_name="MMC Chennai", stream="medical", institute_type="State Govt", established=1835,
         ranking=10, city="Chennai", state="Tamil Nadu",
         nirf_ranking=9, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=0.03, hostel_fees_per_year=0.005,
@@ -1709,7 +1709,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 11. Grant Medical College Mumbai ───────────────────────────
     College(
         name="Grant Government Medical College",
-        short_name="Grant MC Mumbai", institute_type="State Govt", established=1845,
+        short_name="Grant MC Mumbai", stream="medical", institute_type="State Govt", established=1845,
         ranking=11, city="Mumbai", state="Maharashtra",
         nirf_ranking=15, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=0.05, hostel_fees_per_year=0.01,
@@ -1728,7 +1728,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 12. Seth GS Medical College Mumbai ─────────────────────────
     College(
         name="Seth GS Medical College & KEM Hospital",
-        short_name="KEM Mumbai", institute_type="State Govt", established=1926,
+        short_name="KEM Mumbai", stream="medical", institute_type="State Govt", established=1926,
         ranking=12, city="Mumbai", state="Maharashtra",
         nirf_ranking=12, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=0.05, hostel_fees_per_year=0.01,
@@ -1750,7 +1750,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 13. AFMC Pune ──────────────────────────────────────────────
     College(
         name="Armed Forces Medical College",
-        short_name="AFMC Pune", institute_type="Defence", established=1948,
+        short_name="AFMC Pune", stream="medical", institute_type="Defence", established=1948,
         ranking=13, city="Pune", state="Maharashtra",
         nirf_ranking=14, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=0.01, hostel_fees_per_year=0.005,
@@ -1770,7 +1770,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 14. Lady Hardinge Medical College ──────────────────────────
     College(
         name="Lady Hardinge Medical College",
-        short_name="LHMC Delhi", institute_type="Central", established=1916,
+        short_name="LHMC Delhi", stream="medical", institute_type="Central", established=1916,
         ranking=14, city="New Delhi", state="Delhi",
         nirf_ranking=16, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=0.02, hostel_fees_per_year=0.005,
@@ -1790,7 +1790,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 15. Stanley Medical College Chennai ────────────────────────
     College(
         name="Stanley Medical College",
-        short_name="Stanley MC Chennai", institute_type="State Govt", established=1838,
+        short_name="Stanley MC Chennai", stream="medical", institute_type="State Govt", established=1838,
         ranking=15, city="Chennai", state="Tamil Nadu",
         nirf_ranking=20, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=0.03, hostel_fees_per_year=0.005,
@@ -1809,7 +1809,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 16. Govt Medical College Trivandrum ────────────────────────
     College(
         name="Government Medical College Thiruvananthapuram",
-        short_name="GMC Trivandrum", institute_type="State Govt", established=1951,
+        short_name="GMC Trivandrum", stream="medical", institute_type="State Govt", established=1951,
         ranking=16, city="Thiruvananthapuram", state="Kerala",
         nirf_ranking=22, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=0.05, hostel_fees_per_year=0.008,
@@ -1828,7 +1828,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 17. AIIMS Jodhpur ──────────────────────────────────────────
     College(
         name="All India Institute of Medical Sciences Jodhpur",
-        short_name="AIIMS Jodhpur", institute_type="Central", established=2012,
+        short_name="AIIMS Jodhpur", stream="medical", institute_type="Central", established=2012,
         ranking=17, city="Jodhpur", state="Rajasthan",
         nirf_ranking=11, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=0.01, hostel_fees_per_year=0.005,
@@ -1848,7 +1848,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 18. AIIMS Bhopal ──────────────────────────────────────────
     College(
         name="All India Institute of Medical Sciences Bhopal",
-        short_name="AIIMS Bhopal", institute_type="Central", established=2012,
+        short_name="AIIMS Bhopal", stream="medical", institute_type="Central", established=2012,
         ranking=18, city="Bhopal", state="Madhya Pradesh",
         nirf_ranking=13, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=0.01, hostel_fees_per_year=0.005,
@@ -1868,7 +1868,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 19. AIIMS Rishikesh ────────────────────────────────────────
     College(
         name="All India Institute of Medical Sciences Rishikesh",
-        short_name="AIIMS Rishikesh", institute_type="Central", established=2012,
+        short_name="AIIMS Rishikesh", stream="medical", institute_type="Central", established=2012,
         ranking=19, city="Rishikesh", state="Uttarakhand",
         nirf_ranking=17, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=0.01, hostel_fees_per_year=0.005,
@@ -1888,7 +1888,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 20. St. John's Medical College ─────────────────────────────
     College(
         name="St. John's Medical College",
-        short_name="SJMC Bangalore", institute_type="Private", established=1963,
+        short_name="SJMC Bangalore", stream="medical", institute_type="Private", established=1963,
         ranking=20, city="Bangalore", state="Karnataka",
         nirf_ranking=19, naac_grade="A+", nba_accredited=True,
         avg_fees_lpa=8.0, hostel_fees_per_year=0.80,
@@ -1908,7 +1908,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 21. Osmania Medical College ────────────────────────────────
     College(
         name="Osmania Medical College",
-        short_name="OMC Hyderabad", institute_type="State Govt", established=1846,
+        short_name="OMC Hyderabad", stream="medical", institute_type="State Govt", established=1846,
         ranking=21, city="Hyderabad", state="Telangana",
         nirf_ranking=25, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=0.05, hostel_fees_per_year=0.008,
@@ -1927,7 +1927,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 22. SCB Medical College Cuttack ────────────────────────────
     College(
         name="Shrirama Chandra Bhanja Medical College",
-        short_name="SCB Cuttack", institute_type="State Govt", established=1944,
+        short_name="SCB Cuttack", stream="medical", institute_type="State Govt", established=1944,
         ranking=22, city="Cuttack", state="Odisha",
         nirf_ranking=28, naac_grade="B++", nba_accredited=True,
         avg_fees_lpa=0.04, hostel_fees_per_year=0.005,
@@ -1946,7 +1946,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 23. JNMC Belgaum ──────────────────────────────────────────
     College(
         name="Jawaharlal Nehru Medical College Belgaum",
-        short_name="JNMC Belgaum", institute_type="Private", established=1963,
+        short_name="JNMC Belgaum", stream="medical", institute_type="Private", established=1963,
         ranking=23, city="Belgaum", state="Karnataka",
         nirf_ranking=30, naac_grade="A", nba_accredited=True,
         avg_fees_lpa=6.0, hostel_fees_per_year=0.60,
@@ -1965,7 +1965,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 24. RIMS Ranchi ────────────────────────────────────────────
     College(
         name="Rajendra Institute of Medical Sciences",
-        short_name="RIMS Ranchi", institute_type="State Govt", established=1960,
+        short_name="RIMS Ranchi", stream="medical", institute_type="State Govt", established=1960,
         ranking=24, city="Ranchi", state="Jharkhand",
         nirf_ranking=35, naac_grade="B+", nba_accredited=True,
         avg_fees_lpa=0.04, hostel_fees_per_year=0.005,
@@ -1984,7 +1984,7 @@ _MEDICAL_DIRECTORY: list[College] = [
     # ── 25. Patna Medical College ──────────────────────────────────
     College(
         name="Patna Medical College & Hospital",
-        short_name="PMCH Patna", institute_type="State Govt", established=1925,
+        short_name="PMCH Patna", stream="medical", institute_type="State Govt", established=1925,
         ranking=25, city="Patna", state="Bihar",
         nirf_ranking=38, naac_grade="B+", nba_accredited=True,
         avg_fees_lpa=0.03, hostel_fees_per_year=0.005,
@@ -2003,28 +2003,1535 @@ _MEDICAL_DIRECTORY: list[College] = [
 
 
 # ═══════════════════════════════════════════════════════════════════════════
+# LAW — TOP 10 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_LAW_COURSES = [
+    _ct("BA LLB (Hons)", 5, "CLAT / AILET", "10+2, 45%", 0, 2.5),
+    _ct("BBA LLB (Hons)", 5, "CLAT", "10+2, 45%", 0, 2.5),
+    _ct("LLM", 1, "CLAT PG", "LLB/BA LLB", 0, 1.5),
+    _ct("PhD", 4, "Entrance Test", "LLM", 0, 0.5),
+]
+
+_LAW_DIRECTORY: list[College] = [
+    College(
+        name="National Law School of India University",
+        short_name="NLSIU Bangalore", stream="law", institute_type="NLU", established=1986,
+        ranking=1, city="Bangalore", state="Karnataka",
+        nirf_ranking=1, naac_grade="A++",
+        avg_fees_lpa=2.5, hostel_fees_per_year=0.30,
+        avg_placement_lpa=16.0, median_placement_lpa=14.0,
+        highest_placement_lpa=42.0, placement_percentage=95.0,
+        top_recruiters=["AZB & Partners", "Cyril Amarchand", "Khaitan & Co", "Trilegal", "S&R Associates"],
+        total_seats=120, website="https://www.nls.ac.in",
+        course_types=_LAW_COURSES,
+        branches=[
+            _b("BA LLB (Hons)", "BA LLB", 80, 20, 0, "CLAT",
+               0, 0, 0, 0, 0, 0,
+               16.0, 14.0, 42.0, 95, ["Corporate Law", "Litigation", "IP Law"]),
+        ],
+    ),
+    College(
+        name="National Law University Delhi",
+        short_name="NLU Delhi", stream="law", institute_type="NLU", established=2008,
+        ranking=2, city="New Delhi", state="Delhi",
+        nirf_ranking=2, naac_grade="A+",
+        avg_fees_lpa=2.8, hostel_fees_per_year=0.35,
+        avg_placement_lpa=18.0, median_placement_lpa=15.0,
+        highest_placement_lpa=50.0, placement_percentage=96.0,
+        top_recruiters=["AZB & Partners", "Shardul Amarchand", "Cyril Amarchand", "Khaitan & Co", "Trilegal"],
+        total_seats=110, website="https://nludelhi.ac.in",
+        course_types=[_ct("BA LLB (Hons)", 5, "AILET", "10+2, 45%", 0, 2.8), _ct("LLM", 1, "AILET PG", "LLB", 0, 2.0)],
+        branches=[
+            _b("BA LLB (Hons)", "BA LLB", 80, 15, 0, "AILET",
+               0, 0, 0, 0, 0, 0,
+               18.0, 15.0, 50.0, 96, ["Corporate Law", "Constitutional Law", "IP Law"]),
+        ],
+    ),
+    College(
+        name="NALSAR University of Law",
+        short_name="NALSAR Hyderabad", stream="law", institute_type="NLU", established=1998,
+        ranking=3, city="Hyderabad", state="Telangana",
+        nirf_ranking=3, naac_grade="A+",
+        avg_fees_lpa=2.3, hostel_fees_per_year=0.25,
+        avg_placement_lpa=14.0, median_placement_lpa=12.0,
+        highest_placement_lpa=38.0, placement_percentage=92.0,
+        top_recruiters=["AZB & Partners", "Cyril Amarchand", "Lakshmikumaran", "S&R Associates", "Khaitan & Co"],
+        total_seats=120, website="https://www.nalsar.ac.in",
+        course_types=_LAW_COURSES,
+        branches=[
+            _b("BA LLB (Hons)", "BA LLB", 90, 20, 0, "CLAT",
+               0, 0, 0, 0, 0, 0,
+               14.0, 12.0, 38.0, 92, ["Corporate Law", "Litigation", "Criminal Law"]),
+        ],
+    ),
+    College(
+        name="West Bengal National University of Juridical Sciences",
+        short_name="NUJS Kolkata", stream="law", institute_type="NLU", established=1999,
+        ranking=4, city="Kolkata", state="West Bengal",
+        nirf_ranking=4, naac_grade="A+",
+        avg_fees_lpa=2.4, hostel_fees_per_year=0.25,
+        avg_placement_lpa=14.0, median_placement_lpa=12.0,
+        highest_placement_lpa=36.0, placement_percentage=91.0,
+        top_recruiters=["AZB & Partners", "Cyril Amarchand", "Khaitan & Co", "Shardul Amarchand", "CAM"],
+        total_seats=108, website="https://www.nujs.edu",
+        course_types=_LAW_COURSES,
+        branches=[
+            _b("BA LLB (Hons)", "BA LLB", 78, 20, 0, "CLAT",
+               0, 0, 0, 0, 0, 0,
+               14.0, 12.0, 36.0, 91, ["Corporate Law", "IP Law", "Arbitration"]),
+        ],
+    ),
+    College(
+        name="National Law Institute University",
+        short_name="NLIU Bhopal", stream="law", institute_type="NLU", established=1997,
+        ranking=5, city="Bhopal", state="Madhya Pradesh",
+        nirf_ranking=7, naac_grade="A",
+        avg_fees_lpa=1.8, hostel_fees_per_year=0.20,
+        avg_placement_lpa=10.0, median_placement_lpa=8.5,
+        highest_placement_lpa=28.0, placement_percentage=88.0,
+        top_recruiters=["Cyril Amarchand", "Khaitan & Co", "Trilegal", "AZB & Partners", "L&L Partners"],
+        total_seats=120, website="https://www.nliu.ac.in",
+        course_types=_LAW_COURSES,
+        branches=[
+            _b("BA LLB (Hons)", "BA LLB", 80, 25, 0, "CLAT",
+               0, 0, 0, 0, 0, 0,
+               10.0, 8.5, 28.0, 88, ["Corporate Law", "Criminal Law", "IP Law"]),
+        ],
+    ),
+    College(
+        name="National Law University Jodhpur",
+        short_name="NLU Jodhpur", stream="law", institute_type="NLU", established=1999,
+        ranking=6, city="Jodhpur", state="Rajasthan",
+        nirf_ranking=5, naac_grade="A",
+        avg_fees_lpa=2.0, hostel_fees_per_year=0.22,
+        avg_placement_lpa=11.0, median_placement_lpa=9.0,
+        highest_placement_lpa=30.0, placement_percentage=89.0,
+        top_recruiters=["AZB & Partners", "Khaitan & Co", "Trilegal", "Shardul Amarchand", "Cyril Amarchand"],
+        total_seats=132, website="https://www.nlujodhpur.ac.in",
+        course_types=_LAW_COURSES,
+        branches=[
+            _b("BA LLB (Hons)", "BA LLB", 82, 30, 0, "CLAT",
+               0, 0, 0, 0, 0, 0,
+               11.0, 9.0, 30.0, 89, ["Corporate Law", "Tax Law", "Arbitration"]),
+            _b("BBA LLB (Hons)", "BBA LLB", 20, 0, 0, "CLAT",
+               0, 0, 0, 0, 0, 0,
+               10.0, 8.0, 25.0, 85, ["Business Law", "Corporate Governance"]),
+        ],
+    ),
+    College(
+        name="Gujarat National Law University",
+        short_name="GNLU Gandhinagar", stream="law", institute_type="NLU", established=2003,
+        ranking=7, city="Gandhinagar", state="Gujarat",
+        nirf_ranking=6, naac_grade="A",
+        avg_fees_lpa=2.2, hostel_fees_per_year=0.25,
+        avg_placement_lpa=10.5, median_placement_lpa=8.5,
+        highest_placement_lpa=28.0, placement_percentage=87.0,
+        top_recruiters=["Cyril Amarchand", "AZB & Partners", "Khaitan & Co", "Desai & Diwanji", "Trilegal"],
+        total_seats=140, website="https://www.gnlu.ac.in",
+        course_types=_LAW_COURSES,
+        branches=[
+            _b("BA LLB (Hons)", "BA LLB", 80, 30, 0, "CLAT",
+               0, 0, 0, 0, 0, 0,
+               10.5, 8.5, 28.0, 87, ["Corporate Law", "International Law", "IP Law"]),
+            _b("BBA LLB (Hons)", "BBA LLB", 30, 0, 0, "CLAT",
+               0, 0, 0, 0, 0, 0,
+               9.5, 7.5, 22.0, 84, ["Business Law", "Banking Law"]),
+        ],
+    ),
+    College(
+        name="Symbiosis Law School Pune",
+        short_name="SLS Pune", stream="law", institute_type="Private", established=1977,
+        ranking=8, city="Pune", state="Maharashtra",
+        nirf_ranking=10, naac_grade="A+",
+        avg_fees_lpa=3.5, hostel_fees_per_year=0.40,
+        avg_placement_lpa=9.0, median_placement_lpa=7.5,
+        highest_placement_lpa=25.0, placement_percentage=85.0,
+        top_recruiters=["Cyril Amarchand", "Khaitan & Co", "AZB & Partners", "EY", "Deloitte"],
+        total_seats=300, website="https://www.symlaw.ac.in",
+        course_types=[_ct("BA LLB (Hons)", 5, "SLAT", "10+2, 45%", 0, 3.5), _ct("BBA LLB (Hons)", 5, "SLAT", "10+2, 45%", 0, 3.5)],
+        branches=[
+            _b("BA LLB (Hons)", "BA LLB", 150, 0, 0, "SLAT",
+               0, 0, 0, 0, 0, 0,
+               9.0, 7.5, 25.0, 85, ["Corporate Law", "Litigation", "IP Law"]),
+            _b("BBA LLB (Hons)", "BBA LLB", 150, 0, 0, "SLAT",
+               0, 0, 0, 0, 0, 0,
+               8.5, 7.0, 22.0, 83, ["Business Law", "Corporate Governance"]),
+        ],
+    ),
+    College(
+        name="Rajiv Gandhi National University of Law",
+        short_name="RGNUL Patiala", stream="law", institute_type="NLU", established=2006,
+        ranking=9, city="Patiala", state="Punjab",
+        nirf_ranking=9, naac_grade="A",
+        avg_fees_lpa=1.6, hostel_fees_per_year=0.18,
+        avg_placement_lpa=8.0, median_placement_lpa=6.5,
+        highest_placement_lpa=22.0, placement_percentage=82.0,
+        top_recruiters=["Cyril Amarchand", "AZB & Partners", "Trilegal", "Khaitan & Co", "Luthra"],
+        total_seats=120, website="https://www.rgnul.ac.in",
+        course_types=_LAW_COURSES,
+        branches=[
+            _b("BA LLB (Hons)", "BA LLB", 80, 25, 0, "CLAT",
+               0, 0, 0, 0, 0, 0,
+               8.0, 6.5, 22.0, 82, ["Corporate Law", "Criminal Law", "Family Law"]),
+        ],
+    ),
+    College(
+        name="National University of Advanced Legal Studies",
+        short_name="NUALS Kochi", stream="law", institute_type="NLU", established=2005,
+        ranking=10, city="Kochi", state="Kerala",
+        nirf_ranking=12, naac_grade="A",
+        avg_fees_lpa=1.5, hostel_fees_per_year=0.15,
+        avg_placement_lpa=7.5, median_placement_lpa=6.0,
+        highest_placement_lpa=20.0, placement_percentage=80.0,
+        top_recruiters=["Cyril Amarchand", "AZB & Partners", "Trilegal", "EY", "KPMG"],
+        total_seats=100, website="https://www.nuals.ac.in",
+        course_types=_LAW_COURSES,
+        branches=[
+            _b("BA LLB (Hons)", "BA LLB", 60, 25, 0, "CLAT",
+               0, 0, 0, 0, 0, 0,
+               7.5, 6.0, 20.0, 80, ["Corporate Law", "Maritime Law", "Constitutional Law"]),
+        ],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# SCIENCE & RESEARCH — TOP 10 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_SCIENCE_DIRECTORY: list[College] = [
+    College(
+        name="Indian Institute of Science",
+        short_name="IISc Bangalore", stream="science", institute_type="Central", established=1909,
+        ranking=1, city="Bangalore", state="Karnataka",
+        nirf_ranking=1, naac_grade="A++",
+        avg_fees_lpa=0.35, hostel_fees_per_year=0.10,
+        avg_placement_lpa=12.0, median_placement_lpa=10.0,
+        highest_placement_lpa=60.0, placement_percentage=85.0,
+        top_recruiters=["Google", "Microsoft", "ISRO", "DRDO", "Intel"],
+        total_seats=500, website="https://www.iisc.ac.in",
+        course_types=[_ct("BS (Research)", 4, "KVPY/JEE/NEET", "10+2, 75%", 0, 0.35), _ct("MS", 2, "GATE/JAM", "BS/B.Sc", 0, 0.35), _ct("PhD", 5, "GATE/UGC-NET", "MS/M.Sc", 0, 0.35)],
+        branches=[
+            _b("Physics", "PHY", 50, 40, 0, "KVPY/JEE", 0, 0, 0, 0, 0, 0, 12.0, 10.0, 40.0, 80, ["Quantum Physics", "Astrophysics", "Condensed Matter"]),
+            _b("Chemistry", "CHEM", 40, 35, 0, "KVPY/JEE", 0, 0, 0, 0, 0, 0, 10.0, 8.0, 30.0, 75, ["Organic", "Inorganic", "Physical Chemistry"]),
+            _b("Mathematics", "MATH", 40, 30, 0, "KVPY/JEE", 0, 0, 0, 0, 0, 0, 14.0, 12.0, 60.0, 88, ["Applied Math", "Statistics", "Data Science"]),
+            _b("Biology", "BIO", 40, 30, 0, "KVPY/NEET", 0, 0, 0, 0, 0, 0, 8.0, 6.0, 25.0, 70, ["Molecular Biology", "Genetics", "Ecology"]),
+        ],
+    ),
+    College(
+        name="Indian Institute of Science Education and Research Pune",
+        short_name="IISER Pune", stream="science", institute_type="Central", established=2006,
+        ranking=2, city="Pune", state="Maharashtra",
+        nirf_ranking=10, naac_grade="A++",
+        avg_fees_lpa=0.30, hostel_fees_per_year=0.10,
+        avg_placement_lpa=8.0, median_placement_lpa=6.0,
+        highest_placement_lpa=30.0, placement_percentage=70.0,
+        top_recruiters=["TCS", "Infosys", "ISRO", "DRDO", "Wipro"],
+        total_seats=300, website="https://www.iiserpune.ac.in",
+        course_types=[_ct("BS-MS (Dual)", 5, "IAT/KVPY/JEE", "10+2, 75%", 0, 0.30), _ct("PhD", 5, "Entrance", "MS/M.Sc", 0, 0.30)],
+        branches=[
+            _b("Physics", "PHY", 40, 20, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 8.0, 6.0, 25.0, 70, ["Quantum Physics", "Astrophysics"]),
+            _b("Chemistry", "CHEM", 40, 20, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 7.0, 5.5, 20.0, 65, ["Materials", "Organic Chemistry"]),
+            _b("Biology", "BIO", 40, 20, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 6.5, 5.0, 18.0, 62, ["Genetics", "Neuroscience"]),
+            _b("Mathematics", "MATH", 30, 15, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 10.0, 8.0, 30.0, 78, ["Pure Math", "Applied Math"]),
+        ],
+    ),
+    College(
+        name="Indian Institute of Science Education and Research Kolkata",
+        short_name="IISER Kolkata", stream="science", institute_type="Central", established=2006,
+        ranking=3, city="Kolkata", state="West Bengal",
+        nirf_ranking=15, naac_grade="A+",
+        avg_fees_lpa=0.25, hostel_fees_per_year=0.08,
+        avg_placement_lpa=7.0, median_placement_lpa=5.5,
+        highest_placement_lpa=25.0, placement_percentage=65.0,
+        top_recruiters=["TCS", "ISRO", "DRDO", "Infosys", "Cognizant"],
+        total_seats=250, website="https://www.iiserkol.ac.in",
+        course_types=[_ct("BS-MS (Dual)", 5, "IAT/KVPY/JEE", "10+2, 75%", 0, 0.25), _ct("PhD", 5, "Entrance", "MS/M.Sc", 0, 0.25)],
+        branches=[
+            _b("Physics", "PHY", 35, 15, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 7.0, 5.5, 22.0, 65, ["Condensed Matter", "Optics"]),
+            _b("Chemistry", "CHEM", 35, 15, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 6.5, 5.0, 18.0, 60, ["Chemical Biology", "Physical Chemistry"]),
+            _b("Mathematics", "MATH", 25, 10, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 9.0, 7.0, 25.0, 72, ["Statistics", "Number Theory"]),
+        ],
+    ),
+    College(
+        name="St. Stephen's College",
+        short_name="St. Stephen's Delhi", stream="science", institute_type="Private", established=1881,
+        ranking=4, city="New Delhi", state="Delhi",
+        nirf_ranking=8, naac_grade="A+",
+        avg_fees_lpa=0.15, hostel_fees_per_year=0.10,
+        avg_placement_lpa=6.0, median_placement_lpa=4.5,
+        highest_placement_lpa=20.0, placement_percentage=60.0,
+        top_recruiters=["McKinsey", "BCG", "Goldman Sachs", "Deloitte", "EY"],
+        total_seats=400, website="https://www.ststephens.edu",
+        course_types=[_ct("B.Sc (Hons)", 3, "CUET", "10+2, 85%", 0, 0.15)],
+        branches=[
+            _b("Physics", "PHY", 50, 0, 0, "CUET", 0, 0, 0, 0, 0, 0, 6.0, 4.5, 18.0, 55, ["Theoretical Physics", "Applied Physics"]),
+            _b("Chemistry", "CHEM", 40, 0, 0, "CUET", 0, 0, 0, 0, 0, 0, 5.5, 4.0, 15.0, 50, ["Organic", "Inorganic"]),
+            _b("Mathematics", "MATH", 50, 0, 0, "CUET", 0, 0, 0, 0, 0, 0, 7.0, 5.5, 20.0, 62, ["Pure Math", "Statistics"]),
+        ],
+    ),
+    College(
+        name="Presidency University",
+        short_name="Presidency Kolkata", stream="science", institute_type="State Govt", established=1817,
+        ranking=5, city="Kolkata", state="West Bengal",
+        nirf_ranking=22, naac_grade="A+",
+        avg_fees_lpa=0.05, hostel_fees_per_year=0.05,
+        avg_placement_lpa=5.0, median_placement_lpa=3.5,
+        highest_placement_lpa=15.0, placement_percentage=55.0,
+        top_recruiters=["TCS", "Infosys", "Wipro", "ISRO", "DRDO"],
+        total_seats=350, website="https://www.presiuniv.ac.in",
+        course_types=[_ct("B.Sc (Hons)", 3, "Entrance", "10+2, 75%", 0, 0.05), _ct("M.Sc", 2, "Entrance", "B.Sc", 0, 0.05)],
+        branches=[
+            _b("Physics", "PHY", 40, 20, 0, "Entrance", 0, 0, 0, 0, 0, 0, 5.0, 3.5, 14.0, 52, ["Theoretical Physics", "Nuclear Physics"]),
+            _b("Chemistry", "CHEM", 35, 15, 0, "Entrance", 0, 0, 0, 0, 0, 0, 4.5, 3.0, 12.0, 48, ["Organic", "Analytical"]),
+        ],
+    ),
+    College(
+        name="Loyola College Chennai",
+        short_name="Loyola Chennai", stream="science", institute_type="Private", established=1925,
+        ranking=6, city="Chennai", state="Tamil Nadu",
+        nirf_ranking=12, naac_grade="A++",
+        avg_fees_lpa=0.20, hostel_fees_per_year=0.08,
+        avg_placement_lpa=5.5, median_placement_lpa=4.0,
+        highest_placement_lpa=16.0, placement_percentage=58.0,
+        top_recruiters=["TCS", "Infosys", "Wipro", "Cognizant", "HCL"],
+        total_seats=500, website="https://www.loyolacollege.edu",
+        course_types=[_ct("B.Sc", 3, "Merit", "10+2, 75%", 0, 0.20), _ct("M.Sc", 2, "Entrance", "B.Sc", 0, 0.20)],
+        branches=[
+            _b("Physics", "PHY", 60, 20, 0, "Merit", 0, 0, 0, 0, 0, 0, 5.5, 4.0, 16.0, 58, ["Applied Physics", "Electronics"]),
+            _b("Chemistry", "CHEM", 50, 15, 0, "Merit", 0, 0, 0, 0, 0, 0, 5.0, 3.5, 14.0, 55, ["Organic", "Polymer Chemistry"]),
+        ],
+    ),
+    College(
+        name="IISER Mohali",
+        short_name="IISER Mohali", stream="science", institute_type="Central", established=2007,
+        ranking=7, city="Mohali", state="Punjab",
+        nirf_ranking=18, naac_grade="A+",
+        avg_fees_lpa=0.25, hostel_fees_per_year=0.08,
+        avg_placement_lpa=7.0, median_placement_lpa=5.5,
+        highest_placement_lpa=22.0, placement_percentage=65.0,
+        top_recruiters=["TCS", "ISRO", "DRDO", "Infosys", "Wipro"],
+        total_seats=200, website="https://www.iisermohali.ac.in",
+        course_types=[_ct("BS-MS (Dual)", 5, "IAT/KVPY/JEE", "10+2, 75%", 0, 0.25)],
+        branches=[
+            _b("Physics", "PHY", 30, 10, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 7.0, 5.5, 22.0, 65, ["Quantum", "Photonics"]),
+            _b("Chemistry", "CHEM", 25, 10, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 6.0, 4.5, 18.0, 60, ["Materials", "Catalysis"]),
+            _b("Biology", "BIO", 25, 10, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 5.5, 4.0, 15.0, 55, ["Immunology", "Structural Biology"]),
+        ],
+    ),
+    College(
+        name="IISER Bhopal",
+        short_name="IISER Bhopal", stream="science", institute_type="Central", established=2008,
+        ranking=8, city="Bhopal", state="Madhya Pradesh",
+        nirf_ranking=20, naac_grade="A+",
+        avg_fees_lpa=0.25, hostel_fees_per_year=0.08,
+        avg_placement_lpa=6.5, median_placement_lpa=5.0,
+        highest_placement_lpa=20.0, placement_percentage=62.0,
+        top_recruiters=["TCS", "ISRO", "Infosys", "Wipro", "DRDO"],
+        total_seats=200, website="https://www.iiserb.ac.in",
+        course_types=[_ct("BS-MS (Dual)", 5, "IAT/KVPY/JEE", "10+2, 75%", 0, 0.25)],
+        branches=[
+            _b("Physics", "PHY", 30, 10, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 6.5, 5.0, 20.0, 62, ["Astrophysics", "Condensed Matter"]),
+            _b("Chemistry", "CHEM", 25, 10, 0, "IAT/KVPY", 0, 0, 0, 0, 0, 0, 5.5, 4.0, 16.0, 58, ["Organic", "Materials Science"]),
+        ],
+    ),
+    College(
+        name="Chennai Mathematical Institute",
+        short_name="CMI Chennai", stream="science", institute_type="Private", established=1989,
+        ranking=9, city="Chennai", state="Tamil Nadu",
+        nirf_ranking=25,
+        avg_fees_lpa=0.15, hostel_fees_per_year=0.08,
+        avg_placement_lpa=12.0, median_placement_lpa=10.0,
+        highest_placement_lpa=50.0, placement_percentage=82.0,
+        top_recruiters=["Google", "Microsoft", "Goldman Sachs", "Morgan Stanley", "DE Shaw"],
+        total_seats=80, website="https://www.cmi.ac.in",
+        course_types=[_ct("B.Sc (Hons)", 3, "CMI Entrance", "10+2, 75%", 0, 0.15), _ct("M.Sc", 2, "CMI Entrance", "B.Sc/B.Math", 0, 0.15)],
+        branches=[
+            _b("Mathematics", "MATH", 35, 20, 0, "CMI Entrance", 0, 0, 0, 0, 0, 0, 14.0, 12.0, 50.0, 85, ["Pure Math", "Data Science", "CS Theory"]),
+            _b("Computer Science", "CS", 25, 0, 0, "CMI Entrance", 0, 0, 0, 0, 0, 0, 16.0, 14.0, 50.0, 90, ["Algorithms", "ML", "Theory"]),
+        ],
+    ),
+    College(
+        name="Indian Statistical Institute",
+        short_name="ISI Kolkata", stream="science", institute_type="Central", established=1931,
+        ranking=10, city="Kolkata", state="West Bengal",
+        nirf_ranking=28,
+        avg_fees_lpa=0.10, hostel_fees_per_year=0.05,
+        avg_placement_lpa=14.0, median_placement_lpa=12.0,
+        highest_placement_lpa=55.0, placement_percentage=88.0,
+        top_recruiters=["Google", "Microsoft", "Goldman Sachs", "Amazon", "DE Shaw"],
+        total_seats=100, website="https://www.isical.ac.in",
+        course_types=[_ct("B.Stat (Hons)", 3, "ISI Entrance", "10+2, 80%", 0, 0.10), _ct("B.Math (Hons)", 3, "ISI Entrance", "10+2, 80%", 0, 0.10), _ct("M.Stat", 2, "ISI Entrance", "B.Stat/B.Sc", 0, 0.10)],
+        branches=[
+            _b("Statistics", "STAT", 35, 25, 0, "ISI Entrance", 0, 0, 0, 0, 0, 0, 16.0, 14.0, 55.0, 90, ["Data Science", "Machine Learning", "Actuarial"]),
+            _b("Mathematics", "MATH", 30, 15, 0, "ISI Entrance", 0, 0, 0, 0, 0, 0, 12.0, 10.0, 45.0, 85, ["Pure Math", "Applied Math"]),
+        ],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# COMMERCE, FINANCE & BUSINESS — TOP 10 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_COMMERCE_DIRECTORY: list[College] = [
+    College(
+        name="Indian Institute of Management Ahmedabad",
+        short_name="IIM Ahmedabad", stream="commerce", institute_type="Central", established=1961,
+        ranking=1, city="Ahmedabad", state="Gujarat",
+        nirf_ranking=1, naac_grade="A++",
+        avg_fees_lpa=11.0, hostel_fees_per_year=0.50,
+        avg_placement_lpa=32.0, median_placement_lpa=28.0,
+        highest_placement_lpa=80.0, placement_percentage=100.0,
+        top_recruiters=["McKinsey", "BCG", "Bain", "Goldman Sachs", "Amazon"],
+        total_seats=400, website="https://www.iima.ac.in",
+        course_types=[_ct("MBA (PGP)", 2, "CAT", "Graduate, 60%", 0, 11.0), _ct("PhD", 5, "CAT/GMAT", "PGP/MBA", 0, 0.5)],
+        branches=[
+            _b("Management", "MBA", 400, 0, 0, "CAT", 0, 0, 0, 0, 0, 0, 32.0, 28.0, 80.0, 100, ["Finance", "Marketing", "Strategy"]),
+        ],
+    ),
+    College(
+        name="Indian Institute of Management Bangalore",
+        short_name="IIM Bangalore", stream="commerce", institute_type="Central", established=1973,
+        ranking=2, city="Bangalore", state="Karnataka",
+        nirf_ranking=2, naac_grade="A++",
+        avg_fees_lpa=12.0, hostel_fees_per_year=0.50,
+        avg_placement_lpa=34.0, median_placement_lpa=30.0,
+        highest_placement_lpa=85.0, placement_percentage=100.0,
+        top_recruiters=["McKinsey", "BCG", "Google", "Amazon", "Goldman Sachs"],
+        total_seats=400, website="https://www.iimb.ac.in",
+        course_types=[_ct("MBA (PGP)", 2, "CAT", "Graduate, 60%", 0, 12.0)],
+        branches=[
+            _b("Management", "MBA", 400, 0, 0, "CAT", 0, 0, 0, 0, 0, 0, 34.0, 30.0, 85.0, 100, ["Finance", "Marketing", "Analytics"]),
+        ],
+    ),
+    College(
+        name="Indian Institute of Management Calcutta",
+        short_name="IIM Calcutta", stream="commerce", institute_type="Central", established=1961,
+        ranking=3, city="Kolkata", state="West Bengal",
+        nirf_ranking=3, naac_grade="A++",
+        avg_fees_lpa=10.5, hostel_fees_per_year=0.45,
+        avg_placement_lpa=30.0, median_placement_lpa=26.0,
+        highest_placement_lpa=75.0, placement_percentage=100.0,
+        top_recruiters=["McKinsey", "BCG", "Goldman Sachs", "JP Morgan", "Bain"],
+        total_seats=480, website="https://www.iimcal.ac.in",
+        course_types=[_ct("MBA (PGDM)", 2, "CAT", "Graduate, 60%", 0, 10.5)],
+        branches=[
+            _b("Management", "MBA", 480, 0, 0, "CAT", 0, 0, 0, 0, 0, 0, 30.0, 26.0, 75.0, 100, ["Finance", "Consulting", "Marketing"]),
+        ],
+    ),
+    College(
+        name="Shri Ram College of Commerce",
+        short_name="SRCC Delhi", stream="commerce", institute_type="Central University", established=1926,
+        ranking=4, city="New Delhi", state="Delhi",
+        nirf_ranking=5, naac_grade="A++",
+        avg_fees_lpa=0.10, hostel_fees_per_year=0.08,
+        avg_placement_lpa=12.0, median_placement_lpa=10.0,
+        highest_placement_lpa=35.0, placement_percentage=85.0,
+        top_recruiters=["Deloitte", "EY", "KPMG", "PwC", "Goldman Sachs"],
+        total_seats=600, website="https://www.srcc.edu",
+        course_types=[_ct("B.Com (Hons)", 3, "CUET", "10+2 Commerce, 90%", 0, 0.10)],
+        branches=[
+            _b("Commerce", "BCOM", 300, 0, 0, "CUET", 0, 0, 0, 0, 0, 0, 12.0, 10.0, 35.0, 85, ["Accounting", "Finance", "Economics"]),
+        ],
+    ),
+    College(
+        name="Indian School of Business",
+        short_name="ISB Hyderabad", stream="commerce", institute_type="Private", established=2001,
+        ranking=5, city="Hyderabad", state="Telangana",
+        nirf_ranking=4, naac_grade="A+",
+        avg_fees_lpa=18.0, hostel_fees_per_year=1.0,
+        avg_placement_lpa=34.0, median_placement_lpa=30.0,
+        highest_placement_lpa=90.0, placement_percentage=98.0,
+        top_recruiters=["McKinsey", "BCG", "Amazon", "Google", "Microsoft"],
+        total_seats=900, website="https://www.isb.edu",
+        course_types=[_ct("PGP (MBA)", 1, "GMAT/GRE", "Graduate + 2yr work exp", 0, 18.0)],
+        branches=[
+            _b("Management", "MBA", 900, 0, 0, "GMAT/GRE", 0, 0, 0, 0, 0, 0, 34.0, 30.0, 90.0, 98, ["Finance", "Strategy", "Tech Management"]),
+        ],
+    ),
+    College(
+        name="Faculty of Management Studies Delhi",
+        short_name="FMS Delhi", stream="commerce", institute_type="Central University", established=1954,
+        ranking=6, city="New Delhi", state="Delhi",
+        nirf_ranking=7, naac_grade="A+",
+        avg_fees_lpa=0.10, hostel_fees_per_year=0.05,
+        avg_placement_lpa=28.0, median_placement_lpa=24.0,
+        highest_placement_lpa=65.0, placement_percentage=100.0,
+        top_recruiters=["McKinsey", "BCG", "Goldman Sachs", "Bain", "Amazon"],
+        total_seats=220, website="https://www.fms.edu",
+        course_types=[_ct("MBA", 2, "CAT", "Graduate, 60%", 0, 0.10)],
+        branches=[
+            _b("Management", "MBA", 220, 0, 0, "CAT", 0, 0, 0, 0, 0, 0, 28.0, 24.0, 65.0, 100, ["Finance", "Marketing", "Consulting"]),
+        ],
+    ),
+    College(
+        name="XLRI Jamshedpur",
+        short_name="XLRI Jamshedpur", stream="commerce", institute_type="Private", established=1949,
+        ranking=7, city="Jamshedpur", state="Jharkhand",
+        nirf_ranking=8, naac_grade="A+",
+        avg_fees_lpa=12.5, hostel_fees_per_year=0.50,
+        avg_placement_lpa=26.0, median_placement_lpa=22.0,
+        highest_placement_lpa=60.0, placement_percentage=100.0,
+        top_recruiters=["BCG", "McKinsey", "Accenture", "Amazon", "Deloitte"],
+        total_seats=360, website="https://www.xlri.ac.in",
+        course_types=[_ct("MBA (BM)", 2, "XAT", "Graduate, 60%", 0, 12.5), _ct("MBA (HRM)", 2, "XAT", "Graduate, 60%", 0, 12.5)],
+        branches=[
+            _b("Business Management", "BM", 180, 0, 0, "XAT", 0, 0, 0, 0, 0, 0, 28.0, 24.0, 60.0, 100, ["Finance", "Marketing", "Strategy"]),
+            _b("Human Resource Mgmt", "HRM", 180, 0, 0, "XAT", 0, 0, 0, 0, 0, 0, 24.0, 20.0, 50.0, 100, ["HR", "OB", "Labour Relations"]),
+        ],
+    ),
+    College(
+        name="Narsee Monjee Institute of Management Studies",
+        short_name="NMIMS Mumbai", stream="commerce", institute_type="Deemed", established=1981,
+        ranking=8, city="Mumbai", state="Maharashtra",
+        nirf_ranking=12, naac_grade="A+",
+        avg_fees_lpa=10.0, hostel_fees_per_year=0.45,
+        avg_placement_lpa=22.0, median_placement_lpa=18.0,
+        highest_placement_lpa=50.0, placement_percentage=95.0,
+        top_recruiters=["Deloitte", "EY", "KPMG", "Amazon", "JP Morgan"],
+        total_seats=500, website="https://www.nmims.edu",
+        course_types=[_ct("MBA", 2, "NMAT", "Graduate, 60%", 0, 10.0), _ct("B.Com", 3, "Merit", "10+2, 80%", 0, 2.0)],
+        branches=[
+            _b("Management", "MBA", 300, 0, 0, "NMAT", 0, 0, 0, 0, 0, 0, 22.0, 18.0, 50.0, 95, ["Finance", "Marketing", "Analytics"]),
+            _b("Commerce", "BCOM", 200, 0, 0, "Merit", 0, 0, 0, 0, 0, 0, 8.0, 6.0, 20.0, 80, ["Accounting", "Finance"]),
+        ],
+    ),
+    College(
+        name="IIM Lucknow",
+        short_name="IIM Lucknow", stream="commerce", institute_type="Central", established=1984,
+        ranking=9, city="Lucknow", state="Uttar Pradesh",
+        nirf_ranking=6, naac_grade="A++",
+        avg_fees_lpa=10.0, hostel_fees_per_year=0.40,
+        avg_placement_lpa=28.0, median_placement_lpa=24.0,
+        highest_placement_lpa=65.0, placement_percentage=100.0,
+        top_recruiters=["BCG", "McKinsey", "Goldman Sachs", "Amazon", "Bain"],
+        total_seats=480, website="https://www.iiml.ac.in",
+        course_types=[_ct("MBA (PGP)", 2, "CAT", "Graduate, 60%", 0, 10.0)],
+        branches=[
+            _b("Management", "MBA", 480, 0, 0, "CAT", 0, 0, 0, 0, 0, 0, 28.0, 24.0, 65.0, 100, ["Finance", "Marketing", "Operations"]),
+        ],
+    ),
+    College(
+        name="Lady Shri Ram College for Women",
+        short_name="LSR Delhi", stream="commerce", institute_type="Central University", established=1956,
+        ranking=10, city="New Delhi", state="Delhi",
+        nirf_ranking=9, naac_grade="A++",
+        avg_fees_lpa=0.08, hostel_fees_per_year=0.06,
+        avg_placement_lpa=8.0, median_placement_lpa=6.0,
+        highest_placement_lpa=22.0, placement_percentage=75.0,
+        top_recruiters=["Deloitte", "EY", "KPMG", "McKinsey", "Goldman Sachs"],
+        total_seats=400, website="https://lsr.edu.in",
+        course_types=[_ct("B.Com (Hons)", 3, "CUET", "10+2, 90%", 0, 0.08), _ct("BA Economics (Hons)", 3, "CUET", "10+2, 90%", 0, 0.08)],
+        branches=[
+            _b("Commerce", "BCOM", 200, 0, 0, "CUET", 0, 0, 0, 0, 0, 0, 8.0, 6.0, 22.0, 75, ["Accounting", "Finance", "Economics"]),
+            _b("Economics", "ECO", 100, 0, 0, "CUET", 0, 0, 0, 0, 0, 0, 9.0, 7.0, 25.0, 78, ["Econometrics", "Development Economics"]),
+        ],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# EDUCATION & TEACHING — TOP 10 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_EDUCATION_DIRECTORY: list[College] = [
+    College(
+        name="National Council of Educational Research and Training",
+        short_name="NCERT Delhi", stream="education", institute_type="Central", established=1961,
+        ranking=1, city="New Delhi", state="Delhi",
+        nirf_ranking=5,
+        avg_fees_lpa=0.05, hostel_fees_per_year=0.03,
+        avg_placement_lpa=6.0, median_placement_lpa=4.5,
+        highest_placement_lpa=12.0, placement_percentage=85.0,
+        top_recruiters=["KVS", "NVS", "CBSE Schools", "State Govt Schools", "Private Schools"],
+        total_seats=200, website="https://www.ncert.nic.in",
+        course_types=[_ct("B.Ed", 2, "NCET", "Graduate, 50%", 0, 0.05), _ct("M.Ed", 2, "Entrance", "B.Ed", 0, 0.05)],
+        branches=[
+            _b("Education", "BED", 100, 50, 0, "NCET", 0, 0, 0, 0, 0, 0, 6.0, 4.5, 12.0, 85, ["Pedagogy", "Curriculum Design", "Assessment"]),
+        ],
+    ),
+    College(
+        name="Lady Shri Ram College — Education Dept",
+        short_name="LSR Education", stream="education", institute_type="Central University", established=1956,
+        ranking=2, city="New Delhi", state="Delhi",
+        nirf_ranking=8,
+        avg_fees_lpa=0.08, hostel_fees_per_year=0.06,
+        avg_placement_lpa=5.5, median_placement_lpa=4.0,
+        highest_placement_lpa=10.0, placement_percentage=80.0,
+        top_recruiters=["DPS", "KVS", "Modern School", "Shri Ram School", "Private Schools"],
+        total_seats=100, website="https://lsr.edu.in",
+        course_types=[_ct("B.El.Ed", 4, "DU Entrance", "10+2, 80%", 0, 0.08)],
+        branches=[
+            _b("Elementary Education", "BELED", 100, 0, 0, "DU Entrance", 0, 0, 0, 0, 0, 0, 5.5, 4.0, 10.0, 80, ["Primary Education", "Child Psychology"]),
+        ],
+    ),
+    College(
+        name="Tata Institute of Social Sciences",
+        short_name="TISS Mumbai", stream="education", institute_type="Deemed", established=1936,
+        ranking=3, city="Mumbai", state="Maharashtra",
+        nirf_ranking=3, naac_grade="A+",
+        avg_fees_lpa=0.40, hostel_fees_per_year=0.15,
+        avg_placement_lpa=8.0, median_placement_lpa=6.0,
+        highest_placement_lpa=20.0, placement_percentage=88.0,
+        top_recruiters=["Teach for India", "Azim Premji Foundation", "UNICEF", "World Bank", "McKinsey"],
+        total_seats=300, website="https://www.tiss.edu",
+        course_types=[_ct("MA Education", 2, "TISS-NET", "Graduate, 55%", 0, 0.40)],
+        branches=[
+            _b("Education", "MA-ED", 80, 0, 0, "TISS-NET", 0, 0, 0, 0, 0, 0, 8.0, 6.0, 20.0, 88, ["Education Policy", "EdTech", "Inclusive Education"]),
+        ],
+    ),
+    College(
+        name="Jamia Millia Islamia — Faculty of Education",
+        short_name="Jamia Education", stream="education", institute_type="Central University", established=1920,
+        ranking=4, city="New Delhi", state="Delhi",
+        nirf_ranking=6,
+        avg_fees_lpa=0.06, hostel_fees_per_year=0.04,
+        avg_placement_lpa=5.0, median_placement_lpa=3.5,
+        highest_placement_lpa=10.0, placement_percentage=78.0,
+        top_recruiters=["KVS", "NVS", "AMU Schools", "DPS", "Govt Schools"],
+        total_seats=200, website="https://www.jmi.ac.in",
+        course_types=[_ct("B.Ed", 2, "JMI Entrance", "Graduate, 50%", 0, 0.06), _ct("M.Ed", 2, "JMI Entrance", "B.Ed", 0, 0.06)],
+        branches=[
+            _b("Education", "BED", 120, 40, 0, "JMI Entrance", 0, 0, 0, 0, 0, 0, 5.0, 3.5, 10.0, 78, ["Pedagogy", "Special Education"]),
+        ],
+    ),
+    College(
+        name="Banaras Hindu University — Faculty of Education",
+        short_name="BHU Education", stream="education", institute_type="Central University", established=1916,
+        ranking=5, city="Varanasi", state="Uttar Pradesh",
+        nirf_ranking=10,
+        avg_fees_lpa=0.05, hostel_fees_per_year=0.04,
+        avg_placement_lpa=4.5, median_placement_lpa=3.5,
+        highest_placement_lpa=9.0, placement_percentage=75.0,
+        top_recruiters=["KVS", "NVS", "UP Govt Schools", "Private Schools", "CBSE Schools"],
+        total_seats=250, website="https://www.bhu.ac.in",
+        course_types=[_ct("B.Ed", 2, "BHU-PET", "Graduate, 50%", 0, 0.05), _ct("M.Ed", 2, "BHU-PET", "B.Ed", 0, 0.05)],
+        branches=[
+            _b("Education", "BED", 150, 50, 0, "BHU-PET", 0, 0, 0, 0, 0, 0, 4.5, 3.5, 9.0, 75, ["Hindi Medium Ed", "Science Ed", "Special Ed"]),
+        ],
+    ),
+    College(
+        name="Regional Institute of Education Mysore",
+        short_name="RIE Mysore", stream="education", institute_type="Central", established=1963,
+        ranking=6, city="Mysore", state="Karnataka",
+        nirf_ranking=15,
+        avg_fees_lpa=0.04, hostel_fees_per_year=0.03,
+        avg_placement_lpa=4.0, median_placement_lpa=3.0,
+        highest_placement_lpa=8.0, placement_percentage=72.0,
+        top_recruiters=["KVS", "NVS", "State Govt Schools", "CBSE Schools", "Private Schools"],
+        total_seats=300, website="https://www.riemysore.ac.in",
+        course_types=[_ct("B.Sc.B.Ed (Integrated)", 4, "NCET", "10+2, 50%", 0, 0.04), _ct("BA.B.Ed (Integrated)", 4, "NCET", "10+2, 50%", 0, 0.04)],
+        branches=[
+            _b("Education (Science)", "BSCED", 150, 0, 0, "NCET", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 8.0, 72, ["Science Education", "Math Education"]),
+            _b("Education (Arts)", "BAED", 150, 0, 0, "NCET", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 7.0, 68, ["Language Ed", "Social Science Ed"]),
+        ],
+    ),
+    College(
+        name="Azim Premji University",
+        short_name="APU Bangalore", stream="education", institute_type="Private", established=2010,
+        ranking=7, city="Bangalore", state="Karnataka",
+        nirf_ranking=18,
+        avg_fees_lpa=2.0, hostel_fees_per_year=0.30,
+        avg_placement_lpa=6.5, median_placement_lpa=5.0,
+        highest_placement_lpa=15.0, placement_percentage=82.0,
+        top_recruiters=["Teach for India", "Azim Premji Foundation", "UNICEF", "Pratham", "Room to Read"],
+        total_seats=200, website="https://azimpremjiuniversity.edu.in",
+        course_types=[_ct("MA Education", 2, "APU Entrance", "Graduate, 50%", 0, 2.0), _ct("B.Ed", 2, "APU Entrance", "Graduate, 50%", 0, 1.5)],
+        branches=[
+            _b("Education", "MA-ED", 100, 0, 0, "APU Entrance", 0, 0, 0, 0, 0, 0, 6.5, 5.0, 15.0, 82, ["Education Leadership", "Teacher Education"]),
+        ],
+    ),
+    College(
+        name="Central University of Education Delhi",
+        short_name="CIE Delhi", stream="education", institute_type="Central University", established=1947,
+        ranking=8, city="New Delhi", state="Delhi",
+        nirf_ranking=12,
+        avg_fees_lpa=0.05, hostel_fees_per_year=0.03,
+        avg_placement_lpa=4.5, median_placement_lpa=3.5,
+        highest_placement_lpa=9.0, placement_percentage=76.0,
+        top_recruiters=["KVS", "NVS", "DPS", "Modern School", "CBSE Schools"],
+        total_seats=200, website="https://cie.du.ac.in",
+        course_types=[_ct("B.Ed", 2, "DU Entrance", "Graduate, 50%", 0, 0.05), _ct("M.Ed", 2, "DU Entrance", "B.Ed", 0, 0.05)],
+        branches=[
+            _b("Education", "BED", 120, 40, 0, "DU Entrance", 0, 0, 0, 0, 0, 0, 4.5, 3.5, 9.0, 76, ["Pedagogy", "Assessment", "EdTech"]),
+        ],
+    ),
+    College(
+        name="MS University Baroda — Faculty of Education",
+        short_name="MSU Education", stream="education", institute_type="State Govt", established=1949,
+        ranking=9, city="Vadodara", state="Gujarat",
+        nirf_ranking=20,
+        avg_fees_lpa=0.04, hostel_fees_per_year=0.03,
+        avg_placement_lpa=3.5, median_placement_lpa=2.5,
+        highest_placement_lpa=7.0, placement_percentage=70.0,
+        top_recruiters=["Gujarat Govt Schools", "KVS", "Private Schools", "CBSE Schools", "GSEB Schools"],
+        total_seats=200, website="https://www.msubaroda.ac.in",
+        course_types=[_ct("B.Ed", 2, "Entrance", "Graduate, 50%", 0, 0.04)],
+        branches=[
+            _b("Education", "BED", 120, 40, 0, "Entrance", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 7.0, 70, ["Primary Ed", "Secondary Ed"]),
+        ],
+    ),
+    College(
+        name="University of Delhi — Dept of Education",
+        short_name="DU Education", stream="education", institute_type="Central University", established=1922,
+        ranking=10, city="New Delhi", state="Delhi",
+        nirf_ranking=8,
+        avg_fees_lpa=0.05, hostel_fees_per_year=0.04,
+        avg_placement_lpa=5.0, median_placement_lpa=4.0,
+        highest_placement_lpa=10.0, placement_percentage=78.0,
+        top_recruiters=["KVS", "NVS", "DPS", "Modern School", "Sanskriti School"],
+        total_seats=300, website="https://www.du.ac.in",
+        course_types=[_ct("B.Ed", 2, "DU Entrance", "Graduate, 50%", 0, 0.05), _ct("M.Ed", 2, "DU Entrance", "B.Ed", 0, 0.05)],
+        branches=[
+            _b("Education", "BED", 200, 50, 0, "DU Entrance", 0, 0, 0, 0, 0, 0, 5.0, 4.0, 10.0, 78, ["Pedagogy", "Special Education", "Assessment"]),
+        ],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# DESIGN & CREATIVE ARTS — TOP 10 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_DESIGN_DIRECTORY: list[College] = [
+    College(
+        name="National Institute of Design Ahmedabad",
+        short_name="NID Ahmedabad", stream="design", institute_type="Central", established=1961,
+        ranking=1, city="Ahmedabad", state="Gujarat",
+        nirf_ranking=1,
+        avg_fees_lpa=3.5, hostel_fees_per_year=0.30,
+        avg_placement_lpa=12.0, median_placement_lpa=10.0,
+        highest_placement_lpa=35.0, placement_percentage=90.0,
+        top_recruiters=["Google", "Apple", "Samsung", "Titan", "Tata Elxsi"],
+        total_seats=200, website="https://www.nid.edu",
+        course_types=[_ct("B.Des", 4, "NID DAT", "10+2, 50%", 0, 3.5), _ct("M.Des", 2.5, "NID DAT", "Graduate", 0, 3.5)],
+        branches=[
+            _b("Industrial Design", "ID", 30, 15, 0, "NID DAT", 0, 0, 0, 0, 0, 0, 14.0, 12.0, 35.0, 92, ["Product Design", "Furniture", "Automotive"]),
+            _b("Communication Design", "CD", 30, 15, 0, "NID DAT", 0, 0, 0, 0, 0, 0, 12.0, 10.0, 30.0, 90, ["Graphic Design", "Animation", "Film"]),
+            _b("Textile Design", "TD", 20, 10, 0, "NID DAT", 0, 0, 0, 0, 0, 0, 8.0, 6.0, 20.0, 85, ["Apparel", "Textile", "Fashion"]),
+        ],
+    ),
+    College(
+        name="Indian Institute of Technology Bombay — IDC",
+        short_name="IIT Bombay IDC", stream="design", institute_type="IIT", established=1969,
+        ranking=2, city="Mumbai", state="Maharashtra",
+        nirf_ranking=3,
+        avg_fees_lpa=2.5, hostel_fees_per_year=0.20,
+        avg_placement_lpa=16.0, median_placement_lpa=14.0,
+        highest_placement_lpa=45.0, placement_percentage=95.0,
+        top_recruiters=["Google", "Microsoft", "Samsung", "Tata Elxsi", "Flipkart"],
+        total_seats=80, website="https://www.idc.iitb.ac.in",
+        course_types=[_ct("M.Des", 2, "CEED", "B.Tech/B.Des/B.Arch", 0, 2.5)],
+        branches=[
+            _b("Industrial Design", "ID", 0, 25, 0, "CEED", 0, 0, 0, 0, 0, 0, 16.0, 14.0, 45.0, 95, ["Product Design", "UX/UI", "Interaction Design"]),
+            _b("Visual Communication", "VC", 0, 20, 0, "CEED", 0, 0, 0, 0, 0, 0, 14.0, 12.0, 38.0, 92, ["Graphic Design", "Motion Graphics"]),
+        ],
+    ),
+    College(
+        name="National Institute of Fashion Technology Delhi",
+        short_name="NIFT Delhi", stream="design", institute_type="Central", established=1986,
+        ranking=3, city="New Delhi", state="Delhi",
+        nirf_ranking=2,
+        avg_fees_lpa=4.0, hostel_fees_per_year=0.35,
+        avg_placement_lpa=8.0, median_placement_lpa=6.5,
+        highest_placement_lpa=25.0, placement_percentage=85.0,
+        top_recruiters=["H&M", "Zara", "Aditya Birla Fashion", "Raymond", "Titan"],
+        total_seats=300, website="https://www.nift.ac.in",
+        course_types=[_ct("B.Des", 4, "NIFT Entrance", "10+2, 50%", 0, 4.0), _ct("M.Des", 2, "NIFT Entrance", "B.Des/Graduate", 0, 4.0)],
+        branches=[
+            _b("Fashion Design", "FD", 60, 15, 0, "NIFT", 0, 0, 0, 0, 0, 0, 8.0, 6.5, 25.0, 85, ["Fashion", "Textile", "Luxury"]),
+            _b("Accessory Design", "AD", 30, 0, 0, "NIFT", 0, 0, 0, 0, 0, 0, 7.0, 5.5, 18.0, 80, ["Jewellery", "Leather", "Accessories"]),
+            _b("Textile Design", "TD", 30, 10, 0, "NIFT", 0, 0, 0, 0, 0, 0, 7.5, 6.0, 20.0, 82, ["Weaving", "Print", "Surface"]),
+        ],
+    ),
+    College(
+        name="Srishti Manipal Institute of Art Design & Technology",
+        short_name="Srishti Manipal", stream="design", institute_type="Private", established=1996,
+        ranking=4, city="Bangalore", state="Karnataka",
+        nirf_ranking=8,
+        avg_fees_lpa=5.0, hostel_fees_per_year=0.40,
+        avg_placement_lpa=6.0, median_placement_lpa=4.5,
+        highest_placement_lpa=18.0, placement_percentage=75.0,
+        top_recruiters=["Infosys", "Wipro", "Titan", "Samsung", "Tata Elxsi"],
+        total_seats=400, website="https://www.srishtimanipalinstitute.in",
+        course_types=[_ct("B.Des", 4, "SMIAT Entrance", "10+2, 50%", 0, 5.0)],
+        branches=[
+            _b("Human-Centered Design", "HCD", 60, 0, 0, "SMIAT", 0, 0, 0, 0, 0, 0, 6.0, 4.5, 18.0, 75, ["UX/UI", "Service Design", "Interaction"]),
+            _b("Visual Communication", "VC", 60, 0, 0, "SMIAT", 0, 0, 0, 0, 0, 0, 5.5, 4.0, 15.0, 72, ["Graphic Design", "Branding"]),
+        ],
+    ),
+    College(
+        name="MIT Institute of Design Pune",
+        short_name="MIT ID Pune", stream="design", institute_type="Private", established=2006,
+        ranking=5, city="Pune", state="Maharashtra",
+        nirf_ranking=10,
+        avg_fees_lpa=4.5, hostel_fees_per_year=0.35,
+        avg_placement_lpa=6.0, median_placement_lpa=4.5,
+        highest_placement_lpa=16.0, placement_percentage=78.0,
+        top_recruiters=["Infosys", "Wipro", "Tata Elxsi", "Asian Paints", "Godrej"],
+        total_seats=300, website="https://www.mitid.edu.in",
+        course_types=[_ct("B.Des", 4, "MIT DAT", "10+2, 50%", 0, 4.5)],
+        branches=[
+            _b("Industrial Design", "ID", 40, 0, 0, "MIT DAT", 0, 0, 0, 0, 0, 0, 6.5, 5.0, 16.0, 78, ["Product Design", "Furniture"]),
+            _b("Communication Design", "CD", 40, 0, 0, "MIT DAT", 0, 0, 0, 0, 0, 0, 6.0, 4.5, 14.0, 75, ["Graphic Design", "UI/UX"]),
+        ],
+    ),
+    College(
+        name="Indian Institute of Technology Hyderabad — Design",
+        short_name="IIT Hyderabad Design", stream="design", institute_type="IIT", established=2008,
+        ranking=6, city="Hyderabad", state="Telangana",
+        nirf_ranking=5,
+        avg_fees_lpa=2.5, hostel_fees_per_year=0.20,
+        avg_placement_lpa=14.0, median_placement_lpa=12.0,
+        highest_placement_lpa=40.0, placement_percentage=92.0,
+        top_recruiters=["Samsung", "Google", "Microsoft", "Tata Elxsi", "Flipkart"],
+        total_seats=50, website="https://www.iith.ac.in",
+        course_types=[_ct("B.Des", 4, "UCEED", "10+2, 75%", 0, 2.5), _ct("M.Des", 2, "CEED", "B.Des/B.Tech", 0, 2.5)],
+        branches=[
+            _b("Design", "DES", 25, 15, 0, "UCEED/CEED", 0, 0, 0, 0, 0, 0, 14.0, 12.0, 40.0, 92, ["UX/UI", "Product Design", "Interaction"]),
+        ],
+    ),
+    College(
+        name="National Institute of Design Gandhinagar",
+        short_name="NID Gandhinagar", stream="design", institute_type="Central", established=2014,
+        ranking=7, city="Gandhinagar", state="Gujarat",
+        nirf_ranking=6,
+        avg_fees_lpa=3.5, hostel_fees_per_year=0.25,
+        avg_placement_lpa=10.0, median_placement_lpa=8.0,
+        highest_placement_lpa=28.0, placement_percentage=85.0,
+        top_recruiters=["Titan", "Samsung", "Tata Elxsi", "Asian Paints", "Godrej"],
+        total_seats=100, website="https://www.nid.edu",
+        course_types=[_ct("B.Des", 4, "NID DAT", "10+2, 50%", 0, 3.5)],
+        branches=[
+            _b("Industrial Design", "ID", 25, 0, 0, "NID DAT", 0, 0, 0, 0, 0, 0, 10.0, 8.0, 28.0, 85, ["Product Design", "Strategic Design"]),
+            _b("Communication Design", "CD", 25, 0, 0, "NID DAT", 0, 0, 0, 0, 0, 0, 9.0, 7.0, 24.0, 82, ["Animation", "Film", "Graphic Design"]),
+        ],
+    ),
+    College(
+        name="Pearl Academy Delhi",
+        short_name="Pearl Academy", stream="design", institute_type="Private", established=1993,
+        ranking=8, city="New Delhi", state="Delhi",
+        nirf_ranking=15,
+        avg_fees_lpa=5.5, hostel_fees_per_year=0.40,
+        avg_placement_lpa=5.0, median_placement_lpa=3.5,
+        highest_placement_lpa=14.0, placement_percentage=72.0,
+        top_recruiters=["H&M", "Zara", "Fabindia", "Raymond", "Lifestyle"],
+        total_seats=500, website="https://www.pearlacademy.com",
+        course_types=[_ct("B.Des", 4, "Pearl Entrance", "10+2, 50%", 0, 5.5)],
+        branches=[
+            _b("Fashion Design", "FD", 100, 0, 0, "Pearl", 0, 0, 0, 0, 0, 0, 5.0, 3.5, 14.0, 72, ["Fashion", "Luxury", "Styling"]),
+            _b("Interior Design", "INT", 60, 0, 0, "Pearl", 0, 0, 0, 0, 0, 0, 4.5, 3.0, 12.0, 68, ["Residential", "Commercial", "Hospitality"]),
+        ],
+    ),
+    College(
+        name="Symbiosis Institute of Design",
+        short_name="SID Pune", stream="design", institute_type="Deemed", established=2004,
+        ranking=9, city="Pune", state="Maharashtra",
+        nirf_ranking=12,
+        avg_fees_lpa=4.0, hostel_fees_per_year=0.35,
+        avg_placement_lpa=6.0, median_placement_lpa=4.5,
+        highest_placement_lpa=15.0, placement_percentage=78.0,
+        top_recruiters=["Infosys", "Wipro", "Asian Paints", "Titan", "Godrej"],
+        total_seats=200, website="https://www.sid.edu.in",
+        course_types=[_ct("B.Des", 4, "SET", "10+2, 50%", 0, 4.0)],
+        branches=[
+            _b("Communication Design", "CD", 40, 0, 0, "SET", 0, 0, 0, 0, 0, 0, 6.0, 4.5, 15.0, 78, ["Graphic Design", "UX/UI"]),
+            _b("Product Design", "PD", 30, 0, 0, "SET", 0, 0, 0, 0, 0, 0, 5.5, 4.0, 14.0, 75, ["Industrial Design", "Furniture"]),
+        ],
+    ),
+    College(
+        name="Lovely Professional University — School of Design",
+        short_name="LPU Design", stream="design", institute_type="Private", established=2005,
+        ranking=10, city="Phagwara", state="Punjab",
+        nirf_ranking=20,
+        avg_fees_lpa=2.0, hostel_fees_per_year=0.30,
+        avg_placement_lpa=4.0, median_placement_lpa=3.0,
+        highest_placement_lpa=12.0, placement_percentage=70.0,
+        top_recruiters=["Infosys", "Wipro", "TCS", "HCL", "Asian Paints"],
+        total_seats=300, website="https://www.lpu.in",
+        course_types=[_ct("B.Des", 4, "LPUNEST", "10+2, 50%", 0, 2.0)],
+        branches=[
+            _b("Product Design", "PD", 50, 0, 0, "LPUNEST", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 12.0, 70, ["Industrial Design", "UX"]),
+            _b("Fashion Design", "FD", 50, 0, 0, "LPUNEST", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 10.0, 65, ["Fashion", "Textile"]),
+        ],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# ARTS & HUMANITIES — TOP 10 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_ARTS_DIRECTORY: list[College] = [
+    College(
+        name="Jawaharlal Nehru University",
+        short_name="JNU Delhi", stream="arts", institute_type="Central University", established=1969,
+        ranking=1, city="New Delhi", state="Delhi",
+        nirf_ranking=2, naac_grade="A++",
+        avg_fees_lpa=0.03, hostel_fees_per_year=0.02,
+        avg_placement_lpa=6.0, median_placement_lpa=4.5,
+        highest_placement_lpa=18.0, placement_percentage=60.0,
+        top_recruiters=["UPSC", "UGC", "UN Agencies", "Media Houses", "Think Tanks"],
+        total_seats=1500, website="https://www.jnu.ac.in",
+        course_types=[_ct("BA (Hons)", 3, "CUET/JNU Entrance", "10+2, 50%", 0, 0.03), _ct("MA", 2, "JNU Entrance", "BA", 0, 0.03)],
+        branches=[
+            _b("International Relations", "IR", 60, 40, 0, "JNU Entrance", 0, 0, 0, 0, 0, 0, 7.0, 5.0, 18.0, 62, ["Diplomacy", "Foreign Policy", "Security Studies"]),
+            _b("Political Science", "POL", 50, 35, 0, "JNU Entrance", 0, 0, 0, 0, 0, 0, 5.5, 4.0, 15.0, 55, ["Governance", "Public Policy"]),
+            _b("History", "HIST", 40, 30, 0, "JNU Entrance", 0, 0, 0, 0, 0, 0, 4.5, 3.0, 12.0, 48, ["Modern History", "Ancient History"]),
+            _b("Languages", "LANG", 80, 40, 0, "JNU Entrance", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 10.0, 45, ["Hindi", "English", "Foreign Languages"]),
+        ],
+    ),
+    College(
+        name="University of Delhi — Arts Faculty",
+        short_name="DU Arts", stream="arts", institute_type="Central University", established=1922,
+        ranking=2, city="New Delhi", state="Delhi",
+        nirf_ranking=1, naac_grade="A+",
+        avg_fees_lpa=0.05, hostel_fees_per_year=0.04,
+        avg_placement_lpa=5.0, median_placement_lpa=3.5,
+        highest_placement_lpa=15.0, placement_percentage=55.0,
+        top_recruiters=["Media Houses", "Publishing", "UPSC", "NGOs", "Ed-Tech"],
+        total_seats=3000, website="https://www.du.ac.in",
+        course_types=[_ct("BA (Hons)", 3, "CUET", "10+2, 80%", 0, 0.05), _ct("MA", 2, "CUET", "BA", 0, 0.05)],
+        branches=[
+            _b("English", "ENG", 200, 80, 0, "CUET", 0, 0, 0, 0, 0, 0, 5.0, 3.5, 15.0, 55, ["Literature", "Creative Writing", "Media"]),
+            _b("History", "HIST", 150, 60, 0, "CUET", 0, 0, 0, 0, 0, 0, 4.5, 3.0, 12.0, 50, ["Modern", "Medieval", "Ancient"]),
+            _b("Political Science", "POL", 200, 80, 0, "CUET", 0, 0, 0, 0, 0, 0, 5.0, 3.5, 14.0, 52, ["Indian Politics", "IR", "Public Policy"]),
+            _b("Sociology", "SOC", 100, 40, 0, "CUET", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 10.0, 48, ["Urban Sociology", "Gender Studies"]),
+        ],
+    ),
+    College(
+        name="Jadavpur University — Arts Faculty",
+        short_name="JU Arts Kolkata", stream="arts", institute_type="State Govt", established=1955,
+        ranking=3, city="Kolkata", state="West Bengal",
+        nirf_ranking=8, naac_grade="A+",
+        avg_fees_lpa=0.02, hostel_fees_per_year=0.02,
+        avg_placement_lpa=4.0, median_placement_lpa=3.0,
+        highest_placement_lpa=12.0, placement_percentage=50.0,
+        top_recruiters=["Media Houses", "Publishing", "TCS", "Infosys", "NGOs"],
+        total_seats=800, website="https://www.jaduniv.edu.in",
+        course_types=[_ct("BA (Hons)", 3, "Entrance", "10+2, 60%", 0, 0.02)],
+        branches=[
+            _b("English", "ENG", 80, 30, 0, "Entrance", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 12.0, 50, ["Comparative Lit", "Cultural Studies"]),
+            _b("Comparative Literature", "CL", 40, 20, 0, "Entrance", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 10.0, 45, ["World Literature", "Film Studies"]),
+        ],
+    ),
+    College(
+        name="Ashoka University",
+        short_name="Ashoka Sonipat", stream="arts", institute_type="Private", established=2014,
+        ranking=4, city="Sonipat", state="Haryana",
+        nirf_ranking=15,
+        avg_fees_lpa=7.0, hostel_fees_per_year=0.60,
+        avg_placement_lpa=10.0, median_placement_lpa=8.0,
+        highest_placement_lpa=30.0, placement_percentage=82.0,
+        top_recruiters=["McKinsey", "BCG", "Goldman Sachs", "Deloitte", "Google"],
+        total_seats=400, website="https://www.ashoka.edu.in",
+        course_types=[_ct("BA (Hons)", 3, "Ashoka Entrance", "10+2, 80%", 0, 7.0), _ct("MA", 2, "Ashoka Entrance", "BA", 0, 7.0)],
+        branches=[
+            _b("Economics", "ECO", 80, 20, 0, "Ashoka", 0, 0, 0, 0, 0, 0, 12.0, 10.0, 30.0, 85, ["Econometrics", "Policy", "Finance"]),
+            _b("Political Science", "POL", 50, 15, 0, "Ashoka", 0, 0, 0, 0, 0, 0, 8.0, 6.0, 22.0, 78, ["IR", "Public Policy", "Governance"]),
+            _b("English", "ENG", 40, 10, 0, "Ashoka", 0, 0, 0, 0, 0, 0, 7.0, 5.0, 18.0, 72, ["Literature", "Creative Writing"]),
+        ],
+    ),
+    College(
+        name="Presidency University — Arts",
+        short_name="Presidency Arts", stream="arts", institute_type="State Govt", established=1817,
+        ranking=5, city="Kolkata", state="West Bengal",
+        nirf_ranking=12,
+        avg_fees_lpa=0.02, hostel_fees_per_year=0.02,
+        avg_placement_lpa=3.5, median_placement_lpa=2.5,
+        highest_placement_lpa=10.0, placement_percentage=45.0,
+        top_recruiters=["Media", "Publishing", "NGOs", "Govt", "Ed-Tech"],
+        total_seats=500, website="https://www.presiuniv.ac.in",
+        course_types=[_ct("BA (Hons)", 3, "Entrance", "10+2, 65%", 0, 0.02)],
+        branches=[
+            _b("English", "ENG", 60, 20, 0, "Entrance", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 10.0, 45, ["Literature", "Linguistics"]),
+            _b("History", "HIST", 50, 15, 0, "Entrance", 0, 0, 0, 0, 0, 0, 3.0, 2.0, 8.0, 40, ["Modern", "Medieval"]),
+        ],
+    ),
+    College(
+        name="Banaras Hindu University — Arts Faculty",
+        short_name="BHU Arts", stream="arts", institute_type="Central University", established=1916,
+        ranking=6, city="Varanasi", state="Uttar Pradesh",
+        nirf_ranking=6, naac_grade="A",
+        avg_fees_lpa=0.03, hostel_fees_per_year=0.02,
+        avg_placement_lpa=3.5, median_placement_lpa=2.5,
+        highest_placement_lpa=10.0, placement_percentage=48.0,
+        top_recruiters=["UPSC", "State PSC", "Media", "NGOs", "Publishing"],
+        total_seats=1000, website="https://www.bhu.ac.in",
+        course_types=[_ct("BA (Hons)", 3, "CUET", "10+2, 50%", 0, 0.03)],
+        branches=[
+            _b("Hindi", "HIN", 100, 40, 0, "CUET", 0, 0, 0, 0, 0, 0, 3.0, 2.0, 8.0, 42, ["Hindi Literature", "Translation"]),
+            _b("Sanskrit", "SANS", 60, 20, 0, "CUET", 0, 0, 0, 0, 0, 0, 2.5, 2.0, 6.0, 35, ["Vedic Studies", "Sanskrit Literature"]),
+            _b("Political Science", "POL", 80, 30, 0, "CUET", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 10.0, 48, ["Indian Politics", "IR"]),
+        ],
+    ),
+    College(
+        name="Aligarh Muslim University — Arts Faculty",
+        short_name="AMU Arts", stream="arts", institute_type="Central University", established=1875,
+        ranking=7, city="Aligarh", state="Uttar Pradesh",
+        nirf_ranking=10, naac_grade="A+",
+        avg_fees_lpa=0.02, hostel_fees_per_year=0.02,
+        avg_placement_lpa=3.0, median_placement_lpa=2.0,
+        highest_placement_lpa=8.0, placement_percentage=42.0,
+        top_recruiters=["UPSC", "Media", "NGOs", "Teaching", "Publishing"],
+        total_seats=1000, website="https://www.amu.ac.in",
+        course_types=[_ct("BA (Hons)", 3, "AMU Entrance", "10+2, 50%", 0, 0.02)],
+        branches=[
+            _b("English", "ENG", 80, 30, 0, "AMU Entrance", 0, 0, 0, 0, 0, 0, 3.0, 2.0, 8.0, 42, ["Literature", "Linguistics"]),
+            _b("History", "HIST", 60, 25, 0, "AMU Entrance", 0, 0, 0, 0, 0, 0, 2.5, 2.0, 7.0, 38, ["Medieval", "Modern"]),
+        ],
+    ),
+    College(
+        name="Fergusson College Pune",
+        short_name="Fergusson Pune", stream="arts", institute_type="Private", established=1885,
+        ranking=8, city="Pune", state="Maharashtra",
+        nirf_ranking=18, naac_grade="A+",
+        avg_fees_lpa=0.10, hostel_fees_per_year=0.05,
+        avg_placement_lpa=3.5, median_placement_lpa=2.5,
+        highest_placement_lpa=10.0, placement_percentage=50.0,
+        top_recruiters=["TCS", "Infosys", "Media", "NGOs", "Govt"],
+        total_seats=800, website="https://www.fergusson.edu",
+        course_types=[_ct("BA", 3, "Merit", "10+2, 60%", 0, 0.10)],
+        branches=[
+            _b("English", "ENG", 80, 0, 0, "Merit", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 10.0, 50, ["Literature", "Media"]),
+            _b("Economics", "ECO", 60, 0, 0, "Merit", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 12.0, 55, ["Econometrics", "Development"]),
+        ],
+    ),
+    College(
+        name="Loyola College Chennai — Arts",
+        short_name="Loyola Arts", stream="arts", institute_type="Private", established=1925,
+        ranking=9, city="Chennai", state="Tamil Nadu",
+        nirf_ranking=14, naac_grade="A++",
+        avg_fees_lpa=0.15, hostel_fees_per_year=0.08,
+        avg_placement_lpa=3.5, median_placement_lpa=2.5,
+        highest_placement_lpa=10.0, placement_percentage=50.0,
+        top_recruiters=["TCS", "Infosys", "Media", "Publishing", "NGOs"],
+        total_seats=600, website="https://www.loyolacollege.edu",
+        course_types=[_ct("BA", 3, "Merit", "10+2, 60%", 0, 0.15)],
+        branches=[
+            _b("English", "ENG", 60, 0, 0, "Merit", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 10.0, 50, ["Literature", "Journalism"]),
+            _b("Economics", "ECO", 50, 0, 0, "Merit", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 12.0, 55, ["Development Economics", "Econometrics"]),
+        ],
+    ),
+    College(
+        name="Christ University — Arts",
+        short_name="Christ Arts Bangalore", stream="arts", institute_type="Deemed", established=1969,
+        ranking=10, city="Bangalore", state="Karnataka",
+        nirf_ranking=16, naac_grade="A++",
+        avg_fees_lpa=1.0, hostel_fees_per_year=0.30,
+        avg_placement_lpa=4.5, median_placement_lpa=3.5,
+        highest_placement_lpa=12.0, placement_percentage=60.0,
+        top_recruiters=["Deloitte", "EY", "TCS", "Infosys", "Media"],
+        total_seats=800, website="https://christuniversity.in",
+        course_types=[_ct("BA (Hons)", 3, "Christ Entrance", "10+2, 60%", 0, 1.0)],
+        branches=[
+            _b("English", "ENG", 80, 0, 0, "Christ", 0, 0, 0, 0, 0, 0, 4.5, 3.5, 12.0, 60, ["Literature", "Media Studies"]),
+            _b("Psychology", "PSY", 60, 0, 0, "Christ", 0, 0, 0, 0, 0, 0, 5.0, 4.0, 14.0, 65, ["Clinical", "Organizational", "Counselling"]),
+            _b("Economics", "ECO", 60, 0, 0, "Christ", 0, 0, 0, 0, 0, 0, 5.5, 4.0, 15.0, 68, ["Econometrics", "Finance"]),
+        ],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# PERFORMING & FINE ARTS — TOP 5 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_PERFORMING_ARTS_DIRECTORY: list[College] = [
+    College(
+        name="National School of Drama",
+        short_name="NSD Delhi", stream="performing_arts", institute_type="Central", established=1959,
+        ranking=1, city="New Delhi", state="Delhi",
+        avg_fees_lpa=0.10, hostel_fees_per_year=0.05,
+        avg_placement_lpa=5.0, median_placement_lpa=3.5,
+        highest_placement_lpa=20.0, placement_percentage=70.0,
+        top_recruiters=["Bollywood", "Theatre Groups", "OTT Platforms", "Ad Agencies", "TV Channels"],
+        total_seats=50, website="https://nsd.gov.in",
+        course_types=[_ct("Diploma in Dramatic Arts", 3, "NSD Entrance", "Graduate", 0, 0.10)],
+        branches=[_b("Dramatic Arts", "DRAMA", 26, 0, 0, "NSD Entrance", 0, 0, 0, 0, 0, 0, 5.0, 3.5, 20.0, 70, ["Acting", "Direction", "Design"])],
+    ),
+    College(
+        name="Film and Television Institute of India",
+        short_name="FTII Pune", stream="performing_arts", institute_type="Central", established=1960,
+        ranking=2, city="Pune", state="Maharashtra",
+        avg_fees_lpa=0.15, hostel_fees_per_year=0.05,
+        avg_placement_lpa=6.0, median_placement_lpa=4.0,
+        highest_placement_lpa=25.0, placement_percentage=72.0,
+        top_recruiters=["Bollywood", "OTT Platforms", "Ad Agencies", "TV Channels", "Indie Films"],
+        total_seats=100, website="https://www.ftii.ac.in",
+        course_types=[_ct("PG Diploma (Film)", 3, "FTII JET", "Graduate", 0, 0.15)],
+        branches=[
+            _b("Direction", "DIR", 12, 0, 0, "FTII JET", 0, 0, 0, 0, 0, 0, 7.0, 4.5, 25.0, 75, ["Feature Film", "Documentary"]),
+            _b("Cinematography", "CIN", 12, 0, 0, "FTII JET", 0, 0, 0, 0, 0, 0, 6.0, 4.0, 20.0, 72, ["Camera", "Lighting", "DI"]),
+            _b("Acting", "ACT", 10, 0, 0, "FTII JET", 0, 0, 0, 0, 0, 0, 5.0, 3.0, 25.0, 68, ["Method Acting", "Voice", "Movement"]),
+        ],
+    ),
+    College(
+        name="Satyajit Ray Film and Television Institute",
+        short_name="SRFTI Kolkata", stream="performing_arts", institute_type="Central", established=1995,
+        ranking=3, city="Kolkata", state="West Bengal",
+        avg_fees_lpa=0.12, hostel_fees_per_year=0.05,
+        avg_placement_lpa=5.0, median_placement_lpa=3.5,
+        highest_placement_lpa=18.0, placement_percentage=68.0,
+        top_recruiters=["Bengali Film Industry", "OTT Platforms", "Ad Agencies", "Indie Films", "TV"],
+        total_seats=60, website="https://srfrfi.gov.in",
+        course_types=[_ct("PG Diploma (Film)", 3, "SRFTI Entrance", "Graduate", 0, 0.12)],
+        branches=[
+            _b("Direction", "DIR", 10, 0, 0, "SRFTI", 0, 0, 0, 0, 0, 0, 5.0, 3.5, 18.0, 68, ["Feature Film", "Documentary"]),
+            _b("Cinematography", "CIN", 10, 0, 0, "SRFTI", 0, 0, 0, 0, 0, 0, 5.0, 3.5, 15.0, 65, ["Camera", "DI", "Lighting"]),
+        ],
+    ),
+    College(
+        name="Faculty of Music & Fine Arts, University of Delhi",
+        short_name="DU Fine Arts", stream="performing_arts", institute_type="Central University", established=1960,
+        ranking=4, city="New Delhi", state="Delhi",
+        avg_fees_lpa=0.05, hostel_fees_per_year=0.03,
+        avg_placement_lpa=3.0, median_placement_lpa=2.0,
+        highest_placement_lpa=8.0, placement_percentage=50.0,
+        top_recruiters=["Music Industry", "Schools", "Event Companies", "Media", "Freelance"],
+        total_seats=100, website="https://www.du.ac.in",
+        course_types=[_ct("BA Music (Hons)", 3, "CUET + Practical", "10+2, 50%", 0, 0.05)],
+        branches=[
+            _b("Hindustani Music", "HM", 30, 10, 0, "CUET", 0, 0, 0, 0, 0, 0, 3.0, 2.0, 8.0, 50, ["Vocal", "Instrumental"]),
+            _b("Fine Arts", "FA", 30, 10, 0, "CUET", 0, 0, 0, 0, 0, 0, 3.0, 2.0, 8.0, 48, ["Painting", "Sculpture"]),
+        ],
+    ),
+    College(
+        name="Kalakshetra Foundation",
+        short_name="Kalakshetra Chennai", stream="performing_arts", institute_type="Central", established=1936,
+        ranking=5, city="Chennai", state="Tamil Nadu",
+        avg_fees_lpa=0.08, hostel_fees_per_year=0.04,
+        avg_placement_lpa=3.0, median_placement_lpa=2.0,
+        highest_placement_lpa=8.0, placement_percentage=55.0,
+        top_recruiters=["Dance Companies", "Schools", "Cultural Institutions", "Event Mgmt", "Govt"],
+        total_seats=80, website="https://www.kalakshetra.in",
+        course_types=[_ct("Diploma in Bharatanatyam", 4, "Entrance", "10+2", 0, 0.08), _ct("Diploma in Carnatic Music", 4, "Entrance", "10+2", 0, 0.08)],
+        branches=[
+            _b("Bharatanatyam", "BN", 20, 0, 0, "Entrance", 0, 0, 0, 0, 0, 0, 3.0, 2.0, 8.0, 55, ["Classical Dance", "Choreography"]),
+            _b("Carnatic Music", "CM", 15, 0, 0, "Entrance", 0, 0, 0, 0, 0, 0, 2.5, 2.0, 6.0, 50, ["Vocal", "Veena", "Mridangam"]),
+        ],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# SPORTS & PHYSICAL EDUCATION — TOP 5 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_SPORTS_DIRECTORY: list[College] = [
+    College(
+        name="Lakshmibai National Institute of Physical Education",
+        short_name="LNIPE Gwalior", stream="sports", institute_type="Central", established=1957,
+        ranking=1, city="Gwalior", state="Madhya Pradesh",
+        avg_fees_lpa=0.10, hostel_fees_per_year=0.05,
+        avg_placement_lpa=4.0, median_placement_lpa=3.0,
+        highest_placement_lpa=10.0, placement_percentage=80.0,
+        top_recruiters=["SAI", "State Sports Depts", "Schools", "Indian Army", "Indian Navy"],
+        total_seats=300, website="https://lnipe.edu.in",
+        course_types=[_ct("BPEd", 4, "LNIPE Entrance", "10+2 + Sports", 0, 0.10), _ct("MPEd", 2, "LNIPE Entrance", "BPEd", 0, 0.10)],
+        branches=[
+            _b("Physical Education", "BPED", 150, 60, 0, "LNIPE", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 10.0, 80, ["Coaching", "Sports Science", "Fitness"]),
+        ],
+    ),
+    College(
+        name="Sports Authority of India — NSNIS Patiala",
+        short_name="SAI NSNIS Patiala", stream="sports", institute_type="Central", established=1961,
+        ranking=2, city="Patiala", state="Punjab",
+        avg_fees_lpa=0.05, hostel_fees_per_year=0.03,
+        avg_placement_lpa=4.0, median_placement_lpa=3.0,
+        highest_placement_lpa=8.0, placement_percentage=85.0,
+        top_recruiters=["SAI", "State Sports Depts", "Indian Railways", "Indian Army", "Schools"],
+        total_seats=200, website="https://sfrdi.nic.in",
+        course_types=[_ct("Diploma in Sports Coaching", 2, "SAI Entrance", "Graduate + Sports", 0, 0.05)],
+        branches=[
+            _b("Sports Coaching", "COACH", 100, 0, 0, "SAI", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 8.0, 85, ["Athletics", "Team Sports", "Combat Sports"]),
+        ],
+    ),
+    College(
+        name="Indira Gandhi Institute of Physical Education & Sports Sciences",
+        short_name="IGIPESS Delhi", stream="sports", institute_type="State Govt", established=1987,
+        ranking=3, city="New Delhi", state="Delhi",
+        avg_fees_lpa=0.08, hostel_fees_per_year=0.04,
+        avg_placement_lpa=3.5, median_placement_lpa=2.5,
+        highest_placement_lpa=8.0, placement_percentage=75.0,
+        top_recruiters=["Schools", "Delhi Govt Sports", "SAI", "Fitness Industry", "Coaching"],
+        total_seats=200, website="https://igipess.du.ac.in",
+        course_types=[_ct("BPEd (Hons)", 4, "DU Entrance", "10+2 + Sports", 0, 0.08)],
+        branches=[
+            _b("Physical Education", "BPED", 100, 30, 0, "DU Entrance", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 8.0, 75, ["Coaching", "Fitness", "Sports Mgmt"]),
+        ],
+    ),
+    College(
+        name="Tamil Nadu Physical Education and Sports University",
+        short_name="TNPESU Chennai", stream="sports", institute_type="State Govt", established=2005,
+        ranking=4, city="Chennai", state="Tamil Nadu",
+        avg_fees_lpa=0.06, hostel_fees_per_year=0.03,
+        avg_placement_lpa=3.0, median_placement_lpa=2.0,
+        highest_placement_lpa=7.0, placement_percentage=70.0,
+        top_recruiters=["Schools", "State Sports", "SAI", "Fitness Industry", "Coaching"],
+        total_seats=250, website="https://www.tnpesu.ac.in",
+        course_types=[_ct("BPEd", 4, "Entrance", "10+2 + Sports", 0, 0.06), _ct("MPEd", 2, "Entrance", "BPEd", 0, 0.06)],
+        branches=[
+            _b("Physical Education", "BPED", 120, 40, 0, "Entrance", 0, 0, 0, 0, 0, 0, 3.0, 2.0, 7.0, 70, ["Coaching", "Sports Science"]),
+        ],
+    ),
+    College(
+        name="Guru Nanak Dev University — Dept of Sports",
+        short_name="GNDU Sports", stream="sports", institute_type="State Govt", established=1969,
+        ranking=5, city="Amritsar", state="Punjab",
+        avg_fees_lpa=0.05, hostel_fees_per_year=0.03,
+        avg_placement_lpa=3.0, median_placement_lpa=2.0,
+        highest_placement_lpa=6.0, placement_percentage=68.0,
+        top_recruiters=["Schools", "State Sports", "SAI", "Indian Army", "Police"],
+        total_seats=200, website="https://www.gndu.ac.in",
+        course_types=[_ct("BPEd", 2, "Entrance", "Graduate + Sports", 0, 0.05), _ct("MPEd", 2, "Entrance", "BPEd", 0, 0.05)],
+        branches=[
+            _b("Physical Education", "BPED", 100, 30, 0, "Entrance", 0, 0, 0, 0, 0, 0, 3.0, 2.0, 6.0, 68, ["Coaching", "Athletics", "Team Sports"]),
+        ],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# CIVIL SERVICES & GOVERNMENT — TOP 5 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_CIVIL_SERVICES_DIRECTORY: list[College] = [
+    College(
+        name="Lal Bahadur Shastri National Academy of Administration",
+        short_name="LBSNAA Mussoorie", stream="civil_services", institute_type="Central", established=1959,
+        ranking=1, city="Mussoorie", state="Uttarakhand",
+        avg_fees_lpa=0.0, hostel_fees_per_year=0.0,
+        avg_placement_lpa=10.0, median_placement_lpa=10.0,
+        highest_placement_lpa=15.0, placement_percentage=100.0,
+        top_recruiters=["IAS", "IPS", "IFS", "IRS", "Central Govt"],
+        total_seats=180, website="https://www.lbsnaa.gov.in",
+        course_types=[_ct("IAS Training", 2, "UPSC CSE", "Graduate", 0, 0.0)],
+        branches=[_b("Civil Services", "IAS", 180, 0, 0, "UPSC CSE", 0, 0, 0, 0, 0, 0, 10.0, 10.0, 15.0, 100, ["Administration", "Policy", "Governance"])],
+    ),
+    College(
+        name="Sardar Vallabhbhai Patel National Police Academy",
+        short_name="NPA Hyderabad", stream="civil_services", institute_type="Central", established=1948,
+        ranking=2, city="Hyderabad", state="Telangana",
+        avg_fees_lpa=0.0, hostel_fees_per_year=0.0,
+        avg_placement_lpa=9.0, median_placement_lpa=9.0,
+        highest_placement_lpa=14.0, placement_percentage=100.0,
+        top_recruiters=["IPS", "State Police", "CBI", "NIA", "RAW"],
+        total_seats=150, website="https://www.svpnpa.gov.in",
+        course_types=[_ct("IPS Training", 2, "UPSC CSE", "Graduate", 0, 0.0)],
+        branches=[_b("Police Services", "IPS", 150, 0, 0, "UPSC CSE", 0, 0, 0, 0, 0, 0, 9.0, 9.0, 14.0, 100, ["Law & Order", "Investigation", "Intelligence"])],
+    ),
+    College(
+        name="Indian Institute of Public Administration",
+        short_name="IIPA Delhi", stream="civil_services", institute_type="Central", established=1954,
+        ranking=3, city="New Delhi", state="Delhi",
+        avg_fees_lpa=0.50, hostel_fees_per_year=0.10,
+        avg_placement_lpa=8.0, median_placement_lpa=6.0,
+        highest_placement_lpa=15.0, placement_percentage=85.0,
+        top_recruiters=["Central Govt", "State Govts", "UN Agencies", "World Bank", "Think Tanks"],
+        total_seats=100, website="https://www.iipa.org.in",
+        course_types=[_ct("PG Diploma in Public Admin", 1, "IIPA Entrance", "Graduate", 0, 0.50)],
+        branches=[_b("Public Administration", "PA", 50, 30, 0, "IIPA", 0, 0, 0, 0, 0, 0, 8.0, 6.0, 15.0, 85, ["Governance", "Policy", "Public Management"])],
+    ),
+    College(
+        name="Jawaharlal Nehru University — School of International Studies",
+        short_name="JNU SIS", stream="civil_services", institute_type="Central University", established=1969,
+        ranking=4, city="New Delhi", state="Delhi",
+        nirf_ranking=2,
+        avg_fees_lpa=0.03, hostel_fees_per_year=0.02,
+        avg_placement_lpa=6.0, median_placement_lpa=4.5,
+        highest_placement_lpa=15.0, placement_percentage=65.0,
+        top_recruiters=["UPSC", "MEA", "UN", "Think Tanks", "Media"],
+        total_seats=200, website="https://www.jnu.ac.in",
+        course_types=[_ct("MA International Studies", 2, "JNU Entrance", "BA", 0, 0.03)],
+        branches=[_b("International Studies", "IS", 60, 50, 0, "JNU", 0, 0, 0, 0, 0, 0, 6.0, 4.5, 15.0, 65, ["Diplomacy", "Security", "Area Studies"])],
+    ),
+    College(
+        name="National Defence College",
+        short_name="NDC Delhi", stream="civil_services", institute_type="Defence", established=1960,
+        ranking=5, city="New Delhi", state="Delhi",
+        avg_fees_lpa=0.0, hostel_fees_per_year=0.0,
+        avg_placement_lpa=12.0, median_placement_lpa=12.0,
+        highest_placement_lpa=18.0, placement_percentage=100.0,
+        top_recruiters=["Indian Armed Forces", "MEA", "MoD", "Central Govt", "UN Peacekeeping"],
+        total_seats=100, website="https://ndc.nic.in",
+        course_types=[_ct("National Security Course", 1, "Selection", "Senior Officers", 0, 0.0)],
+        branches=[_b("National Security", "NS", 50, 25, 0, "Selection", 0, 0, 0, 0, 0, 0, 12.0, 12.0, 18.0, 100, ["Strategy", "Defence", "Diplomacy"])],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# HOSPITALITY, TRAVEL & TOURISM — TOP 5 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_HOSPITALITY_DIRECTORY: list[College] = [
+    College(
+        name="Institute of Hotel Management Delhi",
+        short_name="IHM Delhi", stream="hospitality", institute_type="Central", established=1962,
+        ranking=1, city="New Delhi", state="Delhi",
+        nirf_ranking=1,
+        avg_fees_lpa=1.2, hostel_fees_per_year=0.20,
+        avg_placement_lpa=5.0, median_placement_lpa=4.0,
+        highest_placement_lpa=15.0, placement_percentage=90.0,
+        top_recruiters=["Taj Hotels", "Oberoi", "Marriott", "Hyatt", "ITC Hotels"],
+        total_seats=300, website="https://www.ihmpusa.net",
+        course_types=[_ct("B.Sc Hospitality & Hotel Admin", 3, "NCHM JEE", "10+2, 50%", 0, 1.2)],
+        branches=[_b("Hotel Management", "HM", 200, 0, 0, "NCHM JEE", 0, 0, 0, 0, 0, 0, 5.0, 4.0, 15.0, 90, ["F&B", "Front Office", "Housekeeping"])],
+    ),
+    College(
+        name="Institute of Hotel Management Mumbai",
+        short_name="IHM Mumbai", stream="hospitality", institute_type="Central", established=1954,
+        ranking=2, city="Mumbai", state="Maharashtra",
+        nirf_ranking=2,
+        avg_fees_lpa=1.2, hostel_fees_per_year=0.20,
+        avg_placement_lpa=5.0, median_placement_lpa=4.0,
+        highest_placement_lpa=14.0, placement_percentage=88.0,
+        top_recruiters=["Taj Hotels", "Marriott", "Hyatt", "ITC Hotels", "Oberoi"],
+        total_seats=280, website="https://www.ihmmumbai.ac.in",
+        course_types=[_ct("B.Sc Hospitality & Hotel Admin", 3, "NCHM JEE", "10+2, 50%", 0, 1.2)],
+        branches=[_b("Hotel Management", "HM", 180, 0, 0, "NCHM JEE", 0, 0, 0, 0, 0, 0, 5.0, 4.0, 14.0, 88, ["F&B", "Front Office", "Housekeeping"])],
+    ),
+    College(
+        name="Welcome Group Graduate School of Hotel Administration",
+        short_name="WGSHA Manipal", stream="hospitality", institute_type="Private", established=1986,
+        ranking=3, city="Manipal", state="Karnataka",
+        nirf_ranking=3,
+        avg_fees_lpa=3.0, hostel_fees_per_year=0.30,
+        avg_placement_lpa=5.5, median_placement_lpa=4.5,
+        highest_placement_lpa=16.0, placement_percentage=92.0,
+        top_recruiters=["Taj Hotels", "Marriott", "Hyatt", "ITC Hotels", "Carnival Cruise"],
+        total_seats=200, website="https://manipal.edu/wgsha.html",
+        course_types=[_ct("BHM", 4, "MET", "10+2, 50%", 0, 3.0)],
+        branches=[_b("Hotel Management", "HM", 120, 0, 0, "MET", 0, 0, 0, 0, 0, 0, 5.5, 4.5, 16.0, 92, ["F&B", "Front Office", "Culinary Arts"])],
+    ),
+    College(
+        name="Christ University — School of Hospitality",
+        short_name="Christ Hospitality", stream="hospitality", institute_type="Deemed", established=1969,
+        ranking=4, city="Bangalore", state="Karnataka",
+        nirf_ranking=5,
+        avg_fees_lpa=2.5, hostel_fees_per_year=0.30,
+        avg_placement_lpa=4.5, median_placement_lpa=3.5,
+        highest_placement_lpa=12.0, placement_percentage=82.0,
+        top_recruiters=["Marriott", "Hyatt", "ITC Hotels", "Taj Hotels", "Oberoi"],
+        total_seats=150, website="https://christuniversity.in",
+        course_types=[_ct("BHM", 4, "Christ Entrance", "10+2, 50%", 0, 2.5)],
+        branches=[_b("Hotel Management", "HM", 80, 0, 0, "Christ", 0, 0, 0, 0, 0, 0, 4.5, 3.5, 12.0, 82, ["F&B", "Events", "Culinary"])],
+    ),
+    College(
+        name="Institute of Hotel Management Bangalore",
+        short_name="IHM Bangalore", stream="hospitality", institute_type="Central", established=1969,
+        ranking=5, city="Bangalore", state="Karnataka",
+        nirf_ranking=4,
+        avg_fees_lpa=1.2, hostel_fees_per_year=0.18,
+        avg_placement_lpa=4.5, median_placement_lpa=3.5,
+        highest_placement_lpa=12.0, placement_percentage=85.0,
+        top_recruiters=["Taj Hotels", "Marriott", "Hyatt", "ITC Hotels", "Oberoi"],
+        total_seats=250, website="https://www.ihmbangalore.ac.in",
+        course_types=[_ct("B.Sc Hospitality & Hotel Admin", 3, "NCHM JEE", "10+2, 50%", 0, 1.2)],
+        branches=[_b("Hotel Management", "HM", 150, 0, 0, "NCHM JEE", 0, 0, 0, 0, 0, 0, 4.5, 3.5, 12.0, 85, ["F&B", "Front Office", "Housekeeping"])],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# AGRICULTURE & ENVIRONMENTAL STUDIES — TOP 5 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_AGRICULTURE_DIRECTORY: list[College] = [
+    College(
+        name="Indian Agricultural Research Institute",
+        short_name="IARI Delhi", stream="agriculture", institute_type="Central", established=1905,
+        ranking=1, city="New Delhi", state="Delhi",
+        nirf_ranking=1, naac_grade="A++",
+        avg_fees_lpa=0.10, hostel_fees_per_year=0.05,
+        avg_placement_lpa=6.0, median_placement_lpa=4.5,
+        highest_placement_lpa=18.0, placement_percentage=80.0,
+        top_recruiters=["ICAR", "FCI", "NABARD", "ITC", "Bayer CropScience"],
+        total_seats=300, website="https://www.iari.res.in",
+        course_types=[_ct("M.Sc Agriculture", 2, "ICAR PG", "B.Sc Agri", 0, 0.10), _ct("PhD", 4, "ICAR SRF", "M.Sc Agri", 0, 0.10)],
+        branches=[
+            _b("Agronomy", "AGRO", 0, 30, 0, "ICAR PG", 0, 0, 0, 0, 0, 0, 6.0, 4.5, 18.0, 80, ["Crop Production", "Soil Science"]),
+            _b("Plant Pathology", "PP", 0, 20, 0, "ICAR PG", 0, 0, 0, 0, 0, 0, 5.5, 4.0, 15.0, 75, ["Disease Management", "Mycology"]),
+            _b("Genetics & Plant Breeding", "GPB", 0, 25, 0, "ICAR PG", 0, 0, 0, 0, 0, 0, 7.0, 5.5, 20.0, 85, ["Crop Improvement", "Biotechnology"]),
+        ],
+    ),
+    College(
+        name="Tamil Nadu Agricultural University",
+        short_name="TNAU Coimbatore", stream="agriculture", institute_type="State Govt", established=1971,
+        ranking=2, city="Coimbatore", state="Tamil Nadu",
+        nirf_ranking=2, naac_grade="A+",
+        avg_fees_lpa=0.08, hostel_fees_per_year=0.04,
+        avg_placement_lpa=4.0, median_placement_lpa=3.0,
+        highest_placement_lpa=12.0, placement_percentage=75.0,
+        top_recruiters=["ICAR", "State Agri Dept", "ITC", "Bayer", "UPL"],
+        total_seats=500, website="https://tnau.ac.in",
+        course_types=[_ct("B.Sc Agriculture", 4, "TNAU Entrance", "10+2 Bio, 50%", 0, 0.08)],
+        branches=[
+            _b("Agriculture", "AGRI", 200, 60, 0, "TNAU", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 12.0, 75, ["Agronomy", "Horticulture", "Soil Science"]),
+            _b("Agricultural Engineering", "AE", 60, 20, 0, "TNAU", 0, 0, 0, 0, 0, 0, 4.5, 3.5, 14.0, 78, ["Farm Machinery", "Irrigation"]),
+        ],
+    ),
+    College(
+        name="Punjab Agricultural University",
+        short_name="PAU Ludhiana", stream="agriculture", institute_type="State Govt", established=1962,
+        ranking=3, city="Ludhiana", state="Punjab",
+        nirf_ranking=4, naac_grade="A+",
+        avg_fees_lpa=0.08, hostel_fees_per_year=0.04,
+        avg_placement_lpa=3.5, median_placement_lpa=2.5,
+        highest_placement_lpa=10.0, placement_percentage=72.0,
+        top_recruiters=["ICAR", "Punjab Agri Dept", "FCI", "NABARD", "Nestle"],
+        total_seats=400, website="https://www.pau.edu",
+        course_types=[_ct("B.Sc Agriculture", 4, "PAU Entrance", "10+2 Bio, 50%", 0, 0.08)],
+        branches=[
+            _b("Agriculture", "AGRI", 180, 50, 0, "PAU", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 10.0, 72, ["Agronomy", "Soil Science", "Entomology"]),
+        ],
+    ),
+    College(
+        name="G.B. Pant University of Agriculture & Technology",
+        short_name="GBPUAT Pantnagar", stream="agriculture", institute_type="State Govt", established=1960,
+        ranking=4, city="Pantnagar", state="Uttarakhand",
+        nirf_ranking=5, naac_grade="A+",
+        avg_fees_lpa=0.06, hostel_fees_per_year=0.03,
+        avg_placement_lpa=3.5, median_placement_lpa=2.5,
+        highest_placement_lpa=10.0, placement_percentage=70.0,
+        top_recruiters=["ICAR", "FCI", "State Agri Dept", "ITC", "Bayer"],
+        total_seats=400, website="https://www.gbpuat.ac.in",
+        course_types=[_ct("B.Sc Agriculture", 4, "Entrance", "10+2 Bio, 50%", 0, 0.06), _ct("B.Tech Agri Engg", 4, "Entrance", "10+2 PCM, 50%", 0, 0.06)],
+        branches=[
+            _b("Agriculture", "AGRI", 160, 40, 0, "Entrance", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 10.0, 70, ["Agronomy", "Horticulture"]),
+            _b("Agricultural Engineering", "AE", 60, 15, 0, "Entrance", 0, 0, 0, 0, 0, 0, 4.0, 3.0, 12.0, 75, ["Farm Machinery", "Processing"]),
+        ],
+    ),
+    College(
+        name="University of Agricultural Sciences Bangalore",
+        short_name="UAS Bangalore", stream="agriculture", institute_type="State Govt", established=1964,
+        ranking=5, city="Bangalore", state="Karnataka",
+        nirf_ranking=6, naac_grade="A",
+        avg_fees_lpa=0.06, hostel_fees_per_year=0.03,
+        avg_placement_lpa=3.5, median_placement_lpa=2.5,
+        highest_placement_lpa=10.0, placement_percentage=68.0,
+        top_recruiters=["ICAR", "Karnataka Agri Dept", "Bayer", "Syngenta", "UPL"],
+        total_seats=400, website="https://uasbangalore.edu.in",
+        course_types=[_ct("B.Sc Agriculture", 4, "KCET", "10+2 Bio, 50%", 0, 0.06)],
+        branches=[
+            _b("Agriculture", "AGRI", 180, 40, 0, "KCET", 0, 0, 0, 0, 0, 0, 3.5, 2.5, 10.0, 68, ["Agronomy", "Genetics", "Plant Protection"]),
+        ],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# DEFENCE & MILITARY — TOP 5 INDIA
+# ═══════════════════════════════════════════════════════════════════════════
+
+_DEFENCE_DIRECTORY: list[College] = [
+    College(
+        name="National Defence Academy",
+        short_name="NDA Pune", stream="defence", institute_type="Defence", established=1954,
+        ranking=1, city="Pune", state="Maharashtra",
+        avg_fees_lpa=0.0, hostel_fees_per_year=0.0,
+        avg_placement_lpa=8.0, median_placement_lpa=8.0,
+        highest_placement_lpa=12.0, placement_percentage=100.0,
+        top_recruiters=["Indian Army", "Indian Navy", "Indian Air Force"],
+        total_seats=370, website="https://nda.nic.in",
+        course_types=[_ct("B.Sc / BA + Military Training", 3, "NDA Exam (UPSC)", "10+2, 16.5-19.5 yrs", 0, 0.0)],
+        branches=[
+            _b("Army Wing", "ARMY", 200, 0, 0, "NDA Exam", 0, 0, 0, 0, 0, 0, 8.0, 8.0, 12.0, 100, ["Infantry", "Artillery", "Armoured"]),
+            _b("Naval Wing", "NAVY", 70, 0, 0, "NDA Exam", 0, 0, 0, 0, 0, 0, 8.0, 8.0, 12.0, 100, ["Navigation", "Engineering", "Aviation"]),
+            _b("Air Force Wing", "AF", 100, 0, 0, "NDA Exam", 0, 0, 0, 0, 0, 0, 9.0, 8.0, 12.0, 100, ["Flying", "Navigation", "Ground Duty"]),
+        ],
+    ),
+    College(
+        name="Indian Military Academy",
+        short_name="IMA Dehradun", stream="defence", institute_type="Defence", established=1932,
+        ranking=2, city="Dehradun", state="Uttarakhand",
+        avg_fees_lpa=0.0, hostel_fees_per_year=0.0,
+        avg_placement_lpa=8.0, median_placement_lpa=8.0,
+        highest_placement_lpa=12.0, placement_percentage=100.0,
+        top_recruiters=["Indian Army"],
+        total_seats=750, website="https://indianarmy.nic.in",
+        course_types=[_ct("Gentlemen Cadets Training", 1, "CDS/ACC/NDA", "Graduate (for CDS)", 0, 0.0)],
+        branches=[_b("Army Officer Training", "ARMY", 750, 0, 0, "CDS/ACC", 0, 0, 0, 0, 0, 0, 8.0, 8.0, 12.0, 100, ["Infantry", "Artillery", "Engineers"])],
+    ),
+    College(
+        name="Armed Forces Medical College",
+        short_name="AFMC Pune", stream="defence", institute_type="Defence", established=1948,
+        ranking=3, city="Pune", state="Maharashtra",
+        nirf_ranking=15,
+        avg_fees_lpa=0.05, hostel_fees_per_year=0.0,
+        avg_placement_lpa=10.0, median_placement_lpa=10.0,
+        highest_placement_lpa=15.0, placement_percentage=100.0,
+        top_recruiters=["Indian Army Medical Corps", "Military Hospitals", "DRDO"],
+        total_seats=150, website="https://afmc.nic.in",
+        course_types=[_ct("MBBS", 5.5, "NEET UG", "10+2 PCB, 60%", 0, 0.05)],
+        branches=[_b("MBBS", "MBBS", 130, 0, 0, "NEET", 0, 0, 0, 0, 0, 0, 10.0, 10.0, 15.0, 100, ["Military Medicine", "Surgery", "Aviation Medicine"])],
+    ),
+    College(
+        name="Indian Naval Academy",
+        short_name="INA Ezhimala", stream="defence", institute_type="Defence", established=2009,
+        ranking=4, city="Ezhimala", state="Kerala",
+        avg_fees_lpa=0.0, hostel_fees_per_year=0.0,
+        avg_placement_lpa=8.0, median_placement_lpa=8.0,
+        highest_placement_lpa=12.0, placement_percentage=100.0,
+        top_recruiters=["Indian Navy"],
+        total_seats=400, website="https://indiannavy.nic.in",
+        course_types=[_ct("B.Tech + Naval Training", 4, "NDA/10+2 Entry", "10+2 PCM", 0, 0.0)],
+        branches=[_b("Naval Officer Training", "NAVY", 400, 0, 0, "NDA/10+2", 0, 0, 0, 0, 0, 0, 8.0, 8.0, 12.0, 100, ["Navigation", "Marine Engg", "Aviation"])],
+    ),
+    College(
+        name="Air Force Academy",
+        short_name="AFA Dundigal", stream="defence", institute_type="Defence", established=1971,
+        ranking=5, city="Hyderabad", state="Telangana",
+        avg_fees_lpa=0.0, hostel_fees_per_year=0.0,
+        avg_placement_lpa=9.0, median_placement_lpa=9.0,
+        highest_placement_lpa=14.0, placement_percentage=100.0,
+        top_recruiters=["Indian Air Force"],
+        total_seats=200, website="https://indianairforce.nic.in",
+        course_types=[_ct("Flying + Ground Training", 1.5, "AFCAT/CDS/NDA", "Graduate (AFCAT/CDS)", 0, 0.0)],
+        branches=[_b("Air Force Officer Training", "AF", 200, 0, 0, "AFCAT/CDS", 0, 0, 0, 0, 0, 0, 9.0, 9.0, 14.0, 100, ["Flying", "Technical", "Admin"])],
+    ),
+]
+
+
+# ═══════════════════════════════════════════════════════════════════════════
 # ACCESSOR FUNCTIONS
 # ═══════════════════════════════════════════════════════════════════════════
 
-def get_college_directory(stream: str = "all") -> list[College]:
+_STREAM_MAP: dict[str, list[College]] = {
+    "engineering": _ENGINEERING_DIRECTORY + _IIIT_DIRECTORY,
+    "medical": _MEDICAL_DIRECTORY,
+    "law": _LAW_DIRECTORY,
+    "science": _SCIENCE_DIRECTORY,
+    "commerce": _COMMERCE_DIRECTORY,
+    "education": _EDUCATION_DIRECTORY,
+    "design": _DESIGN_DIRECTORY,
+    "arts": _ARTS_DIRECTORY,
+    "performing_arts": _PERFORMING_ARTS_DIRECTORY,
+    "sports": _SPORTS_DIRECTORY,
+    "civil_services": _CIVIL_SERVICES_DIRECTORY,
+    "hospitality": _HOSPITALITY_DIRECTORY,
+    "agriculture": _AGRICULTURE_DIRECTORY,
+    "defence": _DEFENCE_DIRECTORY,
+}
+
+
+def get_college_directory(stream: str = "engineering") -> list[College]:
     """Return full college directory, optionally filtered by stream."""
-    if stream == "engineering":
-        return _ENGINEERING_DIRECTORY
-    if stream == "medical":
-        return _MEDICAL_DIRECTORY
-    if stream == "iiit":
-        return _IIIT_DIRECTORY
-    return _ENGINEERING_DIRECTORY + _MEDICAL_DIRECTORY + _IIIT_DIRECTORY
+    if stream in _STREAM_MAP:
+        return _STREAM_MAP[stream]
+    # "all" or unknown — return everything
+    result: list[College] = []
+    for colleges in _STREAM_MAP.values():
+        result.extend(colleges)
+    return result
 
 
 def get_college_streams() -> list[str]:
     """Return available streams in the college directory."""
-    streams = ["engineering"]
-    if _MEDICAL_DIRECTORY:
-        streams.append("medical")
-    if _IIIT_DIRECTORY:
-        streams.append("iiit")
-    return streams
+    return [s for s, colleges in _STREAM_MAP.items() if colleges]
 
 
 def get_college_by_state(state: str, stream: str = "all") -> list[College]:

@@ -73,12 +73,7 @@ function _initCollegeDirectory() {
                 if (haystack.indexOf(q) === -1) return false;
             }
             if (stream !== 'all') {
-                // determine stream from institute_type heuristic
-                var isEngg = ['IIT','NIT','IIIT','Private','State Govt','Deemed'].indexOf(c.institute_type) !== -1
-                    && c.branches && c.branches.length > 0
-                    && !c.branches[0].short_name.match(/^(MBBS|MD|MS|DM|MCh)/);
-                if (stream === 'engineering' && !isEngg) return false;
-                if (stream === 'medical' && isEngg) return false;
+                if (c.stream !== stream) return false;
             }
             if (state !== 'all' && c.state !== state) return false;
             if (type !== 'all' && c.institute_type !== type) return false;
@@ -201,7 +196,8 @@ function _initCollegeDirectory() {
     if (elReset) {
         elReset.addEventListener('click', function() {
             elSearch.value = '';
-            [elStream, elState, elType, elBranch].forEach(function(s) { if (s) s.value = 'all'; });
+            if (elStream) elStream.value = 'engineering';
+            [elState, elType, elBranch].forEach(function(s) { if (s) s.value = 'all'; });
             if (elSort) elSort.value = 'ranking';
             selected = [];
             updateCompareUI();

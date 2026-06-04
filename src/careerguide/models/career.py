@@ -44,6 +44,7 @@ class College(BaseModel):
     """College information."""
     name: str
     short_name: str = ""
+    stream: str = ""
     institute_type: str = ""
     established: int = 0
     ranking: int = 0

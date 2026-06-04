@@ -15,22 +15,31 @@ This information is scattered across dozens of websites (college portals, JoSAA,
 
 ## Solution
 
-Add a dedicated **College Directory** page (`/colleges`) that provides comprehensive, filterable, and comparable college data for all 14 career streams. Phase 1 covers Engineering & Medical with full branch-level detail; subsequent phases extend to all streams.
+Add a dedicated **College Directory** page (`/colleges`) that provides comprehensive, filterable, and comparable college data for all 14 career streams.
 
 ## Scope
 
-### Phase 1 (MVP)
-- Engineering & Technology — Top 23 India (IITs, NITs, BITS, State/Private)
-- Medical & Healthcare — Top 25 India
-- IIIT — All 30 IIITs in India (Government-funded, PPP, and autonomous)
-- Full branch/department details, course types, cutoffs, per-branch placements
-- Search, filter, and compare features
+### Implemented (All Streams)
+- **Engineering & Technology** — 23 top India (IITs, NITs, BITS, State/Private) + 30 IIITs = **53 colleges**
+- **Medical & Healthcare** — Top 25 India = **25 colleges**
+- **Law & Legal Studies** — Top 10 India = **10 colleges**
+- **Science & Research** — Top 10 India (IISc, IISERs, ISI, CMI) = **10 colleges**
+- **Commerce, Finance & Business** — Top 10 India (IIMs, ISB, SRCC, FMS) = **10 colleges**
+- **Education & Teaching** — Top 10 India (NCERT, TISS, APU, BHU) = **10 colleges**
+- **Design & Creative Arts** — Top 10 India (NID, NIFT, IDC) = **10 colleges**
+- **Arts & Humanities** — Top 10 India (JNU, DU, Ashoka) = **10 colleges**
+- **Performing & Fine Arts** — Top 5 India (NSD, FTII, SRFTI) = **5 colleges**
+- **Sports & Physical Education** — Top 5 India (LNIPE, SAI) = **5 colleges**
+- **Civil Services & Government** — Top 5 India (LBSNAA, NPA, IIPA) = **5 colleges**
+- **Hospitality, Travel & Tourism** — Top 5 India (IHM, WGSHA) = **5 colleges**
+- **Agriculture & Environmental Studies** — Top 5 India (IARI, TNAU, PAU) = **5 colleges**
+- **Defence & Military** — Top 5 India (NDA, IMA, AFMC) = **5 colleges**
 
-### Phase 2
-- Law, Science, Commerce, Design, Education, Arts — Top 25 India + Top 10 per state
+**Total: 168 colleges across 14 career streams**
 
-### Phase 3
-- Remaining streams: Performing Arts, Sports, Civil Services, Hospitality, Agriculture, Defence
+### Future Expansion
+- Top 25 per stream for all categories
+- State-level colleges (33 states × ~10 per stream)
 
 ## Data Structure
 
@@ -242,6 +251,156 @@ CourseType:
 
 **Medical course types:** MBBS (5.5yr), BDS (5yr), MD (3yr), MS (3yr), DM (3yr), MCh (3yr), B.Sc Nursing (4yr), BPT (4.5yr), B.Pharm (4yr), PhD
 
+### Law & Legal Studies — Top 10 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | NLU Delhi | Central | Delhi |
+| 2 | NLSIU Bangalore | Central | Karnataka |
+| 3 | NALSAR Hyderabad | Central | Telangana |
+| 4 | NLU Jodhpur | Central | Rajasthan |
+| 5 | WBNUJS Kolkata | Central | West Bengal |
+| 6 | GNLU Gandhinagar | State | Gujarat |
+| 7 | Symbiosis Law School | Private | Maharashtra |
+| 8 | Faculty of Law DU | Central University | Delhi |
+| 9 | ILS Law College Pune | Private | Maharashtra |
+| 10 | NUJS Kolkata | Central | West Bengal |
+
+### Science & Research — Top 10 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | IISc Bangalore | Central | Karnataka |
+| 2 | IISER Pune | Central | Maharashtra |
+| 3 | IISER Kolkata | Central | West Bengal |
+| 4 | St. Stephen's Delhi | Private | Delhi |
+| 5 | Presidency Kolkata | State Govt | West Bengal |
+| 6 | Loyola Chennai | Private | Tamil Nadu |
+| 7 | IISER Mohali | Central | Punjab |
+| 8 | IISER Bhopal | Central | Madhya Pradesh |
+| 9 | CMI Chennai | Private | Tamil Nadu |
+| 10 | ISI Kolkata | Central | West Bengal |
+
+### Commerce, Finance & Business — Top 10 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | IIM Ahmedabad | Central | Gujarat |
+| 2 | IIM Bangalore | Central | Karnataka |
+| 3 | IIM Calcutta | Central | West Bengal |
+| 4 | SRCC Delhi | Central University | Delhi |
+| 5 | ISB Hyderabad | Private | Telangana |
+| 6 | FMS Delhi | Central University | Delhi |
+| 7 | XLRI Jamshedpur | Private | Jharkhand |
+| 8 | NMIMS Mumbai | Deemed | Maharashtra |
+| 9 | IIM Lucknow | Central | Uttar Pradesh |
+| 10 | LSR Delhi | Central University | Delhi |
+
+### Education & Teaching — Top 10 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | NCERT Delhi | Central | Delhi |
+| 2 | LSR Education | Central University | Delhi |
+| 3 | TISS Mumbai | Deemed | Maharashtra |
+| 4 | Jamia Education | Central University | Delhi |
+| 5 | BHU Education | Central University | Uttar Pradesh |
+| 6 | RIE Mysore | Central | Karnataka |
+| 7 | APU Bangalore | Private | Karnataka |
+| 8 | CIE Delhi | Central University | Delhi |
+| 9 | MSU Education | State Govt | Gujarat |
+| 10 | DU Education | Central University | Delhi |
+
+### Design & Creative Arts — Top 10 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | NID Ahmedabad | Central | Gujarat |
+| 2 | IIT Bombay IDC | IIT | Maharashtra |
+| 3 | NIFT Delhi | Central | Delhi |
+| 4 | Srishti Manipal | Private | Karnataka |
+| 5 | MIT ID Pune | Private | Maharashtra |
+| 6 | IIT Hyderabad Design | IIT | Telangana |
+| 7 | NID Gandhinagar | Central | Gujarat |
+| 8 | Pearl Academy | Private | Delhi |
+| 9 | SID Pune | Deemed | Maharashtra |
+| 10 | LPU Design | Private | Punjab |
+
+### Arts & Humanities — Top 10 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | JNU Delhi | Central University | Delhi |
+| 2 | DU Arts | Central University | Delhi |
+| 3 | Jadavpur University | State Govt | West Bengal |
+| 4 | Ashoka Sonipat | Private | Haryana |
+| 5 | Presidency Arts | State Govt | West Bengal |
+| 6 | BHU Arts | Central University | Uttar Pradesh |
+| 7 | AMU Arts | Central University | Uttar Pradesh |
+| 8 | Fergusson Pune | Private | Maharashtra |
+| 9 | Loyola Arts | Private | Tamil Nadu |
+| 10 | Christ Arts Bangalore | Deemed | Karnataka |
+
+### Performing & Fine Arts — Top 5 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | NSD Delhi | Central | Delhi |
+| 2 | FTII Pune | Central | Maharashtra |
+| 3 | SRFTI Kolkata | Central | West Bengal |
+| 4 | DU Fine Arts | Central University | Delhi |
+| 5 | Kalakshetra Chennai | Central | Tamil Nadu |
+
+### Sports & Physical Education — Top 5 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | LNIPE Gwalior | Central | Madhya Pradesh |
+| 2 | SAI NSNIS Patiala | Central | Punjab |
+| 3 | IGIPESS Delhi | State Govt | Delhi |
+| 4 | TNPESU Chennai | State Govt | Tamil Nadu |
+| 5 | GNDU Sports | State Govt | Punjab |
+
+### Civil Services & Government — Top 5 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | LBSNAA Mussoorie | Central | Uttarakhand |
+| 2 | NPA Hyderabad | Central | Telangana |
+| 3 | IIPA Delhi | Central | Delhi |
+| 4 | JNU SIS | Central University | Delhi |
+| 5 | NDC Delhi | Defence | Delhi |
+
+### Hospitality, Travel & Tourism — Top 5 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | IHM Delhi | Central | Delhi |
+| 2 | IHM Mumbai | Central | Maharashtra |
+| 3 | WGSHA Manipal | Private | Karnataka |
+| 4 | Christ Hospitality | Deemed | Karnataka |
+| 5 | IHM Bangalore | Central | Karnataka |
+
+### Agriculture & Environmental Studies — Top 5 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | IARI Delhi | Central | Delhi |
+| 2 | TNAU Coimbatore | State Govt | Tamil Nadu |
+| 3 | PAU Ludhiana | State Govt | Punjab |
+| 4 | GBPUAT Pantnagar | State Govt | Uttarakhand |
+| 5 | UAS Bangalore | State Govt | Karnataka |
+
+### Defence & Military — Top 5 India
+
+| # | College | Type | State |
+|---|---------|------|-------|
+| 1 | NDA Pune | Defence | Maharashtra |
+| 2 | IMA Dehradun | Defence | Uttarakhand |
+| 3 | AFMC Pune | Defence | Maharashtra |
+| 4 | INA Ezhimala | Defence | Kerala |
+| 5 | AFA Dundigal | Defence | Telangana |
+
 ## Page Layout
 
 ```
@@ -319,11 +478,13 @@ CourseType:
 
 | Item | Estimate |
 |------|----------|
-| India-level colleges (Phase 1) | 78 (23 Engg + 25 Medical + 30 IIIT) |
-| State-level colleges (33 states × ~10 × 2) | ~660 |
-| Branches per college (avg 10-15) | ~7,000 entries |
-| Course types per college (avg 5) | ~3,500 entries |
-| `college_data.py` estimated size | ~200-300 KB |
+| Total colleges (all 14 streams) | 168 |
+| Engineering + IIIT | 53 (23 + 30) |
+| Medical | 25 |
+| Law, Science, Commerce, Education, Design, Arts | 10 each (60) |
+| Performing Arts, Sports, Civil Services, Hospitality, Agriculture, Defence | 5 each (30) |
+| Branches per college (avg) | ~3-4 |
+| `college_data.py` estimated size | ~250 KB |
 
 ## Cutoff Data Methodology
 

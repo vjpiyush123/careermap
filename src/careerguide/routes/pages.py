@@ -101,10 +101,10 @@ async def state_opportunities_page(request: Request):
 async def colleges_page(request: Request):
     """College directory — browse, filter, compare colleges."""
     streams = get_college_streams()
-    colleges = [c.model_dump() for c in get_college_directory()]
-    all_states = get_all_college_states()
-    all_types = get_all_institute_types()
-    all_branches = get_all_branches()
+    colleges = [c.model_dump() for c in get_college_directory("all")]
+    all_states = get_all_college_states("all")
+    all_types = get_all_institute_types("all")
+    all_branches = get_all_branches("all")
     return templates.TemplateResponse(request, "colleges.html", {
         "streams": streams,
         "colleges_json": colleges,

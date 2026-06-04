@@ -17,9 +17,24 @@
 
     <div class="cd-filter-row">
         <select id="cdStreamFilter" class="cd-select">
-            <option value="all">All Streams</option>
+            {% set stream_labels = {
+                'engineering': 'Engineering & Technology',
+                'medical': 'Medical & Healthcare',
+                'law': 'Law & Legal Studies',
+                'science': 'Science & Research',
+                'commerce': 'Commerce, Finance & Business',
+                'education': 'Education & Teaching',
+                'design': 'Design & Creative Arts',
+                'arts': 'Arts & Humanities',
+                'performing_arts': 'Performing & Fine Arts',
+                'sports': 'Sports & Physical Education',
+                'civil_services': 'Civil Services & Govt',
+                'hospitality': 'Hospitality & Tourism',
+                'agriculture': 'Agriculture & Environment',
+                'defence': 'Defence & Military'
+            } %}
             {% for s in streams %}
-            <option value="{{ s }}">{{ s|capitalize }}</option>
+            <option value="{{ s }}"{% if s == 'engineering' %} selected{% endif %}>{{ stream_labels.get(s, s|capitalize) }}</option>
             {% endfor %}
         </select>
 

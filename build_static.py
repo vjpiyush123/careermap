@@ -111,10 +111,10 @@ def build(base_path: str = "") -> None:
 
     # ── 3. College Directory page ──────────────────────────────────────
     college_streams = get_college_streams()
-    colleges = [c.model_dump() for c in get_college_directory()]
-    all_college_states = get_all_college_states()
-    all_types = get_all_institute_types()
-    all_branches = get_all_branches()
+    colleges = [c.model_dump() for c in get_college_directory("all")]
+    all_college_states = get_all_college_states("all")
+    all_types = get_all_institute_types("all")
+    all_branches = get_all_branches("all")
 
     _render("colleges.html", {
         "request": _MockRequest("/colleges"),
