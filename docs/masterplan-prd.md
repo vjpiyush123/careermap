@@ -219,6 +219,52 @@ Each stream in `_STREAM_DATA` now includes three additional keys:
 
 ---
 
+## GitHub Pages Deployment
+
+### Rule: Every Page Must Ship to GitHub Pages
+
+**Any new page or menu item added to the FastAPI application MUST also be included in the static GitHub Pages build.** This ensures the public-facing site at `github.io` stays in sync with the full application.
+
+### Checklist for Adding a New Page
+
+When adding a new page to CareerGuide, complete ALL of the following:
+
+1. **`build_static.py`** — Add a render step for the new page with its required template context (data imports, mock request, etc.)
+2. **`static_templates/base.html`** — Add the page link to the navbar `nav-links` section
+3. **`build_static.py` INDEX_TEMPLATE** — Add the page link to the landing page navbar
+4. **Landing page CTAs** — If the page is a major feature, add a button/link to the landing page hero section
+5. **Static template override** (if needed) — If the page has features that require a backend (form submissions, DB writes), create a `static_templates/<page>.html` override with a graceful fallback message (see `static_templates/feedback.html` as an example)
+6. **Rebuild & verify** — Run `python build_static.py` and verify the new page renders in `_site/`
+
+### Current Pages (Static Build)
+
+| Page | File | Status |
+|------|------|--------|
+| Home / Landing | `index.html` | ✅ Built from INDEX_TEMPLATE |
+| Career Options | `careeroptions.html` | ✅ Full data, all 14 streams |
+| College Directory | `colleges.html` | ✅ Full data, 78 colleges (Engg + Medical + IIIT) |
+| State Opportunities | `stateopportunities.html` | ✅ All 33 states/UTs |
+| Feedback | `feedback.html` | ✅ Static override (email fallback) |
+
+### Static Build Command
+
+```bash
+python build_static.py                    # relative paths (works everywhere)
+python build_static.py --base /careermap  # for repo-based GitHub Pages
+```
+
+### Key Files
+
+| File | Purpose |
+|------|---------|
+| `build_static.py` | Renders all pages + copies assets to `_site/` |
+| `static_templates/base.html` | Navbar override for static site (all page links) |
+| `static_templates/feedback.html` | Feedback page override (no DB backend) |
+| `_site/` | Output directory deployed to GitHub Pages |
+| `_site/.nojekyll` | Tells GitHub Pages to skip Jekyll processing |
+
+---
+
 ## Closing Principle
 
 > **The CareerGuide Analysis Agent exists to replace repetitive human analysis,

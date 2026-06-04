@@ -25,9 +25,14 @@ from jinja2 import Environment, FileSystemLoader
 # ── Import data layer ──────────────────────────────────────────────────
 from careerguide.data import (
     build_career_tree,
+    get_all_branches,
+    get_all_college_states,
+    get_all_institute_types,
     get_all_state_data,
     get_all_states,
     get_all_stream_names,
+    get_college_directory,
+    get_college_streams,
     get_stream_data,
 )
 
@@ -104,13 +109,29 @@ def build(base_path: str = "") -> None:
         "state_data": state_data,
     }, "stateopportunities.html")
 
-    # ── 3. Feedback page ──────────────────────────────────────────────
+    # ── 3. College Directory page ──────────────────────────────────────
+    college_streams = get_college_streams()
+    colleges = [c.model_dump() for c in get_college_directory()]
+    all_college_states = get_all_college_states()
+    all_types = get_all_institute_types()
+    all_branches = get_all_branches()
+
+    _render("colleges.html", {
+        "request": _MockRequest("/colleges"),
+        "streams": college_streams,
+        "colleges_json": colleges,
+        "all_states": all_college_states,
+        "all_types": all_types,
+        "all_branches": all_branches,
+    }, "colleges.html")
+
+    # ── 4. Feedback page ──────────────────────────────────────────────
     _render("feedback.html", {
         "request": _MockRequest("/feedback"),
         "streams": streams,
     }, "feedback.html")
 
-    # ── 4. Landing / index page ───────────────────────────────────────
+    # ── 5. Landing / index page ───────────────────────────────────────
     index_html = env.from_string(INDEX_TEMPLATE).render(
         base=base,
         request=_MockRequest("/"),
@@ -122,12 +143,12 @@ def build(base_path: str = "") -> None:
     (OUT_DIR / "index.html").write_text(index_html, encoding="utf-8")
     print("  ✓ index.html")
 
-    # ── 5. Copy static assets ─────────────────────────────────────────
+    # ── 6. Copy static assets ─────────────────────────────────────────
     static_out = OUT_DIR / "static"
     shutil.copytree(STATIC_DIR, static_out)
     print("  ✓ static/ (css, js)")
 
-    # ── 6. Create .nojekyll for GitHub Pages ──────────────────────────
+    # ── 7. Create .nojekyll for GitHub Pages ──────────────────────────
     (OUT_DIR / ".nojekyll").write_text("", encoding="utf-8")
     print("  ✓ .nojekyll")
 
@@ -157,6 +178,7 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
         <div class="nav-links">
             <a href="/" class="nav-link active">Home</a>
             <a href="/careeroptions.html" class="nav-link">Career Options</a>
+            <a href="/colleges.html" class="nav-link">Colleges</a>
             <a href="/stateopportunities.html" class="nav-link">State Guide</a>
             <a href="/feedback.html" class="nav-link">Feedback</a>
             <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle theme">
@@ -177,6 +199,9 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
         <div style="text-align:center; margin:2rem 0; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
             <a href="/careeroptions.html" class="btn btn-primary" style="font-size:1.1rem; padding:0.9rem 2.5rem;">
                 Explore Career Options →
+            </a>
+            <a href="/colleges.html" class="btn btn-primary" style="font-size:1.1rem; padding:0.9rem 2.5rem;">
+                College Directory →
             </a>
             <a href="/stateopportunities.html" class="btn btn-secondary" style="font-size:1.1rem; padding:0.9rem 2.5rem;">
                 State Guide →
