@@ -8,7 +8,18 @@ from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel, EmailStr
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from careerguide.data import build_career_tree, get_all_state_data, get_all_states, get_all_stream_names, get_stream_data
+from careerguide.data import (
+    build_career_tree,
+    get_all_branches,
+    get_all_college_states,
+    get_all_institute_types,
+    get_all_state_data,
+    get_all_states,
+    get_all_stream_names,
+    get_college_directory,
+    get_college_streams,
+    get_stream_data,
+)
 from careerguide.db.session import get_session_factory
 from careerguide.models.student import (
     INDIAN_STATES,
@@ -83,6 +94,23 @@ async def state_opportunities_page(request: Request):
     return templates.TemplateResponse(request, "state_opportunities.html", {
         "states": states,
         "state_data": state_data,
+    })
+
+
+@router.get("/colleges", response_class=HTMLResponse)
+async def colleges_page(request: Request):
+    """College directory — browse, filter, compare colleges."""
+    streams = get_college_streams()
+    colleges = [c.model_dump() for c in get_college_directory()]
+    all_states = get_all_college_states()
+    all_types = get_all_institute_types()
+    all_branches = get_all_branches()
+    return templates.TemplateResponse(request, "colleges.html", {
+        "streams": streams,
+        "colleges_json": colleges,
+        "all_states": all_states,
+        "all_types": all_types,
+        "all_branches": all_branches,
     })
 
 

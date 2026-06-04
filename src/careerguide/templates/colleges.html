@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}College Directory — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>College Directory</h1>
+    <p class="subtitle">Explore colleges, branches, cutoffs, and placements across India</p>
+</div>
+
+<!-- ── Search & Filters ──────────────────────────────────────── -->
+<div class="cd-filters">
+    <div class="cd-search-row">
+        <input type="text" id="cdSearch" class="cd-search-input"
+               placeholder="Search colleges by name, city, state…" autocomplete="off">
+        <span class="cd-result-count" id="cdResultCount"></span>
+    </div>
+
+    <div class="cd-filter-row">
+        <select id="cdStreamFilter" class="cd-select">
+            <option value="all">All Streams</option>
+            {% for s in streams %}
+            <option value="{{ s }}">{{ s|capitalize }}</option>
+            {% endfor %}
+        </select>
+
+        <select id="cdStateFilter" class="cd-select">
+            <option value="all">All States</option>
+            {% for st in all_states %}
+            <option value="{{ st }}">{{ st }}</option>
+            {% endfor %}
+        </select>
+
+        <select id="cdTypeFilter" class="cd-select">
+            <option value="all">All Types</option>
+            {% for t in all_types %}
+            <option value="{{ t }}">{{ t }}</option>
+            {% endfor %}
+        </select>
+
+        <select id="cdBranchFilter" class="cd-select">
+            <option value="all">All Branches</option>
+            {% for b in all_branches %}
+            <option value="{{ b }}">{{ b }}</option>
+            {% endfor %}
+        </select>
+
+        <select id="cdSortBy" class="cd-select">
+            <option value="ranking">NIRF Rank</option>
+            <option value="fees_asc">Fees: Low → High</option>
+            <option value="fees_desc">Fees: High → Low</option>
+            <option value="placement_desc">Placement: High → Low</option>
+            <option value="seats_desc">Seats: Most</option>
+        </select>
+    </div>
+
+    <div class="cd-action-row">
+        <button class="cd-btn cd-btn-compare" id="cdCompareBtn" disabled>
+            Compare Selected (<span id="cdCompareCount">0</span>/3)
+        </button>
+        <button class="cd-btn cd-btn-reset" id="cdResetBtn">Reset Filters</button>
+    </div>
+</div>
+
+<!-- ── College Cards ─────────────────────────────────────────── -->
+<div class="cd-cards" id="cdCards">
+    <!-- Rendered by JS -->
+</div>
+
+<!-- ── Detail Panel (hidden by default) ──────────────────────── -->
+<div class="cd-detail-overlay" id="cdDetailOverlay">
+    <div class="cd-detail-panel" id="cdDetailPanel">
+        <button class="cd-detail-close" id="cdDetailClose">&times;</button>
+        <div id="cdDetailContent">
+            <!-- Filled by JS -->
+        </div>
+    </div>
+</div>
+
+<!-- ── Compare Modal ─────────────────────────────────────────── -->
+<div class="cd-compare-overlay" id="cdCompareOverlay">
+    <div class="cd-compare-modal">
+        <div class="cd-compare-header">
+            <h2>Compare Colleges</h2>
+            <button class="cd-detail-close" id="cdCompareClose">&times;</button>
+        </div>
+        <div class="cd-compare-body" id="cdCompareBody">
+            <!-- Filled by JS -->
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+    const ALL_COLLEGES = {{ colleges_json | tojson }};
+</script>
+{% endblock %}

@@ -34,7 +34,7 @@ def _college(
         avg_placement_lpa=avg_placement_lpa,
         total_seats=total_seats,
         website=website,
-        branches=branches or [],
+        branch_names=branches or [],
     )
 
 

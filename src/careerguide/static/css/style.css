@@ -2318,3 +2318,528 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
         align-items: flex-start;
     }
 }
+
+/* ─── College Directory ───────────────────────────────────── */
+
+.cd-filters {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.cd-search-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cd-search-input {
+    flex: 1;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-family: var(--font);
+}
+
+.cd-search-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-light);
+}
+
+.cd-search-input::placeholder {
+    color: var(--text-muted);
+}
+
+.cd-result-count {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.cd-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+}
+
+.cd-select {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-family: var(--font);
+    cursor: pointer;
+    min-width: 140px;
+}
+
+.cd-select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-light);
+}
+
+.cd-action-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.cd-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: var(--font);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cd-btn-compare {
+    background: var(--accent);
+    color: #fff;
+}
+
+.cd-btn-compare:hover:not(:disabled) {
+    background: var(--accent-hover);
+}
+
+.cd-btn-compare:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.cd-btn-reset {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
+.cd-btn-reset:hover {
+    background: var(--border-light);
+}
+
+/* ── College Cards Grid ──────────────────────────────────── */
+
+.cd-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 1rem;
+}
+
+.cd-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.cd-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-lg);
+}
+
+.cd-card.cd-card-selected {
+    border-color: var(--accent);
+    background: var(--accent-light);
+}
+
+.cd-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.cd-card-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.cd-card-short {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+}
+
+.cd-card-rank {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3rem 0.6rem;
+    background: var(--accent-light);
+    border-radius: var(--radius);
+    min-width: 55px;
+}
+
+.cd-card-rank-label {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+.cd-card-rank-num {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.cd-card-meta {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.cd-card-meta span + span::before {
+    content: " · ";
+    color: var(--text-muted);
+}
+
+.cd-card-branches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.cd-branch-tag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    background: var(--bg-hover);
+    color: var(--text-secondary);
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 500;
+}
+
+.cd-card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.82rem;
+}
+
+.cd-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.cd-stat-label {
+    color: var(--text-muted);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.cd-stat-value {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.cd-card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.75rem;
+}
+
+.cd-compare-check {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.cd-compare-check input[type="checkbox"] {
+    accent-color: var(--accent);
+    cursor: pointer;
+}
+
+.cd-view-btn {
+    padding: 0.35rem 0.75rem;
+    background: var(--accent-light);
+    color: var(--accent);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: var(--font);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cd-view-btn:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+.cd-no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+/* ── Detail Overlay ──────────────────────────────────────── */
+
+.cd-detail-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 200;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem;
+    overflow-y: auto;
+}
+
+.cd-detail-overlay.open {
+    display: flex;
+}
+
+.cd-detail-panel {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    box-shadow: var(--shadow-lg);
+    animation: fadeIn 0.2s ease;
+}
+
+.cd-detail-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--bg-hover);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cd-detail-close:hover {
+    background: var(--danger-bg);
+    border-color: var(--danger);
+    color: var(--danger);
+}
+
+.cd-detail-header {
+    margin-bottom: 1.5rem;
+}
+
+.cd-detail-header h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+}
+
+.cd-detail-header .cd-card-meta {
+    font-size: 0.9rem;
+}
+
+.cd-detail-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.cd-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.cd-badge-accent { background: var(--accent-light); color: var(--accent); }
+.cd-badge-success { background: var(--success-bg); color: var(--success); }
+.cd-badge-warning { background: var(--warning-bg); color: var(--warning); }
+
+/* Detail tabs */
+.cd-detail-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 1.25rem;
+    overflow-x: auto;
+}
+
+.cd-detail-tab {
+    position: relative;
+    padding: 0.6rem 1rem;
+    border: none;
+    background: none;
+    color: var(--text-secondary);
+    font-family: var(--font);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.15s;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+}
+
+.cd-detail-tab:hover {
+    color: var(--text-primary);
+    background: var(--bg-hover);
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.cd-detail-tab.active {
+    color: var(--accent);
+    font-weight: 600;
+    border-bottom-color: var(--accent);
+}
+
+.cd-detail-pane {
+    display: none;
+}
+
+.cd-detail-pane.active {
+    display: block;
+    animation: fadeIn 0.15s ease;
+}
+
+.cd-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.cd-detail-stat {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.75rem;
+}
+
+.cd-detail-stat .cd-stat-label {
+    margin-bottom: 0.2rem;
+}
+
+.cd-detail-stat .cd-stat-value {
+    font-size: 1.1rem;
+}
+
+/* ── Compare Modal ───────────────────────────────────────── */
+
+.cd-compare-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 250;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+}
+
+.cd-compare-overlay.open {
+    display: flex;
+}
+
+.cd-compare-modal {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    box-shadow: var(--shadow-lg);
+    animation: fadeIn 0.2s ease;
+}
+
+.cd-compare-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.cd-compare-header h2 {
+    font-size: 1.15rem;
+}
+
+.cd-compare-body {
+    overflow-x: auto;
+}
+
+.cd-compare-body .data-table th {
+    position: sticky;
+    left: 0;
+    background: var(--bg-hover);
+    z-index: 2;
+    min-width: 160px;
+}
+
+.cd-compare-body .data-table td {
+    min-width: 200px;
+    vertical-align: top;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+    .cd-cards {
+        grid-template-columns: 1fr;
+    }
+    .cd-filter-row {
+        flex-direction: column;
+    }
+    .cd-select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .cd-detail-panel {
+        padding: 1.25rem;
+    }
+    .cd-detail-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
