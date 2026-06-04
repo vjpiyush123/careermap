@@ -1763,6 +1763,563 @@ _STATE_OPPORTUNITIES: dict[str, dict] = {
 # ═══════════════════════════════════════════════════════════════════════════
 # PUBLIC API FUNCTIONS
 # ═══════════════════════════════════════════════════════════════════════════
+# STATE RESERVATION DATA — State-wise reservation policies for education & jobs
+# ═══════════════════════════════════════════════════════════════════════════
+
+_STATE_RESERVATION: dict[str, dict] = {
+    "Andhra Pradesh": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC (Scheduled Caste)", "percentage": "15%", "details": "Mala, Madiga, Adi Andhra and other notified castes"},
+            {"category": "ST (Scheduled Tribe)", "percentage": "6%", "details": "Chenchu, Gond, Koya, Lambada and other notified tribes"},
+            {"category": "BC-A (Backward Class A)", "percentage": "7%", "details": "Viswabrahmin, Kummari, Vaddera and other BC-A communities"},
+            {"category": "BC-B", "percentage": "10%", "details": "Yadava, Kuruma, Golla and other BC-B communities"},
+            {"category": "BC-C", "percentage": "1%", "details": "Christians converted from SC/ST"},
+            {"category": "BC-D", "percentage": "7%", "details": "Muslims (BC-D)"},
+            {"category": "BC-E", "percentage": "4%", "details": "Kapu, Balija, Telaga, Ontari and other BC-E communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections (family income < ₹8 LPA)"},
+        ],
+        "applicable_to": "State engineering colleges (EAMCET), state medical colleges (NEET state quota), state universities, state government jobs (APPSC)",
+        "special_provisions": [
+            "Andhra Pradesh follows 50% cap as per Supreme Court mandate",
+            "Kapu community included under BC-E with 4% reservation",
+            "Women get 33% horizontal reservation in state government jobs",
+            "PwD candidates get 4% horizontal reservation",
+        ],
+    },
+    "Arunachal Pradesh": {
+        "total_reservation": "80%",
+        "categories": [
+            {"category": "APST (Arunachal Pradesh Scheduled Tribe)", "percentage": "80%", "details": "All recognized indigenous tribes of Arunachal Pradesh"},
+            {"category": "EWS", "percentage": "10%", "details": "From remaining 20% unreserved seats"},
+        ],
+        "applicable_to": "State colleges, state university admissions, state government jobs (APPSC)",
+        "special_provisions": [
+            "Arunachal Pradesh has one of the highest tribal reservation percentages in India",
+            "Most seats in state institutions reserved for indigenous tribal communities",
+            "Non-APST candidates compete for limited unreserved seats",
+            "Central institutions in the state follow central reservation norms",
+        ],
+    },
+    "Assam": {
+        "total_reservation": "52%",
+        "categories": [
+            {"category": "SC", "percentage": "7%", "details": "Kaivarta, Hira, Jhalo Malo, Namasudra and other notified castes"},
+            {"category": "ST (Plains)", "percentage": "10%", "details": "Bodo, Mising, Rabha, Tiwa and other plains tribes"},
+            {"category": "ST (Hills)", "percentage": "5%", "details": "Khasi, Garo, Karbi, Dimasa and other hill tribes"},
+            {"category": "OBC/MOBC", "percentage": "27%", "details": "More Other Backward Classes"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "State engineering/medical colleges, Gauhati University, state government jobs (APSC)",
+        "special_provisions": [
+            "Assam's total reservation exceeds 50% due to historical tribal provisions",
+            "Separate reservation for Plains and Hills tribal communities",
+            "Tea-tribe community included under OBC/MOBC category",
+            "Women get 30% horizontal reservation in state government services",
+        ],
+    },
+    "Bihar": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "16%", "details": "Dhobi, Chamar, Musahar, Dom, Pasi and other notified castes"},
+            {"category": "ST", "percentage": "1%", "details": "Santhal, Oraon, Munda, Ho and other notified tribes"},
+            {"category": "EBC (Extremely Backward Class)", "percentage": "18%", "details": "Teli, Kewat, Mali, Bind and other EBC communities"},
+            {"category": "BC (Backward Class)", "percentage": "12%", "details": "Yadav, Kurmi, Koeri and other BC communities"},
+            {"category": "BC Women", "percentage": "3%", "details": "Women from BC communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "State engineering/medical colleges, Bihar universities, state government jobs (BPSC)",
+        "special_provisions": [
+            "Bihar has separate EBC (18%) and BC (12%) reservation categories",
+            "Additional 3% reservation for women from Backward Classes",
+            "65% total reservation (including EWS) — exceeds 50% cap, subject to legal challenges",
+            "Mahadalit sub-category within SC gets priority in welfare schemes",
+        ],
+    },
+    "Chhattisgarh": {
+        "total_reservation": "58%",
+        "categories": [
+            {"category": "SC", "percentage": "13%", "details": "Chamar, Satnami, Ganda, Mehra and other notified castes"},
+            {"category": "ST", "percentage": "32%", "details": "Gond, Baiga, Halba, Kawar, Oraon and other notified tribes"},
+            {"category": "OBC", "percentage": "14%", "details": "Teli, Sahu, Kurmi, Yadav and other OBC communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "State colleges, Pt. Ravishankar University, state government jobs (CGPSC)",
+        "special_provisions": [
+            "High ST reservation (32%) due to large tribal population (~30% of state)",
+            "Total reservation at 58% exceeds Supreme Court's 50% cap — upheld due to special circumstances",
+            "Baiga and Kamar tribes get additional PVTG (Particularly Vulnerable Tribal Group) benefits",
+            "Women get 30% horizontal reservation in state government jobs",
+        ],
+    },
+    "Goa": {
+        "total_reservation": "49%",
+        "categories": [
+            {"category": "SC", "percentage": "2%", "details": "Mahar, Chambhar and other notified castes"},
+            {"category": "ST", "percentage": "12%", "details": "Gawda, Kunbi, Velip, Dhangar and other notified tribes"},
+            {"category": "OBC", "percentage": "25%", "details": "Other Backward Classes"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Goa University, GEC Farmagudi, Goa Medical College, state government jobs (Goa PSC)",
+        "special_provisions": [
+            "Relatively low SC reservation (2%) due to small SC population",
+            "Bhandari community is the largest OBC group in Goa",
+            "Central institutions in Goa (NIT Goa, BITS Pilani Goa) follow central reservation",
+            "PwD candidates get 4% horizontal reservation",
+        ],
+    },
+    "Gujarat": {
+        "total_reservation": "49.5%",
+        "categories": [
+            {"category": "SC", "percentage": "7%", "details": "Vankar, Chamar, Senva, Bhangi and other notified castes"},
+            {"category": "ST", "percentage": "15%", "details": "Bhil, Rathwa, Nayaka, Dhodia, Gamit and other notified tribes"},
+            {"category": "SEBC (Socially & Educationally Backward)", "percentage": "27%", "details": "Patel (partially), Koli, Thakor, Darbar and other SEBC communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Gujarat Technological University, state medical colleges, state government jobs (GPSC)",
+        "special_provisions": [
+            "Patidar community has been demanding OBC reservation — EWS quota partially addresses this",
+            "Gujarat was one of the first states to implement EWS reservation",
+            "High ST reservation (15%) due to significant tribal population in eastern districts",
+            "Women get 33% horizontal reservation in state government services",
+        ],
+    },
+    "Haryana": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "20%", "details": "Chamar, Balmiki, Dhanak, Khatik and other notified castes"},
+            {"category": "BC-A", "percentage": "16%", "details": "Ahir (Yadav), Gujjar, Saini, Lodh and other BC-A communities"},
+            {"category": "BC-B", "percentage": "11%", "details": "Jat and other BC-B communities (in some categories)"},
+            {"category": "SBC (Special Backward Class)", "percentage": "3%", "details": "Special Backward Class communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "State engineering/medical colleges, MDU Rohtak, KUK, state government jobs (HPSC)",
+        "special_provisions": [
+            "High SC reservation (20%) due to large Dalit population",
+            "Jat community included as BC-B after prolonged legal battles",
+            "Haryana provides reservation in private sector jobs for state domiciles (75% quota in ₹50K/month salary jobs)",
+            "Ex-servicemen and their dependents get additional reservation benefits",
+        ],
+    },
+    "Himachal Pradesh": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "25%", "details": "Chamar, Koli, Hali, Doom, Dagee and other notified castes"},
+            {"category": "ST", "percentage": "5%", "details": "Gaddi, Gujjar, Kinnaura, Lahaula and other notified tribes"},
+            {"category": "OBC", "percentage": "20%", "details": "Other Backward Classes"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "HP University, state engineering/medical colleges, state government jobs (HPPSC)",
+        "special_provisions": [
+            "One of the highest SC reservation percentages (25%) among Indian states",
+            "Tribal communities in Kinnaur, Lahaul-Spiti get special area considerations",
+            "State domicile required for state quota benefits",
+            "PwD candidates get 5% horizontal reservation",
+        ],
+    },
+    "Jharkhand": {
+        "total_reservation": "60%",
+        "categories": [
+            {"category": "SC", "percentage": "10%", "details": "Chamar, Dhobi, Dom, Musahar and other notified castes"},
+            {"category": "ST", "percentage": "26%", "details": "Santhal, Munda, Ho, Oraon, Kharia, Birhor and other notified tribes"},
+            {"category": "OBC-I", "percentage": "14%", "details": "Other Backward Class – I"},
+            {"category": "OBC-II", "percentage": "12%", "details": "Other Backward Class – II"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Ranchi University, BIT Mesra (state quota), state government jobs (JPSC)",
+        "special_provisions": [
+            "High ST reservation (26%) reflecting large tribal population",
+            "Total reservation at 60% exceeds 50% cap — subject to ongoing legal review",
+            "PVTG communities (Birhor, Asur, Sauria Paharia) get additional welfare benefits",
+            "Local domicile reservation applies for state government jobs",
+        ],
+    },
+    "Karnataka": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "15%", "details": "Adi Karnataka, Madiga, Bhovi, Lambani and other notified castes"},
+            {"category": "ST", "percentage": "3%", "details": "Soliga, Jenu Kuruba, Iruliga and other notified tribes"},
+            {"category": "OBC (Category I)", "percentage": "4%", "details": "Category I backward communities"},
+            {"category": "OBC (Category IIA)", "percentage": "15%", "details": "Vokkaliga, Lingayat, Kuruba and other communities"},
+            {"category": "OBC (Category IIB)", "percentage": "4%", "details": "Muslim OBC communities"},
+            {"category": "OBC (Category IIIA)", "percentage": "4%", "details": "Category IIIA backward communities"},
+            {"category": "OBC (Category IIIB)", "percentage": "5%", "details": "Category IIIB backward communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "VTU, state medical colleges (KCET), Karnataka state universities, state government jobs (KPSC)",
+        "special_provisions": [
+            "Karnataka has a highly detailed multi-tier OBC classification (Cat I, IIA, IIB, IIIA, IIIB)",
+            "Hyderabad-Karnataka region gets special reservation under Article 371(J)",
+            "Kannada medium students get additional preference in state admissions",
+            "Rural candidates get preference in some state recruitment categories",
+        ],
+    },
+    "Kerala": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "8%", "details": "Pulaya, Paraya, Cheruma, Kuravan and other notified castes"},
+            {"category": "ST", "percentage": "2%", "details": "Paniya, Irula, Kattunaikan, Adiya and other notified tribes"},
+            {"category": "OBC (SEBC)", "percentage": "40%", "details": "Ezhava/Thiyya (14%), Muslim (12%), Latin Catholic/SIUC (4%), OBC Christians (2%), Dheevara (2%), Vishwakarma (2%), Other SEBC (4%)"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Kerala University, CUSAT, state medical/engineering colleges (KEAM), state government jobs (Kerala PSC)",
+        "special_provisions": [
+            "Kerala has one of the most detailed OBC sub-classifications in India",
+            "Ezhava/Thiyya community gets 14% within OBC quota — largest single community reservation",
+            "Muslim community gets 12% within OBC reservation",
+            "Community-wise merit lists ensure equitable distribution within OBC",
+        ],
+    },
+    "Madhya Pradesh": {
+        "total_reservation": "63%",
+        "categories": [
+            {"category": "SC", "percentage": "16%", "details": "Chamar, Bhangi, Balai, Meghwal and other notified castes"},
+            {"category": "ST", "percentage": "20%", "details": "Bhil, Gond, Kol, Baiga, Korku and other notified tribes"},
+            {"category": "OBC", "percentage": "27%", "details": "Other Backward Classes including Yadav, Teli, Kurmi"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "RGPV, state medical colleges, MP state universities, state government jobs (MPPSC)",
+        "special_provisions": [
+            "Total reservation at 63% exceeds 50% cap — challenged in courts",
+            "High ST reservation (20%) due to large tribal population in eastern MP",
+            "Baiga, Bharia, Saharia tribes get PVTG status with additional benefits",
+            "Women get 33% horizontal reservation in state government jobs",
+        ],
+    },
+    "Maharashtra": {
+        "total_reservation": "52%",
+        "categories": [
+            {"category": "SC", "percentage": "13%", "details": "Mahar, Matang, Chambhar, Dhor and other notified castes"},
+            {"category": "ST", "percentage": "7%", "details": "Bhil, Warli, Gond, Mahadeo Koli, Katkari and other notified tribes"},
+            {"category": "OBC", "percentage": "19%", "details": "Kunbi, Mali, Dhangar, Teli and other OBC communities"},
+            {"category": "VJNT (De-notified Tribes)", "percentage": "3%", "details": "Vimukta Jati and Nomadic Tribes"},
+            {"category": "SBC (Special Backward)", "percentage": "2%", "details": "Special Backward Class communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Mumbai University, state engineering (MHT CET), state medical colleges, state government jobs (MPSC)",
+        "special_provisions": [
+            "Maharashtra has unique VJNT (De-notified Tribes) and SBC categories",
+            "Maratha reservation (up to 10%) has been subject to ongoing legal battles — currently stayed by Supreme Court",
+            "52% reservation (without Maratha quota) slightly exceeds 50% cap",
+            "Women get 30% horizontal reservation in state government services",
+        ],
+    },
+    "Manipur": {
+        "total_reservation": "56%",
+        "categories": [
+            {"category": "SC", "percentage": "3%", "details": "Lois, Yaithibi and other notified castes"},
+            {"category": "ST", "percentage": "34%", "details": "Naga, Kuki, Hmar, Mizo, Anal and other hill tribes"},
+            {"category": "OBC", "percentage": "17%", "details": "Other Backward Classes including Meitei Muslims"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Manipur University, state colleges, state government jobs (MPSC Manipur)",
+        "special_provisions": [
+            "High ST reservation (34%) due to large tribal population in hill districts",
+            "Separate provisions for Meitei community in valley areas",
+            "Hill area vs Valley area seat distribution in some state institutions",
+            "Inner Line Permit (ILP) requirement affects non-local admissions",
+        ],
+    },
+    "Meghalaya": {
+        "total_reservation": "80%",
+        "categories": [
+            {"category": "ST (Khasi)", "percentage": "40%", "details": "Khasi and Jaintia tribal communities"},
+            {"category": "ST (Garo)", "percentage": "40%", "details": "Garo tribal communities"},
+            {"category": "EWS", "percentage": "10%", "details": "From remaining 20% unreserved seats"},
+        ],
+        "applicable_to": "NEHU, state colleges, state government jobs (MPSC Meghalaya)",
+        "special_provisions": [
+            "Meghalaya has 80% tribal reservation — one of the highest in India",
+            "Equal split between Khasi (40%) and Garo (40%) tribal groups",
+            "Non-tribal candidates compete for only 20% unreserved seats",
+            "Sixth Schedule areas have additional autonomous district council provisions",
+        ],
+    },
+    "Mizoram": {
+        "total_reservation": "80%",
+        "categories": [
+            {"category": "ST", "percentage": "80%", "details": "Mizo (Lushai), Lai, Mara, Chakma and other notified tribes"},
+            {"category": "EWS", "percentage": "10%", "details": "From remaining unreserved seats"},
+        ],
+        "applicable_to": "Mizoram University, state colleges, state government jobs (MPSC Mizoram)",
+        "special_provisions": [
+            "Mizoram has 80% tribal reservation — among the highest nationally",
+            "Almost entire population belongs to Scheduled Tribe category (~95%)",
+            "Inner Line Permit required for non-Mizo residents",
+            "Central institutions (MZU, NIT Mizoram) follow central reservation norms",
+        ],
+    },
+    "Nagaland": {
+        "total_reservation": "80%",
+        "categories": [
+            {"category": "ST (Naga Tribes)", "percentage": "80%", "details": "Angami, Ao, Sema, Lotha, Chakhesang, Rengma and other Naga tribes"},
+            {"category": "EWS", "percentage": "10%", "details": "From remaining unreserved seats"},
+        ],
+        "applicable_to": "Nagaland University, state colleges, state government jobs (NPSC)",
+        "special_provisions": [
+            "80% tribal reservation reflecting predominantly tribal population",
+            "Article 371(A) provides special provisions for Nagaland — Naga customary law protected",
+            "Inner Line Permit requirement for non-Naga residents",
+            "Tribe-wise roster system ensures representation of all Naga tribes",
+        ],
+    },
+    "Odisha": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "16%", "details": "Bauri, Chamar, Dom, Hadi, Pana and other notified castes"},
+            {"category": "ST", "percentage": "22%", "details": "Gond, Kandha, Santhal, Saora, Bonda and other notified tribes"},
+            {"category": "SEBC (OBC)", "percentage": "11%", "details": "Socially & Educationally Backward Classes"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Utkal University, state engineering/medical colleges, state government jobs (OPSC)",
+        "special_provisions": [
+            "High ST reservation (22%) due to significant tribal population",
+            "13 PVTG communities (Bonda, Dongria Kondh, etc.) get additional welfare support",
+            "Women get 33% horizontal reservation in state government jobs",
+            "Odisha follows strict 50% cap as per Supreme Court guidelines",
+        ],
+    },
+    "Punjab": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "25%", "details": "Mazhabi Sikh, Ravidasia, Ad Dharmi, Balmiki and other notified castes"},
+            {"category": "BC (Backward Class)", "percentage": "12%", "details": "Tarkhaan, Kumhar, Nai, Saini and other BC communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+            {"category": "Ex-Servicemen", "percentage": "3%", "details": "From unreserved category"},
+            {"category": "Sports Persons", "percentage": "2%", "details": "Sports quota in state institutions"},
+        ],
+        "applicable_to": "Punjabi University, Punjab Engineering College, state medical colleges, state government jobs (PPSC)",
+        "special_provisions": [
+            "High SC reservation (25%) — among the highest in India due to large Dalit population",
+            "Separate sub-categories within SC: Mazhabi Sikh / Balmiki get 50% of SC quota",
+            "Additional reservation for ex-servicemen (3%) and sports persons (2%)",
+            "Rural area candidates get preference in some recruitment categories",
+        ],
+    },
+    "Rajasthan": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "16%", "details": "Meghwal, Bairwa, Balai, Khatik and other notified castes"},
+            {"category": "ST", "percentage": "12%", "details": "Meena, Bhil, Garasia, Saharia and other notified tribes"},
+            {"category": "OBC", "percentage": "21%", "details": "Jat, Gujjar, Mali, Teli and other OBC communities"},
+            {"category": "MBC (Most Backward)", "percentage": "1%", "details": "Most Backward Classes — Gujjar and 4 other communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Rajasthan University, state engineering/medical colleges, state government jobs (RPSC)",
+        "special_provisions": [
+            "Gujjar community gets additional MBC reservation after prolonged agitations",
+            "Meena community is the largest ST group in Rajasthan",
+            "Women get 30% horizontal reservation in state government services",
+            "State follows strict 50% cap as per Supreme Court mandate",
+        ],
+    },
+    "Sikkim": {
+        "total_reservation": "70%",
+        "categories": [
+            {"category": "SC", "percentage": "5%", "details": "Kami, Damai, Sarki and other notified castes"},
+            {"category": "ST (Bhutia-Lepcha)", "percentage": "33%", "details": "Bhutia, Lepcha and other notified tribes"},
+            {"category": "OBC", "percentage": "22%", "details": "Newar, Gurung, Tamang, Rai, Limbu and other OBC communities"},
+            {"category": "MBC (Most Backward)", "percentage": "10%", "details": "Most Backward Classes"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Sikkim University, state colleges, state government jobs (SPSC)",
+        "special_provisions": [
+            "Sikkim has 70% total reservation — exceeds 50% cap due to special provisions",
+            "Article 371(F) provides special provisions for Sikkim",
+            "Bhutia-Lepcha communities get 33% reservation",
+            "Local/subject/domicile certificate required for state reservation benefits",
+        ],
+    },
+    "Tamil Nadu": {
+        "total_reservation": "69%",
+        "categories": [
+            {"category": "SC", "percentage": "18%", "details": "Adi Dravida, Pallar, Paraiyar, Chakkiliar and other notified castes"},
+            {"category": "SC (Arunthathiyar)", "percentage": "3%", "details": "Arunthathiyar sub-group within SC"},
+            {"category": "ST", "percentage": "1%", "details": "Irular, Kadar, Toda, Kota and other notified tribes"},
+            {"category": "BC (Backward Class)", "percentage": "26.5%", "details": "Nadar, Thevar, Vanniyar, Mudaliar and other BC communities"},
+            {"category": "BC (Muslim)", "percentage": "3.5%", "details": "Muslim community under BC"},
+            {"category": "MBC (Most Backward)", "percentage": "20%", "details": "Vanniyar (10.5% within MBC), and other MBC communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Anna University, state medical colleges (NEET state quota), state government jobs (TNPSC)",
+        "special_provisions": [
+            "Tamil Nadu has 69% reservation — highest among major states, protected by 9th Schedule",
+            "Placed in 9th Schedule of Constitution to protect from judicial review",
+            "Separate 3% reservation for Arunthathiyar (most oppressed SC sub-group)",
+            "Vanniyar community gets 10.5% internal reservation within MBC quota",
+            "No creamy layer concept applied for BC/MBC in Tamil Nadu",
+        ],
+    },
+    "Telangana": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "15%", "details": "Madiga, Mala, Adi Andhra and other notified castes"},
+            {"category": "ST", "percentage": "6%", "details": "Gond, Lambada, Koya, Chenchu and other notified tribes"},
+            {"category": "BC-A", "percentage": "7%", "details": "Backward Class A communities"},
+            {"category": "BC-B", "percentage": "10%", "details": "Backward Class B communities including Yadava"},
+            {"category": "BC-C", "percentage": "1%", "details": "SC/ST converts to Christianity"},
+            {"category": "BC-D", "percentage": "7%", "details": "Muslim OBC communities"},
+            {"category": "BC-E", "percentage": "4%", "details": "Kapu, Balija and other BC-E communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "JNTU Hyderabad, Osmania University, state medical colleges, state government jobs (TSPSC)",
+        "special_provisions": [
+            "Telangana follows similar reservation structure as Andhra Pradesh (parent state)",
+            "Telangana state domicile required for state quota benefits",
+            "Local area preference in Telangana state government jobs",
+            "Women get 33% horizontal reservation in state government services",
+        ],
+    },
+    "Tripura": {
+        "total_reservation": "55%",
+        "categories": [
+            {"category": "SC", "percentage": "16%", "details": "Dhobi, Muchi, Namasudra, Patni and other notified castes"},
+            {"category": "ST", "percentage": "31%", "details": "Tripuri, Reang, Jamatia, Chakma, Halam and other notified tribes"},
+            {"category": "OBC", "percentage": "2%", "details": "Other Backward Classes"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Tripura University, state colleges, state government jobs (TPSC)",
+        "special_provisions": [
+            "High ST reservation (31%) reflecting significant tribal population",
+            "Tripura Tribal Areas Autonomous District Council has additional provisions",
+            "Bengali and tribal language medium education both available",
+            "Particularly Vulnerable Tribal Groups (Reang) get additional welfare support",
+        ],
+    },
+    "Uttar Pradesh": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "21%", "details": "Chamar, Pasi, Dhobi, Kori, Balmiki and other notified castes"},
+            {"category": "ST", "percentage": "2%", "details": "Tharu, Buksa, Bhotia, Raji and other notified tribes"},
+            {"category": "OBC", "percentage": "27%", "details": "Yadav, Kurmi, Lodh, Kushwaha, Jat and other OBC communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "UP state universities, state engineering/medical colleges, state government jobs (UPPSC)",
+        "special_provisions": [
+            "Highest SC reservation (21%) among Indian states due to large Dalit population",
+            "UP has the largest number of reserved seats in absolute terms",
+            "Women get 33% horizontal reservation in state government jobs (recently increased from 20%)",
+            "Freedom fighter and ex-servicemen dependents get additional reservation benefits",
+        ],
+    },
+    "Uttarakhand": {
+        "total_reservation": "50%",
+        "categories": [
+            {"category": "SC", "percentage": "19%", "details": "Chamar, Dom, Kol, Badi and other notified castes"},
+            {"category": "ST", "percentage": "4%", "details": "Tharu, Buksa, Bhotia, Jaunsari and other notified tribes"},
+            {"category": "OBC", "percentage": "14%", "details": "Other Backward Classes"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "GBPUAT, state engineering/medical colleges, state government jobs (UKPSC)",
+        "special_provisions": [
+            "High SC reservation (19%) carried forward from parent state UP",
+            "Hill area candidates get additional relaxation in some recruitment",
+            "Women get 30% horizontal reservation in state government services",
+            "Uttarakhand follows strict 50% cap as per Supreme Court mandate",
+        ],
+    },
+    "West Bengal": {
+        "total_reservation": "45%",
+        "categories": [
+            {"category": "SC", "percentage": "22%", "details": "Rajbanshi, Namasudra, Pod, Bagdi, Chamar and other notified castes"},
+            {"category": "ST", "percentage": "6%", "details": "Santhal, Oraon, Munda, Bhumij and other notified tribes"},
+            {"category": "OBC-A", "percentage": "10%", "details": "OBC sub-group A — Muslim OBC and other communities"},
+            {"category": "OBC-B", "percentage": "7%", "details": "OBC sub-group B — other backward communities"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Jadavpur University, Calcutta University, state engineering/medical colleges, state government jobs (WBPSC)",
+        "special_provisions": [
+            "High SC reservation (22%) — second highest among states",
+            "West Bengal has sub-divided OBC into OBC-A and OBC-B categories",
+            "Total reservation at 45% (without EWS) is below 50% cap",
+            "Women get 35% horizontal reservation in state government jobs — among the highest",
+        ],
+    },
+    "Delhi": {
+        "total_reservation": "49.5%",
+        "categories": [
+            {"category": "SC", "percentage": "15%", "details": "Chamar, Balmiki, Khatik, Jatav and other notified castes"},
+            {"category": "ST", "percentage": "7.5%", "details": "Delhi has negligible ST population; seats often remain vacant"},
+            {"category": "OBC", "percentage": "27%", "details": "Other Backward Classes as per central list"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Delhi University, IP University, DTU, NSUT, state government jobs (DSSSB)",
+        "special_provisions": [
+            "Delhi follows central reservation norms being a Union Territory",
+            "Delhi University has 85% Delhi quota with central reservation norms",
+            "DSSSB recruitment follows central government reservation policy",
+            "ST reservation seats often remain unfilled due to negligible ST population",
+        ],
+    },
+    "Chandigarh": {
+        "total_reservation": "49.5%",
+        "categories": [
+            {"category": "SC", "percentage": "15%", "details": "As per central SC list"},
+            {"category": "ST", "percentage": "7.5%", "details": "As per central ST list"},
+            {"category": "OBC", "percentage": "27%", "details": "As per central OBC list"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "PU Chandigarh, PEC, GGDSD College, UT administration jobs",
+        "special_provisions": [
+            "Chandigarh follows central reservation norms as a UT",
+            "Panjab University has its own reservation policy following central norms",
+            "PEC Chandigarh follows central reservation for admissions",
+            "UT administration recruitment follows central government norms",
+        ],
+    },
+    "Puducherry": {
+        "total_reservation": "49.5%",
+        "categories": [
+            {"category": "SC", "percentage": "16%", "details": "As per Puducherry SC list"},
+            {"category": "ST", "percentage": "0%", "details": "No ST population in Puducherry"},
+            {"category": "OBC", "percentage": "33.5%", "details": "Other Backward Classes as per Puducherry list"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "Pondicherry University, JIPMER (state quota), state government jobs (UT Administration)",
+        "special_provisions": [
+            "Puducherry has no ST reservation as there is no ST population",
+            "Higher OBC reservation (33.5%) to compensate for zero ST reservation",
+            "JIPMER follows central reservation for its seats",
+            "French-origin residents get some consideration in state government jobs",
+        ],
+    },
+    "Jammu & Kashmir": {
+        "total_reservation": "54%",
+        "categories": [
+            {"category": "SC", "percentage": "8%", "details": "As per J&K SC list"},
+            {"category": "ST", "percentage": "10%", "details": "Gujjar, Bakerwal and other notified tribes"},
+            {"category": "OBC", "percentage": "4%", "details": "Other Backward Classes"},
+            {"category": "RBA (Resident of Backward Area)", "percentage": "10%", "details": "Residents of backward/remote areas like Poonch, Rajouri, Doda"},
+            {"category": "ALC (Actual Line of Control)", "percentage": "2%", "details": "Residents near LoC areas"},
+            {"category": "PSP (Pahari Speaking People)", "percentage": "4%", "details": "Pahari speaking community — newly added"},
+            {"category": "EWS", "percentage": "10%", "details": "Economically Weaker Sections"},
+        ],
+        "applicable_to": "University of Jammu, University of Kashmir, NIT Srinagar (state quota), state government jobs (JKPSC)",
+        "special_provisions": [
+            "J&K has unique reservation categories like RBA, ALC, and PSP not found in other states",
+            "Gujjar and Bakerwal communities are the major ST groups",
+            "After abrogation of Article 370, central reservation norms apply to central institutions",
+            "Kashmiri Pandit migrants have reserved seats in J&K educational institutions",
+            "Ladakh UT now has separate reservation policy",
+        ],
+    },
+    "Ladakh": {
+        "total_reservation": "75%",
+        "categories": [
+            {"category": "ST", "percentage": "75%", "details": "Balti, Beda, Bot, Brokpa, Changpa, Mon, Purigpa and other notified tribes"},
+            {"category": "EWS", "percentage": "10%", "details": "From remaining unreserved seats"},
+        ],
+        "applicable_to": "University of Ladakh, state colleges, UT administration jobs",
+        "special_provisions": [
+            "Ladakh has 75% ST reservation reflecting predominantly tribal population",
+            "Newly formed UT — reservation policies still evolving",
+            "Central institutions follow central reservation norms",
+            "Special provisions under 6th Schedule being discussed for Ladakh",
+        ],
+    },
+}
+
+# ═══════════════════════════════════════════════════════════════════════════
 
 def get_all_states() -> list[str]:
     """Return list of all states in the data."""
@@ -1771,9 +2328,23 @@ def get_all_states() -> list[str]:
 
 def get_state_data(state: str) -> dict | None:
     """Return full data for a given state, or None if not found."""
-    return _STATE_OPPORTUNITIES.get(state)
+    data = _STATE_OPPORTUNITIES.get(state)
+    if data is None:
+        return None
+    result = dict(data)
+    reservation = _STATE_RESERVATION.get(state)
+    if reservation:
+        result["reservation"] = reservation
+    return result
 
 
 def get_all_state_data() -> dict[str, dict]:
     """Return all state data (for template rendering)."""
-    return _STATE_OPPORTUNITIES
+    result = {}
+    for state, data in _STATE_OPPORTUNITIES.items():
+        entry = dict(data)
+        reservation = _STATE_RESERVATION.get(state)
+        if reservation:
+            entry["reservation"] = reservation
+        result[state] = entry
+    return result

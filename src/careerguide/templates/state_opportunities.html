@@ -29,6 +29,7 @@
             <button class="state-tab" type="button" data-pane="industry">🏭 Industry</button>
             <button class="state-tab" type="button" data-pane="startups">🚀 Startups</button>
             <button class="state-tab" type="button" data-pane="schemes">📋 Schemes</button>
+            <button class="state-tab" type="button" data-pane="reservation">🏛️ Reservation</button>
         </div>
 
         <!-- ═══ Pane: Job Market ═══ -->
@@ -218,6 +219,53 @@
             </div>
             {% else %}
             <p class="muted">Government schemes data not available.</p>
+            {% endif %}
+        </div>
+
+        <!-- ═══ Pane: Reservation ═══ -->
+        <div class="state-pane" data-pane-id="reservation">
+            {% if sdata.reservation %}
+            <div class="reservation-header">
+                <h3>🏛️ Reservation Policy — {{ state }}</h3>
+                <span class="reservation-total-badge">Total: {{ sdata.reservation.total_reservation }}</span>
+            </div>
+
+            <h4>Category-wise Reservation</h4>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Percentage</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for cat in sdata.reservation.categories %}
+                        <tr>
+                            <td><strong>{{ cat.category }}</strong></td>
+                            <td><span class="reservation-pct-badge">{{ cat.percentage }}</span></td>
+                            <td>{{ cat.details }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="reservation-applicable">
+                <strong>Applicable To:</strong> {{ sdata.reservation.applicable_to }}
+            </div>
+
+            {% if sdata.reservation.special_provisions %}
+            <h4>Special Provisions</h4>
+            <ul class="reservation-notes-list">
+                {% for note in sdata.reservation.special_provisions %}
+                <li>{{ note }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% else %}
+            <p class="muted">Reservation data not available for this state.</p>
             {% endif %}
         </div>
 

@@ -40,6 +40,7 @@
                 <button class="co-tab-item" type="button" data-pane="pane-abroad-{{ idx }}">Abroad</button>
                 <button class="co-tab-item" type="button" data-pane="pane-scholarships-{{ idx }}">🎓 Scholarships</button>
                 <button class="co-tab-item" type="button" data-pane="pane-ai-impact-{{ idx }}">🤖 AI Impact</button>
+                <button class="co-tab-item" type="button" data-pane="pane-reservation-{{ idx }}">📋 Reservation</button>
             </div>
 
             <!-- ═══ Pane: Roadmap ═══ -->
@@ -332,6 +333,62 @@
                 </div>
                 {% else %}
                 <p class="muted">AI impact data not available for this stream.</p>
+                {% endif %}
+            </div>
+
+            <!-- ═══ Pane: Reservation ═══ -->
+            <div class="co-pane" id="pane-reservation-{{ idx }}">
+                {% if sdata.reservation %}
+                {% set res = sdata.reservation %}
+                <div class="reservation-header">
+                    <h3>📋 Reservation Policy — {{ stream }}</h3>
+                </div>
+
+                <div class="reservation-summary">{{ res.summary }}</div>
+
+                <h4 class="reservation-section-heading">🏛️ Central Reservation Categories</h4>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Percentage</th>
+                                <th>Applicable To</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for cat in res.central_reservation %}
+                            <tr>
+                                <td><strong>{{ cat.category }}</strong></td>
+                                <td><span class="reservation-pct-badge">{{ cat.percentage }}</span></td>
+                                <td>{{ cat.applicable_to }}</td>
+                                <td>{{ cat.details }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="reservation-section-heading">📝 Exam-Wise Reservation Policy</h4>
+                <div class="reservation-exam-grid">
+                    {% for ex in res.key_exams_reservation %}
+                    <div class="reservation-exam-card">
+                        <h5>{{ ex.exam }}</h5>
+                        <div class="reservation-exam-policy">{{ ex.policy }}</div>
+                        <div class="reservation-exam-notes"><strong>Note:</strong> {{ ex.notes }}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <h4 class="reservation-section-heading">⚠️ Important Notes</h4>
+                <ul class="reservation-notes-list">
+                    {% for note in res.important_notes %}
+                    <li>{{ note }}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p class="muted">Reservation data not available for this stream.</p>
                 {% endif %}
             </div>
 

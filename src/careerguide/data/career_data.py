@@ -1704,6 +1704,299 @@ _DEFENCE_COLLEGES_BY_STATE: dict[str, list[College]] = {
     ],
 }
 
+# ═══════════════════════════════════════════════════════════════════════════
+# RESERVATION DATA — Central & state-level reservation policies per stream
+# ═══════════════════════════════════════════════════════════════════════════
+
+_RESERVATION_DATA: dict[str, dict] = {
+    "Engineering & Technology": {
+        "summary": "Engineering admissions through JEE and state CETs follow central and state reservation norms. IITs/NITs/IIITs follow the central policy; state engineering colleges follow their respective state policies.",
+        "central_reservation": [
+            {"category": "SC (Scheduled Caste)", "percentage": "15%", "applicable_to": "IITs, NITs, IIITs, Central Universities", "details": "Based on Constitution (1st Amendment) Act, 1951"},
+            {"category": "ST (Scheduled Tribe)", "percentage": "7.5%", "applicable_to": "IITs, NITs, IIITs, Central Universities", "details": "Based on Constitution (1st Amendment) Act, 1951"},
+            {"category": "OBC-NCL (Other Backward Classes – Non-Creamy Layer)", "percentage": "27%", "applicable_to": "IITs, NITs, IIITs, Central Universities", "details": "Based on Central Educational Institutions Act, 2006"},
+            {"category": "EWS (Economically Weaker Section)", "percentage": "10%", "applicable_to": "IITs, NITs, IIITs, Central Universities", "details": "103rd Constitutional Amendment, 2019. Family income < ₹8 LPA"},
+            {"category": "PwD (Persons with Disability)", "percentage": "5%", "applicable_to": "Horizontal reservation across all categories", "details": "Rights of Persons with Disabilities Act, 2016"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "JEE Main / JEE Advanced", "policy": "Central reservation norms (SC 15%, ST 7.5%, OBC-NCL 27%, EWS 10%)", "notes": "Separate rank lists for each category; relaxed cutoff scores"},
+            {"exam": "State CETs (MHT CET, KCET, EAMCET, etc.)", "policy": "State-specific reservation norms apply", "notes": "Varies by state; some states have higher OBC/SC/ST percentages"},
+        ],
+        "important_notes": [
+            "Central institutions (IITs/NITs) follow uniform central reservation policy",
+            "State-level colleges follow state-specific reservation policies which may differ significantly",
+            "Creamy layer limit for OBC: ₹8 LPA family income",
+            "EWS certificate required from district magistrate; family income must be < ₹8 LPA",
+            "Supernumerary seats available for female candidates at IITs (20% additional seats)",
+        ],
+    },
+    "Medical & Healthcare": {
+        "summary": "Medical admissions via NEET follow central reservation for AIIMS/JIPMER/central colleges and state reservation norms for state medical colleges. The All India Quota (15%) follows central norms while state quotas (85%) follow respective state policies.",
+        "central_reservation": [
+            {"category": "SC (Scheduled Caste)", "percentage": "15%", "applicable_to": "AIIMS, JIPMER, Central Quota (15% AIQ)", "details": "All India Quota seats in government medical colleges"},
+            {"category": "ST (Scheduled Tribe)", "percentage": "7.5%", "applicable_to": "AIIMS, JIPMER, Central Quota (15% AIQ)", "details": "All India Quota seats in government medical colleges"},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "AIIMS, JIPMER, Central Quota (15% AIQ)", "details": "Implemented in AIQ from 2007; Supreme Court upheld in 2008"},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "AIIMS, JIPMER, Central Quota (15% AIQ)", "details": "Applicable from 2019-20 academic session onwards"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation across all categories", "details": "Benchmark disabilities as per RPwD Act, 2016"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "NEET UG", "policy": "15% AIQ: Central reservation; 85% State Quota: State reservation norms", "notes": "State quota seats follow individual state reservation policies"},
+            {"exam": "NEET PG", "policy": "Central reservation norms for AIQ; state norms for state seats", "notes": "50% AIQ seats in PG follow central reservation"},
+        ],
+        "important_notes": [
+            "All India Quota (15% UG, 50% PG) follows central reservation policy",
+            "State Quota (85% UG, 50% PG) follows respective state reservation policies",
+            "Some states like Tamil Nadu have up to 69% reservation in state quota",
+            "Domicile certificate required for state quota seats",
+            "OBC/SC/ST candidates get fee concessions at most government medical colleges",
+        ],
+    },
+    "Law & Legal Studies": {
+        "summary": "Law admissions through CLAT and university-level exams follow reservation norms. National Law Universities (NLUs) follow central reservation; state law colleges follow state policies.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "NLUs, Central Universities", "details": "Applied through CLAT counselling"},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "NLUs, Central Universities", "details": "Applied through CLAT counselling"},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "NLUs, Central Universities", "details": "Most NLUs follow central norms; a few follow state norms"},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "NLUs, Central Universities", "details": "Implemented from 2020 onwards in most NLUs"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation at NLUs", "details": "As per RPwD Act, 2016"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "CLAT", "policy": "Central reservation norms for NLUs", "notes": "Separate merit lists and cutoffs for reserved categories"},
+            {"exam": "AILET (NLU Delhi)", "policy": "Central reservation norms", "notes": "NLU Delhi conducts its own entrance exam"},
+        ],
+        "important_notes": [
+            "NLUs established by state acts may follow state reservation in some seats",
+            "NLSIU Bangalore follows Karnataka state reservation for a portion of seats",
+            "Some NLUs have additional reservations for Kashmiri migrants, wards of defence personnel",
+            "Fee waivers available for SC/ST students at most NLUs",
+        ],
+    },
+    "Science & Research": {
+        "summary": "Science and research admissions through KVPY, NEST, IISER aptitude tests follow central reservation. IISc and IISERs follow central norms; state universities follow state policies.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "IISc, IISERs, Central Universities", "details": "Applied through entrance exam counselling"},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "IISc, IISERs, Central Universities", "details": "Applied through entrance exam counselling"},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "IISc, IISERs, Central Universities", "details": "Central reservation norms"},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "IISc, IISERs, Central Universities", "details": "103rd Amendment applicable"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation", "details": "As per RPwD Act, 2016"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "KVPY / INSPIRE", "policy": "Central reservation norms", "notes": "Fellowship amounts same across categories"},
+            {"exam": "NEST (NISER/CEBS)", "policy": "Central reservation norms", "notes": "Separate cutoffs for reserved categories"},
+        ],
+        "important_notes": [
+            "CSIR/UGC fellowships follow central reservation for PhD admissions",
+            "INSPIRE Fellowship by DST has no category-based reservation but encourages diversity",
+            "IISERs provide full tuition fee waiver for SC/ST candidates",
+            "Research fellowships (JRF/SRF) follow central reservation in selection",
+        ],
+    },
+    "Education & Teaching": {
+        "summary": "Education and teaching admissions follow central reservation for central universities and CTET. State-level TET and B.Ed admissions follow respective state policies.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "Central Universities, KVS, NVS", "details": "B.Ed admissions and teacher recruitment"},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "Central Universities, KVS, NVS", "details": "B.Ed admissions and teacher recruitment"},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "Central Universities, KVS, NVS", "details": "B.Ed admissions and teacher recruitment"},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "Central Universities, KVS, NVS", "details": "Since 2019"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation", "details": "Includes visual, hearing, locomotor, and intellectual disabilities"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "CTET", "policy": "Qualification exam — no reservation in exam, but reservation in recruitment", "notes": "Relaxed qualifying marks for SC/ST: 55% vs 60%"},
+            {"exam": "State TET", "policy": "State-specific reservation in teacher recruitment", "notes": "Varies by state"},
+        ],
+        "important_notes": [
+            "Teacher recruitment follows roster system with point-based reservation",
+            "KVS and NVS recruitment follows central government reservation norms",
+            "State teacher recruitment follows state-specific policies",
+            "Many states provide relaxed age limits for SC/ST/OBC candidates (3-5 years relaxation)",
+        ],
+    },
+    "Commerce, Finance & Business": {
+        "summary": "Commerce and business admissions through CUET, CA Foundation, and MBA exams follow central reservation for central institutions. Professional bodies like ICAI (CA) have no category reservation in exams but follow norms for articleship placements.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "IIMs, Central Universities, DU colleges", "details": "Applicable through CUET/CAT counselling"},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "IIMs, Central Universities, DU colleges", "details": "Applicable through CUET/CAT counselling"},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "IIMs, Central Universities, DU colleges", "details": "Applicable through CUET/CAT counselling"},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "IIMs, Central Universities, DU colleges", "details": "Implemented from 2019"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation", "details": "Applicable at IIMs and central institutions"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "CA Foundation / Intermediate / Final", "policy": "No category reservation in ICAI exams — merit-based", "notes": "However, ICAI offers fee concessions and scholarships for SC/ST students"},
+            {"exam": "CAT (IIMs)", "policy": "Central reservation norms at IIMs", "notes": "Relaxed cutoff scores for reserved categories"},
+        ],
+        "important_notes": [
+            "ICAI, ICSI, and ICMAI exams are purely merit-based with no reservation",
+            "CA/CS/CMA professional bodies offer financial assistance to SC/ST candidates",
+            "IIM admissions follow central reservation with separate shortlisting criteria",
+            "State commerce colleges follow respective state reservation policies",
+        ],
+    },
+    "Arts & Humanities": {
+        "summary": "Arts and humanities admissions through CUET and university-level exams follow central reservation for central universities. UPSC Civil Services follows the most comprehensive reservation policy.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "Central Universities, UPSC", "details": "DU, JNU, BHU, etc."},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "Central Universities, UPSC", "details": "DU, JNU, BHU, etc."},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "Central Universities, UPSC", "details": "DU, JNU, BHU, etc."},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "Central Universities, UPSC", "details": "Since 2019"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation", "details": "As per RPwD Act, 2016"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "UPSC CSE", "policy": "SC 15%, ST 7.5%, OBC 27%, EWS 10%; age relaxation SC/ST +5 yrs, OBC +3 yrs", "notes": "Unlimited attempts for SC/ST (till age limit); 9 for OBC"},
+            {"exam": "CUET", "policy": "Central reservation for central university admissions", "notes": "Separate cutoffs per category"},
+        ],
+        "important_notes": [
+            "UPSC provides maximum age relaxation: SC/ST get 5 years, OBC 3 years extra",
+            "SC/ST candidates get unlimited UPSC attempts until upper age limit",
+            "Fee waivers for SC/ST candidates in UPSC and most entrance exams",
+            "JNU, BHU, AMU have additional internal reservation policies (deprivation points at JNU)",
+        ],
+    },
+    "Design & Creative Arts": {
+        "summary": "Design admissions through UCEED, NID DAT, and NIFT entrance follow central reservation. NIDs and NIFTs being centrally funded follow central norms.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "NID, NIFT, IIT Design (IDC)", "details": "Applied through entrance exam counselling"},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "NID, NIFT, IIT Design (IDC)", "details": "Applied through entrance exam counselling"},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "NID, NIFT, IIT Design (IDC)", "details": "Applied through entrance exam counselling"},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "NID, NIFT, IIT Design (IDC)", "details": "Implemented from 2020"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation", "details": "As per RPwD Act, 2016"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "UCEED (IIT Design)", "policy": "Central reservation norms", "notes": "Same policy as JEE Advanced"},
+            {"exam": "NID DAT / NIFT Entrance", "policy": "Central reservation norms", "notes": "Separate merit lists for reserved categories"},
+        ],
+        "important_notes": [
+            "NID offers full fee waiver for SC/ST and economically disadvantaged students",
+            "NIFT provides fee concession and hostel subsidy for SC/ST students",
+            "Private design colleges (Srishti, Pearl Academy) may not follow reservation",
+            "Portfolio/studio tests are common — category relaxation mainly in entrance exam cutoffs",
+        ],
+    },
+    "Performing & Fine Arts": {
+        "summary": "Performing arts admissions through institution-specific auditions and entrance tests follow reservation norms at central institutions (FTII, NSD, Satyajit Ray). State arts universities follow state policies.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "FTII, NSD, SRFTI, Central Universities", "details": "Applied during admissions"},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "FTII, NSD, SRFTI, Central Universities", "details": "Applied during admissions"},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "FTII, NSD, SRFTI, Central Universities", "details": "Applied during admissions"},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "FTII, NSD, SRFTI, Central Universities", "details": "Since 2019"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation", "details": "As per RPwD Act, 2016"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "FTII Entrance (JET)", "policy": "Central reservation norms", "notes": "Audition/interview rounds for all candidates; cutoff relaxation for reserved categories"},
+            {"exam": "NSD Entrance", "policy": "Central reservation norms", "notes": "Workshop-based selection; reservation applied at admission stage"},
+        ],
+        "important_notes": [
+            "Talent/audition is the primary selection criterion — reservation applies to cutoff scores",
+            "FTII offers full tuition fee waiver and stipend for SC/ST students",
+            "NSD provides hostel and mess fee waiver for economically weaker students",
+            "Many performing arts institutions have a small intake (15-30 students), making reserved seats limited",
+        ],
+    },
+    "Sports & Physical Education": {
+        "summary": "Sports admissions follow a dual policy — sports quota (supernumerary) and regular reservation. Central sports bodies (SAI, LNIPE) follow central norms; state sports colleges follow state policies.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "SAI, LNIPE, Central Universities", "details": "Sports + academic admissions"},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "SAI, LNIPE, Central Universities", "details": "Sports + academic admissions"},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "SAI, LNIPE, Central Universities", "details": "Sports + academic admissions"},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "SAI, LNIPE, Central Universities", "details": "Since 2019"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation (Para-sports emphasis)", "details": "Para-sports athletes get additional support"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "SAI Selection Trials", "policy": "Central reservation norms + sports merit", "notes": "Performance in trials is primary; reservation in final selection"},
+            {"exam": "BPEd / MPEd Entrance", "policy": "Central/state reservation norms", "notes": "Physical fitness tests mandatory for all categories"},
+        ],
+        "important_notes": [
+            "Sports quota admissions are supernumerary (5% in most central universities)",
+            "Khelo India scholarship provides ₹5-6 lakh/year — no category restriction but reserved category candidates prioritized",
+            "SAI Training Centres provide free training, boarding, and equipment for talented athletes",
+            "Para-sports athletes eligible for additional government funding and training support",
+        ],
+    },
+    "Civil Services & Government Services": {
+        "summary": "Government services follow the most comprehensive reservation policy in India. UPSC, SSC, Banking, Railways — all follow central reservation. State services follow respective state policies which may have higher reservation percentages.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "UPSC, SSC, Banking, Railways, PSUs", "details": "All central government services"},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "UPSC, SSC, Banking, Railways, PSUs", "details": "All central government services"},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "UPSC, SSC, Banking, Railways, PSUs", "details": "All central government services"},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "UPSC, SSC, Banking, Railways, PSUs", "details": "Since 2019; family income < ₹8 LPA"},
+            {"category": "PwD", "percentage": "4%", "applicable_to": "Horizontal reservation across all categories", "details": "Increased from 3% to 4% under RPwD Act, 2016"},
+            {"category": "Ex-Servicemen", "percentage": "10%", "applicable_to": "Group C & D posts (SSC, Railways)", "details": "Not applicable to Group A & B services like IAS/IPS"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "UPSC CSE (IAS/IPS/IFS)", "policy": "SC 15%, ST 7.5%, OBC 27%, EWS 10%; age relaxation: SC/ST +5, OBC +3 yrs", "notes": "SC/ST: unlimited attempts; OBC: 9 attempts; General/EWS: 6 attempts"},
+            {"exam": "SSC CGL / CHSL", "policy": "Central reservation norms + ex-servicemen 10%", "notes": "Age relaxation and fee waivers for reserved categories"},
+            {"exam": "IBPS PO / Clerk", "policy": "Central reservation norms", "notes": "Relaxed qualifying marks and age for reserved categories"},
+        ],
+        "important_notes": [
+            "UPSC CSE: SC/ST get unlimited attempts (till age limit 37); OBC gets 9 attempts (till 38); General/EWS 6 (till 32)",
+            "Exam fee waiver for SC/ST/PwD and female candidates in most central exams",
+            "Carry-forward of unfilled reserved vacancies to subsequent recruitment cycles",
+            "State PCS exams may have different (often higher) reservation percentages — check state policy",
+            "Roster system ensures proportional representation across all levels",
+        ],
+    },
+    "Hospitality, Travel & Tourism": {
+        "summary": "Hospitality admissions through NCHMCT JEE follow central reservation for IHMs (central). State IHMs and private colleges follow their own policies.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "Central IHMs (NCHMCT)", "details": "IHM Mumbai, Delhi, Hyderabad, etc."},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "Central IHMs (NCHMCT)", "details": "IHM Mumbai, Delhi, Hyderabad, etc."},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "Central IHMs (NCHMCT)", "details": "IHM Mumbai, Delhi, Hyderabad, etc."},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "Central IHMs (NCHMCT)", "details": "Since 2019"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation", "details": "As per RPwD Act, 2016"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "NCHMCT JEE", "policy": "Central reservation norms", "notes": "Separate rank lists for each category"},
+        ],
+        "important_notes": [
+            "21 central IHMs follow central reservation; state IHMs follow state policies",
+            "SC/ST candidates get fee waiver at central IHMs",
+            "Private hospitality colleges (Oberoi, Taj, Welcome) do not follow reservation but offer scholarships",
+            "Industry placements are merit-based regardless of admission category",
+        ],
+    },
+    "Agriculture & Environmental Studies": {
+        "summary": "Agricultural university admissions through ICAR AIEEA follow central reservation for deemed universities. State agricultural universities follow state reservation policies.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "ICAR Deemed Universities, Central Agriculture Universities", "details": "IARI, NDRI, IVRI, etc."},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "ICAR Deemed Universities, Central Agriculture Universities", "details": "IARI, NDRI, IVRI, etc."},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "ICAR Deemed Universities, Central Agriculture Universities", "details": "IARI, NDRI, IVRI, etc."},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "ICAR Deemed Universities", "details": "Since 2019"},
+            {"category": "PwD", "percentage": "5%", "applicable_to": "Horizontal reservation", "details": "As per RPwD Act, 2016"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "ICAR AIEEA (UG/PG)", "policy": "Central reservation norms for ICAR seats", "notes": "15% All India seats + ICAR deemed university seats"},
+            {"exam": "State agriculture entrance", "policy": "State reservation norms", "notes": "85% state quota seats follow state policies"},
+        ],
+        "important_notes": [
+            "State agricultural universities have 85% state quota with state reservation",
+            "ICAR provides scholarships (₹1,000-3,000/month) with priority to SC/ST/OBC students",
+            "Tribal sub-plan seats available at several state agriculture universities",
+            "KVK (Krishi Vigyan Kendra) training programs have reserved slots for tribal farmers",
+        ],
+    },
+    "Defence Research": {
+        "summary": "Defence admissions through NDA, CDS, and AFCAT follow UPSC reservation norms for officer cadre. DRDO recruitment follows central reservation. Jawans/other ranks follow state-wise roster.",
+        "central_reservation": [
+            {"category": "SC", "percentage": "15%", "applicable_to": "DRDO, DPSU recruitment", "details": "Officer-level technical positions at DRDO/HAL/BEL"},
+            {"category": "ST", "percentage": "7.5%", "applicable_to": "DRDO, DPSU recruitment", "details": "Officer-level technical positions at DRDO/HAL/BEL"},
+            {"category": "OBC-NCL", "percentage": "27%", "applicable_to": "DRDO, DPSU recruitment", "details": "Officer-level technical positions at DRDO/HAL/BEL"},
+            {"category": "EWS", "percentage": "10%", "applicable_to": "DRDO, DPSU recruitment", "details": "Since 2019"},
+            {"category": "PwD", "percentage": "4%", "applicable_to": "DRDO civilian positions only", "details": "Not applicable to armed forces combatant roles"},
+        ],
+        "key_exams_reservation": [
+            {"exam": "NDA / CDS (UPSC)", "policy": "No reservation for officer cadre in Armed Forces", "notes": "Armed Forces officer entry is purely merit-based; no caste reservation"},
+            {"exam": "DRDO SET / RAC", "policy": "Central reservation norms (SC 15%, ST 7.5%, OBC 27%)", "notes": "Scientist positions at DRDO follow full central reservation"},
+            {"exam": "AFCAT", "policy": "No reservation for IAF officer entry", "notes": "Air Force officer selection is merit + medical fitness based"},
+        ],
+        "important_notes": [
+            "Armed Forces officer cadre (Army/Navy/Air Force) does NOT follow caste-based reservation",
+            "Jawan/other ranks recruitment follows state-wise roster and reservation",
+            "DRDO, BEL, HAL, BDL and other DPSUs follow full central reservation in recruitment",
+            "Sainik Schools follow central reservation for admissions",
+            "Agnipath scheme (Agniveer) follows state-wise, category-wise reservation for recruitment",
+        ],
+    },
+}
+
 _STREAM_DATA: dict[str, dict] = {
     "Engineering & Technology": {
         "colleges_india": _ENGINEERING_COLLEGES_INDIA,
@@ -1721,6 +2014,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Engineering & Technology"],
         "scholarships": _SCHOLARSHIP_DATA["Engineering & Technology"],
         "ai_impact": _AI_IMPACT_DATA["Engineering & Technology"],
+        "reservation": _RESERVATION_DATA["Engineering & Technology"],
     },
     "Medical & Healthcare": {
         "colleges_india": _MEDICAL_COLLEGES_INDIA,
@@ -1738,6 +2032,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Medical & Healthcare"],
         "scholarships": _SCHOLARSHIP_DATA["Medical & Healthcare"],
         "ai_impact": _AI_IMPACT_DATA["Medical & Healthcare"],
+        "reservation": _RESERVATION_DATA["Medical & Healthcare"],
     },
     "Law & Legal Studies": {
         "colleges_india": _LAW_COLLEGES_INDIA,
@@ -1755,6 +2050,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Law & Legal Studies"],
         "scholarships": _SCHOLARSHIP_DATA["Law & Legal Studies"],
         "ai_impact": _AI_IMPACT_DATA["Law & Legal Studies"],
+        "reservation": _RESERVATION_DATA["Law & Legal Studies"],
     },
     "Science & Research": {
         "colleges_india": _SCIENCE_COLLEGES_INDIA,
@@ -1772,6 +2068,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Science & Research"],
         "scholarships": _SCHOLARSHIP_DATA["Science & Research"],
         "ai_impact": _AI_IMPACT_DATA["Science & Research"],
+        "reservation": _RESERVATION_DATA["Science & Research"],
     },
     "Education & Teaching": {
         "colleges_india": _EDUCATION_COLLEGES_INDIA,
@@ -1789,6 +2086,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Education & Teaching"],
         "scholarships": _SCHOLARSHIP_DATA["Education & Teaching"],
         "ai_impact": _AI_IMPACT_DATA["Education & Teaching"],
+        "reservation": _RESERVATION_DATA["Education & Teaching"],
     },
     "Commerce, Finance & Business": {
         "colleges_india": _COMMERCE_COLLEGES_INDIA,
@@ -1806,6 +2104,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Commerce, Finance & Business"],
         "scholarships": _SCHOLARSHIP_DATA["Commerce, Finance & Business"],
         "ai_impact": _AI_IMPACT_DATA["Commerce, Finance & Business"],
+        "reservation": _RESERVATION_DATA["Commerce, Finance & Business"],
     },
     "Arts & Humanities": {
         "colleges_india": _ARTS_COLLEGES_INDIA,
@@ -1823,6 +2122,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Arts & Humanities"],
         "scholarships": _SCHOLARSHIP_DATA["Arts & Humanities"],
         "ai_impact": _AI_IMPACT_DATA["Arts & Humanities"],
+        "reservation": _RESERVATION_DATA["Arts & Humanities"],
     },
     "Design & Creative Arts": {
         "colleges_india": _DESIGN_COLLEGES_INDIA,
@@ -1840,6 +2140,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Design & Creative Arts"],
         "scholarships": _SCHOLARSHIP_DATA["Design & Creative Arts"],
         "ai_impact": _AI_IMPACT_DATA["Design & Creative Arts"],
+        "reservation": _RESERVATION_DATA["Design & Creative Arts"],
     },
     "Performing & Fine Arts": {
         "colleges_india": _PERFORMING_ARTS_COLLEGES_INDIA,
@@ -1857,6 +2158,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Performing & Fine Arts"],
         "scholarships": _SCHOLARSHIP_DATA["Performing & Fine Arts"],
         "ai_impact": _AI_IMPACT_DATA["Performing & Fine Arts"],
+        "reservation": _RESERVATION_DATA["Performing & Fine Arts"],
     },
     "Sports & Physical Education": {
         "colleges_india": _SPORTS_COLLEGES_INDIA,
@@ -1874,6 +2176,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Sports & Physical Education"],
         "scholarships": _SCHOLARSHIP_DATA["Sports & Physical Education"],
         "ai_impact": _AI_IMPACT_DATA["Sports & Physical Education"],
+        "reservation": _RESERVATION_DATA["Sports & Physical Education"],
     },
     "Civil Services & Government Services": {
         "colleges_india": _CIVIL_SERVICES_COLLEGES_INDIA,
@@ -1891,6 +2194,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Civil Services & Government Services"],
         "scholarships": _SCHOLARSHIP_DATA["Civil Services & Government Services"],
         "ai_impact": _AI_IMPACT_DATA["Civil Services & Government Services"],
+        "reservation": _RESERVATION_DATA["Civil Services & Government Services"],
     },
     "Hospitality, Travel & Tourism": {
         "colleges_india": _HOSPITALITY_COLLEGES_INDIA,
@@ -1908,6 +2212,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Hospitality, Travel & Tourism"],
         "scholarships": _SCHOLARSHIP_DATA["Hospitality, Travel & Tourism"],
         "ai_impact": _AI_IMPACT_DATA["Hospitality, Travel & Tourism"],
+        "reservation": _RESERVATION_DATA["Hospitality, Travel & Tourism"],
     },
     "Agriculture & Environmental Studies": {
         "colleges_india": _AGRICULTURE_COLLEGES_INDIA,
@@ -1925,6 +2230,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Agriculture & Environmental Studies"],
         "scholarships": _SCHOLARSHIP_DATA["Agriculture & Environmental Studies"],
         "ai_impact": _AI_IMPACT_DATA["Agriculture & Environmental Studies"],
+        "reservation": _RESERVATION_DATA["Agriculture & Environmental Studies"],
     },
     "Defence Research": {
         "colleges_india": _DEFENCE_COLLEGES_INDIA,
@@ -1942,6 +2248,7 @@ _STREAM_DATA: dict[str, dict] = {
         "abroad": _ABROAD_DATA["Defence Research"],
         "scholarships": _SCHOLARSHIP_DATA["Defence Research"],
         "ai_impact": _AI_IMPACT_DATA["Defence Research"],
+        "reservation": _RESERVATION_DATA["Defence Research"],
     },
 }
 

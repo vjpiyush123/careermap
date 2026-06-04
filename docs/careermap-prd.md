@@ -59,6 +59,23 @@ Each career stream has a dedicated AI Impact tab providing a comprehensive analy
 - **Low AI Impact Areas** — Card grid of safer career roles with explanations of why they are resilient
 - **High AI Impact Areas** — Card grid of at-risk roles with explanations of automation threats
 
+## Reservation Policy (per stream)
+
+Each career stream has a dedicated Reservation tab providing comprehensive information about central and state-level reservation policies applicable to admissions and recruitment in that stream. The tab includes:
+
+- **Summary** — Stream-specific overview of how reservation applies to that career field (e.g., IITs follow central norms, state colleges follow state policies)
+- **Central Reservation Categories** — Table listing all reservation categories with percentage, applicable institutions, and legal basis:
+  - SC (Scheduled Caste) — 15%
+  - ST (Scheduled Tribe) — 7.5%
+  - OBC-NCL (Other Backward Classes – Non-Creamy Layer) — 27%
+  - EWS (Economically Weaker Section) — 10%
+  - PwD (Persons with Disability) — 5% (horizontal)
+  - Ex-Servicemen — where applicable
+- **Exam-Wise Reservation Policy** — Card grid showing how reservation applies to specific entrance exams (JEE, NEET, CLAT, UPSC, etc.) with notes on cutoff relaxation, attempt limits, and age relaxation
+- **Important Notes** — Key information about creamy layer limits, fee waivers, attempt relaxations, and special provisions
+
+Displayed as a structured layout with data table for categories, card grid for exam policies, and styled list for important notes.
+
 ## UI Layout
 
 - Full-width content layout (max-width 1600px) to minimize wasted space on left and right sides

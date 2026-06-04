@@ -56,7 +56,7 @@ Add a dedicated **"State Guide"** page (`/stateopportunities`) that provides com
 
 ## Data Structure (per state)
 
-Each state entry contains **6 sections**:
+Each state entry contains **7 sections**:
 
 ### 1. Job Market Snapshot
 - Major cities for employment
@@ -88,6 +88,13 @@ Each state entry contains **6 sections**:
 - 3-5 state + central schemes applicable to youth
 - Each with: scheme name, benefit, eligibility, website
 
+### 7. Reservation Policy
+- Total reservation percentage for the state
+- Category-wise breakdown: SC, ST, OBC (with state-specific sub-categories like BC-A/B/C/D/E, EBC, VJNT, etc.)
+- Each category with: category name, percentage, details/description of communities covered
+- Applicable institutions: state colleges, state universities, state government jobs
+- Special provisions: unique state-specific policies, constitutional protections, horizontal reservations (women, PwD, ex-servicemen)
+
 ## Page Layout
 
 ```
@@ -102,6 +109,7 @@ Each state entry contains **6 sections**:
 │  ┌────────────────────────────────────────────────────────┐ │
 │  │ 💼 Job Market │ 🎓 Scholarships │ 🏛️ Govt Jobs │     │ │
 │  │ 🏭 Industry   │ 🚀 Startups    │ 📋 Schemes   │     │ │
+│  │ 🏛️ Reservation│                 │              │     │ │
 │  ├────────────────────────────────────────────────────────┤ │
 │  │                                                        │ │
 │  │  [Tab content — cards / tables / grids]                │ │
@@ -130,5 +138,5 @@ Each state entry contains **6 sections**:
 - `GET /stateopportunities` — renders the State Guide page with all state data pre-loaded
 
 ### Data Volume
-- 33 states × 6 sections × ~5 items per section ≈ 990 data entries
-- Estimated `state_data.py` size: ~80-100 KB
+- 33 states × 7 sections × ~5 items per section ≈ 1,155 data entries
+- Estimated `state_data.py` size: ~120-140 KB (includes reservation data)
