@@ -1,0 +1,468 @@
+[
+  {
+    "name": "Indian Agricultural Research Institute",
+    "short_name": "IARI Delhi",
+    "stream": "agriculture",
+    "institute_type": "Central",
+    "established": 1905,
+    "ranking": 1,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 1,
+    "naac_grade": "A++",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.1,
+    "hostel_fees_per_year": 0.05,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 6.0,
+    "median_placement_lpa": 4.5,
+    "highest_placement_lpa": 18.0,
+    "placement_percentage": 80.0,
+    "top_recruiters": [
+      "ICAR",
+      "FCI",
+      "NABARD",
+      "ITC",
+      "Bayer CropScience"
+    ],
+    "total_seats": 300,
+    "website": "https://www.iari.res.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Agronomy",
+        "short_name": "AGRO",
+        "ug_seats": 0,
+        "pg_seats": 30,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "ICAR PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 6.0,
+        "median_placement_lpa": 4.5,
+        "highest_placement_lpa": 18.0,
+        "placement_percentage": 80.0,
+        "specializations": [
+          "Crop Production",
+          "Soil Science"
+        ]
+      },
+      {
+        "name": "Plant Pathology",
+        "short_name": "PP",
+        "ug_seats": 0,
+        "pg_seats": 20,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "ICAR PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 5.5,
+        "median_placement_lpa": 4.0,
+        "highest_placement_lpa": 15.0,
+        "placement_percentage": 75.0,
+        "specializations": [
+          "Disease Management",
+          "Mycology"
+        ]
+      },
+      {
+        "name": "Genetics & Plant Breeding",
+        "short_name": "GPB",
+        "ug_seats": 0,
+        "pg_seats": 25,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "ICAR PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 7.0,
+        "median_placement_lpa": 5.5,
+        "highest_placement_lpa": 20.0,
+        "placement_percentage": 85.0,
+        "specializations": [
+          "Crop Improvement",
+          "Biotechnology"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "M.Sc Agriculture",
+        "duration_years": 2.0,
+        "entrance_exam": "ICAR PG",
+        "eligibility": "B.Sc Agri",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "PhD",
+        "duration_years": 4.0,
+        "entrance_exam": "ICAR SRF",
+        "eligibility": "M.Sc Agri",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Tamil Nadu Agricultural University",
+    "short_name": "TNAU Coimbatore",
+    "stream": "agriculture",
+    "institute_type": "State Govt",
+    "established": 1971,
+    "ranking": 2,
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "nirf_ranking": 2,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.08,
+    "hostel_fees_per_year": 0.04,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 4.0,
+    "median_placement_lpa": 3.0,
+    "highest_placement_lpa": 12.0,
+    "placement_percentage": 75.0,
+    "top_recruiters": [
+      "ICAR",
+      "State Agri Dept",
+      "ITC",
+      "Bayer",
+      "UPL"
+    ],
+    "total_seats": 500,
+    "website": "https://tnau.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Agriculture",
+        "short_name": "AGRI",
+        "ug_seats": 200,
+        "pg_seats": 60,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "TNAU",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 4.0,
+        "median_placement_lpa": 3.0,
+        "highest_placement_lpa": 12.0,
+        "placement_percentage": 75.0,
+        "specializations": [
+          "Agronomy",
+          "Horticulture",
+          "Soil Science"
+        ]
+      },
+      {
+        "name": "Agricultural Engineering",
+        "short_name": "AE",
+        "ug_seats": 60,
+        "pg_seats": 20,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "TNAU",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 4.5,
+        "median_placement_lpa": 3.5,
+        "highest_placement_lpa": 14.0,
+        "placement_percentage": 78.0,
+        "specializations": [
+          "Farm Machinery",
+          "Irrigation"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Sc Agriculture",
+        "duration_years": 4.0,
+        "entrance_exam": "TNAU Entrance",
+        "eligibility": "10+2 Bio, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.08,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Punjab Agricultural University",
+    "short_name": "PAU Ludhiana",
+    "stream": "agriculture",
+    "institute_type": "State Govt",
+    "established": 1962,
+    "ranking": 3,
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "nirf_ranking": 4,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.08,
+    "hostel_fees_per_year": 0.04,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 3.5,
+    "median_placement_lpa": 2.5,
+    "highest_placement_lpa": 10.0,
+    "placement_percentage": 72.0,
+    "top_recruiters": [
+      "ICAR",
+      "Punjab Agri Dept",
+      "FCI",
+      "NABARD",
+      "Nestle"
+    ],
+    "total_seats": 400,
+    "website": "https://www.pau.edu",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Agriculture",
+        "short_name": "AGRI",
+        "ug_seats": 180,
+        "pg_seats": 50,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "PAU",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 3.5,
+        "median_placement_lpa": 2.5,
+        "highest_placement_lpa": 10.0,
+        "placement_percentage": 72.0,
+        "specializations": [
+          "Agronomy",
+          "Soil Science",
+          "Entomology"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Sc Agriculture",
+        "duration_years": 4.0,
+        "entrance_exam": "PAU Entrance",
+        "eligibility": "10+2 Bio, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.08,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "G.B. Pant University of Agriculture & Technology",
+    "short_name": "GBPUAT Pantnagar",
+    "stream": "agriculture",
+    "institute_type": "State Govt",
+    "established": 1960,
+    "ranking": 4,
+    "city": "Pantnagar",
+    "state": "Uttarakhand",
+    "nirf_ranking": 5,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.06,
+    "hostel_fees_per_year": 0.03,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 3.5,
+    "median_placement_lpa": 2.5,
+    "highest_placement_lpa": 10.0,
+    "placement_percentage": 70.0,
+    "top_recruiters": [
+      "ICAR",
+      "FCI",
+      "State Agri Dept",
+      "ITC",
+      "Bayer"
+    ],
+    "total_seats": 400,
+    "website": "https://www.gbpuat.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Agriculture",
+        "short_name": "AGRI",
+        "ug_seats": 160,
+        "pg_seats": 40,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 3.5,
+        "median_placement_lpa": 2.5,
+        "highest_placement_lpa": 10.0,
+        "placement_percentage": 70.0,
+        "specializations": [
+          "Agronomy",
+          "Horticulture"
+        ]
+      },
+      {
+        "name": "Agricultural Engineering",
+        "short_name": "AE",
+        "ug_seats": 60,
+        "pg_seats": 15,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 4.0,
+        "median_placement_lpa": 3.0,
+        "highest_placement_lpa": 12.0,
+        "placement_percentage": 75.0,
+        "specializations": [
+          "Farm Machinery",
+          "Processing"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Sc Agriculture",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance",
+        "eligibility": "10+2 Bio, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.06,
+        "available_branches": []
+      },
+      {
+        "name": "B.Tech Agri Engg",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance",
+        "eligibility": "10+2 PCM, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.06,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "University of Agricultural Sciences Bangalore",
+    "short_name": "UAS Bangalore",
+    "stream": "agriculture",
+    "institute_type": "State Govt",
+    "established": 1964,
+    "ranking": 5,
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirf_ranking": 6,
+    "naac_grade": "A",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.06,
+    "hostel_fees_per_year": 0.03,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 3.5,
+    "median_placement_lpa": 2.5,
+    "highest_placement_lpa": 10.0,
+    "placement_percentage": 68.0,
+    "top_recruiters": [
+      "ICAR",
+      "Karnataka Agri Dept",
+      "Bayer",
+      "Syngenta",
+      "UPL"
+    ],
+    "total_seats": 400,
+    "website": "https://uasbangalore.edu.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Agriculture",
+        "short_name": "AGRI",
+        "ug_seats": 180,
+        "pg_seats": 40,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "KCET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 3.5,
+        "median_placement_lpa": 2.5,
+        "highest_placement_lpa": 10.0,
+        "placement_percentage": 68.0,
+        "specializations": [
+          "Agronomy",
+          "Genetics",
+          "Plant Protection"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Sc Agriculture",
+        "duration_years": 4.0,
+        "entrance_exam": "KCET",
+        "eligibility": "10+2 Bio, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.06,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  }
+]

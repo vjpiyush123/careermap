@@ -25,6 +25,7 @@ from jinja2 import Environment, FileSystemLoader
 # ── Import data layer ──────────────────────────────────────────────────
 from careerguide.data import (
     build_career_tree,
+    get_admission_categories,
     get_all_branches,
     get_all_college_states,
     get_all_institute_types,
@@ -33,6 +34,7 @@ from careerguide.data import (
     get_all_stream_names,
     get_college_directory,
     get_college_streams,
+    get_documents_checklist,
     get_stream_data,
 )
 
@@ -125,13 +127,23 @@ def build(base_path: str = "") -> None:
         "all_branches": all_branches,
     }, "colleges.html")
 
-    # ── 4. Feedback page ──────────────────────────────────────────────
+    # ── 4. Special Admissions page ───────────────────────────────────
+    admission_categories = get_admission_categories()
+    documents_checklist = get_documents_checklist()
+
+    _render("special_admissions.html", {
+        "request": _MockRequest("/specialadmissions"),
+        "categories": admission_categories,
+        "checklist": documents_checklist,
+    }, "specialadmissions.html")
+
+    # ── 5. Feedback page ──────────────────────────────────────────────
     _render("feedback.html", {
         "request": _MockRequest("/feedback"),
         "streams": streams,
     }, "feedback.html")
 
-    # ── 5. Landing / index page ───────────────────────────────────────
+    # ── 6. Landing / index page ───────────────────────────────────────
     index_html = env.from_string(INDEX_TEMPLATE).render(
         base=base,
         request=_MockRequest("/"),
@@ -143,12 +155,12 @@ def build(base_path: str = "") -> None:
     (OUT_DIR / "index.html").write_text(index_html, encoding="utf-8")
     print("  ✓ index.html")
 
-    # ── 6. Copy static assets ─────────────────────────────────────────
+    # ── 7. Copy static assets ─────────────────────────────────────────
     static_out = OUT_DIR / "static"
     shutil.copytree(STATIC_DIR, static_out)
     print("  ✓ static/ (css, js)")
 
-    # ── 7. Create .nojekyll for GitHub Pages ──────────────────────────
+    # ── 8. Create .nojekyll for GitHub Pages ──────────────────────────
     (OUT_DIR / ".nojekyll").write_text("", encoding="utf-8")
     print("  ✓ .nojekyll")
 
@@ -179,6 +191,7 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
             <a href="/" class="nav-link active">Home</a>
             <a href="/careeroptions.html" class="nav-link">Career Options</a>
             <a href="/colleges.html" class="nav-link">Colleges</a>
+            <a href="/specialadmissions.html" class="nav-link">Special Admissions</a>
             <a href="/stateopportunities.html" class="nav-link">State Guide</a>
             <a href="/feedback.html" class="nav-link">Feedback</a>
             <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle theme">
@@ -205,6 +218,9 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
             </a>
             <a href="/stateopportunities.html" class="btn btn-secondary" style="font-size:1.1rem; padding:0.9rem 2.5rem;">
                 State Guide →
+            </a>
+            <a href="/specialadmissions.html" class="btn btn-secondary" style="font-size:1.1rem; padding:0.9rem 2.5rem;">
+                Special Admissions →
             </a>
         </div>
 

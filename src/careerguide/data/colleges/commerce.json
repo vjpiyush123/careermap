@@ -1,0 +1,814 @@
+[
+  {
+    "name": "Indian Institute of Management Ahmedabad",
+    "short_name": "IIM Ahmedabad",
+    "stream": "commerce",
+    "institute_type": "Central",
+    "established": 1961,
+    "ranking": 1,
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "nirf_ranking": 1,
+    "naac_grade": "A++",
+    "nba_accredited": false,
+    "avg_fees_lpa": 11.0,
+    "hostel_fees_per_year": 0.5,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 32.0,
+    "median_placement_lpa": 28.0,
+    "highest_placement_lpa": 80.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "McKinsey",
+      "BCG",
+      "Bain",
+      "Goldman Sachs",
+      "Amazon"
+    ],
+    "total_seats": 400,
+    "website": "https://www.iima.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Management",
+        "short_name": "MBA",
+        "ug_seats": 400,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 32.0,
+        "median_placement_lpa": 28.0,
+        "highest_placement_lpa": 80.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Finance",
+          "Marketing",
+          "Strategy"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBA (PGP)",
+        "duration_years": 2.0,
+        "entrance_exam": "CAT",
+        "eligibility": "Graduate, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 11.0,
+        "available_branches": []
+      },
+      {
+        "name": "PhD",
+        "duration_years": 5.0,
+        "entrance_exam": "CAT/GMAT",
+        "eligibility": "PGP/MBA",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Indian Institute of Management Bangalore",
+    "short_name": "IIM Bangalore",
+    "stream": "commerce",
+    "institute_type": "Central",
+    "established": 1973,
+    "ranking": 2,
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirf_ranking": 2,
+    "naac_grade": "A++",
+    "nba_accredited": false,
+    "avg_fees_lpa": 12.0,
+    "hostel_fees_per_year": 0.5,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 34.0,
+    "median_placement_lpa": 30.0,
+    "highest_placement_lpa": 85.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "McKinsey",
+      "BCG",
+      "Google",
+      "Amazon",
+      "Goldman Sachs"
+    ],
+    "total_seats": 400,
+    "website": "https://www.iimb.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Management",
+        "short_name": "MBA",
+        "ug_seats": 400,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 34.0,
+        "median_placement_lpa": 30.0,
+        "highest_placement_lpa": 85.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Finance",
+          "Marketing",
+          "Analytics"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBA (PGP)",
+        "duration_years": 2.0,
+        "entrance_exam": "CAT",
+        "eligibility": "Graduate, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 12.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Indian Institute of Management Calcutta",
+    "short_name": "IIM Calcutta",
+    "stream": "commerce",
+    "institute_type": "Central",
+    "established": 1961,
+    "ranking": 3,
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "nirf_ranking": 3,
+    "naac_grade": "A++",
+    "nba_accredited": false,
+    "avg_fees_lpa": 10.5,
+    "hostel_fees_per_year": 0.45,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 30.0,
+    "median_placement_lpa": 26.0,
+    "highest_placement_lpa": 75.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "McKinsey",
+      "BCG",
+      "Goldman Sachs",
+      "JP Morgan",
+      "Bain"
+    ],
+    "total_seats": 480,
+    "website": "https://www.iimcal.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Management",
+        "short_name": "MBA",
+        "ug_seats": 480,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 30.0,
+        "median_placement_lpa": 26.0,
+        "highest_placement_lpa": 75.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Finance",
+          "Consulting",
+          "Marketing"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBA (PGDM)",
+        "duration_years": 2.0,
+        "entrance_exam": "CAT",
+        "eligibility": "Graduate, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 10.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Shri Ram College of Commerce",
+    "short_name": "SRCC Delhi",
+    "stream": "commerce",
+    "institute_type": "Central University",
+    "established": 1926,
+    "ranking": 4,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 5,
+    "naac_grade": "A++",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.1,
+    "hostel_fees_per_year": 0.08,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 12.0,
+    "median_placement_lpa": 10.0,
+    "highest_placement_lpa": 35.0,
+    "placement_percentage": 85.0,
+    "top_recruiters": [
+      "Deloitte",
+      "EY",
+      "KPMG",
+      "PwC",
+      "Goldman Sachs"
+    ],
+    "total_seats": 600,
+    "website": "https://www.srcc.edu",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Commerce",
+        "short_name": "BCOM",
+        "ug_seats": 300,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CUET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 12.0,
+        "median_placement_lpa": 10.0,
+        "highest_placement_lpa": 35.0,
+        "placement_percentage": 85.0,
+        "specializations": [
+          "Accounting",
+          "Finance",
+          "Economics"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Com (Hons)",
+        "duration_years": 3.0,
+        "entrance_exam": "CUET",
+        "eligibility": "10+2 Commerce, 90%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Indian School of Business",
+    "short_name": "ISB Hyderabad",
+    "stream": "commerce",
+    "institute_type": "Private",
+    "established": 2001,
+    "ranking": 5,
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "nirf_ranking": 4,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 18.0,
+    "hostel_fees_per_year": 1.0,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 34.0,
+    "median_placement_lpa": 30.0,
+    "highest_placement_lpa": 90.0,
+    "placement_percentage": 98.0,
+    "top_recruiters": [
+      "McKinsey",
+      "BCG",
+      "Amazon",
+      "Google",
+      "Microsoft"
+    ],
+    "total_seats": 900,
+    "website": "https://www.isb.edu",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Management",
+        "short_name": "MBA",
+        "ug_seats": 900,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "GMAT/GRE",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 34.0,
+        "median_placement_lpa": 30.0,
+        "highest_placement_lpa": 90.0,
+        "placement_percentage": 98.0,
+        "specializations": [
+          "Finance",
+          "Strategy",
+          "Tech Management"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "PGP (MBA)",
+        "duration_years": 1.0,
+        "entrance_exam": "GMAT/GRE",
+        "eligibility": "Graduate + 2yr work exp",
+        "total_seats": 0,
+        "fee_per_year_lpa": 18.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Faculty of Management Studies Delhi",
+    "short_name": "FMS Delhi",
+    "stream": "commerce",
+    "institute_type": "Central University",
+    "established": 1954,
+    "ranking": 6,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 7,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.1,
+    "hostel_fees_per_year": 0.05,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 28.0,
+    "median_placement_lpa": 24.0,
+    "highest_placement_lpa": 65.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "McKinsey",
+      "BCG",
+      "Goldman Sachs",
+      "Bain",
+      "Amazon"
+    ],
+    "total_seats": 220,
+    "website": "https://www.fms.edu",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Management",
+        "short_name": "MBA",
+        "ug_seats": 220,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 28.0,
+        "median_placement_lpa": 24.0,
+        "highest_placement_lpa": 65.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Finance",
+          "Marketing",
+          "Consulting"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBA",
+        "duration_years": 2.0,
+        "entrance_exam": "CAT",
+        "eligibility": "Graduate, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "XLRI Jamshedpur",
+    "short_name": "XLRI Jamshedpur",
+    "stream": "commerce",
+    "institute_type": "Private",
+    "established": 1949,
+    "ranking": 7,
+    "city": "Jamshedpur",
+    "state": "Jharkhand",
+    "nirf_ranking": 8,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 12.5,
+    "hostel_fees_per_year": 0.5,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 26.0,
+    "median_placement_lpa": 22.0,
+    "highest_placement_lpa": 60.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "BCG",
+      "McKinsey",
+      "Accenture",
+      "Amazon",
+      "Deloitte"
+    ],
+    "total_seats": 360,
+    "website": "https://www.xlri.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Business Management",
+        "short_name": "BM",
+        "ug_seats": 180,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "XAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 28.0,
+        "median_placement_lpa": 24.0,
+        "highest_placement_lpa": 60.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Finance",
+          "Marketing",
+          "Strategy"
+        ]
+      },
+      {
+        "name": "Human Resource Mgmt",
+        "short_name": "HRM",
+        "ug_seats": 180,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "XAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 24.0,
+        "median_placement_lpa": 20.0,
+        "highest_placement_lpa": 50.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "HR",
+          "OB",
+          "Labour Relations"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBA (BM)",
+        "duration_years": 2.0,
+        "entrance_exam": "XAT",
+        "eligibility": "Graduate, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 12.5,
+        "available_branches": []
+      },
+      {
+        "name": "MBA (HRM)",
+        "duration_years": 2.0,
+        "entrance_exam": "XAT",
+        "eligibility": "Graduate, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 12.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Narsee Monjee Institute of Management Studies",
+    "short_name": "NMIMS Mumbai",
+    "stream": "commerce",
+    "institute_type": "Deemed",
+    "established": 1981,
+    "ranking": 8,
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "nirf_ranking": 12,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 10.0,
+    "hostel_fees_per_year": 0.45,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 22.0,
+    "median_placement_lpa": 18.0,
+    "highest_placement_lpa": 50.0,
+    "placement_percentage": 95.0,
+    "top_recruiters": [
+      "Deloitte",
+      "EY",
+      "KPMG",
+      "Amazon",
+      "JP Morgan"
+    ],
+    "total_seats": 500,
+    "website": "https://www.nmims.edu",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Management",
+        "short_name": "MBA",
+        "ug_seats": 300,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NMAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 22.0,
+        "median_placement_lpa": 18.0,
+        "highest_placement_lpa": 50.0,
+        "placement_percentage": 95.0,
+        "specializations": [
+          "Finance",
+          "Marketing",
+          "Analytics"
+        ]
+      },
+      {
+        "name": "Commerce",
+        "short_name": "BCOM",
+        "ug_seats": 200,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "Merit",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 8.0,
+        "median_placement_lpa": 6.0,
+        "highest_placement_lpa": 20.0,
+        "placement_percentage": 80.0,
+        "specializations": [
+          "Accounting",
+          "Finance"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBA",
+        "duration_years": 2.0,
+        "entrance_exam": "NMAT",
+        "eligibility": "Graduate, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 10.0,
+        "available_branches": []
+      },
+      {
+        "name": "B.Com",
+        "duration_years": 3.0,
+        "entrance_exam": "Merit",
+        "eligibility": "10+2, 80%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "IIM Lucknow",
+    "short_name": "IIM Lucknow",
+    "stream": "commerce",
+    "institute_type": "Central",
+    "established": 1984,
+    "ranking": 9,
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "nirf_ranking": 6,
+    "naac_grade": "A++",
+    "nba_accredited": false,
+    "avg_fees_lpa": 10.0,
+    "hostel_fees_per_year": 0.4,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 28.0,
+    "median_placement_lpa": 24.0,
+    "highest_placement_lpa": 65.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "BCG",
+      "McKinsey",
+      "Goldman Sachs",
+      "Amazon",
+      "Bain"
+    ],
+    "total_seats": 480,
+    "website": "https://www.iiml.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Management",
+        "short_name": "MBA",
+        "ug_seats": 480,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 28.0,
+        "median_placement_lpa": 24.0,
+        "highest_placement_lpa": 65.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Finance",
+          "Marketing",
+          "Operations"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBA (PGP)",
+        "duration_years": 2.0,
+        "entrance_exam": "CAT",
+        "eligibility": "Graduate, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 10.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Lady Shri Ram College for Women",
+    "short_name": "LSR Delhi",
+    "stream": "commerce",
+    "institute_type": "Central University",
+    "established": 1956,
+    "ranking": 10,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 9,
+    "naac_grade": "A++",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.08,
+    "hostel_fees_per_year": 0.06,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 8.0,
+    "median_placement_lpa": 6.0,
+    "highest_placement_lpa": 22.0,
+    "placement_percentage": 75.0,
+    "top_recruiters": [
+      "Deloitte",
+      "EY",
+      "KPMG",
+      "McKinsey",
+      "Goldman Sachs"
+    ],
+    "total_seats": 400,
+    "website": "https://lsr.edu.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Commerce",
+        "short_name": "BCOM",
+        "ug_seats": 200,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CUET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 8.0,
+        "median_placement_lpa": 6.0,
+        "highest_placement_lpa": 22.0,
+        "placement_percentage": 75.0,
+        "specializations": [
+          "Accounting",
+          "Finance",
+          "Economics"
+        ]
+      },
+      {
+        "name": "Economics",
+        "short_name": "ECO",
+        "ug_seats": 100,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CUET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 9.0,
+        "median_placement_lpa": 7.0,
+        "highest_placement_lpa": 25.0,
+        "placement_percentage": 78.0,
+        "specializations": [
+          "Econometrics",
+          "Development Economics"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Com (Hons)",
+        "duration_years": 3.0,
+        "entrance_exam": "CUET",
+        "eligibility": "10+2, 90%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.08,
+        "available_branches": []
+      },
+      {
+        "name": "BA Economics (Hons)",
+        "duration_years": 3.0,
+        "entrance_exam": "CUET",
+        "eligibility": "10+2, 90%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.08,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  }
+]

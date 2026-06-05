@@ -2843,3 +2843,235 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
+/* ═══════════════════════════════════════════════════════════════════════
+   SPECIAL ADMISSIONS PAGE
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.sa-filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.25rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+.sa-filter-bar label {
+    font-weight: 600;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+.sa-match-count {
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+/* Category cards */
+.sa-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.sa-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+.sa-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: left;
+    transition: background 0.15s;
+}
+.sa-card-header:hover {
+    background: var(--bg-hover);
+}
+.sa-card-icon {
+    font-size: 1.4rem;
+}
+.sa-card-title {
+    flex: 1;
+}
+.sa-card-chevron {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    transition: transform 0.2s;
+}
+.sa-card-body {
+    padding: 0 1.25rem 1.25rem;
+}
+
+/* Criteria table */
+.sa-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.sa-table thead th {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid var(--border);
+}
+.sa-table tbody td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+    vertical-align: top;
+}
+.sa-table tbody tr:last-child td {
+    border-bottom: none;
+}
+.sa-table tbody tr:hover {
+    background: var(--bg-hover);
+}
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Institution tags */
+.sa-inst-tag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    margin: 0.15rem 0.25rem 0.15rem 0;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Certificates */
+.sa-certs {
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+}
+.sa-certs h4 {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+.sa-certs ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+.sa-certs li {
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+/* Source links */
+.sa-sources {
+    margin-top: 0.75rem;
+}
+.sa-sources h4 {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+.sa-source-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.sa-source-link {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+}
+.sa-source-link:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+/* Documents checklist */
+.sa-checklist-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+.sa-checklist-section h2 {
+    margin: 0 0 0.25rem;
+}
+.sa-checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+.sa-checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.6rem 0.75rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+}
+.sa-check-icon {
+    color: var(--success);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+.sa-check-detail {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+}
+
+/* Master sources table */
+.sa-master-sources {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+.sa-master-sources h2 {
+    margin: 0 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .sa-filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sa-checklist-grid {
+        grid-template-columns: 1fr;
+    }
+}

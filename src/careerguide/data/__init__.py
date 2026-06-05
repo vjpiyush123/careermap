@@ -31,6 +31,10 @@ from careerguide.data.college_data import (
     get_college_directory,
     get_college_streams,
 )
+from careerguide.data.admission_data import (
+    get_admission_categories,
+    get_documents_checklist,
+)
 
 __all__ = [
     "build_career_tree",
@@ -56,4 +60,6 @@ __all__ = [
     "get_college_by_type",
     "get_college_directory",
     "get_college_streams",
+    "get_admission_categories",
+    "get_documents_checklist",
 ]

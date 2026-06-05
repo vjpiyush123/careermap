@@ -1,0 +1,1011 @@
+[
+  {
+    "name": "National Law School of India University",
+    "short_name": "NLSIU Bangalore",
+    "stream": "law",
+    "institute_type": "NLU",
+    "established": 1986,
+    "ranking": 1,
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirf_ranking": 1,
+    "naac_grade": "A++",
+    "nba_accredited": false,
+    "avg_fees_lpa": 2.5,
+    "hostel_fees_per_year": 0.3,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 16.0,
+    "median_placement_lpa": 14.0,
+    "highest_placement_lpa": 42.0,
+    "placement_percentage": 95.0,
+    "top_recruiters": [
+      "AZB & Partners",
+      "Cyril Amarchand",
+      "Khaitan & Co",
+      "Trilegal",
+      "S&R Associates"
+    ],
+    "total_seats": 120,
+    "website": "https://www.nls.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "BA LLB (Hons)",
+        "short_name": "BA LLB",
+        "ug_seats": 80,
+        "pg_seats": 20,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 16.0,
+        "median_placement_lpa": 14.0,
+        "highest_placement_lpa": 42.0,
+        "placement_percentage": 95.0,
+        "specializations": [
+          "Corporate Law",
+          "Litigation",
+          "IP Law"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT / AILET",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "LLM",
+        "duration_years": 1.0,
+        "entrance_exam": "CLAT PG",
+        "eligibility": "LLB/BA LLB",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.5,
+        "available_branches": []
+      },
+      {
+        "name": "PhD",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance Test",
+        "eligibility": "LLM",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "National Law University Delhi",
+    "short_name": "NLU Delhi",
+    "stream": "law",
+    "institute_type": "NLU",
+    "established": 2008,
+    "ranking": 2,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 2,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 2.8,
+    "hostel_fees_per_year": 0.35,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 18.0,
+    "median_placement_lpa": 15.0,
+    "highest_placement_lpa": 50.0,
+    "placement_percentage": 96.0,
+    "top_recruiters": [
+      "AZB & Partners",
+      "Shardul Amarchand",
+      "Cyril Amarchand",
+      "Khaitan & Co",
+      "Trilegal"
+    ],
+    "total_seats": 110,
+    "website": "https://nludelhi.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "BA LLB (Hons)",
+        "short_name": "BA LLB",
+        "ug_seats": 80,
+        "pg_seats": 15,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "AILET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 18.0,
+        "median_placement_lpa": 15.0,
+        "highest_placement_lpa": 50.0,
+        "placement_percentage": 96.0,
+        "specializations": [
+          "Corporate Law",
+          "Constitutional Law",
+          "IP Law"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "AILET",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.8,
+        "available_branches": []
+      },
+      {
+        "name": "LLM",
+        "duration_years": 1.0,
+        "entrance_exam": "AILET PG",
+        "eligibility": "LLB",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "NALSAR University of Law",
+    "short_name": "NALSAR Hyderabad",
+    "stream": "law",
+    "institute_type": "NLU",
+    "established": 1998,
+    "ranking": 3,
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "nirf_ranking": 3,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 2.3,
+    "hostel_fees_per_year": 0.25,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 14.0,
+    "median_placement_lpa": 12.0,
+    "highest_placement_lpa": 38.0,
+    "placement_percentage": 92.0,
+    "top_recruiters": [
+      "AZB & Partners",
+      "Cyril Amarchand",
+      "Lakshmikumaran",
+      "S&R Associates",
+      "Khaitan & Co"
+    ],
+    "total_seats": 120,
+    "website": "https://www.nalsar.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "BA LLB (Hons)",
+        "short_name": "BA LLB",
+        "ug_seats": 90,
+        "pg_seats": 20,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 14.0,
+        "median_placement_lpa": 12.0,
+        "highest_placement_lpa": 38.0,
+        "placement_percentage": 92.0,
+        "specializations": [
+          "Corporate Law",
+          "Litigation",
+          "Criminal Law"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT / AILET",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "LLM",
+        "duration_years": 1.0,
+        "entrance_exam": "CLAT PG",
+        "eligibility": "LLB/BA LLB",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.5,
+        "available_branches": []
+      },
+      {
+        "name": "PhD",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance Test",
+        "eligibility": "LLM",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "West Bengal National University of Juridical Sciences",
+    "short_name": "NUJS Kolkata",
+    "stream": "law",
+    "institute_type": "NLU",
+    "established": 1999,
+    "ranking": 4,
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "nirf_ranking": 4,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 2.4,
+    "hostel_fees_per_year": 0.25,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 14.0,
+    "median_placement_lpa": 12.0,
+    "highest_placement_lpa": 36.0,
+    "placement_percentage": 91.0,
+    "top_recruiters": [
+      "AZB & Partners",
+      "Cyril Amarchand",
+      "Khaitan & Co",
+      "Shardul Amarchand",
+      "CAM"
+    ],
+    "total_seats": 108,
+    "website": "https://www.nujs.edu",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "BA LLB (Hons)",
+        "short_name": "BA LLB",
+        "ug_seats": 78,
+        "pg_seats": 20,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 14.0,
+        "median_placement_lpa": 12.0,
+        "highest_placement_lpa": 36.0,
+        "placement_percentage": 91.0,
+        "specializations": [
+          "Corporate Law",
+          "IP Law",
+          "Arbitration"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT / AILET",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "LLM",
+        "duration_years": 1.0,
+        "entrance_exam": "CLAT PG",
+        "eligibility": "LLB/BA LLB",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.5,
+        "available_branches": []
+      },
+      {
+        "name": "PhD",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance Test",
+        "eligibility": "LLM",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "National Law Institute University",
+    "short_name": "NLIU Bhopal",
+    "stream": "law",
+    "institute_type": "NLU",
+    "established": 1997,
+    "ranking": 5,
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "nirf_ranking": 7,
+    "naac_grade": "A",
+    "nba_accredited": false,
+    "avg_fees_lpa": 1.8,
+    "hostel_fees_per_year": 0.2,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 10.0,
+    "median_placement_lpa": 8.5,
+    "highest_placement_lpa": 28.0,
+    "placement_percentage": 88.0,
+    "top_recruiters": [
+      "Cyril Amarchand",
+      "Khaitan & Co",
+      "Trilegal",
+      "AZB & Partners",
+      "L&L Partners"
+    ],
+    "total_seats": 120,
+    "website": "https://www.nliu.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "BA LLB (Hons)",
+        "short_name": "BA LLB",
+        "ug_seats": 80,
+        "pg_seats": 25,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 10.0,
+        "median_placement_lpa": 8.5,
+        "highest_placement_lpa": 28.0,
+        "placement_percentage": 88.0,
+        "specializations": [
+          "Corporate Law",
+          "Criminal Law",
+          "IP Law"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT / AILET",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "LLM",
+        "duration_years": 1.0,
+        "entrance_exam": "CLAT PG",
+        "eligibility": "LLB/BA LLB",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.5,
+        "available_branches": []
+      },
+      {
+        "name": "PhD",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance Test",
+        "eligibility": "LLM",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "National Law University Jodhpur",
+    "short_name": "NLU Jodhpur",
+    "stream": "law",
+    "institute_type": "NLU",
+    "established": 1999,
+    "ranking": 6,
+    "city": "Jodhpur",
+    "state": "Rajasthan",
+    "nirf_ranking": 5,
+    "naac_grade": "A",
+    "nba_accredited": false,
+    "avg_fees_lpa": 2.0,
+    "hostel_fees_per_year": 0.22,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 11.0,
+    "median_placement_lpa": 9.0,
+    "highest_placement_lpa": 30.0,
+    "placement_percentage": 89.0,
+    "top_recruiters": [
+      "AZB & Partners",
+      "Khaitan & Co",
+      "Trilegal",
+      "Shardul Amarchand",
+      "Cyril Amarchand"
+    ],
+    "total_seats": 132,
+    "website": "https://www.nlujodhpur.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "BA LLB (Hons)",
+        "short_name": "BA LLB",
+        "ug_seats": 82,
+        "pg_seats": 30,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 11.0,
+        "median_placement_lpa": 9.0,
+        "highest_placement_lpa": 30.0,
+        "placement_percentage": 89.0,
+        "specializations": [
+          "Corporate Law",
+          "Tax Law",
+          "Arbitration"
+        ]
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "short_name": "BBA LLB",
+        "ug_seats": 20,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 10.0,
+        "median_placement_lpa": 8.0,
+        "highest_placement_lpa": 25.0,
+        "placement_percentage": 85.0,
+        "specializations": [
+          "Business Law",
+          "Corporate Governance"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT / AILET",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "LLM",
+        "duration_years": 1.0,
+        "entrance_exam": "CLAT PG",
+        "eligibility": "LLB/BA LLB",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.5,
+        "available_branches": []
+      },
+      {
+        "name": "PhD",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance Test",
+        "eligibility": "LLM",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Gujarat National Law University",
+    "short_name": "GNLU Gandhinagar",
+    "stream": "law",
+    "institute_type": "NLU",
+    "established": 2003,
+    "ranking": 7,
+    "city": "Gandhinagar",
+    "state": "Gujarat",
+    "nirf_ranking": 6,
+    "naac_grade": "A",
+    "nba_accredited": false,
+    "avg_fees_lpa": 2.2,
+    "hostel_fees_per_year": 0.25,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 10.5,
+    "median_placement_lpa": 8.5,
+    "highest_placement_lpa": 28.0,
+    "placement_percentage": 87.0,
+    "top_recruiters": [
+      "Cyril Amarchand",
+      "AZB & Partners",
+      "Khaitan & Co",
+      "Desai & Diwanji",
+      "Trilegal"
+    ],
+    "total_seats": 140,
+    "website": "https://www.gnlu.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "BA LLB (Hons)",
+        "short_name": "BA LLB",
+        "ug_seats": 80,
+        "pg_seats": 30,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 10.5,
+        "median_placement_lpa": 8.5,
+        "highest_placement_lpa": 28.0,
+        "placement_percentage": 87.0,
+        "specializations": [
+          "Corporate Law",
+          "International Law",
+          "IP Law"
+        ]
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "short_name": "BBA LLB",
+        "ug_seats": 30,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 9.5,
+        "median_placement_lpa": 7.5,
+        "highest_placement_lpa": 22.0,
+        "placement_percentage": 84.0,
+        "specializations": [
+          "Business Law",
+          "Banking Law"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT / AILET",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "LLM",
+        "duration_years": 1.0,
+        "entrance_exam": "CLAT PG",
+        "eligibility": "LLB/BA LLB",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.5,
+        "available_branches": []
+      },
+      {
+        "name": "PhD",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance Test",
+        "eligibility": "LLM",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Symbiosis Law School Pune",
+    "short_name": "SLS Pune",
+    "stream": "law",
+    "institute_type": "Private",
+    "established": 1977,
+    "ranking": 8,
+    "city": "Pune",
+    "state": "Maharashtra",
+    "nirf_ranking": 10,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 3.5,
+    "hostel_fees_per_year": 0.4,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 9.0,
+    "median_placement_lpa": 7.5,
+    "highest_placement_lpa": 25.0,
+    "placement_percentage": 85.0,
+    "top_recruiters": [
+      "Cyril Amarchand",
+      "Khaitan & Co",
+      "AZB & Partners",
+      "EY",
+      "Deloitte"
+    ],
+    "total_seats": 300,
+    "website": "https://www.symlaw.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "BA LLB (Hons)",
+        "short_name": "BA LLB",
+        "ug_seats": 150,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "SLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 9.0,
+        "median_placement_lpa": 7.5,
+        "highest_placement_lpa": 25.0,
+        "placement_percentage": 85.0,
+        "specializations": [
+          "Corporate Law",
+          "Litigation",
+          "IP Law"
+        ]
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "short_name": "BBA LLB",
+        "ug_seats": 150,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "SLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 8.5,
+        "median_placement_lpa": 7.0,
+        "highest_placement_lpa": 22.0,
+        "placement_percentage": 83.0,
+        "specializations": [
+          "Business Law",
+          "Corporate Governance"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "SLAT",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 3.5,
+        "available_branches": []
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "SLAT",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 3.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Rajiv Gandhi National University of Law",
+    "short_name": "RGNUL Patiala",
+    "stream": "law",
+    "institute_type": "NLU",
+    "established": 2006,
+    "ranking": 9,
+    "city": "Patiala",
+    "state": "Punjab",
+    "nirf_ranking": 9,
+    "naac_grade": "A",
+    "nba_accredited": false,
+    "avg_fees_lpa": 1.6,
+    "hostel_fees_per_year": 0.18,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 8.0,
+    "median_placement_lpa": 6.5,
+    "highest_placement_lpa": 22.0,
+    "placement_percentage": 82.0,
+    "top_recruiters": [
+      "Cyril Amarchand",
+      "AZB & Partners",
+      "Trilegal",
+      "Khaitan & Co",
+      "Luthra"
+    ],
+    "total_seats": 120,
+    "website": "https://www.rgnul.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "BA LLB (Hons)",
+        "short_name": "BA LLB",
+        "ug_seats": 80,
+        "pg_seats": 25,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 8.0,
+        "median_placement_lpa": 6.5,
+        "highest_placement_lpa": 22.0,
+        "placement_percentage": 82.0,
+        "specializations": [
+          "Corporate Law",
+          "Criminal Law",
+          "Family Law"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT / AILET",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "LLM",
+        "duration_years": 1.0,
+        "entrance_exam": "CLAT PG",
+        "eligibility": "LLB/BA LLB",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.5,
+        "available_branches": []
+      },
+      {
+        "name": "PhD",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance Test",
+        "eligibility": "LLM",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "National University of Advanced Legal Studies",
+    "short_name": "NUALS Kochi",
+    "stream": "law",
+    "institute_type": "NLU",
+    "established": 2005,
+    "ranking": 10,
+    "city": "Kochi",
+    "state": "Kerala",
+    "nirf_ranking": 12,
+    "naac_grade": "A",
+    "nba_accredited": false,
+    "avg_fees_lpa": 1.5,
+    "hostel_fees_per_year": 0.15,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 7.5,
+    "median_placement_lpa": 6.0,
+    "highest_placement_lpa": 20.0,
+    "placement_percentage": 80.0,
+    "top_recruiters": [
+      "Cyril Amarchand",
+      "AZB & Partners",
+      "Trilegal",
+      "EY",
+      "KPMG"
+    ],
+    "total_seats": 100,
+    "website": "https://www.nuals.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "BA LLB (Hons)",
+        "short_name": "BA LLB",
+        "ug_seats": 60,
+        "pg_seats": 25,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "CLAT",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 7.5,
+        "median_placement_lpa": 6.0,
+        "highest_placement_lpa": 20.0,
+        "placement_percentage": 80.0,
+        "specializations": [
+          "Corporate Law",
+          "Maritime Law",
+          "Constitutional Law"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT / AILET",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "BBA LLB (Hons)",
+        "duration_years": 5.0,
+        "entrance_exam": "CLAT",
+        "eligibility": "10+2, 45%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      },
+      {
+        "name": "LLM",
+        "duration_years": 1.0,
+        "entrance_exam": "CLAT PG",
+        "eligibility": "LLB/BA LLB",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.5,
+        "available_branches": []
+      },
+      {
+        "name": "PhD",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance Test",
+        "eligibility": "LLM",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  }
+]

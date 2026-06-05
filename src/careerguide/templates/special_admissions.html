@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% block title %}Special Admissions — CareerGuide{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Special Admission Criteria</h1>
+    <p class="subtitle">Discover alternative admission routes beyond standard entrance exams — quotas, direct entry, and special schemes across Indian colleges</p>
+</div>
+
+<!-- ── Filter ───────────────────────────────────────────────── -->
+<div class="sa-filter-bar">
+    <label for="saInstFilter">Filter by institution type:</label>
+    <select id="saInstFilter" class="cd-select" style="max-width:300px;">
+        <option value="all" selected>All Institutions</option>
+        <option value="IIT">IITs</option>
+        <option value="NIT">NITs</option>
+        <option value="IIIT">IIITs</option>
+        <option value="IISER">IISERs / IISc</option>
+        <option value="Central">Central Universities</option>
+        <option value="State">State Universities</option>
+    </select>
+    <span class="sa-match-count" id="saMatchCount"></span>
+</div>
+
+<!-- ── Category Cards ───────────────────────────────────────── -->
+<div class="sa-categories">
+    {% for cat in categories %}
+    <div class="sa-card" id="sa-{{ cat.id }}">
+        <button class="sa-card-header" type="button" aria-expanded="true" onclick="toggleSaCard(this)">
+            <span class="sa-card-icon">{{ cat.icon }}</span>
+            <span class="sa-card-title">{{ cat.title }}</span>
+            <span class="sa-card-chevron">▾</span>
+        </button>
+        <div class="sa-card-body">
+            <!-- Criteria table -->
+            <div class="table-responsive">
+                <table class="sa-table">
+                    <thead>
+                        <tr>
+                            <th>Criterion</th>
+                            <th>Description</th>
+                            <th>Applicable Institutions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for c in cat.criteria %}
+                        <tr data-institutions="{{ c.institutions | join(', ') }}">
+                            <td><strong>{{ c.name }}</strong></td>
+                            <td>{{ c.description }}</td>
+                            <td>
+                                {% for inst in c.institutions %}
+                                <span class="sa-inst-tag">{{ inst }}</span>
+                                {% endfor %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Certificates -->
+            <div class="sa-certs">
+                <h4>📋 Key Certificates Needed</h4>
+                <ul>
+                    {% for cert in cat.certificates %}
+                    <li>{{ cert }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- Sources -->
+            <div class="sa-sources">
+                <h4>🔗 Verified Sources</h4>
+                <div class="sa-source-links">
+                    {% for src in cat.sources %}
+                    <a href="{{ src.url }}" target="_blank" rel="noopener noreferrer" class="sa-source-link">
+                        {{ src.name }} ↗
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- ── Documents Checklist ──────────────────────────────────── -->
+<div class="sa-checklist-section">
+    <h2>📄 Key Documents Checklist</h2>
+    <p class="subtitle">Collect these documents early — before the admission cycle begins</p>
+    <div class="sa-checklist-grid">
+        {% for doc in checklist %}
+        <div class="sa-checklist-item">
+            <span class="sa-check-icon">☑</span>
+            <div>
+                <strong>{{ doc.name }}</strong>
+                <span class="sa-check-detail">{{ doc.detail }}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- ── Master Sources ──────────────────────────────────────── -->
+<div class="sa-master-sources">
+    <h2>🏛️ Official Source Directory</h2>
+    <div class="table-responsive">
+        <table class="sa-table">
+            <thead>
+                <tr><th>Source</th><th>URL</th><th>Coverage</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>JoSAA</td><td><a href="https://josaa.nic.in" target="_blank" rel="noopener noreferrer">josaa.nic.in ↗</a></td><td>IIT/NIT/IIIT cutoffs, quotas, seat matrix</td></tr>
+                <tr><td>CSAB</td><td><a href="https://csab.nic.in" target="_blank" rel="noopener noreferrer">csab.nic.in ↗</a></td><td>NIT/IIIT special rounds, supernumerary</td></tr>
+                <tr><td>NTA</td><td><a href="https://nta.ac.in" target="_blank" rel="noopener noreferrer">nta.ac.in ↗</a></td><td>JEE Main/Advanced, NEET, CUET results</td></tr>
+                <tr><td>MCC</td><td><a href="https://mcc.nic.in" target="_blank" rel="noopener noreferrer">mcc.nic.in ↗</a></td><td>Medical counselling, NEET cutoffs</td></tr>
+                <tr><td>NIRF</td><td><a href="https://www.nirfindia.org" target="_blank" rel="noopener noreferrer">nirfindia.org ↗</a></td><td>Rankings, fees, placement data</td></tr>
+                <tr><td>NAAC</td><td><a href="https://naac.gov.in" target="_blank" rel="noopener noreferrer">naac.gov.in ↗</a></td><td>Accreditation grades</td></tr>
+                <tr><td>UGC</td><td><a href="https://www.ugc.gov.in" target="_blank" rel="noopener noreferrer">ugc.gov.in ↗</a></td><td>University recognition, regulations</td></tr>
+                <tr><td>AICTE</td><td><a href="https://www.aicte-india.org" target="_blank" rel="noopener noreferrer">aicte-india.org ↗</a></td><td>Technical education approvals</td></tr>
+                <tr><td>HBCSE</td><td><a href="https://olympiads.hbcse.tifr.res.in" target="_blank" rel="noopener noreferrer">olympiads.hbcse.tifr.res.in ↗</a></td><td>Olympiad selections</td></tr>
+                <tr><td>SAI</td><td><a href="https://sfrdi.nic.in" target="_blank" rel="noopener noreferrer">sfrdi.nic.in ↗</a></td><td>Sports grading & quota</td></tr>
+                <tr><td>NCC</td><td><a href="https://indiancc.nic.in" target="_blank" rel="noopener noreferrer">indiancc.nic.in ↗</a></td><td>NCC certificates</td></tr>
+                <tr><td>DASA</td><td><a href="https://dasanit.org" target="_blank" rel="noopener noreferrer">dasanit.org ↗</a></td><td>NRI/foreign admission</td></tr>
+                <tr><td>DESW</td><td><a href="https://desw.gov.in" target="_blank" rel="noopener noreferrer">desw.gov.in ↗</a></td><td>Defence personnel welfare</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+/* Toggle expand/collapse of category cards */
+function toggleSaCard(btn) {
+    const body = btn.nextElementSibling;
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    body.style.display = expanded ? 'none' : '';
+    btn.querySelector('.sa-card-chevron').textContent = expanded ? '▸' : '▾';
+}
+
+/* Filter by institution type */
+document.getElementById('saInstFilter').addEventListener('change', function() {
+    const filter = this.value.toLowerCase();
+    let visible = 0;
+    document.querySelectorAll('.sa-table tbody tr[data-institutions]').forEach(function(row) {
+        const inst = (row.getAttribute('data-institutions') || '').toLowerCase();
+        if (filter === 'all' || inst.includes(filter)) {
+            row.style.display = '';
+            visible++;
+        } else {
+            row.style.display = 'none';
+        }
+    });
+    document.getElementById('saMatchCount').textContent = filter === 'all' ? '' : visible + ' matching criteria';
+});
+</script>
+{% endblock %}

@@ -10,6 +10,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from careerguide.data import (
     build_career_tree,
+    get_admission_categories,
     get_all_branches,
     get_all_college_states,
     get_all_institute_types,
@@ -18,6 +19,7 @@ from careerguide.data import (
     get_all_stream_names,
     get_college_directory,
     get_college_streams,
+    get_documents_checklist,
     get_stream_data,
 )
 from careerguide.db.session import get_session_factory
@@ -111,6 +113,17 @@ async def colleges_page(request: Request):
         "all_states": all_states,
         "all_types": all_types,
         "all_branches": all_branches,
+    })
+
+
+@router.get("/specialadmissions", response_class=HTMLResponse)
+async def special_admissions_page(request: Request):
+    """Special admission criteria — quotas, direct entry, and special schemes."""
+    categories = get_admission_categories()
+    checklist = get_documents_checklist()
+    return templates.TemplateResponse(request, "special_admissions.html", {
+        "categories": categories,
+        "checklist": checklist,
     })
 
 

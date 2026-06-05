@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Institute of Hotel Management Delhi",
+    "short_name": "IHM Delhi",
+    "stream": "hospitality",
+    "institute_type": "Central",
+    "established": 1962,
+    "ranking": 1,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 1,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 1.2,
+    "hostel_fees_per_year": 0.2,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 5.0,
+    "median_placement_lpa": 4.0,
+    "highest_placement_lpa": 15.0,
+    "placement_percentage": 90.0,
+    "top_recruiters": [
+      "Taj Hotels",
+      "Oberoi",
+      "Marriott",
+      "Hyatt",
+      "ITC Hotels"
+    ],
+    "total_seats": 300,
+    "website": "https://www.ihmpusa.net",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Hotel Management",
+        "short_name": "HM",
+        "ug_seats": 200,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NCHM JEE",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 5.0,
+        "median_placement_lpa": 4.0,
+        "highest_placement_lpa": 15.0,
+        "placement_percentage": 90.0,
+        "specializations": [
+          "F&B",
+          "Front Office",
+          "Housekeeping"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Sc Hospitality & Hotel Admin",
+        "duration_years": 3.0,
+        "entrance_exam": "NCHM JEE",
+        "eligibility": "10+2, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Institute of Hotel Management Mumbai",
+    "short_name": "IHM Mumbai",
+    "stream": "hospitality",
+    "institute_type": "Central",
+    "established": 1954,
+    "ranking": 2,
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "nirf_ranking": 2,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 1.2,
+    "hostel_fees_per_year": 0.2,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 5.0,
+    "median_placement_lpa": 4.0,
+    "highest_placement_lpa": 14.0,
+    "placement_percentage": 88.0,
+    "top_recruiters": [
+      "Taj Hotels",
+      "Marriott",
+      "Hyatt",
+      "ITC Hotels",
+      "Oberoi"
+    ],
+    "total_seats": 280,
+    "website": "https://www.ihmmumbai.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Hotel Management",
+        "short_name": "HM",
+        "ug_seats": 180,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NCHM JEE",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 5.0,
+        "median_placement_lpa": 4.0,
+        "highest_placement_lpa": 14.0,
+        "placement_percentage": 88.0,
+        "specializations": [
+          "F&B",
+          "Front Office",
+          "Housekeeping"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Sc Hospitality & Hotel Admin",
+        "duration_years": 3.0,
+        "entrance_exam": "NCHM JEE",
+        "eligibility": "10+2, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Welcome Group Graduate School of Hotel Administration",
+    "short_name": "WGSHA Manipal",
+    "stream": "hospitality",
+    "institute_type": "Private",
+    "established": 1986,
+    "ranking": 3,
+    "city": "Manipal",
+    "state": "Karnataka",
+    "nirf_ranking": 3,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 3.0,
+    "hostel_fees_per_year": 0.3,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 5.5,
+    "median_placement_lpa": 4.5,
+    "highest_placement_lpa": 16.0,
+    "placement_percentage": 92.0,
+    "top_recruiters": [
+      "Taj Hotels",
+      "Marriott",
+      "Hyatt",
+      "ITC Hotels",
+      "Carnival Cruise"
+    ],
+    "total_seats": 200,
+    "website": "https://manipal.edu/wgsha.html",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Hotel Management",
+        "short_name": "HM",
+        "ug_seats": 120,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "MET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 5.5,
+        "median_placement_lpa": 4.5,
+        "highest_placement_lpa": 16.0,
+        "placement_percentage": 92.0,
+        "specializations": [
+          "F&B",
+          "Front Office",
+          "Culinary Arts"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BHM",
+        "duration_years": 4.0,
+        "entrance_exam": "MET",
+        "eligibility": "10+2, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 3.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Christ University — School of Hospitality",
+    "short_name": "Christ Hospitality",
+    "stream": "hospitality",
+    "institute_type": "Deemed",
+    "established": 1969,
+    "ranking": 4,
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirf_ranking": 5,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 2.5,
+    "hostel_fees_per_year": 0.3,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 4.5,
+    "median_placement_lpa": 3.5,
+    "highest_placement_lpa": 12.0,
+    "placement_percentage": 82.0,
+    "top_recruiters": [
+      "Marriott",
+      "Hyatt",
+      "ITC Hotels",
+      "Taj Hotels",
+      "Oberoi"
+    ],
+    "total_seats": 150,
+    "website": "https://christuniversity.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Hotel Management",
+        "short_name": "HM",
+        "ug_seats": 80,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "Christ",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 4.5,
+        "median_placement_lpa": 3.5,
+        "highest_placement_lpa": 12.0,
+        "placement_percentage": 82.0,
+        "specializations": [
+          "F&B",
+          "Events",
+          "Culinary"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BHM",
+        "duration_years": 4.0,
+        "entrance_exam": "Christ Entrance",
+        "eligibility": "10+2, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Institute of Hotel Management Bangalore",
+    "short_name": "IHM Bangalore",
+    "stream": "hospitality",
+    "institute_type": "Central",
+    "established": 1969,
+    "ranking": 5,
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirf_ranking": 4,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 1.2,
+    "hostel_fees_per_year": 0.18,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 4.5,
+    "median_placement_lpa": 3.5,
+    "highest_placement_lpa": 12.0,
+    "placement_percentage": 85.0,
+    "top_recruiters": [
+      "Taj Hotels",
+      "Marriott",
+      "Hyatt",
+      "ITC Hotels",
+      "Oberoi"
+    ],
+    "total_seats": 250,
+    "website": "https://www.ihmbangalore.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Hotel Management",
+        "short_name": "HM",
+        "ug_seats": 150,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NCHM JEE",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 4.5,
+        "median_placement_lpa": 3.5,
+        "highest_placement_lpa": 12.0,
+        "placement_percentage": 85.0,
+        "specializations": [
+          "F&B",
+          "Front Office",
+          "Housekeeping"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Sc Hospitality & Hotel Admin",
+        "duration_years": 3.0,
+        "entrance_exam": "NCHM JEE",
+        "eligibility": "10+2, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  }
+]

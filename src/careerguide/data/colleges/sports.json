@@ -1,0 +1,378 @@
+[
+  {
+    "name": "Lakshmibai National Institute of Physical Education",
+    "short_name": "LNIPE Gwalior",
+    "stream": "sports",
+    "institute_type": "Central",
+    "established": 1957,
+    "ranking": 1,
+    "city": "Gwalior",
+    "state": "Madhya Pradesh",
+    "nirf_ranking": 0,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.1,
+    "hostel_fees_per_year": 0.05,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 4.0,
+    "median_placement_lpa": 3.0,
+    "highest_placement_lpa": 10.0,
+    "placement_percentage": 80.0,
+    "top_recruiters": [
+      "SAI",
+      "State Sports Depts",
+      "Schools",
+      "Indian Army",
+      "Indian Navy"
+    ],
+    "total_seats": 300,
+    "website": "https://lnipe.edu.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Physical Education",
+        "short_name": "BPED",
+        "ug_seats": 150,
+        "pg_seats": 60,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "LNIPE",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 4.0,
+        "median_placement_lpa": 3.0,
+        "highest_placement_lpa": 10.0,
+        "placement_percentage": 80.0,
+        "specializations": [
+          "Coaching",
+          "Sports Science",
+          "Fitness"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BPEd",
+        "duration_years": 4.0,
+        "entrance_exam": "LNIPE Entrance",
+        "eligibility": "10+2 + Sports",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MPEd",
+        "duration_years": 2.0,
+        "entrance_exam": "LNIPE Entrance",
+        "eligibility": "BPEd",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Sports Authority of India — NSNIS Patiala",
+    "short_name": "SAI NSNIS Patiala",
+    "stream": "sports",
+    "institute_type": "Central",
+    "established": 1961,
+    "ranking": 2,
+    "city": "Patiala",
+    "state": "Punjab",
+    "nirf_ranking": 0,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.03,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 4.0,
+    "median_placement_lpa": 3.0,
+    "highest_placement_lpa": 8.0,
+    "placement_percentage": 85.0,
+    "top_recruiters": [
+      "SAI",
+      "State Sports Depts",
+      "Indian Railways",
+      "Indian Army",
+      "Schools"
+    ],
+    "total_seats": 200,
+    "website": "https://sfrdi.nic.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Sports Coaching",
+        "short_name": "COACH",
+        "ug_seats": 100,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "SAI",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 4.0,
+        "median_placement_lpa": 3.0,
+        "highest_placement_lpa": 8.0,
+        "placement_percentage": 85.0,
+        "specializations": [
+          "Athletics",
+          "Team Sports",
+          "Combat Sports"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "Diploma in Sports Coaching",
+        "duration_years": 2.0,
+        "entrance_exam": "SAI Entrance",
+        "eligibility": "Graduate + Sports",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Indira Gandhi Institute of Physical Education & Sports Sciences",
+    "short_name": "IGIPESS Delhi",
+    "stream": "sports",
+    "institute_type": "State Govt",
+    "established": 1987,
+    "ranking": 3,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 0,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.08,
+    "hostel_fees_per_year": 0.04,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 3.5,
+    "median_placement_lpa": 2.5,
+    "highest_placement_lpa": 8.0,
+    "placement_percentage": 75.0,
+    "top_recruiters": [
+      "Schools",
+      "Delhi Govt Sports",
+      "SAI",
+      "Fitness Industry",
+      "Coaching"
+    ],
+    "total_seats": 200,
+    "website": "https://igipess.du.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Physical Education",
+        "short_name": "BPED",
+        "ug_seats": 100,
+        "pg_seats": 30,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "DU Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 3.5,
+        "median_placement_lpa": 2.5,
+        "highest_placement_lpa": 8.0,
+        "placement_percentage": 75.0,
+        "specializations": [
+          "Coaching",
+          "Fitness",
+          "Sports Mgmt"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BPEd (Hons)",
+        "duration_years": 4.0,
+        "entrance_exam": "DU Entrance",
+        "eligibility": "10+2 + Sports",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.08,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Tamil Nadu Physical Education and Sports University",
+    "short_name": "TNPESU Chennai",
+    "stream": "sports",
+    "institute_type": "State Govt",
+    "established": 2005,
+    "ranking": 4,
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "nirf_ranking": 0,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.06,
+    "hostel_fees_per_year": 0.03,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 3.0,
+    "median_placement_lpa": 2.0,
+    "highest_placement_lpa": 7.0,
+    "placement_percentage": 70.0,
+    "top_recruiters": [
+      "Schools",
+      "State Sports",
+      "SAI",
+      "Fitness Industry",
+      "Coaching"
+    ],
+    "total_seats": 250,
+    "website": "https://www.tnpesu.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Physical Education",
+        "short_name": "BPED",
+        "ug_seats": 120,
+        "pg_seats": 40,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 3.0,
+        "median_placement_lpa": 2.0,
+        "highest_placement_lpa": 7.0,
+        "placement_percentage": 70.0,
+        "specializations": [
+          "Coaching",
+          "Sports Science"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BPEd",
+        "duration_years": 4.0,
+        "entrance_exam": "Entrance",
+        "eligibility": "10+2 + Sports",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.06,
+        "available_branches": []
+      },
+      {
+        "name": "MPEd",
+        "duration_years": 2.0,
+        "entrance_exam": "Entrance",
+        "eligibility": "BPEd",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.06,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Guru Nanak Dev University — Dept of Sports",
+    "short_name": "GNDU Sports",
+    "stream": "sports",
+    "institute_type": "State Govt",
+    "established": 1969,
+    "ranking": 5,
+    "city": "Amritsar",
+    "state": "Punjab",
+    "nirf_ranking": 0,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.03,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 3.0,
+    "median_placement_lpa": 2.0,
+    "highest_placement_lpa": 6.0,
+    "placement_percentage": 68.0,
+    "top_recruiters": [
+      "Schools",
+      "State Sports",
+      "SAI",
+      "Indian Army",
+      "Police"
+    ],
+    "total_seats": 200,
+    "website": "https://www.gndu.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Physical Education",
+        "short_name": "BPED",
+        "ug_seats": 100,
+        "pg_seats": 30,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 3.0,
+        "median_placement_lpa": 2.0,
+        "highest_placement_lpa": 6.0,
+        "placement_percentage": 68.0,
+        "specializations": [
+          "Coaching",
+          "Athletics",
+          "Team Sports"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "BPEd",
+        "duration_years": 2.0,
+        "entrance_exam": "Entrance",
+        "eligibility": "Graduate + Sports",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      },
+      {
+        "name": "MPEd",
+        "duration_years": 2.0,
+        "entrance_exam": "Entrance",
+        "eligibility": "BPEd",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  }
+]

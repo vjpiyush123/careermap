@@ -1,0 +1,3028 @@
+[
+  {
+    "name": "All India Institute of Medical Sciences, New Delhi",
+    "short_name": "AIIMS Delhi",
+    "stream": "medical",
+    "institute_type": "Central",
+    "established": 1956,
+    "ranking": 1,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 1,
+    "naac_grade": "A++",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.01,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "Virtually free education",
+    "avg_placement_lpa": 15.0,
+    "median_placement_lpa": 12.0,
+    "highest_placement_lpa": 35.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "AIIMS Hospitals",
+      "Apollo",
+      "Fortis",
+      "Max Healthcare"
+    ],
+    "total_seats": 107,
+    "website": "https://www.aiims.edu",
+    "notable_alumni": [
+      "Dr. Randeep Guleria",
+      "Dr. Devi Shetty"
+    ],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 107,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 1,
+        "obc_closing_rank": 50,
+        "sc_closing_rank": 250,
+        "st_closing_rank": 150,
+        "ews_closing_rank": 70,
+        "female_closing_rank": 100,
+        "avg_placement_lpa": 15.0,
+        "median_placement_lpa": 12.0,
+        "highest_placement_lpa": 35.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery",
+          "Pediatrics"
+        ]
+      },
+      {
+        "name": "General Medicine",
+        "short_name": "MD-Med",
+        "ug_seats": 0,
+        "pg_seats": 25,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "INI CET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 25.0,
+        "median_placement_lpa": 20.0,
+        "highest_placement_lpa": 45.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cardiology",
+          "Pulmonology",
+          "Nephrology"
+        ]
+      },
+      {
+        "name": "General Surgery",
+        "short_name": "MS-Surg",
+        "ug_seats": 0,
+        "pg_seats": 20,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "INI CET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 22.0,
+        "median_placement_lpa": 18.0,
+        "highest_placement_lpa": 40.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Gastro Surgery",
+          "Transplant",
+          "Trauma"
+        ]
+      },
+      {
+        "name": "Pediatrics",
+        "short_name": "MD-Peds",
+        "ug_seats": 0,
+        "pg_seats": 15,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "INI CET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 18.0,
+        "median_placement_lpa": 15.0,
+        "highest_placement_lpa": 30.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Neonatology",
+          "Pediatric ICU"
+        ]
+      },
+      {
+        "name": "Orthopedics",
+        "short_name": "MS-Ortho",
+        "ug_seats": 0,
+        "pg_seats": 12,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "INI CET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 20.0,
+        "median_placement_lpa": 17.0,
+        "highest_placement_lpa": 38.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Joint Replacement",
+          "Spine",
+          "Sports Medicine"
+        ]
+      },
+      {
+        "name": "Dermatology",
+        "short_name": "MD-Derm",
+        "ug_seats": 0,
+        "pg_seats": 8,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "INI CET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 22.0,
+        "median_placement_lpa": 18.0,
+        "highest_placement_lpa": 50.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cosmetic",
+          "Clinical",
+          "Laser"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "INI CET",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "INI CET",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "INI SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "INI SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "B.Sc Nursing",
+        "duration_years": 4.0,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 55%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Post Graduate Institute of Medical Education & Research",
+    "short_name": "PGIMER",
+    "stream": "medical",
+    "institute_type": "Central",
+    "established": 1962,
+    "ranking": 2,
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "nirf_ranking": 2,
+    "naac_grade": "A++",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.02,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "Nominal fees, government funded",
+    "avg_placement_lpa": 14.0,
+    "median_placement_lpa": 11.0,
+    "highest_placement_lpa": 30.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "PGIMER Hospital",
+      "Medanta",
+      "Max Healthcare"
+    ],
+    "total_seats": 75,
+    "website": "https://pgimer.edu.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 75,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 50,
+        "obc_closing_rank": 150,
+        "sc_closing_rank": 500,
+        "st_closing_rank": 350,
+        "ews_closing_rank": 200,
+        "female_closing_rank": 250,
+        "avg_placement_lpa": 14.0,
+        "median_placement_lpa": 11.0,
+        "highest_placement_lpa": 30.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Internal Medicine",
+          "Surgery"
+        ]
+      },
+      {
+        "name": "General Medicine",
+        "short_name": "MD-Med",
+        "ug_seats": 0,
+        "pg_seats": 20,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 24.0,
+        "median_placement_lpa": 19.0,
+        "highest_placement_lpa": 42.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cardiology",
+          "Gastro",
+          "Pulmonology"
+        ]
+      },
+      {
+        "name": "General Surgery",
+        "short_name": "MS-Surg",
+        "ug_seats": 0,
+        "pg_seats": 18,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 20.0,
+        "median_placement_lpa": 16.0,
+        "highest_placement_lpa": 35.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "GI Surgery",
+          "Transplant"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Christian Medical College Vellore",
+    "short_name": "CMC Vellore",
+    "stream": "medical",
+    "institute_type": "Private",
+    "established": 1900,
+    "ranking": 3,
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "nirf_ranking": 3,
+    "naac_grade": "A++",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.35,
+    "hostel_fees_per_year": 0.1,
+    "fee_waiver_policy": "Need-based scholarships available",
+    "avg_placement_lpa": 12.0,
+    "median_placement_lpa": 10.0,
+    "highest_placement_lpa": 28.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "CMC Hospital",
+      "Apollo",
+      "NIMHANS",
+      "Global Hospitals"
+    ],
+    "total_seats": 100,
+    "website": "https://www.cmch-vellore.edu",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 100,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 80,
+        "obc_closing_rank": 300,
+        "sc_closing_rank": 900,
+        "st_closing_rank": 600,
+        "ews_closing_rank": 350,
+        "female_closing_rank": 500,
+        "avg_placement_lpa": 12.0,
+        "median_placement_lpa": 10.0,
+        "highest_placement_lpa": 28.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery",
+          "Ob-Gyn"
+        ]
+      },
+      {
+        "name": "General Medicine",
+        "short_name": "MD-Med",
+        "ug_seats": 0,
+        "pg_seats": 18,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 22.0,
+        "median_placement_lpa": 18.0,
+        "highest_placement_lpa": 40.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cardiology",
+          "Neurology",
+          "Nephrology"
+        ]
+      },
+      {
+        "name": "General Surgery",
+        "short_name": "MS-Surg",
+        "ug_seats": 0,
+        "pg_seats": 15,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 20.0,
+        "median_placement_lpa": 16.0,
+        "highest_placement_lpa": 35.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "GI Surgery",
+          "Urology",
+          "Transplant"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 12.0,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 8.0,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 8.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Jawaharlal Institute of Postgraduate Medical Education & Research",
+    "short_name": "JIPMER",
+    "stream": "medical",
+    "institute_type": "Central",
+    "established": 1823,
+    "ranking": 4,
+    "city": "Puducherry",
+    "state": "Puducherry",
+    "nirf_ranking": 5,
+    "naac_grade": "A++",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.02,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "Government funded, minimal fees",
+    "avg_placement_lpa": 13.0,
+    "median_placement_lpa": 10.5,
+    "highest_placement_lpa": 28.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "JIPMER Hospital",
+      "Apollo",
+      "AIIMS"
+    ],
+    "total_seats": 200,
+    "website": "https://www.jipmer.edu.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 200,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 100,
+        "obc_closing_rank": 400,
+        "sc_closing_rank": 1200,
+        "st_closing_rank": 800,
+        "ews_closing_rank": 450,
+        "female_closing_rank": 650,
+        "avg_placement_lpa": 13.0,
+        "median_placement_lpa": 10.5,
+        "highest_placement_lpa": 28.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      },
+      {
+        "name": "General Medicine",
+        "short_name": "MD-Med",
+        "ug_seats": 0,
+        "pg_seats": 15,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 22.0,
+        "median_placement_lpa": 17.0,
+        "highest_placement_lpa": 38.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cardiology",
+          "Nephrology"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "National Institute of Mental Health and Neurosciences",
+    "short_name": "NIMHANS",
+    "stream": "medical",
+    "institute_type": "Central",
+    "established": 1974,
+    "ranking": 5,
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirf_ranking": 4,
+    "naac_grade": "A++",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.02,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "Government funded",
+    "avg_placement_lpa": 14.0,
+    "median_placement_lpa": 11.0,
+    "highest_placement_lpa": 30.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "NIMHANS Hospital",
+      "Apollo",
+      "Manipal Hospitals"
+    ],
+    "total_seats": 60,
+    "website": "https://nimhans.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Psychiatry",
+        "short_name": "MD-Psych",
+        "ug_seats": 0,
+        "pg_seats": 20,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 16.0,
+        "median_placement_lpa": 13.0,
+        "highest_placement_lpa": 30.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Child Psychiatry",
+          "Addiction",
+          "Forensic"
+        ]
+      },
+      {
+        "name": "Neurology",
+        "short_name": "DM-Neuro",
+        "ug_seats": 0,
+        "pg_seats": 10,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET SS",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 25.0,
+        "median_placement_lpa": 20.0,
+        "highest_placement_lpa": 45.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Stroke",
+          "Epilepsy",
+          "Movement Disorders"
+        ]
+      },
+      {
+        "name": "Neurosurgery",
+        "short_name": "MCh-NS",
+        "ug_seats": 0,
+        "pg_seats": 8,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET SS",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 28.0,
+        "median_placement_lpa": 22.0,
+        "highest_placement_lpa": 50.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Spine",
+          "Neuro-oncology",
+          "Vascular"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MD Psychiatry",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.02,
+        "available_branches": []
+      },
+      {
+        "name": "DM Neurology",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD Medicine",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.02,
+        "available_branches": []
+      },
+      {
+        "name": "DM Clinical Psychology",
+        "duration_years": 3.0,
+        "entrance_exam": "Institute Exam",
+        "eligibility": "MA Psychology",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.02,
+        "available_branches": []
+      },
+      {
+        "name": "MCh Neurosurgery",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS Surgery",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.02,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Kasturba Medical College Manipal",
+    "short_name": "KMC Manipal",
+    "stream": "medical",
+    "institute_type": "Private",
+    "established": 1953,
+    "ranking": 6,
+    "city": "Manipal",
+    "state": "Karnataka",
+    "nirf_ranking": 6,
+    "naac_grade": "A++",
+    "nba_accredited": true,
+    "avg_fees_lpa": 12.0,
+    "hostel_fees_per_year": 1.0,
+    "fee_waiver_policy": "Merit scholarships for top rankers",
+    "avg_placement_lpa": 10.0,
+    "median_placement_lpa": 8.0,
+    "highest_placement_lpa": 25.0,
+    "placement_percentage": 95.0,
+    "top_recruiters": [
+      "Manipal Hospitals",
+      "Apollo",
+      "Fortis",
+      "Columbia Asia"
+    ],
+    "total_seats": 250,
+    "website": "https://manipal.edu/kmc-manipal.html",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 250,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 5000,
+        "obc_closing_rank": 15000,
+        "sc_closing_rank": 45000,
+        "st_closing_rank": 30000,
+        "ews_closing_rank": 18000,
+        "female_closing_rank": 25000,
+        "avg_placement_lpa": 10.0,
+        "median_placement_lpa": 8.0,
+        "highest_placement_lpa": 25.0,
+        "placement_percentage": 95.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery",
+          "Pediatrics"
+        ]
+      },
+      {
+        "name": "General Medicine",
+        "short_name": "MD-Med",
+        "ug_seats": 0,
+        "pg_seats": 20,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 18.0,
+        "median_placement_lpa": 15.0,
+        "highest_placement_lpa": 32.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cardiology",
+          "Endocrinology"
+        ]
+      },
+      {
+        "name": "General Surgery",
+        "short_name": "MS-Surg",
+        "ug_seats": 0,
+        "pg_seats": 15,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 16.0,
+        "median_placement_lpa": 13.0,
+        "highest_placement_lpa": 28.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Laparoscopic",
+          "GI Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 12.0,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 8.0,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 8.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Institute of Medical Sciences, BHU",
+    "short_name": "IMS BHU",
+    "stream": "medical",
+    "institute_type": "Central University",
+    "established": 1916,
+    "ranking": 7,
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "nirf_ranking": 8,
+    "naac_grade": "A++",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.01,
+    "fee_waiver_policy": "Tuition waiver for SC/ST/PwD",
+    "avg_placement_lpa": 11.0,
+    "median_placement_lpa": 9.0,
+    "highest_placement_lpa": 25.0,
+    "placement_percentage": 98.0,
+    "top_recruiters": [
+      "BHU Hospital",
+      "AIIMS",
+      "Medanta",
+      "Apollo"
+    ],
+    "total_seats": 120,
+    "website": "https://www.bhu.ac.in/ims",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 120,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 200,
+        "obc_closing_rank": 800,
+        "sc_closing_rank": 2500,
+        "st_closing_rank": 1500,
+        "ews_closing_rank": 900,
+        "female_closing_rank": 1200,
+        "avg_placement_lpa": 11.0,
+        "median_placement_lpa": 9.0,
+        "highest_placement_lpa": 25.0,
+        "placement_percentage": 98.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery",
+          "Ob-Gyn"
+        ]
+      },
+      {
+        "name": "General Medicine",
+        "short_name": "MD-Med",
+        "ug_seats": 0,
+        "pg_seats": 15,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 20.0,
+        "median_placement_lpa": 16.0,
+        "highest_placement_lpa": 35.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cardiology",
+          "Gastro"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "King George's Medical University",
+    "short_name": "KGMU",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1911,
+    "ranking": 8,
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "nirf_ranking": 10,
+    "naac_grade": "A+",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.08,
+    "hostel_fees_per_year": 0.01,
+    "fee_waiver_policy": "State govt subsidized",
+    "avg_placement_lpa": 10.0,
+    "median_placement_lpa": 8.0,
+    "highest_placement_lpa": 22.0,
+    "placement_percentage": 97.0,
+    "top_recruiters": [
+      "KGMU Hospital",
+      "Medanta",
+      "Apollo",
+      "Max"
+    ],
+    "total_seats": 250,
+    "website": "https://www.kgmu.org",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 250,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 300,
+        "obc_closing_rank": 1200,
+        "sc_closing_rank": 4000,
+        "st_closing_rank": 2500,
+        "ews_closing_rank": 1400,
+        "female_closing_rank": 1800,
+        "avg_placement_lpa": 10.0,
+        "median_placement_lpa": 8.0,
+        "highest_placement_lpa": 22.0,
+        "placement_percentage": 97.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery",
+          "Pediatrics"
+        ]
+      },
+      {
+        "name": "General Medicine",
+        "short_name": "MD-Med",
+        "ug_seats": 0,
+        "pg_seats": 20,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 18.0,
+        "median_placement_lpa": 14.0,
+        "highest_placement_lpa": 30.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cardiology",
+          "Nephrology"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Maulana Azad Medical College",
+    "short_name": "MAMC Delhi",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1958,
+    "ranking": 9,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 7,
+    "naac_grade": "A+",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.01,
+    "fee_waiver_policy": "Delhi govt subsidized",
+    "avg_placement_lpa": 12.0,
+    "median_placement_lpa": 10.0,
+    "highest_placement_lpa": 28.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "Lok Nayak Hospital",
+      "AIIMS",
+      "Safdarjung",
+      "Max"
+    ],
+    "total_seats": 250,
+    "website": "https://www.mamc.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 250,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 60,
+        "obc_closing_rank": 200,
+        "sc_closing_rank": 700,
+        "st_closing_rank": 450,
+        "ews_closing_rank": 250,
+        "female_closing_rank": 350,
+        "avg_placement_lpa": 12.0,
+        "median_placement_lpa": 10.0,
+        "highest_placement_lpa": 28.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery",
+          "Ob-Gyn"
+        ]
+      },
+      {
+        "name": "General Medicine",
+        "short_name": "MD-Med",
+        "ug_seats": 0,
+        "pg_seats": 22,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 22.0,
+        "median_placement_lpa": 18.0,
+        "highest_placement_lpa": 38.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cardiology",
+          "Pulmonology"
+        ]
+      },
+      {
+        "name": "General Surgery",
+        "short_name": "MS-Surg",
+        "ug_seats": 0,
+        "pg_seats": 18,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 20.0,
+        "median_placement_lpa": 16.0,
+        "highest_placement_lpa": 35.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Trauma",
+          "GI Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Madras Medical College",
+    "short_name": "MMC Chennai",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1835,
+    "ranking": 10,
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "nirf_ranking": 9,
+    "naac_grade": "A+",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.03,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "TN state govt subsidized",
+    "avg_placement_lpa": 10.0,
+    "median_placement_lpa": 8.0,
+    "highest_placement_lpa": 22.0,
+    "placement_percentage": 98.0,
+    "top_recruiters": [
+      "Rajiv Gandhi GH",
+      "Apollo",
+      "MIOT",
+      "Fortis"
+    ],
+    "total_seats": 250,
+    "website": "https://www.mmc.tn.gov.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 250,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 150,
+        "obc_closing_rank": 600,
+        "sc_closing_rank": 2000,
+        "st_closing_rank": 1200,
+        "ews_closing_rank": 700,
+        "female_closing_rank": 900,
+        "avg_placement_lpa": 10.0,
+        "median_placement_lpa": 8.0,
+        "highest_placement_lpa": 22.0,
+        "placement_percentage": 98.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      },
+      {
+        "name": "General Medicine",
+        "short_name": "MD-Med",
+        "ug_seats": 0,
+        "pg_seats": 18,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 18.0,
+        "median_placement_lpa": 14.0,
+        "highest_placement_lpa": 30.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cardiology",
+          "Gastro"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Grant Government Medical College",
+    "short_name": "Grant MC Mumbai",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1845,
+    "ranking": 11,
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "nirf_ranking": 15,
+    "naac_grade": "A",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.01,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 10.0,
+    "median_placement_lpa": 8.0,
+    "highest_placement_lpa": 22.0,
+    "placement_percentage": 97.0,
+    "top_recruiters": [
+      "JJ Hospital",
+      "Bombay Hospital",
+      "KEM",
+      "Lilavati"
+    ],
+    "total_seats": 200,
+    "website": "https://www.gmcjjh.org",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 200,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 250,
+        "obc_closing_rank": 900,
+        "sc_closing_rank": 3000,
+        "st_closing_rank": 1800,
+        "ews_closing_rank": 1100,
+        "female_closing_rank": 1400,
+        "avg_placement_lpa": 10.0,
+        "median_placement_lpa": 8.0,
+        "highest_placement_lpa": 22.0,
+        "placement_percentage": 97.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Seth GS Medical College & KEM Hospital",
+    "short_name": "KEM Mumbai",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1926,
+    "ranking": 12,
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "nirf_ranking": 12,
+    "naac_grade": "A+",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.01,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 11.0,
+    "median_placement_lpa": 9.0,
+    "highest_placement_lpa": 25.0,
+    "placement_percentage": 98.0,
+    "top_recruiters": [
+      "KEM Hospital",
+      "Hinduja",
+      "Kokilaben",
+      "Lilavati"
+    ],
+    "total_seats": 200,
+    "website": "https://www.kem.edu",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 200,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 200,
+        "obc_closing_rank": 800,
+        "sc_closing_rank": 2800,
+        "st_closing_rank": 1600,
+        "ews_closing_rank": 1000,
+        "female_closing_rank": 1300,
+        "avg_placement_lpa": 11.0,
+        "median_placement_lpa": 9.0,
+        "highest_placement_lpa": 25.0,
+        "placement_percentage": 98.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery",
+          "Ob-Gyn"
+        ]
+      },
+      {
+        "name": "General Medicine",
+        "short_name": "MD-Med",
+        "ug_seats": 0,
+        "pg_seats": 16,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET PG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 20.0,
+        "median_placement_lpa": 16.0,
+        "highest_placement_lpa": 35.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Cardiology",
+          "Nephrology"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Armed Forces Medical College",
+    "short_name": "AFMC Pune",
+    "stream": "medical",
+    "institute_type": "Defence",
+    "established": 1948,
+    "ranking": 13,
+    "city": "Pune",
+    "state": "Maharashtra",
+    "nirf_ranking": 14,
+    "naac_grade": "A+",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.01,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "Free for defence candidates",
+    "avg_placement_lpa": 12.0,
+    "median_placement_lpa": 10.0,
+    "highest_placement_lpa": 25.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "Indian Armed Forces Medical Corps"
+    ],
+    "total_seats": 150,
+    "website": "https://www.afmc.nic.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 150,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 100,
+        "obc_closing_rank": 400,
+        "sc_closing_rank": 1500,
+        "st_closing_rank": 900,
+        "ews_closing_rank": 500,
+        "female_closing_rank": 700,
+        "avg_placement_lpa": 12.0,
+        "median_placement_lpa": 10.0,
+        "highest_placement_lpa": 25.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Military Medicine",
+          "Surgery",
+          "Aviation Medicine"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG + Interview",
+        "eligibility": "10+2 PCB, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Lady Hardinge Medical College",
+    "short_name": "LHMC Delhi",
+    "stream": "medical",
+    "institute_type": "Central",
+    "established": 1916,
+    "ranking": 14,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 16,
+    "naac_grade": "A",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.02,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "Central govt funded",
+    "avg_placement_lpa": 11.0,
+    "median_placement_lpa": 9.0,
+    "highest_placement_lpa": 25.0,
+    "placement_percentage": 99.0,
+    "top_recruiters": [
+      "Smt. Sucheta Kriplani Hospital",
+      "AIIMS",
+      "Safdarjung"
+    ],
+    "total_seats": 200,
+    "website": "https://www.lhmc-hosp.gov.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 200,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 70,
+        "obc_closing_rank": 250,
+        "sc_closing_rank": 800,
+        "st_closing_rank": 500,
+        "ews_closing_rank": 300,
+        "female_closing_rank": 400,
+        "avg_placement_lpa": 11.0,
+        "median_placement_lpa": 9.0,
+        "highest_placement_lpa": 25.0,
+        "placement_percentage": 99.0,
+        "specializations": [
+          "General Medicine",
+          "Ob-Gyn",
+          "Pediatrics"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Stanley Medical College",
+    "short_name": "Stanley MC Chennai",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1838,
+    "ranking": 15,
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "nirf_ranking": 20,
+    "naac_grade": "A",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.03,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 9.0,
+    "median_placement_lpa": 7.5,
+    "highest_placement_lpa": 20.0,
+    "placement_percentage": 97.0,
+    "top_recruiters": [
+      "Stanley Hospital",
+      "Apollo",
+      "MIOT"
+    ],
+    "total_seats": 250,
+    "website": "https://www.stanleymedicalcollege.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 250,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 200,
+        "obc_closing_rank": 700,
+        "sc_closing_rank": 2200,
+        "st_closing_rank": 1400,
+        "ews_closing_rank": 800,
+        "female_closing_rank": 1100,
+        "avg_placement_lpa": 9.0,
+        "median_placement_lpa": 7.5,
+        "highest_placement_lpa": 20.0,
+        "placement_percentage": 97.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Government Medical College Thiruvananthapuram",
+    "short_name": "GMC Trivandrum",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1951,
+    "ranking": 16,
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "nirf_ranking": 22,
+    "naac_grade": "A",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.008,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 9.5,
+    "median_placement_lpa": 7.5,
+    "highest_placement_lpa": 22.0,
+    "placement_percentage": 97.0,
+    "top_recruiters": [
+      "SAT Hospital",
+      "KIMS",
+      "Amrita Hospital"
+    ],
+    "total_seats": 250,
+    "website": "https://www.gmctvm.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 250,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 300,
+        "obc_closing_rank": 1000,
+        "sc_closing_rank": 3500,
+        "st_closing_rank": 2000,
+        "ews_closing_rank": 1200,
+        "female_closing_rank": 1600,
+        "avg_placement_lpa": 9.5,
+        "median_placement_lpa": 7.5,
+        "highest_placement_lpa": 22.0,
+        "placement_percentage": 97.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery",
+          "Pediatrics"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "All India Institute of Medical Sciences Jodhpur",
+    "short_name": "AIIMS Jodhpur",
+    "stream": "medical",
+    "institute_type": "Central",
+    "established": 2012,
+    "ranking": 17,
+    "city": "Jodhpur",
+    "state": "Rajasthan",
+    "nirf_ranking": 11,
+    "naac_grade": "A+",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.01,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "Virtually free education",
+    "avg_placement_lpa": 12.0,
+    "median_placement_lpa": 10.0,
+    "highest_placement_lpa": 25.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "AIIMS Jodhpur Hospital",
+      "Fortis",
+      "Medanta"
+    ],
+    "total_seats": 125,
+    "website": "https://www.aiimsjodhpur.edu.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 125,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 150,
+        "obc_closing_rank": 600,
+        "sc_closing_rank": 2000,
+        "st_closing_rank": 1200,
+        "ews_closing_rank": 700,
+        "female_closing_rank": 950,
+        "avg_placement_lpa": 12.0,
+        "median_placement_lpa": 10.0,
+        "highest_placement_lpa": 25.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "INI CET",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "INI CET",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "INI SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "INI SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "B.Sc Nursing",
+        "duration_years": 4.0,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 55%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "All India Institute of Medical Sciences Bhopal",
+    "short_name": "AIIMS Bhopal",
+    "stream": "medical",
+    "institute_type": "Central",
+    "established": 2012,
+    "ranking": 18,
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "nirf_ranking": 13,
+    "naac_grade": "A+",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.01,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "Virtually free education",
+    "avg_placement_lpa": 11.0,
+    "median_placement_lpa": 9.0,
+    "highest_placement_lpa": 22.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "AIIMS Bhopal Hospital",
+      "Medanta",
+      "Apollo"
+    ],
+    "total_seats": 125,
+    "website": "https://www.aiimsbhopal.edu.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 125,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 180,
+        "obc_closing_rank": 700,
+        "sc_closing_rank": 2200,
+        "st_closing_rank": 1400,
+        "ews_closing_rank": 800,
+        "female_closing_rank": 1050,
+        "avg_placement_lpa": 11.0,
+        "median_placement_lpa": 9.0,
+        "highest_placement_lpa": 22.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "INI CET",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "INI CET",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "INI SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "INI SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "B.Sc Nursing",
+        "duration_years": 4.0,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 55%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "All India Institute of Medical Sciences Rishikesh",
+    "short_name": "AIIMS Rishikesh",
+    "stream": "medical",
+    "institute_type": "Central",
+    "established": 2012,
+    "ranking": 19,
+    "city": "Rishikesh",
+    "state": "Uttarakhand",
+    "nirf_ranking": 17,
+    "naac_grade": "A",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.01,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "Virtually free education",
+    "avg_placement_lpa": 10.5,
+    "median_placement_lpa": 8.5,
+    "highest_placement_lpa": 20.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "AIIMS Rishikesh Hospital",
+      "Max",
+      "Fortis"
+    ],
+    "total_seats": 125,
+    "website": "https://www.aiims.edu/rishikesh",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 125,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 200,
+        "obc_closing_rank": 750,
+        "sc_closing_rank": 2400,
+        "st_closing_rank": 1500,
+        "ews_closing_rank": 850,
+        "female_closing_rank": 1100,
+        "avg_placement_lpa": 10.5,
+        "median_placement_lpa": 8.5,
+        "highest_placement_lpa": 20.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 60%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "INI CET",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "INI CET",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "INI SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "INI SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      },
+      {
+        "name": "B.Sc Nursing",
+        "duration_years": 4.0,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 55%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.01,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "St. John's Medical College",
+    "short_name": "SJMC Bangalore",
+    "stream": "medical",
+    "institute_type": "Private",
+    "established": 1963,
+    "ranking": 20,
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirf_ranking": 19,
+    "naac_grade": "A+",
+    "nba_accredited": true,
+    "avg_fees_lpa": 8.0,
+    "hostel_fees_per_year": 0.8,
+    "fee_waiver_policy": "Need-based scholarships",
+    "avg_placement_lpa": 10.0,
+    "median_placement_lpa": 8.0,
+    "highest_placement_lpa": 22.0,
+    "placement_percentage": 96.0,
+    "top_recruiters": [
+      "St. John's Hospital",
+      "Manipal Hospitals",
+      "Apollo"
+    ],
+    "total_seats": 150,
+    "website": "https://www.stjohns.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 150,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 3000,
+        "obc_closing_rank": 10000,
+        "sc_closing_rank": 30000,
+        "st_closing_rank": 20000,
+        "ews_closing_rank": 12000,
+        "female_closing_rank": 16000,
+        "avg_placement_lpa": 10.0,
+        "median_placement_lpa": 8.0,
+        "highest_placement_lpa": 22.0,
+        "placement_percentage": 96.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery",
+          "Pediatrics"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 12.0,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 8.0,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 8.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Osmania Medical College",
+    "short_name": "OMC Hyderabad",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1846,
+    "ranking": 21,
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "nirf_ranking": 25,
+    "naac_grade": "A",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.008,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 9.0,
+    "median_placement_lpa": 7.0,
+    "highest_placement_lpa": 20.0,
+    "placement_percentage": 96.0,
+    "top_recruiters": [
+      "Osmania GH",
+      "NIMS",
+      "Apollo",
+      "Yashoda"
+    ],
+    "total_seats": 250,
+    "website": "https://www.osmania.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 250,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 400,
+        "obc_closing_rank": 1500,
+        "sc_closing_rank": 5000,
+        "st_closing_rank": 3000,
+        "ews_closing_rank": 1800,
+        "female_closing_rank": 2500,
+        "avg_placement_lpa": 9.0,
+        "median_placement_lpa": 7.0,
+        "highest_placement_lpa": 20.0,
+        "placement_percentage": 96.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Shrirama Chandra Bhanja Medical College",
+    "short_name": "SCB Cuttack",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1944,
+    "ranking": 22,
+    "city": "Cuttack",
+    "state": "Odisha",
+    "nirf_ranking": 28,
+    "naac_grade": "B++",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.04,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 8.0,
+    "median_placement_lpa": 6.5,
+    "highest_placement_lpa": 18.0,
+    "placement_percentage": 95.0,
+    "top_recruiters": [
+      "SCB Hospital",
+      "KIMS",
+      "Apollo"
+    ],
+    "total_seats": 250,
+    "website": "https://www.scbmch.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 250,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 500,
+        "obc_closing_rank": 2000,
+        "sc_closing_rank": 6000,
+        "st_closing_rank": 3500,
+        "ews_closing_rank": 2200,
+        "female_closing_rank": 3000,
+        "avg_placement_lpa": 8.0,
+        "median_placement_lpa": 6.5,
+        "highest_placement_lpa": 18.0,
+        "placement_percentage": 95.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Jawaharlal Nehru Medical College Belgaum",
+    "short_name": "JNMC Belgaum",
+    "stream": "medical",
+    "institute_type": "Private",
+    "established": 1963,
+    "ranking": 23,
+    "city": "Belgaum",
+    "state": "Karnataka",
+    "nirf_ranking": 30,
+    "naac_grade": "A",
+    "nba_accredited": true,
+    "avg_fees_lpa": 6.0,
+    "hostel_fees_per_year": 0.6,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 8.0,
+    "median_placement_lpa": 6.5,
+    "highest_placement_lpa": 18.0,
+    "placement_percentage": 92.0,
+    "top_recruiters": [
+      "KLES Hospital",
+      "Manipal Hospitals",
+      "Apollo"
+    ],
+    "total_seats": 200,
+    "website": "https://www.jnmc.edu",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 200,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 8000,
+        "obc_closing_rank": 25000,
+        "sc_closing_rank": 60000,
+        "st_closing_rank": 40000,
+        "ews_closing_rank": 28000,
+        "female_closing_rank": 35000,
+        "avg_placement_lpa": 8.0,
+        "median_placement_lpa": 6.5,
+        "highest_placement_lpa": 18.0,
+        "placement_percentage": 92.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 12.0,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 8.0,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 8.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Rajendra Institute of Medical Sciences",
+    "short_name": "RIMS Ranchi",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1960,
+    "ranking": 24,
+    "city": "Ranchi",
+    "state": "Jharkhand",
+    "nirf_ranking": 35,
+    "naac_grade": "B+",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.04,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 7.5,
+    "median_placement_lpa": 6.0,
+    "highest_placement_lpa": 16.0,
+    "placement_percentage": 94.0,
+    "top_recruiters": [
+      "RIMS Hospital",
+      "Medica",
+      "Apollo"
+    ],
+    "total_seats": 200,
+    "website": "https://www.rimsranchi.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 200,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 600,
+        "obc_closing_rank": 2500,
+        "sc_closing_rank": 7000,
+        "st_closing_rank": 4000,
+        "ews_closing_rank": 2500,
+        "female_closing_rank": 3500,
+        "avg_placement_lpa": 7.5,
+        "median_placement_lpa": 6.0,
+        "highest_placement_lpa": 16.0,
+        "placement_percentage": 94.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Patna Medical College & Hospital",
+    "short_name": "PMCH Patna",
+    "stream": "medical",
+    "institute_type": "State Govt",
+    "established": 1925,
+    "ranking": 25,
+    "city": "Patna",
+    "state": "Bihar",
+    "nirf_ranking": 38,
+    "naac_grade": "B+",
+    "nba_accredited": true,
+    "avg_fees_lpa": 0.03,
+    "hostel_fees_per_year": 0.005,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 7.0,
+    "median_placement_lpa": 5.5,
+    "highest_placement_lpa": 15.0,
+    "placement_percentage": 93.0,
+    "top_recruiters": [
+      "PMCH Hospital",
+      "AIIMS Patna",
+      "Mahavir Hospital"
+    ],
+    "total_seats": 200,
+    "website": "https://www.pmch-bih.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "MBBS",
+        "short_name": "MBBS",
+        "ug_seats": 200,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NEET UG",
+        "general_opening_rank": 0,
+        "general_closing_rank": 700,
+        "obc_closing_rank": 3000,
+        "sc_closing_rank": 8000,
+        "st_closing_rank": 5000,
+        "ews_closing_rank": 3000,
+        "female_closing_rank": 4000,
+        "avg_placement_lpa": 7.0,
+        "median_placement_lpa": 5.5,
+        "highest_placement_lpa": 15.0,
+        "placement_percentage": 93.0,
+        "specializations": [
+          "General Medicine",
+          "Surgery"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MBBS",
+        "duration_years": 5.5,
+        "entrance_exam": "NEET UG",
+        "eligibility": "10+2 PCB, 50% (40% SC/ST)",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.1,
+        "available_branches": []
+      },
+      {
+        "name": "MD",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "MS",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET PG",
+        "eligibility": "MBBS with internship",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.15,
+        "available_branches": []
+      },
+      {
+        "name": "DM",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MD in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      },
+      {
+        "name": "MCh",
+        "duration_years": 3.0,
+        "entrance_exam": "NEET SS",
+        "eligibility": "MS in relevant specialty",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.2,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Lal Bahadur Shastri National Academy of Administration",
+    "short_name": "LBSNAA Mussoorie",
+    "stream": "civil_services",
+    "institute_type": "Central",
+    "established": 1959,
+    "ranking": 1,
+    "city": "Mussoorie",
+    "state": "Uttarakhand",
+    "nirf_ranking": 0,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.0,
+    "hostel_fees_per_year": 0.0,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 10.0,
+    "median_placement_lpa": 10.0,
+    "highest_placement_lpa": 15.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "IAS",
+      "IPS",
+      "IFS",
+      "IRS",
+      "Central Govt"
+    ],
+    "total_seats": 180,
+    "website": "https://www.lbsnaa.gov.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Civil Services",
+        "short_name": "IAS",
+        "ug_seats": 180,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "UPSC CSE",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 10.0,
+        "median_placement_lpa": 10.0,
+        "highest_placement_lpa": 15.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Administration",
+          "Policy",
+          "Governance"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "IAS Training",
+        "duration_years": 2.0,
+        "entrance_exam": "UPSC CSE",
+        "eligibility": "Graduate",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Sardar Vallabhbhai Patel National Police Academy",
+    "short_name": "NPA Hyderabad",
+    "stream": "civil_services",
+    "institute_type": "Central",
+    "established": 1948,
+    "ranking": 2,
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "nirf_ranking": 0,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.0,
+    "hostel_fees_per_year": 0.0,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 9.0,
+    "median_placement_lpa": 9.0,
+    "highest_placement_lpa": 14.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "IPS",
+      "State Police",
+      "CBI",
+      "NIA",
+      "RAW"
+    ],
+    "total_seats": 150,
+    "website": "https://www.svpnpa.gov.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Police Services",
+        "short_name": "IPS",
+        "ug_seats": 150,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "UPSC CSE",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 9.0,
+        "median_placement_lpa": 9.0,
+        "highest_placement_lpa": 14.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Law & Order",
+          "Investigation",
+          "Intelligence"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "IPS Training",
+        "duration_years": 2.0,
+        "entrance_exam": "UPSC CSE",
+        "eligibility": "Graduate",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Indian Institute of Public Administration",
+    "short_name": "IIPA Delhi",
+    "stream": "civil_services",
+    "institute_type": "Central",
+    "established": 1954,
+    "ranking": 3,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 0,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.5,
+    "hostel_fees_per_year": 0.1,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 8.0,
+    "median_placement_lpa": 6.0,
+    "highest_placement_lpa": 15.0,
+    "placement_percentage": 85.0,
+    "top_recruiters": [
+      "Central Govt",
+      "State Govts",
+      "UN Agencies",
+      "World Bank",
+      "Think Tanks"
+    ],
+    "total_seats": 100,
+    "website": "https://www.iipa.org.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Public Administration",
+        "short_name": "PA",
+        "ug_seats": 50,
+        "pg_seats": 30,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "IIPA",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 8.0,
+        "median_placement_lpa": 6.0,
+        "highest_placement_lpa": 15.0,
+        "placement_percentage": 85.0,
+        "specializations": [
+          "Governance",
+          "Policy",
+          "Public Management"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "PG Diploma in Public Admin",
+        "duration_years": 1.0,
+        "entrance_exam": "IIPA Entrance",
+        "eligibility": "Graduate",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Jawaharlal Nehru University — School of International Studies",
+    "short_name": "JNU SIS",
+    "stream": "civil_services",
+    "institute_type": "Central University",
+    "established": 1969,
+    "ranking": 4,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 2,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.03,
+    "hostel_fees_per_year": 0.02,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 6.0,
+    "median_placement_lpa": 4.5,
+    "highest_placement_lpa": 15.0,
+    "placement_percentage": 65.0,
+    "top_recruiters": [
+      "UPSC",
+      "MEA",
+      "UN",
+      "Think Tanks",
+      "Media"
+    ],
+    "total_seats": 200,
+    "website": "https://www.jnu.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "International Studies",
+        "short_name": "IS",
+        "ug_seats": 60,
+        "pg_seats": 50,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "JNU",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 6.0,
+        "median_placement_lpa": 4.5,
+        "highest_placement_lpa": 15.0,
+        "placement_percentage": 65.0,
+        "specializations": [
+          "Diplomacy",
+          "Security",
+          "Area Studies"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MA International Studies",
+        "duration_years": 2.0,
+        "entrance_exam": "JNU Entrance",
+        "eligibility": "BA",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.03,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "National Defence College",
+    "short_name": "NDC Delhi",
+    "stream": "civil_services",
+    "institute_type": "Defence",
+    "established": 1960,
+    "ranking": 5,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 0,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.0,
+    "hostel_fees_per_year": 0.0,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 12.0,
+    "median_placement_lpa": 12.0,
+    "highest_placement_lpa": 18.0,
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "Indian Armed Forces",
+      "MEA",
+      "MoD",
+      "Central Govt",
+      "UN Peacekeeping"
+    ],
+    "total_seats": 100,
+    "website": "https://ndc.nic.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "National Security",
+        "short_name": "NS",
+        "ug_seats": 50,
+        "pg_seats": 25,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "Selection",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 12.0,
+        "median_placement_lpa": 12.0,
+        "highest_placement_lpa": 18.0,
+        "placement_percentage": 100.0,
+        "specializations": [
+          "Strategy",
+          "Defence",
+          "Diplomacy"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "National Security Course",
+        "duration_years": 1.0,
+        "entrance_exam": "Selection",
+        "eligibility": "Senior Officers",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.0,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  }
+]

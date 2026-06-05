@@ -1,0 +1,785 @@
+[
+  {
+    "name": "National Council of Educational Research and Training",
+    "short_name": "NCERT Delhi",
+    "stream": "education",
+    "institute_type": "Central",
+    "established": 1961,
+    "ranking": 1,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 5,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.03,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 6.0,
+    "median_placement_lpa": 4.5,
+    "highest_placement_lpa": 12.0,
+    "placement_percentage": 85.0,
+    "top_recruiters": [
+      "KVS",
+      "NVS",
+      "CBSE Schools",
+      "State Govt Schools",
+      "Private Schools"
+    ],
+    "total_seats": 200,
+    "website": "https://www.ncert.nic.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Education",
+        "short_name": "BED",
+        "ug_seats": 100,
+        "pg_seats": 50,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NCET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 6.0,
+        "median_placement_lpa": 4.5,
+        "highest_placement_lpa": 12.0,
+        "placement_percentage": 85.0,
+        "specializations": [
+          "Pedagogy",
+          "Curriculum Design",
+          "Assessment"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "NCET",
+        "eligibility": "Graduate, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      },
+      {
+        "name": "M.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "Entrance",
+        "eligibility": "B.Ed",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Lady Shri Ram College — Education Dept",
+    "short_name": "LSR Education",
+    "stream": "education",
+    "institute_type": "Central University",
+    "established": 1956,
+    "ranking": 2,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 8,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.08,
+    "hostel_fees_per_year": 0.06,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 5.5,
+    "median_placement_lpa": 4.0,
+    "highest_placement_lpa": 10.0,
+    "placement_percentage": 80.0,
+    "top_recruiters": [
+      "DPS",
+      "KVS",
+      "Modern School",
+      "Shri Ram School",
+      "Private Schools"
+    ],
+    "total_seats": 100,
+    "website": "https://lsr.edu.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Elementary Education",
+        "short_name": "BELED",
+        "ug_seats": 100,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "DU Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 5.5,
+        "median_placement_lpa": 4.0,
+        "highest_placement_lpa": 10.0,
+        "placement_percentage": 80.0,
+        "specializations": [
+          "Primary Education",
+          "Child Psychology"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.El.Ed",
+        "duration_years": 4.0,
+        "entrance_exam": "DU Entrance",
+        "eligibility": "10+2, 80%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.08,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Tata Institute of Social Sciences",
+    "short_name": "TISS Mumbai",
+    "stream": "education",
+    "institute_type": "Deemed",
+    "established": 1936,
+    "ranking": 3,
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "nirf_ranking": 3,
+    "naac_grade": "A+",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.4,
+    "hostel_fees_per_year": 0.15,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 8.0,
+    "median_placement_lpa": 6.0,
+    "highest_placement_lpa": 20.0,
+    "placement_percentage": 88.0,
+    "top_recruiters": [
+      "Teach for India",
+      "Azim Premji Foundation",
+      "UNICEF",
+      "World Bank",
+      "McKinsey"
+    ],
+    "total_seats": 300,
+    "website": "https://www.tiss.edu",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Education",
+        "short_name": "MA-ED",
+        "ug_seats": 80,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "TISS-NET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 8.0,
+        "median_placement_lpa": 6.0,
+        "highest_placement_lpa": 20.0,
+        "placement_percentage": 88.0,
+        "specializations": [
+          "Education Policy",
+          "EdTech",
+          "Inclusive Education"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MA Education",
+        "duration_years": 2.0,
+        "entrance_exam": "TISS-NET",
+        "eligibility": "Graduate, 55%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.4,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Jamia Millia Islamia — Faculty of Education",
+    "short_name": "Jamia Education",
+    "stream": "education",
+    "institute_type": "Central University",
+    "established": 1920,
+    "ranking": 4,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 6,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.06,
+    "hostel_fees_per_year": 0.04,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 5.0,
+    "median_placement_lpa": 3.5,
+    "highest_placement_lpa": 10.0,
+    "placement_percentage": 78.0,
+    "top_recruiters": [
+      "KVS",
+      "NVS",
+      "AMU Schools",
+      "DPS",
+      "Govt Schools"
+    ],
+    "total_seats": 200,
+    "website": "https://www.jmi.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Education",
+        "short_name": "BED",
+        "ug_seats": 120,
+        "pg_seats": 40,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "JMI Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 5.0,
+        "median_placement_lpa": 3.5,
+        "highest_placement_lpa": 10.0,
+        "placement_percentage": 78.0,
+        "specializations": [
+          "Pedagogy",
+          "Special Education"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "JMI Entrance",
+        "eligibility": "Graduate, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.06,
+        "available_branches": []
+      },
+      {
+        "name": "M.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "JMI Entrance",
+        "eligibility": "B.Ed",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.06,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Banaras Hindu University — Faculty of Education",
+    "short_name": "BHU Education",
+    "stream": "education",
+    "institute_type": "Central University",
+    "established": 1916,
+    "ranking": 5,
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "nirf_ranking": 10,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.04,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 4.5,
+    "median_placement_lpa": 3.5,
+    "highest_placement_lpa": 9.0,
+    "placement_percentage": 75.0,
+    "top_recruiters": [
+      "KVS",
+      "NVS",
+      "UP Govt Schools",
+      "Private Schools",
+      "CBSE Schools"
+    ],
+    "total_seats": 250,
+    "website": "https://www.bhu.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Education",
+        "short_name": "BED",
+        "ug_seats": 150,
+        "pg_seats": 50,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "BHU-PET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 4.5,
+        "median_placement_lpa": 3.5,
+        "highest_placement_lpa": 9.0,
+        "placement_percentage": 75.0,
+        "specializations": [
+          "Hindi Medium Ed",
+          "Science Ed",
+          "Special Ed"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "BHU-PET",
+        "eligibility": "Graduate, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      },
+      {
+        "name": "M.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "BHU-PET",
+        "eligibility": "B.Ed",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Regional Institute of Education Mysore",
+    "short_name": "RIE Mysore",
+    "stream": "education",
+    "institute_type": "Central",
+    "established": 1963,
+    "ranking": 6,
+    "city": "Mysore",
+    "state": "Karnataka",
+    "nirf_ranking": 15,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.04,
+    "hostel_fees_per_year": 0.03,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 4.0,
+    "median_placement_lpa": 3.0,
+    "highest_placement_lpa": 8.0,
+    "placement_percentage": 72.0,
+    "top_recruiters": [
+      "KVS",
+      "NVS",
+      "State Govt Schools",
+      "CBSE Schools",
+      "Private Schools"
+    ],
+    "total_seats": 300,
+    "website": "https://www.riemysore.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Education (Science)",
+        "short_name": "BSCED",
+        "ug_seats": 150,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NCET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 4.0,
+        "median_placement_lpa": 3.0,
+        "highest_placement_lpa": 8.0,
+        "placement_percentage": 72.0,
+        "specializations": [
+          "Science Education",
+          "Math Education"
+        ]
+      },
+      {
+        "name": "Education (Arts)",
+        "short_name": "BAED",
+        "ug_seats": 150,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "NCET",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 3.5,
+        "median_placement_lpa": 2.5,
+        "highest_placement_lpa": 7.0,
+        "placement_percentage": 68.0,
+        "specializations": [
+          "Language Ed",
+          "Social Science Ed"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Sc.B.Ed (Integrated)",
+        "duration_years": 4.0,
+        "entrance_exam": "NCET",
+        "eligibility": "10+2, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.04,
+        "available_branches": []
+      },
+      {
+        "name": "BA.B.Ed (Integrated)",
+        "duration_years": 4.0,
+        "entrance_exam": "NCET",
+        "eligibility": "10+2, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.04,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Azim Premji University",
+    "short_name": "APU Bangalore",
+    "stream": "education",
+    "institute_type": "Private",
+    "established": 2010,
+    "ranking": 7,
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirf_ranking": 18,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 2.0,
+    "hostel_fees_per_year": 0.3,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 6.5,
+    "median_placement_lpa": 5.0,
+    "highest_placement_lpa": 15.0,
+    "placement_percentage": 82.0,
+    "top_recruiters": [
+      "Teach for India",
+      "Azim Premji Foundation",
+      "UNICEF",
+      "Pratham",
+      "Room to Read"
+    ],
+    "total_seats": 200,
+    "website": "https://azimpremjiuniversity.edu.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Education",
+        "short_name": "MA-ED",
+        "ug_seats": 100,
+        "pg_seats": 0,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "APU Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 6.5,
+        "median_placement_lpa": 5.0,
+        "highest_placement_lpa": 15.0,
+        "placement_percentage": 82.0,
+        "specializations": [
+          "Education Leadership",
+          "Teacher Education"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "MA Education",
+        "duration_years": 2.0,
+        "entrance_exam": "APU Entrance",
+        "eligibility": "Graduate, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 2.0,
+        "available_branches": []
+      },
+      {
+        "name": "B.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "APU Entrance",
+        "eligibility": "Graduate, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 1.5,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "Central University of Education Delhi",
+    "short_name": "CIE Delhi",
+    "stream": "education",
+    "institute_type": "Central University",
+    "established": 1947,
+    "ranking": 8,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 12,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.03,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 4.5,
+    "median_placement_lpa": 3.5,
+    "highest_placement_lpa": 9.0,
+    "placement_percentage": 76.0,
+    "top_recruiters": [
+      "KVS",
+      "NVS",
+      "DPS",
+      "Modern School",
+      "CBSE Schools"
+    ],
+    "total_seats": 200,
+    "website": "https://cie.du.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Education",
+        "short_name": "BED",
+        "ug_seats": 120,
+        "pg_seats": 40,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "DU Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 4.5,
+        "median_placement_lpa": 3.5,
+        "highest_placement_lpa": 9.0,
+        "placement_percentage": 76.0,
+        "specializations": [
+          "Pedagogy",
+          "Assessment",
+          "EdTech"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "DU Entrance",
+        "eligibility": "Graduate, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      },
+      {
+        "name": "M.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "DU Entrance",
+        "eligibility": "B.Ed",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "MS University Baroda — Faculty of Education",
+    "short_name": "MSU Education",
+    "stream": "education",
+    "institute_type": "State Govt",
+    "established": 1949,
+    "ranking": 9,
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "nirf_ranking": 20,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.04,
+    "hostel_fees_per_year": 0.03,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 3.5,
+    "median_placement_lpa": 2.5,
+    "highest_placement_lpa": 7.0,
+    "placement_percentage": 70.0,
+    "top_recruiters": [
+      "Gujarat Govt Schools",
+      "KVS",
+      "Private Schools",
+      "CBSE Schools",
+      "GSEB Schools"
+    ],
+    "total_seats": 200,
+    "website": "https://www.msubaroda.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Education",
+        "short_name": "BED",
+        "ug_seats": 120,
+        "pg_seats": 40,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 3.5,
+        "median_placement_lpa": 2.5,
+        "highest_placement_lpa": 7.0,
+        "placement_percentage": 70.0,
+        "specializations": [
+          "Primary Ed",
+          "Secondary Ed"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "Entrance",
+        "eligibility": "Graduate, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.04,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  },
+  {
+    "name": "University of Delhi — Dept of Education",
+    "short_name": "DU Education",
+    "stream": "education",
+    "institute_type": "Central University",
+    "established": 1922,
+    "ranking": 10,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "nirf_ranking": 8,
+    "naac_grade": "",
+    "nba_accredited": false,
+    "avg_fees_lpa": 0.05,
+    "hostel_fees_per_year": 0.04,
+    "fee_waiver_policy": "",
+    "avg_placement_lpa": 5.0,
+    "median_placement_lpa": 4.0,
+    "highest_placement_lpa": 10.0,
+    "placement_percentage": 78.0,
+    "top_recruiters": [
+      "KVS",
+      "NVS",
+      "DPS",
+      "Modern School",
+      "Sanskriti School"
+    ],
+    "total_seats": 300,
+    "website": "https://www.du.ac.in",
+    "notable_alumni": [],
+    "branches": [
+      {
+        "name": "Education",
+        "short_name": "BED",
+        "ug_seats": 200,
+        "pg_seats": 50,
+        "phd_seats": 0,
+        "dual_degree_seats": 0,
+        "cutoff_year": 2024,
+        "cutoff_exam": "DU Entrance",
+        "general_opening_rank": 0,
+        "general_closing_rank": 0,
+        "obc_closing_rank": 0,
+        "sc_closing_rank": 0,
+        "st_closing_rank": 0,
+        "ews_closing_rank": 0,
+        "female_closing_rank": 0,
+        "avg_placement_lpa": 5.0,
+        "median_placement_lpa": 4.0,
+        "highest_placement_lpa": 10.0,
+        "placement_percentage": 78.0,
+        "specializations": [
+          "Pedagogy",
+          "Special Education",
+          "Assessment"
+        ]
+      }
+    ],
+    "course_types": [
+      {
+        "name": "B.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "DU Entrance",
+        "eligibility": "Graduate, 50%",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      },
+      {
+        "name": "M.Ed",
+        "duration_years": 2.0,
+        "entrance_exam": "DU Entrance",
+        "eligibility": "B.Ed",
+        "total_seats": 0,
+        "fee_per_year_lpa": 0.05,
+        "available_branches": []
+      }
+    ],
+    "branch_names": []
+  }
+]
